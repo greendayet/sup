@@ -155,7 +155,7 @@ header{
 }
 
 h1{
-	width: 143px;
+	width: 100px;
 	height: 118px;
 	margin: 0px auto;
 	text-indent: -9999px;
@@ -163,7 +163,7 @@ h1{
 
 h1 a{
 	display:block;
-	width: 143px;
+	width: 100px;
 	height: 118px;
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 305.555555% 343.220338%;
