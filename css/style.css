@@ -2209,6 +2209,7 @@ li.other-contact{
 	background: transparent;
 	padding: 10px;
 	vertical-align: middle;
+	box-sizing: border-box;
 }
 .login-info ul li.login-function{
 	justify-content: space-between;
@@ -2382,14 +2383,11 @@ li.other-contact{
   .login-wrapper {
     max-width: 768px;
 }
-.login-box{
-	/*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,0%);*/
-}
 
 @media only screen and (max-width:600px){
+	.login-box{
+	width: 80%;
+}
 	/*.login-body{
 		background: #f6f4f1;
 		background-image: none;
@@ -2420,6 +2418,23 @@ li.other-contact{
 	}
 	.login-info{
 		padding: 20px 40px 40px;
+	}
+	.language-cn,.language-en{
+	width: 50px;
+	height: 34px;
+	}
+	.login-box input{
+	width: 100%;
+	padding-left: 0px;
+	}
+	.login-info {
+    padding: 20px 25px 40px;
+	}
+	.login-info ul li div:nth-child(2){
+		width: 70%;
+	}
+	.login-info ul li.login-function div:nth-child(2){
+		width: auto;
 	}
 }
 
