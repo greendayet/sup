@@ -2227,7 +2227,7 @@ li.other-contact{
 .login-info{
 	background: #f6f4f1;
 	padding: 20px 20px 40px 20px;
-	border-radius: 10px;
+	border-radius: 6px;
 }
 .login-info ul{
 	margin-bottom: 20px;
@@ -2388,7 +2388,7 @@ li.other-contact{
 	}
 	.login-info {
     background: #fff;
-    box-shadow: 2px 2px 15px #0f3d59;
+    box-shadow: 2px 2px 10px #0f3d59;
 	}
 	.login-box h1{
 		margin-bottom: 30px;
