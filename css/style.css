@@ -2205,6 +2205,7 @@ li.other-contact{
     transform: translate(-50%,-50%);*/
 }
 .login-box input{
+	width: 100%;
 	border: none;
 	background: transparent;
 	padding: 10px;
