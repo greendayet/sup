@@ -2377,6 +2377,7 @@ li.other-contact{
   .login-body{
 	background: url(../images/bg-login-m.png) #fff no-repeat center bottom;
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
   .login-wrapper {
     max-width: 768px;
