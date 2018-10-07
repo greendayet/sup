@@ -33,19 +33,38 @@
 							<input type="password" placeholder="请输入密码">
 							<div class="m-pass-box">
 								<a class="inline" href="#inline_content"><img class="finger-pass" src="images/img-trans.png"></a>
-								<a href="#"><img class="pic-pass" src="images/img-trans.png"></a>
+								<a class="inline" href="#inline_content_picpass"><img class="pic-pass" src="images/img-trans.png"></a>
 							</div>
 							<!--指紋辨識 start-->
 							<div style='display:none'>
-			<div id="inline_content">
-			<p>指纹扫瞄</p>
-			<div class="finger-check-out">
-			<img class="finger-check" src="images/img-trans.png">
-			</div>
-			</div>
-		</div>
-		<!--指紋辨識 end-->
-
+								<div id="inline_content">
+								<p>指纹扫瞄</p>
+								<div class="finger-check-out">
+								<img href="#inline_content_2" class="inline finger-check" src="images/img-trans.png">
+								</div>
+								</div>
+							</div>
+							<!--指紋辨識 end-->
+							<!--再次指紋辨識 start-->
+							<div style='display:none'>
+								<div id="inline_content_2">
+								<p>再次指纹扫瞄</p>
+								<div class="finger-check-out">
+								<img class="finger-check" src="images/img-trans.png">
+								</div>
+								</div>
+							</div>
+							<!--再次指紋辨識 end-->
+							<!--圖形密碼辨識 start-->
+							<div style='display:none'>
+								<div id="inline_content_picpass">
+								<p>输入图形密码</p>
+								<div class="finger-check-out">
+								图形密码
+								</div>
+								</div>
+							</div>
+							<!--圖形密碼辨識 end-->
 
 						</div>
 					</li>
@@ -55,7 +74,7 @@
 					</li>
 				</ul>
 				<div class="login-btn">
-					<button class="setting-btn-yellow">登入</button>
+					<button class="setting-btn-yellow" onclick="location.href='index.html'">登入</button>
 					<p>or</p>
 					<button class="fb-blue">FACEBOOK</button>
 				</div>
