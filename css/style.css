@@ -2242,7 +2242,7 @@ li.other-contact{
 	justify-content: flex-start;
 	align-items: center;
 }
-.login-info ul li div:nth-child(2){
+.login-info ul li > div:nth-child(2){
 	margin-left: 20px;
 }
 .language-choice{
@@ -2355,10 +2355,10 @@ li.other-contact{
 }
 
 .login-info ul li div:nth-child(1){
-		width: 20%;
+		width: 18%;
 	}
-	.login-info ul li div:nth-child(2){
-		width: 80%;
+	.login-info ul li > div:nth-child(2){
+		width: 82%;
 	}
 	.login-info ul li.login-function div:nth-child(1),.login-info ul li.login-function div:nth-child(2){
 		width: auto;
@@ -2429,6 +2429,10 @@ li.other-contact{
 		justify-content: space-around;
 		align-items: center;
 	}
+	.login-info ul li.log-pass > div:nth-child(2) input{
+		flex:2;
+		margin-right: 10px;
+	}
 	.m-pass-box{
 		display: block;
 		text-align: right;
@@ -2451,6 +2455,14 @@ li.other-contact{
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1629.62963% 1500%;
 	background-position: 82.808717% 79.62963%;/*342 301*/
+	}
+	.finger-check{
+	width: 81px;
+	height: 115px;
+	vertical-align: middle;
+	background: url("../images/bg-icon.png") no-repeat;
+	background-size: 543.209877% 352.173913%;
+	background-position: 70.194986% 93.448276%;/*252 271*/
 	}
 }
 
