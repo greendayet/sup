@@ -2347,6 +2347,11 @@ li.other-contact{
 	top:40%;
 }
 
+.login-body footer{
+	background: transparent;
+}
+
+
 /* ======= Responsive ======= */
 
 @media only screen and (min-width: 1200px) {
