@@ -5,7 +5,8 @@
 <title>SUPREME-登 入</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="css/colorbox.css" type="text/css" media="all">	
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
@@ -31,9 +32,19 @@
 						<div>
 							<input type="password" placeholder="请输入密码">
 							<div class="m-pass-box">
-								<a href="#"><img class="finger-pass" src="images/img-trans.png"></a>
+								<a class="inline" href="#inline_content"><img class="finger-pass" src="images/img-trans.png"></a>
 								<a href="#"><img class="pic-pass" src="images/img-trans.png"></a>
 							</div>
+							<!--指紋辨識 start-->
+							<div style='display:none'>
+			<div id="inline_content">
+			<p>指纹扫瞄</p>
+			<img class="finger-check" src="images/img-trans.png">
+			</div>
+		</div>
+		<!--指紋辨識 end-->
+
+
 						</div>
 					</li>
 					<li class="login-function">
@@ -52,3 +63,17 @@
 	</div>
 </body>
 </html>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".inline").colorbox({inline:true, width:"550px"});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#f00", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
