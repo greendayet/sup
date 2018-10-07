@@ -2353,6 +2353,16 @@ li.other-contact{
     color: #f0f0f0;
 }
 
+.login-info ul li div:nth-child(1){
+		width: 20%;
+	}
+	.login-info ul li div:nth-child(2){
+		width: 80%;
+	}
+	.login-info ul li.login-function div:nth-child(1),.login-info ul li.login-function div:nth-child(2){
+		width: auto;
+	}
+
 
 /* ======= Responsive ======= */
 
@@ -2453,15 +2463,6 @@ li.other-contact{
 	}
 	.login-info {
     padding: 20px 25px 40px;
-	}
-	.login-info ul li div:nth-child(1){
-		width: 20%;
-	}
-	.login-info ul li div:nth-child(2){
-		width: 80%;
-	}
-	.login-info ul li.login-function div:nth-child(2){
-		width: auto;
 	}
 }
 
