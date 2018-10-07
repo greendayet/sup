@@ -2364,6 +2364,12 @@ li.other-contact{
 		width: auto;
 	}
 
+.login-info ul li.language-choice div:nth-child(2){
+		margin-left: 30px;
+	}
+.m-pass-box{
+		display: none;
+	}
 
 /* ======= Responsive ======= */
 
@@ -2417,6 +2423,34 @@ li.other-contact{
     background-color: transparent;
     padding: 20px 0px 10px;
     color: #f0f0f0;
+	}
+	.login-info ul li.log-pass > div:nth-child(2){
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.m-pass-box{
+		display: block;
+		text-align: right;
+	}
+	.m-pass-box a{
+		display: inline-block;
+	}
+	.finger-pass{
+	width: 27px;
+	height: 27px;
+	vertical-align: middle;
+	background: url("../images/bg-icon.png") no-repeat;
+	background-size: 1629.62963% 1500%;
+	background-position: 82.808717% 72.486772%;/*342 274*/
+	}
+	.pic-pass{
+	width: 27px;
+	height: 27px;
+	vertical-align: middle;
+	background: url("../images/bg-icon.png") no-repeat;
+	background-size: 1629.62963% 1500%;
+	background-position: 82.808717% 79.62963%;/*342 301*/
 	}
 }
 
