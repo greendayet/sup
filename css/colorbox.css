@@ -69,11 +69,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
 
-#inline_content{
+#inline_content,#inline_content_2,#inline_content_picpass{
     text-align: center;
     color: #766d68;
 }
-#inline_content p{
+#inline_content p,#inline_content_2 p,#inline_content_picpass p{
     font-size: 18px;
     padding-bottom: 30px;
     border-bottom: solid 1px #eeeeee;

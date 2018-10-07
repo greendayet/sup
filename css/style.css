@@ -2373,7 +2373,10 @@ li.other-contact{
 
 /* ======= Responsive ======= */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1350px) {
+	.container,.head,nav{
+		width: 980px;
+	}
 }
 
 @media only screen and (max-width:768px){
@@ -2466,6 +2469,7 @@ li.other-contact{
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 543.209877% 352.173913%;
 	background-position: 70.194986% 93.448276%;/*252 271*/
+	cursor: pointer;
 	}
 }
 
