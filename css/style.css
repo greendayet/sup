@@ -2233,7 +2233,7 @@ li.other-contact{
 	margin-bottom: 20px;
 }
 .login-info ul li{
-	padding: 20px 0px;
+	padding: 10px 0px;
 	border-bottom: solid 1px #c1c1c0;
 }
 .login-info ul li{
@@ -2276,7 +2276,7 @@ li.other-contact{
 	padding:10px 0px;
 }
 .login-btn button{
-	padding: 20px 0px;
+	padding: 10px 0px;
 	color: #fff;
 	border: none;
 	cursor: pointer;
@@ -2291,11 +2291,8 @@ li.other-contact{
 }
 
 .register-group{
-	width: 30%;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	width: 550px;
+	margin: 0px auto;
 }
 .register-group .login-box{
 	position: static;
@@ -2303,8 +2300,8 @@ li.other-contact{
 	width: 100%;
 	padding-top: 0px;
 	margin-bottom: 40px;
-	height: 680px;
-	overflow-y: auto;
+	/*height: 680px;
+	overflow-y: auto;*/
 }
 .register-head{
 	margin-bottom: 20px;
@@ -2379,9 +2376,23 @@ li.other-contact{
   }
   .login-body{
 	background: url(../images/bg-login-m.png) #fff no-repeat center bottom;
+	padding-top: 30px;
 }
   .login-wrapper {
     max-width: 768px;
+	}
+	.login-box {
+    border-radius: 0px;
+    box-shadow: none; 
+    padding-top: 0px;
+	}
+	.login-info {
+    background: #fff;
+    box-shadow: 5px 5px 30px #0f3d59;
+	}
+	.login-box h1{
+		margin-bottom: 30px;
+	}
 }
 
 @media only screen and (max-width:600px){
