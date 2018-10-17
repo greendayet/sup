@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">	
+<title>SUPREME-SHARE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="css/side-menu.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="head">
+				<h1><a href="index.html">SUPREME</a></h1>
+				<h1 class="head-mobile">商城</h1>
+				<div class="head-rightfunction">
+					<ul>
+						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
+						<li><a href="admin-order.html">店铺后台</a></li>
+						<li><img src="images/img-trans.png">
+							<a href="#" class="tooltip">推广回馈
+							<span class="tooltiptext">
+								<div class="qrcode-img">
+								<img src="images/qrcode.png">
+								</div>
+								<div class="orange ft13">
+									2018DIGHISDRHG OIERHYIOERHIOYHE
+								</div>
+							</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="home-mobile"><a href="mall.html"><i class="fas fa-angle-left"></i></a></div>			
+				<div class="malllist-mobile"><a href="#"><i class="fas fa-shopping-cart"></i></i></a></div>
+			</div>
+			<nav class="nav-desktop">
+				<ul>
+					<li><a class="active" href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
+				</ul>
+				<div class="searchbox">
+					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
+					
+				</div>
+			</nav>	
+		</header>
+		<div class="main">
+			<div class="container">
+				<div class="share-img"><img src="images/img-product-485x388.jpg" class="simpleLens-big-image"></div>
+				<div class="share-bottom">
+					<div class="share-txt">
+						<p>分享商品</p>
+						<span>快告诉你的亲朋好友，你在这发现了什么好东西</span>
+					</div>
+					<div class="community-mobile">
+						<p><a class="share-mobile-line" href="#"><i class="fab fa-line"></i></a><span>LINE</span></p>
+						<p><a class="share-mobile-fbmessage" href="#"><i class="fab fa-facebook-messenger"></i></a><span>Messanger</span></p>
+						<p><a class="share-mobile-fb-f" href="#"><i class="fab fa-facebook-f"></i></a><span>Facebook</span></p>
+						<p><a class="share-mobile-ig" href="#"><i class="fab fa-instagram"></i></a><span>Instagram</span></p>
+						<p><a class="share-mobile-whatsapp" href="#"><i class="fab fa-whatsapp"></i></a><span>Whatsapp</span></p>
+					</div>
+					<div class="share-function">
+						<p><a class="share-function-copydata" href="#"><i class="far fa-clone"></i></a><span>复制资讯</span></p>
+						<p><a class="share-function-copylink" href="#"><i class="fas fa-link"></i></a><span>复制连结</span></p>
+						<p><a class="share-function-newsletter" href="#"><i class="far fa-comment-alt"></i></a><span>简讯</span></p>
+						<p><a class="share-function-mail" href="#"><i class="far fa-envelope"></i></a><span>email</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>© 2018 SUPREME. All rights reserved.</footer>
+	</div>
+</body>
+</html>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+<script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('#demo-1 .simpleLens-thumbnails-container img').simpleGallery({
+            loading_image: 'images/loading.gif'
+        });
+
+        $('#demo-1 .simpleLens-big-image').simpleLens({
+            loading_image: 'images/loading.gif'
+        });
+    });
+</script>

@@ -4,8 +4,9 @@
 <meta charset="utf-8">	
 <title>SUPREME-MALL</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="css/side-menu.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
@@ -14,6 +15,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
+				<h1 class="head-mobile">商城</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -32,41 +34,48 @@
 						</li>
 					</ul>
 				</div>
+				<div class="home-mobile"><a href="index.html"><i class="fas fa-home"></i></a></div>			
+				<div class="malllist-mobile"><a href="#"><i class="fas fa-list-ul"></i></a></div>
 			</div>
-			<nav>
+			<nav class="nav-desktop">
 				<ul>
-					<li><img src="images/img-trans.png"><a href="mall.html">商城</a></li>
-					<li><img src="images/img-trans.png"><a href="wallet-payA-step1.html">钱包</a></li>
-					<li><img src="images/img-trans.png"><a href="ticket.html">票券</a></li>
-					<li><img src="images/img-trans.png"><a href="event-list.html">活动</a></li>
+					<li><a class="active" href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
 					
 				</div>
 			</nav>
+			
 		</header>
 		<div class="main">
 			<div class="container">
 				<div class="inner-mall">
 					<div class="left-side">
+						<div class="searchbox">
+					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>	
+				</div>
 						<h2 class="category">商品分类</h2>
 						<ul>
-							<li><img src="images/img-trans.png"><a href="#">流行服饰</a></li>
-							<li><img src="images/img-trans.png"><a href="#">美妆药妆</a></li>
-							<li><img src="images/img-trans.png"><a href="#">鞋包配饰</a></li>
-							<li><img src="images/img-trans.png"><a href="#">妇幼玩具</a></li>
-							<li class="calculation"><img src="images/img-trans.png"><a href="#">计算机周边</a></li>
-							<li><img src="images/img-trans.png"><a href="#">家电影音</a></li>
-							<li><img src="images/img-trans.png"><a href="#">手机相机</a></li>
-							<li><img src="images/img-trans.png"><a href="#">电玩娱乐</a></li>
-							<li><img src="images/img-trans.png"><a href="#">美食保健</a></li>
-							<li><img src="images/img-trans.png"><a href="#">清洁医疗</a></li>
-							<li><img src="images/img-trans.png"><a href="#">宠物用品</a></li>
-							<li><img src="images/img-trans.png"><a href="#">居家寝具</a></li>
-							<li><img src="images/img-trans.png"><a href="#">运动户外</a></li>
-							<li><img src="images/img-trans.png"><a href="#">餐券旅游</a></li>
-							<li><img src="images/img-trans.png"><a href="#">图书文具</a></li>
+							<li><img src="images/img-trans.png"><a class="active" href="#">流行服饰</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">美妆药妆</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">鞋包配饰</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">妇幼玩具</a><span>|</span></li>
+							<li class="calculation"><img src="images/img-trans.png"><a href="#">计算机周边</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">家电影音</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">手机相机</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">电玩娱乐</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">美食保健</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">清洁医疗</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">宠物用品</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">居家寝具</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">运动户外</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">餐券旅游</a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">图书文具</a><span>|</span></li>
 						</ul>
 					</div>
 					<div class="right-side">
@@ -112,11 +121,9 @@
 </div>
     <!-- #endregion Jssor Slider End -->
 							
-						<div class="mall-product">
-							
-							<div id="mallindexpro"">         
-     <!--products-->
-     <div class="content_box">
+	<div class="masonry">
+						<!--products-->
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -131,34 +138,28 @@
      </div>
      <!--products-->
 
-     <!--AD-->
-     <div class="content_box">
-     	<div class="products-adbox"><figure><img src="images/ad.jpg"></figure></div>
+     <!--products-->
+     <div class="content_box item">
+     	<div class="products-box-main1">
+     	<div class="mall-products-left-group">
+			<a href="mall-products.html">
+				<figure><img src="images/img-product-small.jpg"></figure>
+				<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
+				<p class="shop-description">契尔氏经典明星商品 100ml</p>
+				<span class="price">USDT<b>250</b></span>
+				<button class="btn-favorite"></button>
+			</a>
+		</div>
+		</div>							
      </div>
-     <!--AD-->
+     <!--products-->
 
      <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
 				<figure><img src="images/img-product-485x200.jpg"></figure>
-				<h2 class="shop-name">我的店铺名</h2>
-				<p class="shop-description">契尔氏经典明星商品 100ml</p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>
-			</a>
-		</div>
-		</div>							
-     </div>
-      <!--products-->
-
-      <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main1">
-     	<div class="mall-products-left-group">
-			<a href="mall-products.html">
-				<figure><img src="images/img-product-485x388.jpg"></figure>
 				<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
 				<p class="shop-description">契尔氏经典明星商品 100ml</p>
 				<span class="price">USDT<b>250</b></span>
@@ -167,21 +168,15 @@
 		</div>
 		</div>							
      </div>
-     <!--products-->
+      <!--products-->
 
-     <!--AD-->
-     <div class="content_box">
-     	<div class="products-adbox"><figure><img src="images/ad.jpg"></figure></div>
-     </div>
-     <!--AD-->
-
-     <!--products-->
-     <div class="content_box">
+      <!--products-->
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
 				<figure><img src="images/img-product-485x200.jpg"></figure>
-				<h2 class="shop-name">我的店铺名</h2>
+				<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
 				<p class="shop-description">契尔氏经典明星商品 100ml</p>
 				<span class="price">USDT<b>250</b></span>
 				<button class="btn-favorite"></button>
@@ -192,7 +187,23 @@
       <!--products-->
 
       <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
+     	<div class="products-box-main1">
+     	<div class="mall-products-left-group">
+			<a href="mall-products.html">
+				<figure><img src="images/img-product-small.jpg"></figure>
+				<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
+				<p class="shop-description">契尔氏经典明星商品 100ml</p>
+				<span class="price">USDT<b>250</b></span>
+				<button class="btn-favorite"></button>
+			</a>
+		</div>
+		</div>							
+     </div>
+     <!--products-->
+
+     <!--products-->
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -207,19 +218,13 @@
      </div>
      <!--products-->
 
-     <!--AD-->
-     <div class="content_box">
-     	<div class="products-adbox"><figure><img src="images/ad.jpg"></figure></div>
-     </div>
-     <!--AD-->
-
      <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
 				<figure><img src="images/img-product-485x200.jpg"></figure>
-				<h2 class="shop-name">我的店铺名</h2>
+				<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
 				<p class="shop-description">契尔氏经典明星商品 100ml</p>
 				<span class="price">USDT<b>250</b></span>
 				<button class="btn-favorite"></button>
@@ -230,7 +235,7 @@
       <!--products-->
 
       <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -244,118 +249,7 @@
 		</div>							
      </div>
      <!--products-->
-
-     
-</div>
-								<!--<div class="products-box-main1">
-									<div class="mall-products-left-group">
-										<a href="mall-products.html">
-											<figure><img src="images/img-product-485x388.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-										<div class="products-adbox">AD</div>
-									</div>
-									<div class="mall-products-left-group">
-										<a href="#">
-											<figure><img src="images/img-product-485x388.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-										<div class="products-adbox">AD</div>
-									</div>
-									<div class="mall-products-left-group">
-										<a href="#">
-											<figure><img src="images/img-product-485x388.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-										<div class="products-adbox">AD</div>
-									</div>
-								</div>
-							
-								<div class="products-box-main-other">
-									<div class="mall-products-right-group">
-										<a href="#">
-											<figure><img src="images/img-product-small.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-									</div>
-									<div class="mall-products-right-group">
-										<a href="#">
-											<figure><img src="images/img-product-small.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-									</div>
-									<div class="mall-products-right-group">
-										<a href="#">
-											<figure><img src="images/img-product-small.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-									</div>
-									<div class="mall-products-right-group">
-										<a href="#">
-											<figure><img src="images/img-product-small.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-									</div>
-									<div class="mall-products-right-group">
-										<a href="#">
-											<figure><img src="images/img-product-small.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-									</div>
-									<div class="mall-products-right-group">
-										<a href="#">
-											<figure><img src="images/img-product-small.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-									</div>
-									<div class="mall-products-right-group">
-										<a href="#">
-											<figure><img src="images/img-product-small.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-									</div>
-									<div class="mall-products-right-group">
-										<a href="#">
-											<figure><img src="images/img-product-small.jpg"></figure>
-											<h2 class="shop-name">我的店铺名</h2>
-											<p class="shop-description">契尔氏经典明星商品 100ml</p>
-											<span class="price">USDT<b>250</b></span>
-											<button class="btn-favorite"></button>
-										</a>
-									</div>
-								</div>-->
-							
-						</div>
+ </div>
 						
 					
 					</div>
@@ -412,17 +306,13 @@
             /*#endregion responsive code end*/
         });
     </script>
-<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$('#mallindexpro').imagesLoaded(function () {
-        $('#mallindexpro').masonry({        
-            itemSelector: '.content_box',
-            columnWidth: 0,
-            animate:true
-        });
-});
-});
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
 </script>
 
 

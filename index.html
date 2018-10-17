@@ -6,11 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/side-menu.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper index">
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
@@ -32,21 +33,68 @@
 						</li>
 					</ul>
 				</div>
+
+				<!-- hamburger -->
+<span class="rwd-hamburger" onclick="openNav()">&#9776;</span>
+				
+				<!-- Sidebar -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="wallet-left-side setting">
+						<div class="setting-top">
+							<div class="setting-head">
+								<img class="user-photo" src="images/user.png">
+								<p class="personal-level ft13">等级<img src="images/img-trans.png"></p>
+								<p class="personal-name">Shaleen LIN</p>
+							</div>
+							<div class="acount-total">
+								<p class="ft15">帐户余额</p>
+								<ul>
+									<li>S COIN <span class="acount-money">1.000.000.000</span></li>
+									<li>USDT <span class="acount-money">1.000.000.000</span></li>
+									<li>ETH <span class="acount-money">1.000.000.000</span></li>
+									<li>SUP <span class="acount-money">1.000.000.000</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="setting-left-list">
+							<ul>
+								<li><a class="active" href="personal-setting.html">个人设定</a></li>
+								<li><a href="account-upgrate.html">账户升级</a></li>
+								<li><a href="member-management.html">会员管理</a></li>
+								<li><a href="wallet-setting.html">钱包设定</a></li>
+								<li><a href="transaction-record.html">交易纪录</a></li>
+								<li><a href="booking-info.html">订购信息</a></li>
+								<li><a href="mystore-info.html">我的店铺</a></li>
+								<li><a href="index.html">登出</a></li>
+							</ul>
+						</div>
+					</div>
+</div>
+				<div class="promotion-mobile"><a href="#" class="tooltip"><i class="fas fa-star"></i><span class="tooltiptext">
+								<div class="qrcode-img">
+								<img src="images/qrcode.png">
+								</div>
+								<div class="orange ft13">
+									2018DIGHISDRHG OIERHYIOERHIOYHE
+								</div>
+							</span></a></div>
 			</div>
-			<nav>
+			<nav class="nav-desktop">
 				<ul>
-					<li><img src="images/img-trans.png"><a href="mall.html">商城</a></li>
-					<li><img src="images/img-trans.png"><a href="wallet-payA-step1.html">钱包</a></li>
-					<li><img src="images/img-trans.png"><a href="ticket.html">票券</a></li>
-					<li><img src="images/img-trans.png"><a href="event-list.html">活动</a></li>
+					<li><a href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
 					
 				</div>
 			</nav>
+			
 		</header>
-	
 	<div class="banner">
 		<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1920px;height:700px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
@@ -95,9 +143,12 @@
 						<a class="title-more" href="mall.html">更多商品</a>
 					</div>
 					<div class="products-box-out">
-						<div id="mallindexpro"">
+
+
+
+						<div class="masonry">
 						<!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -113,7 +164,7 @@
      <!--products-->
 
      <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -129,7 +180,7 @@
      <!--products-->
 
      <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -145,7 +196,23 @@
       <!--products-->
 
       <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
+     	<div class="products-box-main1">
+     	<div class="mall-products-left-group">
+			<a href="mall-products.html">
+				<figure><img src="images/img-product-485x200.jpg"></figure>
+				<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
+				<p class="shop-description">契尔氏经典明星商品 100ml</p>
+				<span class="price">USDT<b>250</b></span>
+				<button class="btn-favorite"></button>
+			</a>
+		</div>
+		</div>							
+     </div>
+      <!--products-->
+
+      <!--products-->
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -160,40 +227,8 @@
      </div>
      <!--products-->
 
-      <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main1">
-     	<div class="mall-products-left-group">
-			<a href="mall-products.html">
-				<figure><img src="images/img-product-485x200.jpg"></figure>
-				<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
-				<p class="shop-description">契尔氏经典明星商品 100ml</p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>
-			</a>
-		</div>
-		</div>							
-     </div>
-      <!--products-->
-
      <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main1">
-     	<div class="mall-products-left-group">
-			<a href="mall-products.html">
-				<figure><img src="images/img-product-485x200.jpg"></figure>
-				<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
-				<p class="shop-description">契尔氏经典明星商品 100ml</p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>
-			</a>
-		</div>
-		</div>							
-     </div>
-      <!--products-->
-
-     <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -209,7 +244,7 @@
      <!--products-->
 
      <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -225,7 +260,7 @@
       <!--products-->
 
       <!--products-->
-     <div class="content_box">
+     <div class="content_box item">
      	<div class="products-box-main1">
      	<div class="mall-products-left-group">
 			<a href="mall-products.html">
@@ -252,25 +287,25 @@
 							<li>
 								<figure><img src="images/img-event.jpg"></figure>
 								<h2 class="shop-name"><a href="#">今日比特币，明日至尊币说明会</a></h2>
-								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫...</p>
+								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫造全新的革命新區塊閃電網路紫造全新的革命新區塊閃電網路紫造全新的革命新區塊閃電網路紫</p>
 								<span>活動時間:<time>2018.07.30</time></span>
 							</li>
 							<li>
 								<figure><img src="images/img-event.jpg"></figure>
 								<h2 class="shop-name"><a href="#">今日比特币，明日至尊币说明会</a></h2>
-								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫...</p>
+								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫</p>
 								<span>活動時間:<time>2018.07.30</time></span>
 							</li>
 							<li>
 								<figure><img src="images/img-event.jpg"></figure>
 								<h2 class="shop-name"><a href="#">今日比特币，明日至尊币说明会</a></h2>
-								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫...</p>
+								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫</p>
 								<span>活動時間:<time>2018.07.30</time></span>
 							</li>
 							<li>
 								<figure><img src="images/img-event.jpg"></figure>
 								<h2 class="shop-name"><a href="#">今日比特币，明日至尊币说明会</a></h2>
-								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫...</p>
+								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫</p>
 								<span>活動時間:<time>2018.07.30</time></span>
 							</li>
 						</ul>
@@ -328,15 +363,12 @@
             /*#endregion responsive code end*/
         });
     </script>
-<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$('#mallindexpro').imagesLoaded(function () {
-        $('#mallindexpro').masonry({        
-            itemSelector: '.content_box',
-            columnWidth: 0,
-            animate:true
-        });
-});
-});
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "244px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 </script>

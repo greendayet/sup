@@ -14,6 +14,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
+				<h1 class="head-mobile">购买结帐</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -32,24 +33,27 @@
 						</li>
 					</ul>
 				</div>
+				<div class="home-mobile"><a href="mall-products.html"><i class="fas fa-angle-left"></i></a></div>			
 			</div>
-			<nav>
+			<nav class="nav-desktop">
 				<ul>
-					<li><img src="images/img-trans.png"><a href="mall.html">商城</a></li>
-					<li><img src="images/img-trans.png"><a href="wallet-payA-step1.html">钱包</a></li>
-					<li><img src="images/img-trans.png"><a href="ticket.html">票券</a></li>
-					<li><img src="images/img-trans.png"><a href="event-list.html">活动</a></li>
+					<li><a class="active" href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
 					
 				</div>
 			</nav>
+			
 		</header>
 		<div class="main">
 			<div class="container">
 				<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">商城</a> > 购物车</div>
-				<div class="mall-cart">
+				<div class="mall-cart mall-checkout">
 					<ul>
   <li class="thead">
     <ol class="tr">
@@ -74,7 +78,7 @@
 <!--group start-->						
   <li class="tbody">
     <ol class="tr">
-      <li data-title="店铺 / 商品規格">
+      <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="cart-detail">
 		  	<input class="cart-detail-checkbox" type="checkbox">
 			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
@@ -82,10 +86,23 @@
 				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
 				<p class="cart-category">类别：化妆 / 保养品</p>
 				<span class="price">USDT<b>250</b></span>
+				<!--mobile 数量-->
+				<div class="count-mobile">
+				<input class="count-min" id="min" name="" type="button" value="-" /> 
+				<input class="count-text" id="text_box" name="" type="text" value="1" /> 
+				<input class="count-add" id="add" name="" type="button" value="+" /> 
+				</div>
+				<!--mobile 数量-->
 			</div>  
 		  </div>
+		  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p>取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
 	  </li>
-      <li data-title="数量">
+      <li class="count" data-title="数量">
 		<select>
 			  <option>1</option>
 			  <option>2</option>
@@ -95,7 +112,7 @@
 		  </select>	
 	  </li>
       <li class="price" data-title="价格">USDT 250</li>
-      <li data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
+      <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
     </ol>  
   </li>
   <div class="cartline"></div>					
@@ -103,7 +120,7 @@
 <!--group start-->						
   <li class="tbody">
     <ol class="tr">
-      <li data-title="店铺 / 商品規格">
+      <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="cart-detail">
 		  	<input class="cart-detail-checkbox" type="checkbox">
 			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
@@ -111,10 +128,23 @@
 				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
 				<p class="cart-category">类别：化妆 / 保养品</p>
 				<span class="price">USDT<b>250</b></span>
+				<!--mobile 数量-->
+				<div class="count-mobile">
+				<input class="count-min" id="min" name="" type="button" value="-" /> 
+				<input class="count-text" id="text_box" name="" type="text" value="1" /> 
+				<input class="count-add" id="add" name="" type="button" value="+" /> 
+				</div>
+				<!--mobile 数量-->
 			</div>  
 		  </div>
+		  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p>取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
 	  </li>
-      <li data-title="数量">
+      <li class="count" data-title="数量">
 		<select>
 			  <option>1</option>
 			  <option>2</option>
@@ -124,10 +154,10 @@
 		  </select>	
 	  </li>
       <li class="price" data-title="价格">USDT 250</li>
-      <li data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
+      <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
     </ol>  
   </li>
-  <div class="cartline"></div>				
+  <div class="cartline"></div>					
 <!--group end-->
 </ul>
 <!--購物車內容-->
@@ -142,7 +172,7 @@
   </li>						
   <li class="tbody">
     <ol class="tr">
-      <li data-title="店铺 / 商品規格">
+      <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="discount-detail">
 		  	<input class="cart-detail-checkbox" type="checkbox">
 			<p>累积点数20点，可折USDT 10</p>
@@ -163,7 +193,7 @@
   </li>						
   <li class="tbody">
     <ol class="tr">
-      <li data-title="店铺 / 商品規格">
+      <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="discount-detail">
 		  	<input class="cart-detail-checkbox" type="checkbox">
 			<p>票券可折USDT 50</p>
@@ -184,7 +214,7 @@
   </li>						
   <li class="tbody">
     <ol class="tr">
-      <li data-title="店铺 / 商品規格">
+      <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="discount-detail express">
 		  	<p> 货运 / 宅配</p>
 			<p class="blue-over-detail">金額超過 USDT 100免運費</p>
@@ -248,4 +278,28 @@ $(document).ready(function() {
   });
   
 }); 
+</script>
+<script>
+$(document).ready(function(){
+//獲得文本框對象
+var t = $("#text_box");
+//初始化數量為1,并失效減
+$('#min').attr('disabled',true);
+    //數量增加操作
+    $("#add").click(function(){    
+        // 給獲取的val加上絕對值，避免出現負數
+        t.val(Math.abs(parseInt(t.val()))+1);
+        if (parseInt(t.val())!=1){
+        $('#min').attr('disabled',false);
+        };
+    }) 
+    //數量減少操作
+    $("#min").click(function(){
+    t.val(Math.abs(parseInt(t.val()))-1);
+    if (parseInt(t.val())==1){
+    $('#min').attr('disabled',true);
+    };
+    })
+
+});
 </script>
