@@ -2,11 +2,12 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">	
-<title>SUPREME - 账户储值</title>
+<title>SUPREME - 个人设定编辑</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">	
+<link rel="stylesheet" href="css/jquery-ui.css">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
@@ -15,7 +16,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
-				<h1 class="head-mobile">帐户升级</h1>
+				<h1 class="head-mobile">个人设定</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -72,9 +73,8 @@
 						</div>
 					</div>
 </div>
-<div class="promotion-mobile">
-					<button onclick="location.href='personal-setting-edit.html'" class="updatebtn">升級</button>
-					<button onclick="location.href='personal-setting-edit.html'" class="updatebtn">儲值</button>
+				<div class="promotion-mobile">
+					<button onclick="location.href='personal-setting.html'" class="updatebtn">更新</button>
 				</div>
 			</div>
 			<nav class="nav-desktop">
@@ -96,7 +96,7 @@
 			<div class="container">
 				<div class="inner-mall">
 					<div class="path"><a href="index.html">首頁</a> > 设定 </div>
-					<div class="bg-white out-clear">
+					<div class="bg-white out-clear setting-mobile-bg">
 					<div class="wallet-left-side setting wallet-pay-none">
 						<div class="setting-top">
 							<div class="setting-head">
@@ -116,8 +116,8 @@
 						</div>
 						<div class="setting-left-list">
 							<ul>
-								<li><a href="personal-setting.html">个人设定</a></li>
-								<li><a class="active" href="account-upgrate.html">账户升级</a></li>
+								<li><a class="active" href="personal-setting.html">个人设定</a></li>
+								<li><a href="account-upgrate.html">账户升级</a></li>
 								<li><a href="member-management.html">会员管理</a></li>
 								<li><a href="wallet-setting.html">钱包设定</a></li>
 								<li><a href="transaction-record.html">交易纪录</a></li>
@@ -126,47 +126,22 @@
 							</ul>
 						</div>
 					</div>
-					<div class="wallet-right-side setting-right">
-						<div class="account-upgrate-intro">
-							<section>
-								<div style="color: #0e3244;">等级介绍</div>
-								<div class="medal-intro">
-									<ul>
-										<li>
-											<img class="silver" src="images/img-trans.png"><p>银级<br>1000 USD</p>
-										</li>
-										<li>
-											<img class="gold" src="images/img-trans.png"><p>金级<br>5000 USD</p>
-										</li>
-										<li>
-											<img class="purple" src="images/img-trans.png"><p>紫金级<br>10000 USD</p>
-										</li>
-									</ul>
+					<div class="wallet-right-side setting-right password-change">
+						<div class="personal-form">
+							<ul class="fingerscand">
+								<li>
+									<select>
+								<option>指纹辨识</option>
+								<option>图形辨识</option>
+							</select>
+								</li>
+								<li>
+								<p>扫描指纹</p>
+								<div class="finger-bg">
+								<img class="inline finger-check" src="images/img-trans.png">
 								</div>
-							</section>
-							<section>
-								<div style="color: #0e3244;">等级介绍</div>
-								<div>
-									等级说明等级说明等级说明等级说明等级说明等
-级说明等级说明等级说明等级说明等级说明等级
-说明等级说明等级说明等级说明等级说明等级说
-明等级说明等级说明
-
-等级说明等级说明等级说明等级说明等级说明等
-级说明等级说明等级说明等级说明等级说明等级
-说明等级说明等级说明等级说明等级说明等级说
-明等级说明等级说明
-
-等级说明等级说明等级说明等级说明等级说明等
-级说明等级说明等级说明等级说明等级说明等级
-说明等级说明等级说明等级说明等级说明等级说
-明等级说明等级说明
-
-								</div>
-							</section>
-							<button onclick="location.href='wallet-payA-step2.html'" class="setting-btn setting-btn-yellow">升   级</button>
-							<button onclick="location.href='account-upgrate-storage.html'" class="setting-btn setting-btn-lightblue">储   值</button>
-							<div class="clear"></div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -208,12 +183,13 @@ $(document).ready(function() {
   
 }); 
 </script>
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "244px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content",
+		active:"false",
+		collapsible: "true"
+    });
+  } );
+  </script>
