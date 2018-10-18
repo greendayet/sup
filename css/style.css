@@ -1160,7 +1160,26 @@ button.go-payment:hover{
 	background-size: 5500% 4500%;
 	background-position: 54.861111% 17.171717%;/*237 68*/
  }
-
+.qrscand{
+	background: #171c61;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 40px !important;
+}
+.qrscand img{
+	
+	margin-bottom: 10px;
+	text-align: center;
+}
+.qrscand a{
+	display: block;
+	color: #fff;
+	padding: 30px 70px;
+}
+.qrscand span{
+	display: block;
+}
 .wallet-left-side{
 	float: left;
 	width: 244px;
@@ -1191,6 +1210,9 @@ button.go-payment:hover{
 .currently-account li span{
 	margin-left: 25px;
 }
+.currently-account li span:first-child{
+	margin-left: 0px;
+}
 .currently-account img{
 	vertical-align: sub;
 	margin-right: 10px;
@@ -1218,10 +1240,19 @@ button.go-payment:hover{
 	color: #fff;
 	background: #7ebfd7;
 }
+.left-bottom-link span a{
+	background: #425b84;
+	padding: 20px 15px;
+	display: block;
+	color: #fff;
+}
 .left-bottom-link li a:hover,.left-bottom-link li a.active{
 	background: #425b84;
 }
-.left-bottom-link li:first-child img{
+.left-bottom-link span a.active,.left-bottom-link span a:hover{
+	background: #7ebfd7;
+}
+.left-bottom-link li:first-child img,.wallet-left-1{
 	vertical-align: sub;
 	margin-right: 10px;
 	width: 23px;
@@ -1230,7 +1261,7 @@ button.go-payment:hover{
 	background-size: 1913.043478% 1840.909091%;
 	background-position: 54.676259% 8.0939948%;/*228 31*/
 }
-.left-bottom-link li:nth-child(2) img{
+.left-bottom-link li:nth-child(2) img,.wallet-left-2{
 	vertical-align: sub;
 	margin-right: 10px;
 	width: 21px;
@@ -1239,7 +1270,7 @@ button.go-payment:hover{
 	background-size: 2095.238095% 1840.909091%;
 	background-position: 65.155131% 8.0939948%;/*273 31*/
 }
-.left-bottom-link li:last-child img{
+.left-bottom-link li:last-child img,.wallet-left-3{
 	vertical-align: sub;
 	margin-right: 10px;
 	width: 22px;
@@ -1248,6 +1279,10 @@ button.go-payment:hover{
 	background-size: 2000% 1840.909091%;
 	background-position: 60.047847% 8.0939948%;/*251 31*/
 }
+.wallet-left-4{
+	width: 22px;
+	vertical-align: sub;
+	margin-right: 10px;}
 .wallet-step-block{
 	display: table;
 	margin: 0px auto;
@@ -1444,13 +1479,23 @@ button.go-payment:hover{
 .editbox-group figure{
 	margin-right: 20px;
 }
+.editbox-group img{
+	max-width: 100%;
+	margin-bottom: 15px;
+}
+.event-head{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: flex-end;
+	padding-bottom: 15px;
+	border-bottom: solid 1px #c6c6c6;
+}
 .right-event-type{
 	width: 100%;
 	position: relative;
 }
 .right-event-type .shop-name{
-	padding-bottom: 15px;
-	border-bottom: solid 1px #c6c6c6;
 	font-size: 24px;
 	color: #171c61;
 }
@@ -1461,7 +1506,6 @@ button.go-payment:hover{
 .link-function{
 	position: relative;
 	padding-top: 15px;
-	margin-bottom: 80px;
 }
 .link-function .community{
 	top:15px;
@@ -1826,6 +1870,8 @@ word-break: break-all;
 .wallet-setting li span,.wallet-setting li span:last-child{
 	color: #8d8c8c;
 }
+.desktop-wallet{display: block;}
+.mobile-wallet{display: none;}
 #accordion li{
 	display: block;
 	padding-bottom: 0px;
@@ -1889,6 +1935,24 @@ word-break: break-all;
 #accordion .accorsing-content-3 li span{
 	margin-right: 20px;
 }
+
+#accordion-wallet{}
+#accordion-wallet > li{
+	margin-bottom: 10px;
+}
+#accordion-wallet .wallet-right-side{
+	float: none;
+	width: auto;
+}
+
+#accordion-wallet .accorsing-content-2{
+	display: block;
+}
+#accordion-wallet .accorsing-content-2 img{
+	width: auto;
+}
+
+
 .record{}
 section.record {
 	height: 500px;
@@ -2535,6 +2599,9 @@ li.other-contact{
 .seller-store figure img{
 		max-width: 100%;
 	}
+.mobile-visibile{
+	display: none;
+}
 
 
 /* ======= Responsive ======= */
@@ -2629,6 +2696,10 @@ li.other-contact{
 	}
 	nav[role="navigation"]{
 		display: block;
+	}
+	.wallet-right-side{
+		float: none;
+		width: auto;
 	}
 	.promotion-mobile,.malllist-mobile{
 		display: block;
@@ -2782,7 +2853,9 @@ li.other-contact{
 .change-mobile p:last-child{
 	float: right;
 }
-
+	.pd0{
+		padding: 0px;
+	}
   .login-body{
 	background: url(../images/bg-login-m.png) #fff no-repeat center bottom;
 	padding-top: 30px;
@@ -3124,6 +3197,66 @@ li.other-contact{
 	}
 	.seller-content .cart-detail-type .status-favorite{
 		display: block;
+	}
+	.desktop-wallet{display: none;}
+	.mobile-wallet{display: block;}
+	.wallet-left-side{
+		float: none;
+		width: 100%;
+	}
+	.currently-account{
+		width: 100%;
+		background-size: cover;
+	}
+	.currently-account li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+	.currently-account{
+		padding: 30px 30%;
+	}
+	.wallet-pay-none{display: none;}
+	.products-info > div{
+		display: none;
+	}
+	.editbox-group{
+		display: block;
+	}
+	.editbox-group figure{
+		text-align: center;
+	}
+	.unuse-ticket-box, .use-ticket-box{
+		width: 100%;
+	}
+	.unuse-ticket-box:nth-last-child(2), .use-ticket-box:nth-last-child(2){
+		    border-bottom: solid 1px #c6c6c6;padding-bottom: 15px;
+	}
+	.updatebtn{
+		background: #171c61;
+		color: #fff;
+		padding: 5px 10px;
+		border: none;
+		cursor: pointer;
+	}
+	.personal-form{
+		width: 100%;
+	}
+	.personal-form li{
+		padding: 0px 30px 15px;
+	}
+	.personal-form li span:last-child{
+		text-align: right;
+	}
+	.mobile-visibile{
+		display: block;
+	}
+	.personal-form ul{
+		background: #fff;
+		padding-top: 15px;
+	}
+	.bg-white{
+		background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
 	}
 }
 
