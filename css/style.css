@@ -1631,6 +1631,10 @@ word-break: break-all;
 .setting-head > img{
 	float: left;
 }
+.national{}
+.national select{
+	width: 100%;
+}
 .personal-level{}
 .personal-name{
 	font-size: 24px;
@@ -1721,6 +1725,7 @@ word-break: break-all;
 	padding: 9px 10px;
 	border: solid 1px #d1d1d5;
 	color: #2476a0;
+	height: 38px;
 }
 .personal-form li{
 	padding-bottom: 15px;
@@ -3255,8 +3260,67 @@ li.other-contact{
 		background: #fff;
 		padding-top: 15px;
 	}
-	.bg-white{
+	.setting-mobile-bg{
 		background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
+	}
+	.out-clear{padding: 0px;}
+	.setting-right .login-password-desktop{
+		display: none;
+	}
+	.login-password-mobile{
+		display: block;
+	}
+	.setting-right button{
+		display: none;
+	}
+	.setting-right .mobile-visibile button{
+		display: block;
+	}
+	.password-change ul{
+		margin: 0px;
+	}
+	.password-change{
+		overflow: hidden;
+	}
+	.password-change select{
+		width: 100%;
+	}
+	.wallet-right-side.password-change{
+		padding-bottom: 0px;
+	}
+	.fingerscand li{text-align: center;display: block;}
+	.fingerscand li:last-child{margin-bottom: 0px;}
+	.fingerscand select{
+		font-size: 15px;
+	}
+	.finger-bg{
+		width: 321px;
+		height: 321px;
+		margin: 20px auto;
+		text-align: center !important;
+		line-height: 321px;
+		background: url(../images/bg-mobile-scan.png) no-repeat center;
+	}
+	.medal-intro ul{
+		display: block;
+	}
+	.medal-intro ul li{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		margin-bottom: 30px;
+	}
+	.medal-intro ul li img{
+		margin-right: 20px;
+	}
+	.account-upgrate-intro section{
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 0px 30px;
+	}
+	.account-upgrate-intro{
+		padding: 0px;
 	}
 }
 
