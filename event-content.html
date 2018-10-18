@@ -4,7 +4,7 @@
 <meta charset="utf-8">	
 <title>SUPREME- 活动</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">	
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">	
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
@@ -14,6 +14,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
+				<h1 class="head-mobile">活动</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -32,19 +33,22 @@
 						</li>
 					</ul>
 				</div>
+				<div class="home-mobile"><a href="event-list.html"><i class="fas fa-angle-left"></i></a></div>			
 			</div>
-			<nav>
+			<nav class="nav-desktop">
 				<ul>
-					<li><img src="images/img-trans.png"><a href="mall.html">商城</a></li>
-					<li><img src="images/img-trans.png"><a href="wallet-payA-step1.html">钱包</a></li>
-					<li><img src="images/img-trans.png"><a href="ticket.html">票券</a></li>
-					<li><img src="images/img-trans.png"><a href="event-list.html">活动</a></li>
+					<li><a href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
+					<li><a href="wallet-qrcode-01.html"><img src="images/img-trans.png"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
+					<li><a class="active" href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
 					
 				</div>
 			</nav>
+			
 		</header>
 		<div class="main">
 			<div class="container">
@@ -54,11 +58,12 @@
 						<div>最新活动</div>
 					</div>
 					<div class="editbox-group">
-						<figure><img src="images/img-event.jpg"></figure>
 						<div class="right-event-type">
+							<div class="event-head">
 							<h2 class="shop-name">今日比特币，明日至尊币说明会</h2>
+							<span class="date ft15">2018.07.30</span>
+							</div>
 								<div class="link-function">
-								<span class="date ft15">(2018.07.30)</span>
 								<div class="community">
 										<a href="#"><i class="fab fa-line"></i></a>
 										<a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -66,6 +71,7 @@
 								</div>
 								</div>
 								<div class="editbox">
+									<figure><img src="images/img-event.jpg"></figure>
 									革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊
 閃電網路紫革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的
 革命新區塊閃電網路紫革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，

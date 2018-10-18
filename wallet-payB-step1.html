@@ -4,7 +4,7 @@
 <meta charset="utf-8">	
 <title>SUPREME-WALLET-立即付款</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">	
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -15,6 +15,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
+				<h1 class="head-mobile">钱包</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -33,19 +34,22 @@
 						</li>
 					</ul>
 				</div>
+				<div class="home-mobile"><a href="wallet-payA-step1.html"><i class="fas fa-angle-left"></i></a></div>			
 			</div>
-			<nav>
+			<nav class="nav-desktop">
 				<ul>
-					<li><img src="images/img-trans.png"><a href="mall.html">商城</a></li>
-					<li><img src="images/img-trans.png"><a href="wallet-payA-step1.html">钱包</a></li>
-					<li><img src="images/img-trans.png"><a href="ticket.html">票券</a></li>
-					<li><img src="images/img-trans.png"><a href="event-list.html">活动</a></li>
+					<li><a href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
+					<li><a class="active" href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
 					
 				</div>
 			</nav>
+			
 		</header>
 		<div class="main">
 			<div class="container">

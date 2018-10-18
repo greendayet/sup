@@ -15,7 +15,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
-				<h1 class="head-mobile">钱包</h1>
+				<h1 class="head-mobile">扫描二维码</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -34,13 +34,13 @@
 						</li>
 					</ul>
 				</div>
-				<div class="home-mobile"><a href="wallet-payA-step2.html"><i class="fas fa-angle-left"></i></a></div>			
+				<div class="home-mobile"><a href="wallet-payA-step1.html"><i class="fas fa-angle-left"></i></a></div>			
 			</div>
 			<nav class="nav-desktop">
 				<ul>
-					<li><a class="active" href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
-					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
-					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
+					<li><a href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
+					<li><a class="active" href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
+					<li><a href="wallet-qrcode-01.html"><img src="images/img-trans.png"><span>扫描</span></a></li>
 					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
 					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
 				</ul>
@@ -78,29 +78,32 @@
 						<div class="desktop-wallet">
 					<div class="wallet-right-side">
 						<div class="wallet-step-block">
-							<div><p class="orange">忘记密码</p></div>
+							<div><p class="orange">支付密码</p></div>
 							<div class="password-input">
-								<span style="color: #909090;">请输入E-MAIL</span><input type="text">
+								<input type="password">
+							</div>
+							<div class="cyanine ft15 forget-password">
+								<a class="cyanine" href="wallet-payA-forgetpassword.html">忘记密码</a>
 							</div>
 						</div>
-						<button onclick="location.href='wallet-payA-forgetpassword-send-done.html'" class="btn light-blue btn-wallet bold">确认送出</button>	
+						<button onclick="location.href='wallet-payA-step-done.html'" class="btn light-blue btn-wallet bold">产生付款条形码</button>	
 					</div>
-						</div>
+							</div>
 					<!--desktop end-->
 						<!--mobile start-->
 					<ul id="accordion-wallet" class="personal-info mobile-wallet">
 									<li>
 
-<div class="left-bottom-link"><span><a href="wallet-payA-step1.html"><img class="wallet-left-1" src="images/img-trans.png">现场支付</a></span></div>										
-  <div>
-	  <div class="accorsing-content-1 wallet-right-side">
+<div class="left-bottom-link"><span><a href="#"><img class="wallet-left-4" src="images/wallet-left-4.png">收款</a></span></div>										
+  <div><div class="accorsing-content-1 wallet-right-side">
 						<div class="wallet-step-block">
-							<div><p class="orange">忘记密码</p></div>
-							<div class="password-input">
-								<span style="color: #909090;">请输入E-MAIL</span><input type="text">
+							<div class="qrcode-img">
+								<img src="images/qrcode.png">
 							</div>
-						</div>
-						<button onclick="location.href='wallet-payA-forgetpassword-send-done.html'" class="btn light-blue btn-wallet bold">确认送出</button>	
+							<div class="orange ft13">
+								2018DIGHISDRHG OIERHYIOERHIOYHE
+							</div>
+						</div>	
 					</div>
   </div>
 									</li>
@@ -145,3 +148,11 @@ $(document).ready(function() {
   
 }); 
 </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion-wallet" ).accordion({
+      heightStyle: "content",
+    });
+  } );
+  </script>
