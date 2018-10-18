@@ -16,6 +16,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
+				<h1 class="head-mobile">钱包设定</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -34,26 +35,76 @@
 						</li>
 					</ul>
 				</div>
+<div class="promotion-mobile">
+					<button onclick="location.href='account-upgrate-storage.html'" class="updatebtn">储值</button>
+				</div>
+				<!-- hamburger -->
+<span class="rwd-hamburger" onclick="openNav()">&#9776;</span>
+				
+				<!-- Sidebar -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="wallet-left-side setting">
+						<div class="setting-top">
+							<div class="setting-head">
+								<img class="user-photo" src="images/user.png">
+								<p class="personal-level ft13">等级<img src="images/img-trans.png"></p>
+								<p class="personal-name">Shaleen LIN</p>
+							</div>
+							<div class="acount-total">
+								<p class="ft15">帐户余额</p>
+								<ul>
+									<li>S COIN <span class="acount-money">1.000.000.000</span></li>
+									<li>USDT <span class="acount-money">1.000.000.000</span></li>
+									<li>ETH <span class="acount-money">1.000.000.000</span></li>
+									<li>SUP <span class="acount-money">1.000.000.000</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="setting-left-list">
+							<ul>
+								<li><a href="personal-setting.html">个人设定</a></li>
+								<li><a href="account-upgrate.html">账户升级</a></li>
+								<li><a href="member-management.html">会员管理</a></li>
+								<li><a class="active" href="wallet-setting.html">钱包设定</a></li>
+								<li><a href="transaction-record.html">交易纪录</a></li>
+								<li><a href="booking-info.html">订购信息</a></li>
+								<li><a href="mystore-info.html">我的店铺</a></li>
+								<li><a href="index.html">登出</a></li>
+							</ul>
+						</div>
+					</div>
+</div>
+				<!--<div class="promotion-mobile"><a href="#" class="tooltip"><i class="fas fa-star"></i><span class="tooltiptext">
+								<div class="qrcode-img">
+								<img src="images/qrcode.png">
+								</div>
+								<div class="orange ft13">
+									2018DIGHISDRHG OIERHYIOERHIOYHE
+								</div>
+							</span></a></div>-->
 			</div>
-			<nav>
+			<nav class="nav-desktop">
 				<ul>
-					<li><img src="images/img-trans.png"><a href="mall.html">商城</a></li>
-					<li><img src="images/img-trans.png"><a href="wallet-payA-step1.html">钱包</a></li>
-					<li><img src="images/img-trans.png"><a href="ticket.html">票券</a></li>
-					<li><img src="images/img-trans.png"><a href="event-list.html">活动</a></li>
+					<li><a href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
 					
 				</div>
 			</nav>
+			
 		</header>
 		<div class="main">
 			<div class="container">
 				<div class="inner-mall">
 					<div class="path"><a href="index.html">首頁</a> > 设定 </div>
 					<div class="bg-white out-clear">
-					<div class="wallet-left-side setting">
+					<div class="wallet-left-side setting wallet-pay-none">
 						<div class="setting-top">
 							<div class="setting-head">
 								<img class="user-photo" src="images/user.png">
@@ -82,7 +133,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="wallet-right-side setting-right">
+					<div class="wallet-right-side setting-right wallet-setting-wrapper">
 						<div class="personal-form wallet-setting">
 							<!--<button onclick="location.href='personal-setting-edit.html'" class="setting-btn setting-btn-yellow">编   辑</button>
 							<div class="clear"></div>			-->				
@@ -133,7 +184,9 @@
 	</ul>
   </div>
 									</li>
-									<li>
+									<li class="password-wallet-setting">
+  <!--desktop start-->
+						
   <span>支付密码</span>
   <div class="personal-form">
 							<ul class="personal-info accorsing-content-3">
@@ -143,9 +196,15 @@
 							<button onclick="location.href='#'" class="setting-btn setting-btn-darkblue">变   更</button>
 							<button onclick="location.href='#'" class="setting-btn setting-btn-lightblue">取   消</button>
 							<div class="clear"></div>
-						</div>
+						</div>					
+<!--desktop end-->				
 									</li>
 								</ul>
+						<!--mobile start-->
+	<div class="wallet-setting-paypassword mobile-wallet">
+		<div><span>登入密码</span></div>
+		<div><span>S***********0</span><span><button onclick="location.href='mobile-wallet-password-check.html'" class="updatebtn">变更</button></span></div></div>	
+<!--mobile end-->		
 						</div>
 					</div>
 				</div>
@@ -198,4 +257,12 @@ $(document).ready(function() {
   } );
   </script>
 <!--※collapsible ，false 代表展開。 true 代表關閉。
-※active代表是否展開第一個框架，改成 false 代表不展開任何框架。
+※active代表是否展開第一個框架，改成 false 代表不展開任何框架。--><script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "244px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
