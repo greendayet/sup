@@ -1764,6 +1764,8 @@ word-break: break-all;
 	margin: 0px auto;
 	padding: 0px 150px;
 }
+.medal-intro{display: block;}
+.medal-intro-mobile{display: none;}
 .medal-intro ul{
 	display: flex;
 	justify-content: space-between;
@@ -3321,6 +3323,42 @@ li.other-contact{
 	}
 	.account-upgrate-intro{
 		padding: 0px;
+	}
+	.storage-name{display: none;}
+	.setting-right.account-upgrate-storage{
+		padding-bottom: 0px;
+	}
+	.setting-right.account-upgrate-storage .personal-form button{
+		display: block;
+		width: 100%;
+	}
+	.medal-intro{display: none;}
+	.medal-intro-mobile{display: block;}
+	.medal-intro-mobile li{
+		padding-top: 15px;
+		margin: 0px 30px;
+		border-bottom: solid 1px #efefef;
+	}
+	.medal-intro-mobile ul li img{margin: 0px 20px 0px 0px;}
+	.personal-form .medal-intro-mobile li:first-child{border-bottom: solid 1px #efefef;}
+	.member-management .medal-intro-mobile ul li{margin: 0px;}
+	.medal-intro-mobile ul li:nth-child(2),.medal-intro-mobile ul li:nth-child(3){
+		padding-left: 60px;
+	}
+	.medal-intro-mobile ul li:nth-child(4),.medal-intro-mobile ul li:nth-child(5),.medal-intro-mobile ul li:nth-child(6),.medal-intro-mobile ul li:nth-child(7),.medal-intro-mobile ul li:nth-child(8),.medal-intro-mobile ul li:nth-child(9){
+		padding-left: 120px;
+	}
+	#accordion li.password-wallet-setting {display: none;}
+	.wallet-setting-paypassword{
+		color: #8d8c8c;
+		padding: 0px 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.wallet-setting-paypassword span:first-child{padding-left: .7em;}
+	.setting-right .mobile-wallet button{display: block;}
+	.wallet-setting-wrapper ul{
+		margin-bottom: 0px;
 	}
 }
 
