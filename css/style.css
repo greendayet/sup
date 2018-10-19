@@ -2087,7 +2087,7 @@ li.other-contact{
 /* ======= Admin ======= */
 
 .wrapper-admin header{
-	height: 245px;
+	/*height: 245px;*/
 	background: url("../images/bg-admin-navi.png") no-repeat center bottom;
 }
 
@@ -2117,6 +2117,10 @@ li.other-contact{
 	background-position: 49.757281% 0%;/*205 0*/
 }
 
+.wrapper-admin nav.nav-desktop li img{
+	vertical-align: middle;
+}
+
 .wrapper-admin .wallet-right-side{
 	padding: 0px;
 	width: 956px;
@@ -2131,7 +2135,7 @@ li.other-contact{
 	background: none;
 	padding-top: 0px;
 }
-.wrapper-admin .setting-left-list ul a.active,.wrapper-admin .setting-left-list ul a:hover{
+.wrapper-admin .setting-left-list ul a.active,.wrapper-admin .setting-left-list ul a:hover,.wrapper-admin nav.nav-desktop a:hover,.wrapper-admin nav.nav-desktop a.active{
 	background-image: none;
 	background: #872b2b;
 	color: #fff;
@@ -2606,9 +2610,10 @@ li.other-contact{
 .seller-store figure img{
 		max-width: 100%;
 	}
-.mobile-visibile{
+.mobile-visibile,.wallet-total,.order-history-search{
 	display: none;
 }
+
 
 
 /* ======= Responsive ======= */
@@ -2679,7 +2684,7 @@ li.other-contact{
 	display: block;
 		color: #171c61;
 		position: absolute;
-    	left: 35px;
+    	left: 20px;
     	top: 50%;
 		transform: translateY(-50%);
     	font-size: 30px;
@@ -2712,7 +2717,7 @@ li.other-contact{
 		display: block;
 		color: #171c61;
 		position: absolute;
-    	right: 35px;
+    	right: 20px;
     	top: 50%;
 		transform: translateY(-50%);
     	font-size: 30px;
@@ -2948,7 +2953,7 @@ li.other-contact{
 	.event-box-out li{
 		width: 100%;
 	}
-	h1,h1 a{width: 70px;height: 57px;padding-top: 17.5px;display: none;}
+	h1,h1 a{width: 70px;height: 57px;padding-top: 17.5px;display: none;box-sizing: border-box;}
 	h1.head-mobile{
 		display: block;
 		width: auto;
@@ -2962,6 +2967,7 @@ li.other-contact{
 	.index h1,.index h1 a,.w3-teal{
 		display: block;
 	}
+	.wrapper-admin h1.head-mobile{color: #a6494d;}
 	.path{
 		display: none;
 	}
@@ -3360,6 +3366,118 @@ li.other-contact{
 	.wallet-setting-wrapper ul{
 		margin-bottom: 0px;
 	}
+	.setting-wrapper .nav-desktop{
+		display: none;
+	}
+	.setting-wrapper header{
+		background: none;
+		height: 105px;
+	}
+	.setting-wrapper .wallet-right-side{
+		padding: 0px;
+	}
+	.setting-wrapper .transaction-record .all-item-group .tr li:before{
+		background: #a9cadf;
+		padding-right: 0px;
+		padding: 1.5em 2.5em;
+		margin-right: 1em;
+	}
+	.setting-wrapper .transaction-record section.record li.tbody li{
+		display: block;
+		width: 100% !important;
+		text-align: left;
+		border-bottom: solid 1px #fff;
+	}
+	.setting-wrapper .transaction-record section.record li.tbody{
+		border-bottom: none;
+	}
+	.setting-wrapper .transaction-record .tr{
+		background: #f2f2f2;
+	}
+	section.record time{
+		display: inline-block;vertical-align:middle;
+	}
+	.setting-wrapper .transaction-record .ui-tabs .ui-tabs-panel{
+		padding: 0px;
+	}
+	.setting-wrapper .transaction-record .tbody li{
+		padding: 0px;
+	}
+	.setting-wrapper section.record{
+		overflow-y: auto;
+		height: auto;
+	}
+	.wallet-total{
+		display: block;
+		padding: 1.5em 2.5em;
+		text-align: right;
+		color: #171c61;
+		background: #a9cadf;
+	}
+	.order-history-search{
+		background: url(../images/bg-navi.png) no-repeat center bottom;
+		height: 75px;
+		padding: 0px 15px;
+		box-sizing: border-box;
+		line-height: 75px;
+		display: block;
+	}
+	.order-history-search select{
+		height: 40px;
+		width: 100%;
+	}
+	.only-bg{
+		background: url(../images/bg-navi.png) no-repeat center bottom;
+		height: 30px;
+	}
+	.booking-info{
+		width: 100%;
+	}
+	.booking-info .thead-select-all{
+		background: #a9cadf;
+		color: #171c61;
+	}
+	.booking-info .thead-select-all .shop-name{
+		color: #171c61;
+	}
+	.booking-info .thead-select-all .shop-name img{
+		display: none;
+	}
+	.booking-info .thead-select-all li{
+		padding: 15px;
+	}
+	.booking-info .tr li:before{
+		padding-right: 0px;
+	}
+	.setting-right .booking-info button{
+		display: block;
+		padding: 5px 10px;
+	}
+	.setting-btn2{
+		font-size: 13px;
+		padding: 5px 10px;
+	}
+	.booking-info .tbody li:before{
+		display: none;
+	}
+	.booking-info .tbody li{
+		padding: 15px;
+	}
+	.message_notice .thead-select-all{
+		background: #f29e1c;
+		color: #fff;
+	}	
+	.booking-info .message_notice .shop-name{color: #fff;}
+	.message_notice .setting-btn2{ background: transparent;font-size: 24px;}
+	.message_notice .cart-category{color: #333;}
+	.message_notice .cart-detail-type{margin: 0px;width: 100%;}
+	.booking-info .message_notice .thead-select-all li{
+		padding: 5px 15px;
+	}
+	.message_notice .thead-select-all.first li{
+		padding: 15px 15px;
+	}
+		
 }
 
 @media only screen and (max-width:600px){
@@ -3406,10 +3524,7 @@ li.other-contact{
 	}
 }
 @media only screen and (max-width:400px){
-	h1,h1 a{
-		width: 108px;
-		height: 89px;
-	}
+
 	.login-info{
 		padding: 20px 40px 40px;
 	}
