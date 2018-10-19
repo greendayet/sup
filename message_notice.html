@@ -2,11 +2,12 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">	
-<title>SUPREME - 店铺后台</title>
+<title>SUPREME - 讯息通知</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">	
+<link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" href="css/jquery-ui.css">	
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
@@ -15,7 +16,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
-				<h1 class="head-mobile">店铺申请</h1>
+				<h1 class="head-mobile">讯息通知</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -34,44 +35,7 @@
 						</li>
 					</ul>
 				</div>
-
-				<!-- hamburger -->
-<span class="rwd-hamburger" onclick="openNav()">&#9776;</span>
-				
-				<!-- Sidebar -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="wallet-left-side setting">
-						<div class="setting-top">
-							<div class="setting-head">
-								<img class="user-photo" src="images/user.png">
-								<p class="personal-level ft13">等级<img src="images/img-trans.png"></p>
-								<p class="personal-name">Shaleen LIN</p>
-							</div>
-							<div class="acount-total">
-								<p class="ft15">帐户余额</p>
-								<ul>
-									<li>S COIN <span class="acount-money">1.000.000.000</span></li>
-									<li>USDT <span class="acount-money">1.000.000.000</span></li>
-									<li>ETH <span class="acount-money">1.000.000.000</span></li>
-									<li>SUP <span class="acount-money">1.000.000.000</span></li>
-								</ul>
-							</div>
-						</div>
-						<div class="setting-left-list">
-							<ul>
-								<li><a href="personal-setting.html">个人设定</a></li>
-								<li><a href="account-upgrate.html">账户升级</a></li>
-								<li><a href="member-management.html">会员管理</a></li>
-								<li><a href="wallet-setting.html">钱包设定</a></li>
-								<li><a class="active" href="transaction-record.html">交易纪录</a></li>
-								<li><a href="booking-info.html">订购信息</a></li>
-								<li><a href="mystore-info.html">我的店铺</a></li>
-								<li><a href="index.html">登出</a></li>
-							</ul>
-						</div>
-					</div>
-</div>
+				<div class="home-mobile"><a href="booking-info.html"><i class="fas fa-angle-left"></i></a></div>
 			</div>
 			<nav class="nav-desktop">
 				<ul>
@@ -117,22 +81,93 @@
 								<li><a href="member-management.html">会员管理</a></li>
 								<li><a href="wallet-setting.html">钱包设定</a></li>
 								<li><a href="transaction-record.html">交易纪录</a></li>
-								<li><a href="booking-info.html">订购信息</a></li>
-								<li><a class="active" href="mystore-info.html">我的店铺</a></li>
+								<li><a class="active" href="booking-info.html">订购信息</a></li>
+								<li><a href="mystore-info.html">我的店铺</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="wallet-right-side setting-right account-upgrate-storage mystore">
-						<div class="only-bg"></div>
-						<div class="personal-form">
-							<div style="color: #0e3244;margin-bottom: 20px" class="ft24 storage-name">我的店铺</div>
-							<ul class="personal-info">
-								<li class="stored-currency"><span>等 级<img class="gold" src="images/img-trans.png"></span><div>
-									<button class="setting-btn2 setting-btn-lightblue" onclick="location.href='mystore-edit.html'">我要开店</button>
-									</div>
-								</li>
-							</ul>
-							<div class="clear"></div>
+					<div class="wallet-right-side setting-right">
+						<div class="w90 booking-info">
+							<div class="mall-cart">
+<ul class="all-item-group message_notice">
+  <li class="thead-select-all first">
+    <ol class="tr">
+      <li>
+		  <h2 class="shop-name">最新讯息<br><span style="font-size: 13px;">2018/07/20  09:30</span></h2>
+		  <button class="setting-btn2" onclick="location.href='#'"><i class="fas fa-times"></i></button>
+	  </li>
+    </ol>
+  </li>
+  <div class="cartline"></div>						
+<!--group start-->						
+  <li class="tbody">
+    <ol class="tr">
+      <li data-title="店铺 / 商品規格">
+		  <div class="cart-detail">
+			<div class="cart-detail-type">
+				<h3 class="cart-name">您的訂單「契爾式經典明星商品契爾式經典明星商品 100 ml」已經出貨，請注
+意查收。</h3>
+				<p class="cart-category">店舖名稱：XXXXX<br>連絡電話：0910-888888</p>
+			</div>
+		  </div>
+	  </li>
+    </ol>  
+  </li>					
+<!--group end-->
+</ul>
+<ul class="all-item-group message_notice">
+  <li class="thead-select-all">
+    <ol class="tr">
+      <li>
+		  <h2 class="shop-name"><span style="font-size: 13px;">2018/07/20  09:30</span></h2>
+		  <button class="setting-btn2" onclick="location.href='#'"><i class="fas fa-times"></i></button>
+	  </li>
+    </ol>
+  </li>
+  <div class="cartline"></div>						
+<!--group start-->						
+  <li class="tbody">
+    <ol class="tr">
+      <li data-title="店铺 / 商品規格">
+		  <div class="cart-detail">
+			<div class="cart-detail-type">
+				<h3 class="cart-name">契您的訂單「契爾式經典明星商品契爾式經典明星商品 100 ml」已經出貨，請注意查收。</h3>
+				<p class="cart-category">店舖名稱：XXXXX<br>連絡電話：0910-888888</p>
+			</div>
+		  </div>
+	  </li>
+    </ol>  
+  </li>					
+<!--group end-->
+</ul>
+<ul class="all-item-group message_notice">
+  <li class="thead-select-all">
+    <ol class="tr">
+      <li>
+		  <h2 class="shop-name"><span style="font-size: 13px;">2018/07/20  09:30</span></h2>
+		  <button class="setting-btn2" onclick="location.href='#'"><i class="fas fa-times"></i></button>
+	  </li>
+    </ol>
+  </li>
+  <div class="cartline"></div>						
+<!--group start-->						
+  <li class="tbody">
+    <ol class="tr">
+      <li data-title="店铺 / 商品規格">
+		  <div class="cart-detail">
+			<div class="cart-detail-type">
+				<h3 class="cart-name">契您的訂單「契爾式經典明星商品契爾式經典明星商品 100 ml」已經出貨，請注意查收。</h3>
+				<p class="cart-category">店舖名稱：XXXXX<br>連絡電話：0910-888888</p>
+			</div>
+		  </div>
+	  </li>
+    </ol>  
+  </li>					
+<!--group end-->
+</ul>
+
+
+				</div>
 						</div>
 					</div>
 				</div>
@@ -174,6 +209,23 @@ $(document).ready(function() {
   
 }); 
 </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content",
+		active:"false",
+		collapsible: "true"
+    });
+  } );
+  </script>
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+<!--※collapsible ，false 代表展開。 true 代表關閉。
+※active代表是否展開第一個框架，改成 false 代表不展開任何框架。-->
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "244px";
