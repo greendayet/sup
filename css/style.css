@@ -2518,7 +2518,7 @@ li.other-contact{
 	}
 
 .login-info ul li.language-choice div:nth-child(2){
-		margin-left: 30px;
+		margin-left: 20px;
 	}
 .m-pass-box{
 		display: none;
@@ -2869,7 +2869,7 @@ li.other-contact{
 		padding: 0px;
 	}
   .login-body{
-	background: url(../images/bg-login-m.png) #fff no-repeat center bottom;
+	background: url(../images/bg-login-m.png) #363c64 no-repeat center bottom;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -2898,7 +2898,7 @@ li.other-contact{
     box-shadow: 2px 2px 10px #0f3d59;
 	}
 	.login-box h1{
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 	}
 	.login-info ul li.language-choice div:nth-child(2),.login-info ul li > div:nth-child(2){
 		text-align: right;
