@@ -2869,7 +2869,7 @@ li.other-contact{
 		padding: 0px;
 	}
   .login-body{
-	background: url(../images/bg-login-m.png) #363c64 no-repeat center bottom;
+	background: url(../images/bg-login-m.png) #363c64 no-repeat center top;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
