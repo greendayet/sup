@@ -3169,6 +3169,9 @@ li.other-contact{
 	footer{
 		display: none;
 	}
+	.login-body footer{
+		display: block;
+	}
 	.seller-store{
 		margin: 10px;
 	}
