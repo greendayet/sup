@@ -1,0 +1,232 @@
+@import "compass/css3";
+
+/**
+/* Mixins:
+*/
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content
+  }
+  @-moz-keyframes #{$name} {
+    @content
+  }
+  @-ms-keyframes #{$name} {
+    @content
+  }
+  @-o-keyframes #{$name} {
+    @content
+  }
+  @keyframes #{$name} {
+    @content
+  }
+}
+
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -ms-animation: $value;
+  -o-animation: $value;
+  animation: $value;
+}
+
+/**
+/* Animations:
+*/
+@include keyframes(LoadIn) {
+  0%   {
+    width: 0px;
+  }
+  100% {
+  }
+}
+
+/**
+* Variables:
+*/
+$primary-color: desaturate( lighten(green,30),70 );
+$secondary-color: darken($primary-color,10);
+$tertiary-color: desaturate( adjust-hue( $primary-color,330 ),60 );
+$bg-dark: mix(#444,$primary-color,95);
+
+$small-screen: 500px;
+$medium-screen: 800px;
+$large-screen: 1280px;
+
+/**
+* Styles:
+*/
+* { box-sizing:border-box;}
+
+html, body {width: 100%; height: 100%;}
+
+h1,h2,h3,h4,h5 {margin-top: 0;}
+
+body {
+  background: $bg-dark;
+  color: #f3f3f3;
+  margin-top: 4em;
+  
+  @media (max-width: $small-screen) {
+    margin-top: 0;
+  }
+}
+
+[role="main"] {
+  padding: 0.5em 1em 0 3.25em;
+  float: left;
+  width: (100%/5*4);
+}
+
+nav[role="navigation"] {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  width: 100%;
+  
+  .mobile-handle {display: none;}
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      float: left;
+      width: (100%/4);
+      border-left: 1px solid transparent;
+      &:first-child {
+        border-left: none;
+      }
+      
+      a {
+        display: block;
+        padding: 1em 0;
+        @include background-image (linear-gradient(
+          top,
+          $primary-color, $secondary-color
+          ));
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        border-bottom: 3px solid transparent;
+        @include transition(0.5s all ease);
+        
+        &:hover {
+        }
+        
+      }
+    }
+  }
+  
+  @media (max-width: $small-screen) {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    @include transform( translateX(-240px) );
+    @include transition( 0.5s all ease );
+    background: $primary-color;
+    
+    &.active {
+      @include transform( translateX(0px) );
+    }
+    
+    .mobile-handle {
+      display: block;
+      position: absolute;
+      right: -35px;
+      width: 35px;
+      height: 35px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      background: $primary-color;
+      @include border-radius(0 4px 4px 0);
+      @include box-shadow(4px 3px 2px rgba(black,.05));
+      
+      &:before {
+        content:"\2261";
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        color: white;
+        font-size: 2em;
+      }
+    }
+    
+    ul {
+      li {
+        float: none;
+        width: auto;
+        
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+aside {
+  float: left;
+  width: (100%/5);
+  position: relative;
+  z-index: 80;
+  
+  @media (max-width: $small-screen) {
+    float: none;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 40px;
+    @include transform( translateX(-240px) );
+    @include transition( 0.5s all ease );
+    background: #222;
+    
+    &.active {
+      @include transform( translateX(0px) );
+    }
+  }
+  
+  .aside-nav-handle {
+    display: none;
+    
+    @media (max-width: $small-screen) {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: -35px;
+      width: 35px;
+      height: 35px;
+      background: #222;
+      color: white;
+      cursor: pointer;
+      @include border-radius(0 4px 4px 0);
+      @include box-shadow(4px 3px 2px rgba(black,.05));
+      
+      &:before {
+        content:"\2261";
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        color: white;
+        font-size: 2em;
+      }
+    }
+  }
+  
+  a {
+    display: block;
+    color: $primary-color;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    
+    @media (max-width: $small-screen) {
+      padding: 1em;
+      text-align: center;
+    }
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
