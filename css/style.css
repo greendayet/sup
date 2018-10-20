@@ -26,6 +26,14 @@ button,input{
 button.btn-favorite{
 	transition: none;
 }
+.flexbox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.flexbox span:last-child{
+	margin-left: 2%;
+}
 .bluegreen{
 	background: #7ceaee;
 	color: #124670 !important;
@@ -67,6 +75,8 @@ button.btn-favorite{
 .brown:hover{
 	background: #a26632;
 }
+.number-photo{width: 15%;vertical-align: middle;border:none;background: transparent;padding: 0px;cursor: pointer;}
+.number-photo img{max-width: 100%;}
 .setting-btn{
 	color: #fff;
 	padding: 15px 50px;
@@ -317,7 +327,9 @@ footer{
 	text-align: center;
 	padding: 150px 0px 45px;
 }
-
+.bg-menu-mobile footer{
+	display: block;
+}
 .main{
 	background: #f5f5f4;
 	padding-top: 25px;
@@ -2338,7 +2350,7 @@ li.other-contact{
 
 .login-body{
 	background: url("../images/bg-login.png") #1d6f95 no-repeat center top;
-	padding: 100px 0px;
+	padding: 5% 0px;
 }
 
 .login-wrapper{
@@ -2381,7 +2393,7 @@ li.other-contact{
 .login-info{
 	background: #f6f4f1;
 	padding: 20px 20px 40px 20px;
-	border-radius: 10px;
+	border-radius: 0px 0px 10px 10px;
 }
 .login-info ul{
 	margin-bottom: 10px;
@@ -2614,6 +2626,12 @@ li.other-contact{
 	display: none;
 }
 
+.login-width{
+		width: 20%;
+	}
+	.login-width-right{
+		width: 80%;
+	}
 
 
 /* ======= Responsive ======= */
@@ -2903,6 +2921,12 @@ li.other-contact{
 	.login-info ul li.language-choice div:nth-child(2),.login-info ul li > div:nth-child(2){
 		text-align: right;
 	}
+	.login-info ul li > div:nth-child(1){
+		width: 20%;
+	}
+	.login-info ul li > div:nth-child(2){
+		width: 80%;
+	}
 	.login-body footer {
     background-color: transparent;
     padding: 20px 0px 10px;
@@ -3166,7 +3190,7 @@ li.other-contact{
 	.total{
 		padding: 25px 5px 25px 0px;
 	}
-	footer{
+	footer,.login-body.bg-menu-mobile footer{
 		display: none;
 	}
 	.login-body footer{
@@ -3532,12 +3556,6 @@ li.other-contact{
 	.seller-contact{
 		display: block;
 		text-align: center;
-	}
-	.login-width{
-		width: 20%;
-	}
-	.login-width-right{
-		width: 80%;
 	}
 }
 @media only screen and (max-width:400px){
