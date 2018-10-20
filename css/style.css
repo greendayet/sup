@@ -2395,9 +2395,7 @@ li.other-contact{
 	justify-content: flex-start;
 	align-items: center;
 }
-.login-info ul li > div:nth-child(2){
-	margin-left: 20px;
-}
+
 .language-choice{
 	
 }
@@ -2407,7 +2405,8 @@ li.other-contact{
 	width: 69px;
 	height: 47px;
 	margin-right: 10px;
-	background: url("../images/cn.png") no-repeat;
+	background: url("../images/cn.png") no-repeat center;
+	background-size: 100%;
 	opacity: .4;
 	cursor: pointer;
 }
@@ -2416,7 +2415,8 @@ li.other-contact{
 	text-indent: -9999px;
 	width: 69px;
 	height: 47px;
-	background: url("../images/en.png") no-repeat;
+	background: url("../images/en.png") no-repeat center;
+	background-size: 100%;
 	opacity: .4;
 	cursor: pointer;
 }
@@ -2427,7 +2427,7 @@ li.other-contact{
 	text-align: center;
 }
 .login-btn p{
-	padding:10px 0px;
+	padding:3px 0px;
 }
 .login-btn button{
 	padding: 10px 0px;
@@ -2679,10 +2679,6 @@ li.other-contact{
 		line-height: 105px;
 		padding-top: 0px;
 	}
-	.login-wrapper h1,.login-wrapper h1 a{
-		display: block;
-		width: 98px; height: 80px;
-	}
 	.rwd-hamburger{
 	visibility: visible;
 	display: block;
@@ -2879,7 +2875,15 @@ li.other-contact{
 }
 .login-body.bg-menu-mobile{
 	background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
+
 }
+.login-wrapper h1,.login-wrapper h1 a{
+		display: block;
+		width: 98px; height: 80px;
+	}
+	.login-body.loginindex{
+		padding-top: 0px !important;
+	}
   .login-wrapper {
     max-width: 768px;
 	}
@@ -3492,9 +3496,9 @@ li.other-contact{
 	width: 15px;
 	height: 15px;
 }
-.register-group,input,.register-group .login-mobile select{
+/*.register-group,input,.register-group .login-mobile select{
 		font-size: 13px;
-	}
+	}*/
 	/*.login-body{
 		background: #f6f4f1;
 		background-image: none;
@@ -3525,6 +3529,12 @@ li.other-contact{
 	.seller-contact{
 		display: block;
 		text-align: center;
+	}
+	.login-width{
+		width: 20%;
+	}
+	.login-width-right{
+		width: 80%;
 	}
 }
 @media only screen and (max-width:400px){
