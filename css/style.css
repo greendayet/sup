@@ -2679,6 +2679,10 @@ li.other-contact{
 		line-height: 105px;
 		padding-top: 0px;
 	}
+	.login-wrapper h1,.login-wrapper h1 a{
+		display: block;
+		width: 144px; height: 118px;
+	}
 	.rwd-hamburger{
 	visibility: visible;
 	display: block;
