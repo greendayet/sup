@@ -91,19 +91,19 @@ button.btn-favorite{
 	cursor: pointer;
 	font-size: 16px;
 }
-.setting-btn-yellow{
+.setting-btn-yellow,.setting-btn-yellow:active{
 	background: #ceb44f;
 }
 .setting-btn-yellow:hover{
 	background: #7f6f32;
 }
-.setting-btn-darkblue{
+.setting-btn-darkblue,.setting-btn-darkblue:active{
 	background: #3c689d;
 }
 .setting-btn-darkblue:hover{
 	background: #64bce9;
 }
-.setting-btn-lightblue{
+.setting-btn-lightblue,.setting-btn-lightblue:active{
 	background: #64bce9;
 }
 .setting-btn-lightblue:hover{
