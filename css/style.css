@@ -111,6 +111,12 @@ button,input{
 .setting-btn-lightblue:hover{
 	background: #3c689d;
 }
+.setting-orange,.setting-orange:active{
+	background: #f19d1d;
+}
+.setting-orange:hover{
+	background: #fa9803;
+}
 .red{
 	background: #df4443;
 }
@@ -462,6 +468,11 @@ a.title-more{
 	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1375% 1350%;
 	background-position: 40.68627450980392% 8.2666666%;166 31*/
+}
+.w90.booking-info{
+	display: table;
+	margin: 0px auto;
+	width: 70%;
 }
 .booking-info .shop-name{
 	flex:1;
@@ -1781,7 +1792,8 @@ word-break: break-all;
 }
 .personal-form{
 	font-size: 15px;
-	width: 70%;
+	width: 60%;
+	display: table;
 	margin: 0px auto;
 }
 .personal-form input{
@@ -1892,7 +1904,7 @@ word-break: break-all;
 	border-bottom: solid 1px #efefef;
 }
 .account-upgrate-intro section div{
-	flex:1;
+	flex:1.5;
 }
 .account-upgrate-intro section div:nth-child(2){
 	flex:3;
@@ -2207,12 +2219,13 @@ li.other-contact{
 
 .wrapper-admin .wallet-right-side{
 	padding: 0px;
-	width: 956px;
+	width: 75%;
+	display: table;
+	margin: 0px auto;
 }
 .wrapper-admin .setting{
 	background: #cdbeb0;
 	padding: 0px;
-	height: 100vh;
 }
 
 .wrapper-admin .setting-left-list ul{
@@ -2726,6 +2739,11 @@ li.other-contact{
 	.link-function{
 		margin-bottom: 70px;
 	}
+	.w90.booking-info{
+	display: table;
+	margin: 0px auto;
+	width: 60%;
+	}
 }
 @media only screen and (max-width: 1050px) {
 	.container,.head,nav.nav-desktop{
@@ -2802,6 +2820,24 @@ li.other-contact{
 	header{
 		height: 180px;
 	}
+	.twobox{}
+	.wrapper-admin .setting-left-list ul{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+	}
+	.wrapper-admin .setting-left-list .twobox li{
+		width: 49%;
+		border: solid 1px #872b2b;
+	}
+	.wrapper-admin .setting-left-list ul a{padding: 10px 0px;}
+	.w70{
+	width:100%;
+	}
+	.order-box{
+		border: none;
+	}
 	.head{
 		position: relative;
 		height: 105px;
@@ -2835,6 +2871,10 @@ li.other-contact{
 		width: 20%;
 		text-align: center;
 	}
+	.wrapper-admin nav.nav-desktop ul li {
+		width: 33.3%;
+		text-align: center;
+	}
 	nav.nav-desktop li a span,.nav-desktop .searchbox{
 		display: none;
 	}
@@ -2850,6 +2890,9 @@ li.other-contact{
 	.wallet-right-side{
 		float: none;
 		width: auto;
+	}
+	.wrapper-admin .wallet-right-side{
+		width: 100%;
 	}
 	.promotion-mobile,.malllist-mobile{
 		display: block;
@@ -3373,6 +3416,9 @@ li.other-contact{
 		float: none;
 		width: 100%;
 	}
+	#mySidenav .wallet-left-side{
+		width: 244px;
+	}
 	.currently-account{
 		width: 100%;
 		background-size: cover;
@@ -3410,9 +3456,12 @@ li.other-contact{
 	.updatebtn{
 		background: #171c61;
 		color: #fff;
-		padding: 5px 10px;
+		padding: 5px 7px;
 		border: none;
 		cursor: pointer;
+	}
+	.upgrate-out{
+		right: 12px;
 	}
 	.personal-form{
 		width: 100%;
@@ -3471,6 +3520,10 @@ li.other-contact{
 		line-height: 321px;
 		background: url(../images/bg-mobile-scan.png) no-repeat center;
 	}
+	.account-upgrate-intro .medal-intro{
+		display: block;
+	}
+	.medal-intro{display: none;}
 	.medal-intro ul{
 		display: block;
 	}
@@ -3487,7 +3540,8 @@ li.other-contact{
 	.account-upgrate-intro section{
 		justify-content: space-around;
 		flex-wrap: wrap;
-		padding: 0px 30px;
+		padding: 0px 30px 30px;
+		padding-top: 45px !important;
 	}
 	.account-upgrate-intro{
 		padding: 0px;
@@ -3500,7 +3554,6 @@ li.other-contact{
 		display: block;
 		width: 100%;
 	}
-	.medal-intro{display: none;}
 	.medal-intro-mobile{display: block;}
 	.medal-intro-mobile li{
 		padding-top: 15px;
@@ -3587,6 +3640,7 @@ li.other-contact{
 	.order-history-search select{
 		height: 40px;
 		width: 100%;
+		background: #fff;
 	}
 	.only-bg{
 		background: url(../images/bg-navi.png) no-repeat center bottom;
