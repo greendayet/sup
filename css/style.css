@@ -2705,7 +2705,7 @@ li.other-contact{
     	left: 20px;
     	top: 50%;
 		transform: translateY(-50%);
-    	font-size: 30px;
+    	font-size: 26px;
 	}
 	nav.nav-desktop ul{
 		float: none;
@@ -2738,7 +2738,7 @@ li.other-contact{
     	right: 20px;
     	top: 50%;
 		transform: translateY(-50%);
-    	font-size: 30px;
+    	font-size: 26px;
 		z-index: 9999;
 	}
 	.promotion-mobile a,.home-mobile a,.malllist-mobile a{
