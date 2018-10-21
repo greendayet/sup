@@ -449,9 +449,9 @@ a.title-more{
 	width: 32px;
 	height: 30px;
 	vertical-align: bottom;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1375% 1350%;
-	background-position: 40.68627450980392% 8.2666666%;/*166 31*/
+	background-position: 40.68627450980392% 8.2666666%;166 31*/
 }
 .booking-info .shop-name{
 	flex:1;
