@@ -15,7 +15,7 @@ body{
 }
 p{font-size: 15px;}
 button{
-	padding: 0px !important;
+	padding: 0px;
 }
 a,button,.btn{
 	text-decoration:none;
