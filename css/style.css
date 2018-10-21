@@ -13,6 +13,7 @@ body{
 	letter-spacing: 0.75px;
 	color: #333;
 }
+p{font-size: 15px;}
 button{
 	padding: 0px !important;
 }
@@ -26,9 +27,7 @@ a,button,.btn{
 button,input{
 	font-size: 15px;
 }
-button.btn-favorite{
-	transition: none;
-}
+
 .flexbox{
 	display: flex;
 	justify-content: flex-start;
@@ -402,7 +401,7 @@ a.title-more{
 	margin-right:0px;
 }
 
-.products-box-out li a,.products-box-main1 a,.products-box-main-other a{
+.products-box-out li a,.products-box-main,.products-box-main-other a{
 	box-sizing: border-box;
 	display: block;
 	padding: 10px;
@@ -430,6 +429,7 @@ a.title-more{
 	color: #1ba5d6;
 	margin-bottom: 5px;
 }
+.shop-name a{color: #1ba5d6;}
 .shop-name img{
 	margin-right: 10px;
 	width: 32px;
@@ -451,8 +451,8 @@ a.title-more{
 	color: #171c61;
 	margin-bottom: 5px;
 }
-.products-box-main1 .shop-name{
-	font-size: 24px;
+.products-box-main .shop-name{
+	font-size: 18px;
 	margin-bottom: 10px;
 }
 
@@ -468,13 +468,14 @@ a.title-more{
 }
 .price{
 	color:#ed6c00;
+	font-size: 18px;
 }
 .price b{
-	padding:0 3px;
+	padding:0 7px;
 }
 
 .btn-favorite{
-	width: 36px;
+	/*width: 36px;
 	height: 31px;
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1222.222222% 1306.451612%;
@@ -483,24 +484,33 @@ a.title-more{
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
-	color: #ed6c00;
-	cursor: pointer;background: transparent;
+	background: transparent;
 }
-.btn-favorite:hover{
-	background: url("../images/bg-icon.png") no-repeat;
+.btn-favorite::before{
+	color: #ed6c00;
+	font-size: 22px;
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f004";
+	font-weight: 400; 
+	cursor: pointer;
+}
+.btn-favorite.active::before{
+	content: "\f004";
+	font-weight: 900;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1222.222222% 1306.451612%;
 	background-position: 46.039603% 18.181818%;/*186 68*/
 }
 
-.products-box-main1 .btn-favorite{
+/*.products-box-main1 .btn-favorite{
 	width: 24px;
 	height: 21px;
 }
 .products-box-main1 .btn-favorite:hover{
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1222.222222% 1306.451612%;
-	background-position: 46.039603% 18.181818%;/*186 68*/
-}
+	background-position: 46.039603% 18.181818%;/*186 68
+}*/
 
 /* ======= 首頁最新活動 ======= */
 
@@ -668,10 +678,10 @@ a.title-more{
 	margin-bottom: 20px;
 }
 .mall-products-left-group .shop-name img{
-	width: 26px;
-	height: 24px;
-	vertical-align: middle;
-	margin-top: -7px;
+	width: 21px;
+	height: 19px;
+	vertical-align: top;
+	/*margin-top: -7px;*/
 }
 
 /*products-detail-box*/
@@ -3072,9 +3082,6 @@ li.other-contact{
 	padding: 10px;
 	box-sizing: border-box;
 	}
-	.products-box-main1 .shop-name{
-		font-size: 18px;
-	}
 	.status-favorite img{
 		width: 16px;
 		height: 14px;
@@ -3609,19 +3616,17 @@ li.other-contact{
     -webkit-column-count: 4;
   -moz-column-count:4;
   column-count: 4;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-   margin: 1.5em;
+  -webkit-column-gap: 0.75em;
+  -moz-column-gap: 0.75em;
+  column-gap: 0.75em;
+   /*margin: 1.5em;*/
     padding: 0;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 1.5em;
-    font-size: .85em;
+    -moz-column-gap: 0.75em;
+    -webkit-column-gap: 0.75em;
+    column-gap: 0.75em;
 }
 .item {
-    display: inline-block;
-    
+    display: inline-block;  
     padding: 0em;
     margin: 0 0 1.5em;
     width: 100%;
