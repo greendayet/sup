@@ -13,7 +13,7 @@ body{
 	letter-spacing: 0.75px;
 	color: #333;
 }
-button,.btn{
+a,button,.btn{
 	text-decoration:none;
 	transition: all .5s;
     transition-timing-function: ease;
@@ -471,8 +471,8 @@ a.title-more{
 }
 
 .btn-favorite{
-	width: 20px;
-	height: 17px;
+	width: 36px;
+	height: 31px;
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1222.222222% 1306.451612%;
 	background-position: 35.643564% 18.181818%;/*144 68*/
@@ -3008,9 +3008,6 @@ li.other-contact{
 		width: auto;
 		background-color: #7ebed7;
 		padding: 20px;
-	}
-	.main{
-		padding-top: 0px;
 	}
 	.left-side ul{
 		text-align: center;
