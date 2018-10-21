@@ -697,9 +697,10 @@ a.title-more{
 	margin-bottom: 20px;
 }
 .mall-products-left-group .shop-name img{
-	width: 21px;
-	height: 19px;
+	width: 20px;
+	height: 18px;
 	vertical-align: top;
+	max-width: auto;
 	/*margin-top: -7px;*/
 }
 
