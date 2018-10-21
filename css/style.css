@@ -701,6 +701,7 @@ a.title-more{
 	height: 20px;
 	vertical-align: top;
 	max-width: auto;
+	box-sizing: border-box;
 	/*margin-top: -7px;*/
 }
 
