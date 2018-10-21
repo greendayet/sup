@@ -483,7 +483,8 @@ a.title-more{
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
-	cursor: pointer;
+	color: #ed6c00;
+	cursor: pointer;background: transparent;
 }
 .btn-favorite:hover{
 	background: url("../images/bg-icon.png") no-repeat;
