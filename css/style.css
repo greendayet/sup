@@ -13,6 +13,9 @@ body{
 	letter-spacing: 0.75px;
 	color: #333;
 }
+button{
+	padding: 0px !important;
+}
 a,button,.btn{
 	text-decoration:none;
 	transition: all .5s;
