@@ -56,10 +56,9 @@
 				<div class="inner-mall">
 					<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">商城</a> > XXXX店舖</div>
 					<div class="seller-top">
-						<div class="seller-store-head">
+						<div class="seller-store-head seller-store">
 							<h2 class="shop-name"><img src="images/img-trans.png"><span>我的店铺名</span></h2>
-							<!--mobile 星星-->
-									<div class="Evaluation Evaluation-mobile">
+							<div class="Evaluation">
 										<a href="#" class="Evaluation-btn">
 											<i class="far fa-star"></i>
 											<i class="fas fa-star"></i>
@@ -81,53 +80,64 @@
 											<i class="fas fa-star"></i>
 										</a>
 									</div>
-									<!--mobile 星星-->
 						</div>
 						<div class="seller-store-banner"><img src="images/store-banner.jpg"></div>
 					</div>
-					<div class="right-side">
+					<div class="left-side seller-store">
+						<h2 class="category">全部商品</h2>
+						<ul>
+							<li><img src="images/img-trans.png"><a href="#">流行服饰<b class="quantity">(10)</b></a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">美妆药妆<b class="quantity">(15)</b></a><span>|</span></li>
+							<li><img src="images/img-trans.png"><a href="#">鞋包配饰<b class="quantity">(20)</b></a><span>|</span></li>
+						</ul>
+					</div>
+					<div class="right-side seller-store">
 						<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">商城</a> > 美妆药妆</div>
 						<div class="products-detail-box">
+
 							<div class="products-photo-group">
-								<img src="images/img-product-485x388.jpg">
+								
+								<div class="simpleLens-gallery-container" id="demo-1">
+        <div class="simpleLens-container">
+            <div class="simpleLens-big-image-container">
+                <a class="simpleLens-lens-image" data-lens-image="images/img-product-1.jpg">
+                    <img src="images/img-product-1.jpg" class="simpleLens-big-image">
+                </a>
+            </div>
+        </div>
+
+        <div class="simpleLens-thumbnails-container">
+        	<a href="#" class="simpleLens-thumbnail-wrapper"
+               data-lens-image="images/img-product-1.jpg"
+               data-big-image="images/img-product-1.jpg">
+                <img src="images/img-product-1.jpg">
+            </a>
+            <a href="#" class="simpleLens-thumbnail-wrapper"
+               data-lens-image="images/img-product-1-2.jpg"
+               data-big-image="images/img-product-1-2.jpg">
+                <img src="images/img-product-1-2.jpg">
+            </a>
+
+            <a href="#" class="simpleLens-thumbnail-wrapper"
+               data-lens-image="images/img-product-1-3.jpg"
+               data-big-image="images/img-product-1-3.jpg">
+                <img src="images/img-product-1-3.jpg">
+            </a>
+        </div>
+    </div>
+
 							</div>
+
 							<div class="products-type-group">
+
+								
 								<div class="products-type-head">
 									<div class="products-type-head-name">
-									<h2 class="shop-name"><img src="images/img-trans.png"><span>我的店铺名</span></h2>
-									<div class="products-type-head-rightfunction">
-										<span class="stored into-shop"><a href="#">进入店铺</a><img src="images/img-trans.png"></span>
-										<span class="status-favorite"><img src="images/img-trans.png"></span>
+									<h2 class="shop-name"><span>我的店铺名</span></h2>
 									</div>
-									</div>
-									<!--desktop 星星-->
-									<div class="Evaluation">
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-									</div>
-									<!--desktop 星星-->
 								</div>
 								<div class="cart-detail-type">
 									<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
-									<span class="status-favorite"><img src="images/img-trans.png"></span>
 									<p class="cart-category">类别：化妆 / 保养品</p>
 									<span class="price">USDT<b>250</b></span>
 									<div class="community">
@@ -163,10 +173,12 @@
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">关闭</a>
 				</div>
 									<!--share-->
+
+
 								</div>
 								<div class="cart-step-btn">
-									<button class="keep-shop" onclick="location.href='mall-cart.html'">购买结账</button>
-									<button class="go-payment" onclick="location.href='#'">加入购物车</button>
+									<button class="keep-shop" onclick="location.href='mall-checkout.html'">购买结账</button>
+									<button class="go-payment" onclick="location.href='mall-cart.html'">加入购物车</button>
 								</div>
 								<div class="products-info">
 									<div>产品说明</div>
@@ -194,53 +206,8 @@
 									<button class="keep-shop" onclick="location.href='mall-cart.html'">加入购物车</button>
 								<button class="go-payment" onclick="location.href='mall-checkout.html'">购买结账</button>
 								</div>
-							<!--mobile button-->
+							<!--mobile button-->	
 						</div>
-						<div class="products-box-out review-products">
-							<p>你曾看过的商品</p>
-							<ul>
-							<li>
-								<a href="#">
-									<figure><img src="images/img-product-small.jpg"></figure>
-									<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
-									<p class="shop-description">契尔氏经典明星商品 100ml</p>
-									<span class="price">USDT<b>250</b></span>
-									<button class="btn-favorite"></button>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<figure><img src="images/img-product-small.jpg"></figure>
-									<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
-									<p class="shop-description">契尔氏经典明星商品 100ml</p>
-									<span class="price">USDT<b>250</b></span>
-									<button class="btn-favorite"></button>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<figure><img src="images/img-product-small.jpg"></figure>
-									<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
-									<p class="shop-description">契尔氏经典明星商品 100ml</p>
-									<span class="price">USDT<b>250</b></span>
-									<button class="btn-favorite"></button>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<figure><img src="images/img-product-small.jpg"></figure>
-									<h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
-									<p class="shop-description">契尔氏经典明星商品 100ml</p>
-									<span class="price">USDT<b>250</b></span>
-									<button class="btn-favorite"></button>
-								</a>
-							</li>
-						</ul>
-						</div>
-							
-						
-						
-					
 					</div>
 				</div>
 				<div class="seller-contact">
