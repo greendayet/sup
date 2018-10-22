@@ -1340,7 +1340,7 @@ a.ui-button:active,
 }	
 
 @media only screen and (max-width:768px){
-	.ui-widget.ui-widget-content {
+	.transaction-record .ui-widget.ui-widget-content {
 	/*border: 1px solid #c5c5c5;*/
 	width: 100%;
 	}

@@ -1142,13 +1142,21 @@ a.title-more{
 .cart-step-btn{
 	text-align: right;
 }
-.cart-step-btn button,.btn-wallet{
+.btn-wallet{
 	color: #fff;
 	padding: 20px 0px;
 	font-size: 19px;
 	cursor: pointer;
 	border: none;
 	/*width: 49.5%;*/
+}
+.cart-step-btn button{
+	color: #fff;
+	padding: 20px 0px;
+	font-size: 19px;
+	cursor: pointer;
+	border: none;
+	width: 49.5%;
 }
 button.keep-shop{
 	background: #ceb44f;
@@ -2904,6 +2912,9 @@ li.other-contact{
     	font-size: 26px;
 		z-index: 9999;
 	}
+	.cart-detail-type .community{
+		display: none;
+	}
 	.promotion-mobile a,.home-mobile a,.malllist-mobile a{
 		color: #171c61;
 	}
@@ -3646,7 +3657,7 @@ li.other-contact{
 		background: url(../images/bg-navi.png) no-repeat center bottom;
 		height: 30px;
 	}
-	.booking-info{
+	.w90.booking-info{
 		width: 100%;
 	}
 	.booking-info .thead-select-all{
