@@ -904,9 +904,10 @@ body .ui-tooltip {
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 1em;
 }
-.ui-widget.ui-widget-content {
+.transaction-record .ui-widget.ui-widget-content {
 	/*border: 1px solid #c5c5c5;*/
-	width: 90%;
+	display: table;
+	width: 70%;
     margin: 0px auto;
 }
 .ui-widget-content {
@@ -1322,7 +1323,21 @@ a.ui-button:active,
 }
 
 
+.ui-tabs .ui-tabs-nav{
+		background: url(../images/bg-navi.png) no-repeat center bottom;
+	}
+	.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
+		color: #fff;
+	}
+	.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited,.ui-state-default a:hover{
+		background: #171c61;
+	}
 
+@media only screen and (max-width:1200px){
+.transaction-record .ui-widget.ui-widget-content {
+	width: 65%;
+	}
+}	
 
 @media only screen and (max-width:768px){
 	.ui-widget.ui-widget-content {
@@ -1334,14 +1349,5 @@ a.ui-button:active,
 	}
 	.ui-tabs .ui-tabs-nav .ui-tabs-anchor{
 		padding: 1.5em 1em;
-	}
-	.ui-tabs .ui-tabs-nav{
-		background: url(../images/bg-navi.png) no-repeat center bottom;
-	}
-	.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
-		color: #fff;
-	}
-	.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited,.ui-state-default a:hover{
-		background: #171c61;
 	}
 }
