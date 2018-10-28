@@ -4,9 +4,6 @@
 <meta charset="utf-8">	
 <title>SUPREME-登 入</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" href="css/colorbox.css" type="text/css" media="all">	
@@ -92,12 +89,7 @@
 		<script>
 			$(document).ready(function(){
 				//Examples of how to assign the Colorbox event to elements
-				$(".inline").colorbox({inline:true, width:"80%"});
+				$(".inline").colorbox({inline:true, width:"360px"});
 				
-				//Example of preserving a JavaScript event for inline calls.
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#f00", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-					return false;
-				});
 			});
-		</script>
+		</script>							
