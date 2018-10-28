@@ -446,7 +446,7 @@ a.title-more{
 	margin-right:0px;
 }
 
-.products-box-out li a,.products-box-main,.products-box-main-other a{
+.products-box-main,.products-box-main-other a{
 	box-sizing: border-box;
 	display: block;
 	padding: 10px;
@@ -483,10 +483,7 @@ a.title-more{
 .review-products figure a{
 	text-align: center;
 }
-.review-products img{
-	max-width: 100%;
-	height: 150px;
-}
+
 .index .products-box-out ul img,.index .products-box-main-other img{
 	width: 250px;
 }
@@ -518,7 +515,7 @@ a.title-more{
 	/*vertical-align: top;*/
 }
 .cart-name{
-	color: #171c61;
+	color: #4662A0;
 	margin-bottom: 8px;
 	font-size: 18px;
 }
@@ -538,9 +535,10 @@ a.title-more{
 	color: #9fa0a0;
 }
 .cart-category{
-	color: #bbbcbc;
+	color: #333;
 	margin-bottom:20px;
 }
+.category-list a{ font-size: 15px; }
 .price{
 	color:#ed6c00;
 	font-size: 18px;
@@ -593,7 +591,7 @@ a.title-more{
 
 .eventblock{
 	background: #fff;
-	padding-bottom: 25px;
+	padding-bottom: 0px;
 }
 .event-box-out{
 	font-size: 15px;
@@ -671,7 +669,7 @@ a.title-more{
 }
 .left-side{
 	float: left;
-	width: 20%;
+	width: 12%;
 }
 .left-side ul span{
 	visibility: hidden;
@@ -701,13 +699,12 @@ a.title-more{
 }
 .right-side{
 	float: right;
-	width: 78%;
+	width: 86%;
 }
 .path{
 	color:#173661;
-	padding: 12px 0px;
+	padding: 0px 0px 12px;
 	font-size: 15px;
-	margin-bottom: 12px;
 }
 .path a{
 	color:#173661;
@@ -888,7 +885,7 @@ a.title-more{
 .products-type-head-name .shop-name{
 	/*float: left;*/
 	width: 64%;
-	font-size: 24px;
+	font-size: 18px;
 }
 .products-type-head-name .shop-name img{
 	width: 22px;
@@ -923,7 +920,6 @@ a.title-more{
 	background-position: 46.039603% 18.181818%;/*186 68
 }*/
 .status-favorite .btn-favorite{position: static;}
-.status-favorite .btn-favorite::before{font-weight: 900;}
 .into-shop{
 	margin-right: 15px;
 }
@@ -934,7 +930,7 @@ a.title-more{
 .Evaluation-btn:hover .far.fa-star,.Evaluation-btn .fas.fa-star {
     display: none;
 }
-.Evaluation-btn:hover .fas.fa-star{
+.Evaluation-btn:hover .fas.fa-star,.Evaluation-btn:active .fas.fa-star{
     display: inline;
 }
 .Evaluation-mobile{
@@ -1042,9 +1038,7 @@ a.title-more{
 	justify-content: space-between;
 	align-items: center;
 }
-.products-type-group .cart-category{
-	padding-bottom: 50px;
-}
+
 .products-info{
 	/*padding-top: 20px;
 	border-top: solid 1px #DDDDDD;*/
@@ -3072,7 +3066,20 @@ li.other-contact{
 	.event-box-out li figure img{
 		width: 96px;
 	}
+	.products-type-head{
+		margin-bottom: 10px;
+	}
 	.container{width: 100%;padding: 0px 10px 20px;box-sizing: border-box;}
+	.nopd{
+		padding: 0px;
+	}
+	.pdtop{
+		padding-top: 10px;
+		padding-bottom: 0px;
+	}
+	.remind{
+		margin-bottom: 20px;
+	}
 	.radio-cont{
 		padding-left: 30px;
 	}
@@ -3095,6 +3102,7 @@ a.title-more{
 	font-size: 12px;
 	padding: 3px;
 	line-height: 12px;
+	background: #181D62;
 }
 .content_box{
 	width: 32%;
@@ -3219,7 +3227,7 @@ a.title-more{
     	left: 20px;
     	top: 50%;
 		transform: translateY(-50%);
-    	font-size: 26px;
+    	font-size: 18px;
 		z-index: 9999;
 	}
 	
@@ -3479,8 +3487,14 @@ a.title-more{
 	.eventblock,.productsblock{
     /*margin: 0px 10px;*/
 	}
+	.right-side .productsblock{
+		padding: 10px;
+	}
 	.event-box-out li{
 		width: 100%;
+	}
+	h1{
+		display: none;
 	}
 	h1.head-mobile{
 		display: block;
@@ -3488,20 +3502,20 @@ a.title-more{
 		height: auto;
 		text-indent: 0px;
 		text-align: center;
-		font-size: 32px;
+		font-size: 18px;
 		color: #181D62;
 		padding-top: 0px;
 	}
-	h1,h1 a{
+	.index h1,.index h1 a{
 		width: 29px;
 		height: 29px;
 	}
-	h1{
+	.index h1{
 		padding-top: 5.5px;
 		height: auto;
 		box-sizing: border-box;
 	}
-	h1 a{
+	.index h1 a{
 		background: url(../images/logo_m.png) no-repeat;
 		background-size: 100%;
 	}
