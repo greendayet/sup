@@ -2596,7 +2596,7 @@ li.other-contact{
 	font-size: 24px;
 	letter-spacing:50px;
 	text-indent: 50px;
-	font-weight: 100;
+	font-weight: 300;
 }
 .register-group .login-info{
 	background: #fff;
@@ -3011,7 +3011,7 @@ li.other-contact{
 		font-size: 15px;
 	}
 	button,input{
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.wrapper, .wrapper-admin{
 		max-width: 768px;
