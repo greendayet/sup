@@ -2632,6 +2632,8 @@ li.other-contact{
 	height: auto;
 }
 .forgot-group p.orange{
+	text-align:center;
+	padding: 0px 0px 20px;
 	line-height: 1.5;
 }
 .forgot-group .login-btn button{
