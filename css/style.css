@@ -28,6 +28,10 @@ button,input{
 	font-size: 21px;
 }
 
+.searchbox input{
+	font-size: 15px;
+}
+
 .flexbox{
 	display: flex;
 	justify-content: flex-start;
@@ -271,39 +275,39 @@ nav.nav-desktop li:first-child img{
 	width: 28px;
 	height: 28px;
 	vertical-align:text-bottom;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1571.428571% 1446.428571%;
-	background-position: 42.961165% 0%;/*177 0*/
+	background-position: 42.961165% 0%;177 0*/
 }
 nav.nav-desktop li:nth-child(2) img{
 	width: 28px;
 	height: 28px;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1571.428571% 1446.428571%;
-	background-position: 49.757281% 0%;/*205 0*/
+	background-position: 49.757281% 0%;205 0*/
 }
 nav.nav-desktop li:nth-child(3) img{
 	width: 26px;
 	height: 25px;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1692.307692% 1620%;
-	background-position: 80.193236% 0%;/*332 0*/
+	background-position: 80.193236% 0%;332 0*/
 }
 nav.nav-desktop li:nth-child(4) img{
 	width: 32px;
 	height: 19px;
 	vertical-align:middle;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1375% 2131.578947%;
-	background-position: 57.107843% 0%;/*233 0*/
+	background-position: 57.107843% 0%;233 0*/
 }
 nav.nav-desktop li:last-child img{
 	width: 27px;
 	height: 26px;
 	vertical-align:text-bottom;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1629.629629% 1557.692307%;
-	background-position: 64.164648% 0%;/*265 0*/
+	background-position: 64.164648% 0%;265 0*/
 }
 nav.nav-desktop li a{
 	color:#fff;
@@ -3076,7 +3080,7 @@ li.other-contact{
 	display: block;
 		color: #171c61;
 		position: absolute;
-    	left: 20px;
+    	left: 15px;
     	top: 50%;
 		transform: translateY(-50%);
     	font-size: 18px;
@@ -3116,7 +3120,7 @@ li.other-contact{
 		display: block;
 		color: #171c61;
 		position: absolute;
-    	right: 20px;
+    	right: 10px;
     	top: 50%;
 		transform: translateY(-50%);
     	font-size: 18px;
