@@ -609,6 +609,11 @@ a.title-more{
 .event-box-out h2 a{
 	color:#171c61;
 	font-weight: bold;
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    height: 18px;
 }
 .event-box-out p{
 	color:#595757;
@@ -3052,6 +3057,20 @@ li.other-contact{
 		width: 100%;
 		height: 60px;
 		line-height: 60px;
+	}
+	.event-box-out{
+		padding: 0px 10px;
+		font-size: 13px;
+	}
+	.event-box-out p{
+		font-size: 13px;
+		height: 32px;
+	}
+	.event-box-out h2 a{
+		height: 16px;
+	}
+	.event-box-out li figure img{
+		width: 96px;
 	}
 	.container{width: 100%;padding: 0px 10px 20px;box-sizing: border-box;}
 	.radio-cont{
