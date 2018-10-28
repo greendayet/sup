@@ -8,12 +8,12 @@ html{
 }
 body{
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 15px;
+	font-size: 21px;
 	line-height: 1.25;
 	letter-spacing: 0.75px;
 	color: #333;
 }
-p{font-size: 15px;}
+p{font-size: 19px;}
 button{
 	padding: 0px;
 }
@@ -25,7 +25,7 @@ a,button,.btn{
 	color: #333;
 }
 button,input{
-	font-size: 15px;
+	font-size: 21px;
 }
 
 .flexbox{
@@ -345,7 +345,7 @@ nav.nav-desktop li a:hover,nav.nav-desktop li a.active{
 }
 
 footer{
-	font-size:13px;
+	font-size:15px;
 	color: #9ea9aa;
 	background-color: #f5f5f5;
 	text-align: center;
@@ -2459,7 +2459,8 @@ li.other-contact{
 
 .login-body{
 	background: url("../images/bg-login.png") #1d6f95 no-repeat center top;
-	padding: 5% 0px;
+	padding: 170px 0px 35px;
+	color: #919191;
 }
 
 .login-wrapper{
@@ -2470,9 +2471,10 @@ li.other-contact{
 	border-radius: 10px;
 	box-shadow: 2px 2px 10px #0f3d59;
 	background: #fff;
-	width: 550px;
+	width: 580px;
 	margin: 0px auto;
-	padding-top: 20px;
+	padding-top: 25px;
+	margin-bottom: 70px;
 	/*position: absolute;
     top: 50%;
     left: 50%;
@@ -2485,6 +2487,7 @@ li.other-contact{
 	padding: 10px;
 	vertical-align: middle;
 	box-sizing: border-box;
+	color: #020202;
 }
 .login-info ul li.login-function{
 	justify-content: space-between;
@@ -2497,11 +2500,11 @@ li.other-contact{
 	color: #f0a934;
 }
 .login-box h1{
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .login-info{
 	background: #f6f4f1;
-	padding: 20px 20px 40px 20px;
+	padding: 45px 45px 35px;
 	border-radius: 10px;
 }
 .loginindex .login-info{border-radius: 0px 0px 10px 10px;}
@@ -2509,7 +2512,7 @@ li.other-contact{
 	margin-bottom: 10px;
 }
 .login-info ul li{
-	padding: 7px 0px;
+	padding: 35px 0px;
 	border-bottom: solid 1px #c1c1c0;
 }
 .login-info ul li{
@@ -2518,8 +2521,9 @@ li.other-contact{
 	align-items: center;
 }
 
-.language-choice{
-	
+.loginindex .language-choice{
+	padding-top: 0px;
+	padding-bottom: 20px;
 }
 .language-cn{
 	border: none;
@@ -2545,6 +2549,10 @@ li.other-contact{
 .language-cn:hover,.language-en:hover,.language-cn.active,.language-en.active{
 	opacity: 1;
 }
+.log-btn{
+	letter-spacing: 45px;
+	text-indent: 45px;
+}
 .login-btn{
 	text-align: center;
 }
@@ -2552,7 +2560,7 @@ li.other-contact{
 	padding:3px 0px;
 }
 .login-btn button{
-	padding: 10px 0px;
+	padding: 30px 0px;
 	color: #fff;
 	border: none;
 	cursor: pointer;
@@ -2625,7 +2633,7 @@ li.other-contact{
 
 .login-body footer{
 	background-color: transparent;
-    padding: 20px 0px 10px;
+    padding: 0px 0px 10px;
     color: #f0f0f0;
 }
 
@@ -2738,6 +2746,7 @@ li.other-contact{
 
 .login-width{
 		width: 20%;
+		letter-spacing: 15px;
 	}
 	.login-width-right{
 		width: 80%;
@@ -2835,6 +2844,9 @@ li.other-contact{
 
 
 @media only screen and (max-width:768px){
+	body,button,input{
+		font-size: 15px;
+	}
 	.wrapper, .wrapper-admin{
 		max-width: 768px;
 	}
@@ -3077,9 +3089,9 @@ li.other-contact{
 		padding: 0px;
 	}
   .login-body{
-	background: url(../images/bg-login-m.png) #363c64 no-repeat center top;
+	background: url(../images/bg-login-m.png) #363c64 no-repeat center;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 25px;
 }
 .login-body.bg-menu-mobile{
 	background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
@@ -3087,10 +3099,10 @@ li.other-contact{
 }
 .login-wrapper h1,.login-wrapper h1 a{
 		display: block;
-		width: 98px; height: 80px;
+		width: 144px; height: 119px;
 	}
 	.login-body.loginindex{
-		padding-top: 0px !important;
+		padding-top: 50px !important;
 	}
   .login-wrapper {
     max-width: 768px;
@@ -3100,10 +3112,16 @@ li.other-contact{
     box-shadow: none; 
     padding-top: 0px;
     background: transparent;
+    margin-bottom: 15px;
+    width: 360px;
 	}
 	.login-info {
     background: #fff;
-    box-shadow: 2px 2px 10px #0f3d59;
+    box-shadow: 2px 2px 10px #0f3d59; 
+    padding: 45px 20px 35px;
+	}
+	.loginindex .login-info{
+		border-radius: 10px;
 	}
 	.login-box h1{
 		margin-bottom: 35px;
@@ -3117,10 +3135,13 @@ li.other-contact{
 	.login-info ul li > div:nth-child(2){
 		width: 80%;
 	}
+	.login-width{
+		letter-spacing: 0px;
+	}
 	.login-body footer {
     background-color: transparent;
-    padding: 20px 0px 10px;
     color: #f0f0f0;
+    font-size: 13px;
 	}
 	.login-info ul li.log-pass > div:nth-child(2){
 		display: flex;
@@ -3156,6 +3177,7 @@ li.other-contact{
 	}
 	.finger-check-out{
 		padding: 80px 0px;
+		height: 140px;
 	}
 	.finger-check{
 	width: 81px;
@@ -3176,7 +3198,6 @@ li.other-contact{
 	.event-box-out li{
 		width: 100%;
 	}
-	h1,h1 a{width: 70px;height: 57px;padding-top: 17.5px;display: none;box-sizing: border-box;}
 	h1.head-mobile{
 		display: block;
 		width: auto;
@@ -3730,6 +3751,28 @@ li.other-contact{
 .left-side.seller-store{
 	padding: 0px 20px;
 }
+	.language-cn,.language-en{
+	width: 36px;
+	height: 24px;
+	}
+.loginindex .language-choice{
+	padding-bottom: 10px;
+}
+.loginindex .login-box input{
+	padding: 0px 10px;
+}
+.login-info ul{
+	margin-bottom: 20px;
+}
+.login-info ul li{
+	padding: 30px 0px 10px;
+}
+.login-info ul li.login-function{
+	padding-top: 15px;
+}	
+.login-btn button{
+	padding: 15px 0px;
+}
 /*.seller-store ul li{
 	width: 32%;
 	float: none;
@@ -3739,9 +3782,7 @@ li.other-contact{
 }
 
 @media only screen and (max-width:600px){
-	.login-box,.register-group{
-	width: 85%;
-}
+
 .register-group .login-info ul li.referrer input, .register-group .login-info ul li.sex input{
 	width: 15px;
 	height: 15px;
@@ -3782,19 +3823,11 @@ li.other-contact{
 	}
 }
 @media only screen and (max-width:400px){
-
-	.login-info{
-		padding: 20px 40px 40px;
-	}
-	.language-cn,.language-en{
-	width: 50px;
-	height: 34px;
-	}
 	.login-box input{
 	width: 100%;
 	}
-	.login-info {
-    padding: 20px 25px;
+	.login-box{
+		width: 320px;
 	}
 }
 
@@ -3804,7 +3837,10 @@ li.other-contact{
 	}
 .products-type-head-name .shop-name{
 	width: 50%;
-}	
+	}
+	.login-box{
+		width: 290px;
+	}	
 }
 
 
