@@ -39,11 +39,11 @@
 			</div>
 			<nav class="nav-desktop">
 				<ul>
-					<li><a class="active" href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
-					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
-					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
-					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
-					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
+					<li><a href="mall.html"><img src="images/svg/navi-icon-01.svg"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/svg/navi-icon-02.svg"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/svg/navi-icon-03.svg"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/svg/navi-icon-04.svg"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/svg/navi-icon-05.svg"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
@@ -53,14 +53,14 @@
 			
 		</header>
 		<div class="main">
-			<div class="container">
+			<div class="container nopd">
 				<div class="inner-mall">
 					<div class="left-side mallindex">
 						<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>	
 				</div>
 						<h2 class="category">商品分类</h2>
-						<ul>
+						<ul class="category-list">
 							<li><img src="images/img-trans.png"><a class="active" href="#">流行服饰</a><span>|</span></li>
 							<li><img src="images/img-trans.png"><a href="#">美妆药妆</a><span>|</span></li>
 							<li><img src="images/img-trans.png"><a href="#">鞋包配饰</a><span>|</span></li>
@@ -81,7 +81,7 @@
 					<div class="right-side">
 						<div class="path">首頁 > 商城</div>
 						
-						<div class="mall_jssor">
+						<div class="mall_jssor desktop-banner">
 						<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:900px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -120,11 +120,42 @@
     </div>
 </div>
     <!-- #endregion Jssor Slider End -->
+
+<!--mobile-banner-start-->
+	<div class="banner mobile-banner">
+		<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:768px;height:614px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:768px;height:614px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="images/banner-1-m.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/banner-2-m.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/banner-3-m.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+	</div>	
+<!--mobile-banner-end-->
+
 	<div class="productsblock">				
-	<div class="products-box-out">
-	<div class="masonry">
+	 <div class="products-box-out">
 						<!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-1.jpg"></a></figure>
@@ -138,7 +169,7 @@
      <!--products-->
 
      <!--products-->
-     <div class=" item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-2.jpg"></a></figure>
@@ -152,7 +183,7 @@
      <!--products-->
 
      <!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-3.jpg"></a></figure>
@@ -166,7 +197,7 @@
      <!--products-->
 
       <!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-4.jpg"></a></figure>
@@ -180,7 +211,7 @@
      <!--products-->
 
       <!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-5.jpg"></a></figure>
@@ -194,7 +225,7 @@
      <!--products-->
 
      <!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-6.jpg"></a></figure>
@@ -208,7 +239,7 @@
      <!--products-->
 
      <!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-7.jpg"></a></figure>
@@ -222,7 +253,7 @@
      <!--products-->
 
       <!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-8.jpg"></a></figure>
@@ -235,7 +266,7 @@
      </div>
      <!--products-->
      <!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-9.jpg"></a></figure>
@@ -248,7 +279,7 @@
      </div>
      <!--products-->
      <!--products-->
-     <div class="item">
+     <div class="content_box">
      	<div class="products-box-main">
      	<div class="mall-products-left-group">
 				<figure><a href="mall-products.html"><img src="images/img-product-10.jpg"></a></figure>
@@ -260,8 +291,7 @@
 		</div>							
      </div>
      <!--products-->
- </div>
-</div>
+					</div>
 </div>
 						
 					
@@ -319,6 +349,50 @@
             /*#endregion responsive code end*/
         });
     </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_2_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_2_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_2_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>    
 <script>
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
