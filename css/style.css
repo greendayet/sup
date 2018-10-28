@@ -8,10 +8,13 @@ html{
 }
 body{
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 21px;
+	font-size: 18px;
 	line-height: 1.25;
 	letter-spacing: 0.75px;
 	color: #333;
+}
+body.login-body{
+	font-size: 21px;
 }
 p{font-size: 19px;}
 button{
@@ -313,7 +316,7 @@ nav.nav-desktop li a{
 	color:#fff;
 	padding: 0px 25px;
 }
-nav.nav-desktop li a:hover,nav.nav-desktop li a.active{
+nav.nav-desktop li a:hover{
 	background-color:#27548b;
 }
 
@@ -346,6 +349,12 @@ nav.nav-desktop li a:hover,nav.nav-desktop li a.active{
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 2200% 2250%;/*20 18*/
 	background-position: 74.285714% 0%;/*292 0*/
+}
+.desktop-banner{
+	display: block;
+}
+.mobile-banner{
+	display: none;
 }
 
 footer{
@@ -3011,7 +3020,7 @@ li.other-contact{
 
 
 @media only screen and (max-width:768px){
-	body,p{
+	body,p,body.login-body{
 		font-size: 15px;
 	}
 	button,input{
@@ -3038,9 +3047,21 @@ li.other-contact{
 	.radio-cont{
 		padding-left: 30px;
 	}
+	.desktop-banner{
+	display: none;
+}
+.mobile-banner{
+	display: block;
+}
 	header{
 		height: 100px;
 		background-position: center bottom -15px;
+	}
+	nav.nav-desktop li a{
+		padding: 0px;
+	}
+	nav.nav-desktop li img{
+		margin: 0px;
 	}
 	.twobox{}
 	.wrapper-admin .setting-left-list ul{
