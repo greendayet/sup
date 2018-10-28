@@ -3113,7 +3113,7 @@ li.other-contact{
     padding-top: 0px;
     background: transparent;
     margin-bottom: 15px;
-    width: 360px;
+    width: 320px;
 	}
 	.login-info {
     background: #fff;
@@ -3826,9 +3826,6 @@ li.other-contact{
 	.login-box input{
 	width: 100%;
 	}
-	.login-box{
-		width: 320px;
-	}
 }
 
 @media only screen and (max-width:370px){
@@ -3839,7 +3836,7 @@ li.other-contact{
 	width: 50%;
 	}
 	.login-box{
-		width: 290px;
+		width: 270px;
 	}	
 }
 
