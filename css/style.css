@@ -188,6 +188,22 @@ h1 a{
 	background-position: 0px 0px;
 }
 
+.login-body h1{
+	width: 214px;
+	height: 176px;
+	margin: 0px auto;
+	text-indent: -9999px;
+}
+
+.login-body h1 a{
+	display:block;
+	width: 214px;
+	height: 176px;
+	background: url("../images/logo.png") no-repeat;
+	background-size: 100%;
+	background-position: 0px 0px;
+}
+
 .head-rightfunction{
 	position:absolute;
 	bottom:26px;
