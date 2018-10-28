@@ -3028,12 +3028,15 @@ li.other-contact{
 	}
 	.container,.head,nav.nav-desktop{
 		width: 100%;
+		height: 60px;
+		line-height: 60px;
 	}
 	.radio-cont{
 		padding-left: 30px;
 	}
 	header{
-		height: 180px;
+		height: 100px;
+		background-position: center bottom -15px;
 	}
 	.twobox{}
 	.wrapper-admin .setting-left-list ul{
@@ -3055,8 +3058,8 @@ li.other-contact{
 	}
 	.head{
 		position: relative;
-		height: 105px;
-		line-height: 105px;
+		height: 40px;
+		line-height: 40px;
 		padding-top: 0px;
 	}
 	.mallindex .searchbox{
@@ -3076,7 +3079,7 @@ li.other-contact{
     	left: 20px;
     	top: 50%;
 		transform: translateY(-50%);
-    	font-size: 26px;
+    	font-size: 18px;
 	}
 	nav.nav-desktop ul{
 		float: none;
@@ -3116,7 +3119,7 @@ li.other-contact{
     	right: 20px;
     	top: 50%;
 		transform: translateY(-50%);
-    	font-size: 26px;
+    	font-size: 18px;
 		z-index: 9999;
 	}
 	.cart-detail-type .community{
@@ -3405,6 +3408,19 @@ li.other-contact{
 		font-size: 32px;
 		color: #181D62;
 		padding-top: 0px;
+	}
+	h1,h1 a{
+		width: 29px;
+		height: 29px;
+	}
+	h1{
+		padding-top: 5.5px;
+		height: auto;
+		box-sizing: border-box;
+	}
+	h1 a{
+		background: url(../images/logo_m.png) no-repeat;
+		background-size: 100%;
 	}
 	.index h1,.index h1 a,.w3-teal{
 		display: block;
