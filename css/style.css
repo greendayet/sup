@@ -3052,6 +3052,9 @@ li.other-contact{
 		opacity: 1;
     transition: opacity 0.6s;
 	}
+	ul.all-item-group .mobile-head-line{
+		display: block;
+	}
 
 /* Track */
 .left-side ul.category-list::-webkit-scrollbar-track {
@@ -3337,7 +3340,7 @@ a.title-more{
 }
 .thead-select-all .tr li{
 	width: auto !important;
-	padding: 20px 0px;
+	padding: 10px 0px 0px;
 }
 	.discount-out-group .tr li:before{
 		padding-right: 0px;
@@ -3356,11 +3359,12 @@ a.title-more{
 	outline: 0;
 	padding: 10px;
 	background: #fff;
+	height: 30px;
 }
 
-.count-min{border-right:solid 1px #ddd; color: #c7c8c9;font-size: 15px;border:none;}
+.count-min{border-right:solid 1px #ddd; color: #c7c8c9;font-size: 30px;border:none;}
 .count-text{color: #333;font-size: 18px;width: 50px; text-align: center;border:none;border-left:solid 1px #ddd;border-right:solid 1px #ddd;}
-.count-add{color: #00A6D6;font-size: 15px;border:none;}
+.count-add{color: #00A6D6;font-size: 25px;border:none;}
 
 .tbody li{
 	padding: 15px 16px 15px 16px;
