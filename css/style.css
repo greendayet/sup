@@ -3038,6 +3038,27 @@ li.other-contact{
 	.wrapper, .wrapper-admin{
 		max-width: 768px;
 	}
+	.left-side ul::-webkit-scrollbar {
+    height: 3px;
+}
+
+/* Track */
+.left-side ul.category-list::-webkit-scrollbar-track {
+	background: rgba(68,166,204,.7);
+}
+ 
+/* Handle */
+.left-side ul.category-list::-webkit-scrollbar-thumb {
+	background: rgba(0,121,168,.8);
+}
+
+/* Handle on hover */
+.left-side ul.category-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(234,234,234,.6);
+}
+	ul.category-list li{
+		padding: 0px;
+	}
 	.checkmark{
 		width: 18px;
 		height: 18px;
@@ -3571,7 +3592,7 @@ a.title-more{
 	.left-side .searchbox{
 		float: none;
 		position: relative;
-		margin: 0px auto 20px;
+		margin: 0px auto 10px;
 	}
 	.left-side .searchbox input{
 		min-width: 100%;
