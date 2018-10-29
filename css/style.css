@@ -1468,7 +1468,9 @@ button.go-payment:hover{
 .text-left .password-input input{
 	width:71.75%;
 }
-
+.password-input span{
+	position: static !important;
+}
 .wallet-right-side .btn-wallet{
 	color: #333;
 	display: table;
@@ -1497,6 +1499,11 @@ button.go-payment:hover{
 	padding-top: 75px;
 }
 
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .ticket-group{}
 .ticket-content{
 	padding: 20px;
@@ -2051,6 +2058,10 @@ word-break: break-all;
 	right: 0px;
 	top:50%;
 	transform: translateY(-50%);
+}
+#accordion-wallet li .accorsing-content-3 span:first-child{
+	position: static;
+	transform: none;
 }
 #accordion li ul{
 	margin-bottom: 0px;
@@ -3010,6 +3021,16 @@ li.other-contact{
 .select-selected {
   background-color: transparent;
 }
+#accordion-wallet .wallet-step-block .select-selected{
+	text-align: left;
+	text-indent: 10px;
+}
+#accordion-wallet .wallet-step-block .select-selected,#accordion-wallet .wallet-step-block .custom-select{margin-bottom: 0px;}
+#accordion-wallet .wallet-step-block .select-selected,#accordion-wallet li .select-items div:nth-child(2){border-top: solid 1px #d1d1d5;}
+#accordion-wallet .select-items div{margin-bottom: 0px;}
+.select-width{}
+.select-width > div{width: 40%;}
+.select-width input{width: 60%;}
 /*style the arrow inside the select element:*/
 .select-selected:after {
   position: absolute;
@@ -3073,6 +3094,18 @@ li.other-contact{
 .seller-banner-mobile{
 	display: block;
 }
+.select-selected{
+	margin-bottom: 0px !important;
+	padding: 0px;
+}
+.wallet-step-block .select-items{
+	text-align: left;
+	text-indent: 10px;
+}
+.wallet-step-block .select-items div{
+	margin-bottom: 0px;
+}
+.pdtop{padding-top: 10px;}
 
 /* ======= Responsive ======= */
 
