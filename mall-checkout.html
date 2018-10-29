@@ -65,6 +65,7 @@
   </li>
 </ul>
 <!--購物車內容-->
+					<div>
 <ul class="all-item-group">
   <li class="thead-select-all">
     <ol class="tr">
@@ -95,12 +96,7 @@
 				<!--mobile 数量-->
 			</div>  
 		  </div>
-		  <!--mobile 取消订单-->
-		  <div class="change-mobile">
-		  	<p>取消订单</p>
-		  	<p>小计<span>$500<b>SUP</b></span></p>
-		  </div>
-		  <!--mobile 取消订单-->
+		  
 	  </li>
       <li class="count" data-title="数量">
 		<select>
@@ -113,7 +109,13 @@
 	  </li>
       <li class="price" data-title="价格">USDT 250</li>
       <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
-    </ol>  
+    </ol>
+	  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p class="closebtnorder">取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
   </li>
   <div class="cartline"></div>					
 <!--group end-->
@@ -137,12 +139,6 @@
 				<!--mobile 数量-->
 			</div>  
 		  </div>
-		  <!--mobile 取消订单-->
-		  <div class="change-mobile">
-		  	<p>取消订单</p>
-		  	<p>小计<span>$500<b>SUP</b></span></p>
-		  </div>
-		  <!--mobile 取消订单-->
 	  </li>
       <li class="count" data-title="数量">
 		<select>
@@ -155,8 +151,14 @@
 	  </li>
       <li class="price" data-title="价格">USDT 250</li>
       <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
-    </ol>  
-  </li>
+    </ol>
+	  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p class="closebtnorder">取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
+  </li>	
   <div class="cartline"></div>					
 <!--group end-->
 </ul>
@@ -302,4 +304,16 @@ $('#min').attr('disabled',true);
     })
 
 });
+</script>
+<script>
+var close = document.getElementsByClassName("closebtnorder");
+var i;
+
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
 </script>
