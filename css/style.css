@@ -3358,9 +3358,10 @@ a.title-more{
 	border:solid 1px #ddd;
 }
 	
-	.count-mobile input[type="button" i],.count-mobile input[type="button"]{
+	.count-mobile input[type="button"]{
 		background: #fff;
 		border-radius: 0px !important;
+		-webkit-appearance:none;
 	}
 
 
