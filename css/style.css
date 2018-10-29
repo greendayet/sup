@@ -3676,6 +3676,9 @@ a.title-more{
 	.loginindex .login-info ul li{
 		padding-top: 15px;
 	}
+	.loginindex .login-info ul{
+		margin-bottom: 0px;
+	}
 	.login-box h1{
 		margin-bottom: 35px;
 	}
