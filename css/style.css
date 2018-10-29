@@ -3357,6 +3357,9 @@ a.title-more{
 	padding: 0px 10px;
 	background: #fff;
 }
+	.count-mobile button{
+		background: transparent;
+	}
 	.count-mobile input[type=button]{
 		background: #fff;
 		border-radius: 0px;
