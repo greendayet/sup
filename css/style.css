@@ -3360,6 +3360,7 @@ a.title-more{
 	padding: 0px 10px;
 	background: #fff;
 	height: 30px;
+	border-radius: 0px !important;
 }
 	
 	.count-mobile input[type="button"]{
