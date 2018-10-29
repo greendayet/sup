@@ -3348,22 +3348,23 @@ a.title-more{
 .count-mobile{
 	visibility: visible;
 	margin-top: 10px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	border:solid 1px #ddd;
+	overflow: hidden;
+	clear: both;
 }
 .count-mobile input{
-	display: block;
-	float: left; 
+	display: inline;
 	outline: 0;
-	padding: 10px;
+	padding: 0px 10px;
 	background: #fff;
-	height: 30px;
-	border:solid 1px #ddd;
 }
+	.count-mobile input[disabled="disabled"]{
+		background: #fff;
+		border-radius: 0px;
+	}
 
 .count-min{border-right:solid 1px #ddd; color: #c7c8c9;font-size: 30px;border:none;}
-.count-text{color: #333;font-size: 18px;width: 50px; text-align: center;border:none;border-left:solid 1px #ddd;border-right:solid 1px #ddd;}
+.count-text{color: #333;font-size: 18px;width: 50px;height: 30px; text-align: center;line-height: 30px; border:none;border-left:solid 1px #ddd;border-right:solid 1px #ddd;}
 .count-add{color: #00A6D6;font-size: 25px;border:none;}
 
 .tbody li{
