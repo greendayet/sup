@@ -1074,6 +1074,7 @@ a.title-more{
   border-collapse: collapse;
 	background: #fff;
 }
+.mall-cart ul .cartline:last-child{display: none;}
 .all-item-group,.all-discount-group{
 	margin-bottom: 30px;
 }
@@ -1132,6 +1133,9 @@ a.title-more{
 .tr .price{
 	color: #ed6c00;
 }
+.tr .price.total{
+	color: #fff;
+}
 
 .cart-delete{
 	background: transparent;
@@ -1174,9 +1178,6 @@ a.title-more{
 .booking-info .cartline{
 	margin: 0px;
 }
-.all-item-group .cartline:last-child{
-	display:none;
-}
 .cart-step-btn{
 	text-align: right;
 }
@@ -1193,7 +1194,7 @@ a.title-more{
 	padding: 20px 0px;
 	cursor: pointer;
 	border: none;
-	width: 49.5%;
+	width: 30%;
 }
 button.keep-shop{
 	background: #ceb44f;
@@ -1209,6 +1210,10 @@ button.go-payment:hover{
 }
 .all-discount-group{}
 .discount-detail{
+	margin-left: 20px;
+}
+.express p:first-child{
+	padding-left: 0px;
 }
 .discount-category{
 	display: inline-block;
@@ -1228,11 +1233,20 @@ button.go-payment:hover{
 .all-discount-group .tbody .tr li:first-child{
 	width: 81%;
 }
-.all-discount-group .tbody .tr li:last-child{
+/*.all-discount-group .tbody .tr li:last-child{
 	text-align: left;
 	width: 19%;
+}*/
+.all-discount-group .tbody .tr li:last-child{
+	text-align: right;
+	width: 19%;
+	padding-right: 25px;
 }
+.all-discount-group-total{}
+.all-discount-group.all-discount-group-total .tbody .tr li:first-child{width: 0%;}
+.all-discount-group.all-discount-group-total .tbody .tr li:last-child{width: 100%;}
 .discount-out-group{
+	background: #fff;
 }
 .discount-out-group .all-discount-group:last-child .cartline{
 	display: none;
@@ -1243,6 +1257,7 @@ button.go-payment:hover{
 }
 .discount-detail p{
 	padding-left: 15px;
+	padding-top: 4px;
 }
 .express {
  	display: flex;
@@ -1252,8 +1267,9 @@ button.go-payment:hover{
  .total{
  	text-align: right;
  	background: #e06932;
- 	padding: 25px 115px 25px 0px;
+ 	padding: 25px 25px 25px 0px;
  	color: #fff;
+	 font-size: 18px;
  	margin-bottom: 30px; 
  }
  .total span{
@@ -1262,6 +1278,7 @@ button.go-payment:hover{
  .remind{
  	text-align: right;
  	margin-bottom: 80px;
+	 margin-right: 25px;
  	display: flex; 
  	justify-content: flex-end;
     align-items: center;
@@ -2697,6 +2714,7 @@ li.other-contact{
 	}
 .community-mobile-link,.count-mobile{
 		visibility: hidden;
+	display: none;
 	}
 
 /*====sidemenu====*/
@@ -2767,7 +2785,7 @@ li.other-contact{
 }
 
 .change-mobile{
-	visibility: hidden;
+	visibility: hidden;display: none;
 }
 
 .seller-store figure img{
@@ -2785,7 +2803,7 @@ li.other-contact{
 		width: 80%;
 	}
 .mall-checkout{
-	background: #fff;
+	
 }
 .radioflex{
 	display: flex;
@@ -2833,10 +2851,15 @@ li.other-contact{
 	border: solid 1px #ed6c00;
 	border-radius: 0px;
 }
+.checked-cont.black .checkmark{border: solid 1px #607e88;}
+.checked-cont.black{
+	padding-left: 40px;
+	margin-left: 15px;
+}
 
 /* On mouse-over, add a grey background color */
 .checked-cont:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #f2f2f2;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -2867,6 +2890,10 @@ li.other-contact{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+.checked-cont.black .checkmark:after{
+	border: solid #607e88;
+	border-width: 0 3px 3px 0;
 }
 /*Radio*/
 /* The container */
@@ -3108,9 +3135,15 @@ li.other-contact{
 	.left-side ul::-webkit-scrollbar {
     height: 3px;
 }
+	.form-white,.discount-out-group{
+		background: transparent !important;
+	}
 	.mall-cart ul{
 		width: auto;
 		margin: 0px 10px;
+	}
+	.mall-cart-list ul{
+		margin: 0px 10px 20px;
 	}
 	ul.all-item-group .cartline{
 		display: none;
@@ -3122,7 +3155,9 @@ li.other-contact{
 	ul.all-item-group .mobile-head-line{
 		display: block;
 	}
-
+	.all-item-group .cartline:last-child{
+	display:none;
+}
 /* Track */
 .left-side ul.category-list::-webkit-scrollbar-track {
 	background: rgba(68,166,204,.7);
@@ -3182,6 +3217,8 @@ li.other-contact{
 	}
 	.remind{
 		margin-bottom: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 	.radio-cont{
 		padding-left: 30px;
@@ -3464,6 +3501,7 @@ a.title-more{
 	clear: both;
 	overflow: hidden;
 	visibility: visible;
+	display: block;
 }
 .change-mobile span{
 	margin-left: 15px;
@@ -3811,16 +3849,26 @@ a.title-more{
 		margin-left: 0px;
 		color: #5A5858;
 		background: transparent;
-		padding: 10px 0px;
+		    padding: 15px 0px 10px;
 	}
 	.discount-detail{
 		align-items: center;
+		margin-left: 0px;
 	}
 	.discount-detail p{
 		padding-left: 0px;
 	}
 	.all-discount-group .tbody .tr li:first-child,.all-discount-group .tbody .tr li:last-child{
 		width: auto;
+	}
+	.all-discount-group .tbody .tr li:first-child{
+		width: 60%;
+	}
+	.all-discount-group .tbody .tr li:last-child{
+		width: 40%;
+	}
+	.discount-detail p{
+		padding-top: 0px;
 	}
 	.all-discount-group ol{
 		display: flex;
@@ -3830,11 +3878,13 @@ a.title-more{
 	.express{
 		display: block;
 	}
-	.blue-over-detail{
+	.express .blue-over-detail{
 		padding: 5px 0px;
 	}
 	.total{
-		padding: 25px 5px 25px 0px;
+		padding: 20px 25px 20px 0px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 	footer,.login-body.bg-menu-mobile footer{
 		display: none;
@@ -4207,6 +4257,7 @@ a.title-more{
 .register-group .login-info ul li{
 	padding: 15px 0px;
 }
+	.price{font-size: 15px;}
 		
 }
 
@@ -4254,7 +4305,10 @@ a.title-more{
 @media only screen and (max-width:470px){
 	.register-group{
 	width: 360px;
-}
+	}
+	.checked-cont .checkmark{width: 18px;height: 18px;}
+	.checked-cont .checkmark:after{left: 5px;
+    top: 2px;}
 }
 @media only screen and (max-width:430px){
 	.seller-contact-head{
