@@ -568,6 +568,7 @@ a.title-more{
 	content: "\f004";
 	font-weight: 400; 
 	cursor: pointer;
+	padding: 1px;
 }
 .btn-favorite.active::before{
 	content: "\f004";
