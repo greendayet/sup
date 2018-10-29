@@ -3361,6 +3361,7 @@ a.title-more{
 	background: #fff;
 	height: 30px;
 	border-radius: 0px !important;
+	-webkit-appearance:none;
 }
 	
 	.count-mobile input[type="button"]{
