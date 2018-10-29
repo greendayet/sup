@@ -38,11 +38,11 @@
 			</div>
 			<nav class="nav-desktop">
 				<ul>
-					<li><a class="active" href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
-					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
-					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
-					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
-					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
+					<li><a href="mall.html"><img src="images/svg/navi-icon-01.svg"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/svg/navi-icon-02.svg"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/svg/navi-icon-03.svg"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/svg/navi-icon-04.svg"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/svg/navi-icon-05.svg"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
@@ -52,7 +52,7 @@
 			
 		</header>
 		<div class="main">
-			<div class="container seller-content">
+			<div class="container seller-content nopd">
 				<div class="inner-mall">
 					<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">商城</a> > XXXX店舖</div>
 					<div class="seller-top">
@@ -81,7 +81,7 @@
 										</a>
 									</div>
 						</div>
-						<div class="seller-store-banner"><img src="images/store-banner.jpg"></div>
+						<div class="seller-store-banner seller-banner-mobile"><img src="images/store-banner.jpg"></div>
 					</div>
 					<div class="left-side seller-store">
 						<h2 class="category">全部商品</h2>
@@ -129,17 +129,14 @@
 							</div>
 
 							<div class="products-type-group">
-
-								
-								<div class="products-type-head">
-									<div class="products-type-head-name">
-									<h2 class="shop-name"><span>我的店铺名</span></h2>
-									</div>
-								</div>
 								<div class="cart-detail-type">
-									<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
+									<div class="seller-store-head" style="background: transparent;padding: 0px;align-items: flex-start;">
+									<h3 class="cart-name" style="width: 80%;">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
+									<span class="status-favorite"><button class="btn-favorite"></button></span>
+									</div>
 									<p class="cart-category">类别：化妆 / 保养品</p>
 									<span class="price">USDT<b>250</b></span>
+
 									<div class="community">
 										<a href="#"><i class="fab fa-line"></i></a>
 										<a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -233,33 +230,19 @@
 <script src="js/jquery-2.1.1.min.js"></script>
 <!--slider-->
 <script src="js/sliderResponsive.js"></script>
+<script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+<script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+
 <script>
-$(document).ready(function() {
-  
-  $("#slider1").sliderResponsive({
-  // Using default everything
-    // slidePause: 5000,
-    // fadeSpeed: 800,
-    // autoPlay: "on",
-    // showArrows: "off", 
-    // hideDots: "off", 
-    // hoverZoom: "on", 
-    // titleBarTop: "off"
-  });
-  
-  $("#slider2").sliderResponsive({
-    fadeSpeed: 300,
-    autoPlay: "off",
-    showArrows: "on",
-    hideDots: "on"
-  });
-  
-  $("#slider3").sliderResponsive({
-    hoverZoom: "off",
-    hideDots: "on"
-  });
-  
-}); 
+    $(document).ready(function(){
+        $('#demo-1 .simpleLens-thumbnails-container img').simpleGallery({
+            loading_image: 'images/loading.gif'
+        });
+
+        $('#demo-1 .simpleLens-big-image').simpleLens({
+            loading_image: 'images/loading.gif'
+        });
+    });
 </script>
 <script>
 function openNav() {
@@ -269,4 +252,9 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.height = "0";
 }
+</script>
+<script type="text/javascript">
+	$('.btn-favorite').click(function() {
+	$(this).toggleClass('active');
+});
 </script>
