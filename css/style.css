@@ -3361,6 +3361,7 @@ a.title-more{
 		background: #fff;
 		border-radius: 0px;
 	}
+	::disabled{background: #fff;}
 
 .count-min{border-right:solid 1px #ddd; color: #c7c8c9;font-size: 30px;border:none;}
 .count-text{color: #333;font-size: 18px;width: 50px;height: 30px; text-align: center;line-height: 30px; border:none;border-left:solid 1px #ddd;border-right:solid 1px #ddd;}
