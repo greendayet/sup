@@ -3041,6 +3041,17 @@ li.other-contact{
 	.left-side ul::-webkit-scrollbar {
     height: 3px;
 }
+	.mall-cart ul{
+		width: auto;
+		margin: 0px 10px;
+	}
+	ul.all-item-group .cartline{
+		display: none;
+	}
+	ul.all-item-group .tbody{
+		opacity: 1;
+    transition: opacity 0.6s;
+	}
 
 /* Track */
 .left-side ul.category-list::-webkit-scrollbar-track {
@@ -3184,6 +3195,7 @@ a.title-more{
 	}
 	.mall-checkout{
 	background: transparent;
+	padding-top: 10px;
 }
 	.rwd-hamburger{
 	visibility: visible;
@@ -3327,6 +3339,9 @@ a.title-more{
 	width: auto !important;
 	padding: 20px 0px;
 }
+	.discount-out-group .tr li:before{
+		padding-right: 0px;
+	}
 .count-mobile{
 	visibility: visible;
 	border:solid 1px #ddd;
@@ -3381,6 +3396,8 @@ a.title-more{
 .change-mobile p:last-child{
 	float: right;
 }
+	.closebtnorder{cursor: pointer;
+    transition: 0.3s;}	
 	.pd0{
 		padding: 0px;
 	}
@@ -3713,7 +3730,7 @@ a.title-more{
 		margin-left: 0px;
 		color: #5A5858;
 		background: transparent;
-		padding: 5px 0px;
+		padding: 10px 0px;
 	}
 	.discount-detail{
 		align-items: center;
