@@ -3357,13 +3357,12 @@ a.title-more{
 	background: #fff;
 	border:solid 1px #ddd;
 }
-	.count-mobile button{
-		background: transparent;
-	}
-	.count-mobile input[type="button" i]{
+	
+	.count-mobile input[type="button" i],.count-mobile input[type="button"]{
 		background: #fff;
 		border-radius: 0px;
 	}
+
 
 
 .count-min{border-right:solid 1px #ddd; color: #c7c8c9;font-size: 30px;border:none;background: transparent;}
