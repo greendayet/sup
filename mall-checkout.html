@@ -65,13 +65,16 @@
   </li>
 </ul>
 <!--購物車內容-->
-					<div>
+<div class="form-white" style="background: #fff;">					
 <ul class="all-item-group">
   <li class="thead-select-all">
     <ol class="tr">
       <li>
-		  <input class="cart-detail-checkbox" type="checkbox">
-		  <h2 class="shop-name"><img src="images/img-shopname.png">我的店铺名</h2>
+		  <label class="checked-cont black"><h2 class="shop-name"><img src="images/img-shopname.png">我的店铺名</h2>
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  </label>
+		  
 	  </li>
     </ol>
   </li>
@@ -81,7 +84,10 @@
     <ol class="tr">
       <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="cart-detail">
-		  	<input class="cart-detail-checkbox" type="checkbox">
+			  <label class="checked-cont black">
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  	  </label>
 			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
 			<div class="cart-detail-type">
 				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
@@ -124,7 +130,10 @@
     <ol class="tr">
       <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="cart-detail">
-		  	<input class="cart-detail-checkbox" type="checkbox">
+		  	<label class="checked-cont black">
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  	  </label>
 			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
 			<div class="cart-detail-type">
 				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
@@ -175,10 +184,11 @@
   <li class="tbody">
     <ol class="tr">
       <li class="spec" data-title="店铺 / 商品規格">
-		  <div class="discount-detail checked-cont">
-		  	<input class="cart-detail-checkbox" type="checkbox">
+		  <div class="discount-detail">
+			  <label class="checked-cont"><p>累积点数20点，可折USDT 10</p>
+				  <input class="cart-detail-checkbox" type="checkbox">
 			  <span class="checkmark"></span>
-			<p>累积点数20点，可折USDT 10</p>
+			  </label>	
 		  </div>
 	  </li>
       <li class="price" data-title="价格">-USDT 10</li>
@@ -197,10 +207,11 @@
   <li class="tbody">
     <ol class="tr">
       <li class="spec" data-title="店铺 / 商品規格">
-		  <div class="discount-detail checked-cont">
+		  <div class="discount-detail">
+			  <label class="checked-cont"><p>票券可折USDT 50</p>
 		  	<input class="cart-detail-checkbox" type="checkbox">
 			  <span class="checkmark"></span>
-			<p>票券可折USDT 50</p>
+			  </label>
 		  </div>
 	  </li>
       <li class="price" data-title="价格">-USDT 50</li>
@@ -228,24 +239,22 @@
     </ol>  
   </li>
   <div class="cartline"></div>				
-</ul>
+</ul>	
+</div>
 <div class="total">
 	<span><b>总金额</b></span>
-	<span>USDT 500</span>
+	<span style="margin-right: 0px;">USDT 500</span>
 </div>
+				</div>					
 <div class="remind">
 <span><img class="remind-img" src="images/img-trans.png">目前账户USDT余额不足</span>
 <span class="stored"><a href="#">立刻储值</a><img src="images/img-trans.png"></span>
-</div>
-</div>
+</div>						
 
 <div class="cart-step-btn">
 	<button class="keep-shop" onclick="location.href='mall.html'">继续购买</button>
 	<button class="go-payment" onclick="location.href='mall-checkout.html'">立即付款</button>
 </div>
-
-
-				</div>
 			</div>
 		</div>
 		<footer>© 2018 SUPREME. All rights reserved.</footer>

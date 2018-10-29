@@ -37,11 +37,11 @@
 			</div>
 			<nav class="nav-desktop">
 				<ul>
-					<li><a class="active" href="mall.html"><img src="images/img-trans.png"><span>商城</span></a></li>
-					<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png"><span>钱包</span></a></li>
-					<li><a href="#"><img src="images/img-trans.png"><span>扫描</span></a></li>
-					<li><a href="ticket.html"><img src="images/img-trans.png"><span>票券</span></a></li>
-					<li><a href="event-list.html"><img src="images/img-trans.png"><span>活动</span></a></li>
+					<li><a href="mall.html"><img src="images/svg/navi-icon-01.svg"><span>商城</span></a></li>
+					<li><a href="wallet-payA-step1.html"><img src="images/svg/navi-icon-02.svg"><span>钱包</span></a></li>
+					<li><a href="#"><img src="images/svg/navi-icon-03.svg"><span>扫描</span></a></li>
+					<li><a href="ticket.html"><img src="images/svg/navi-icon-04.svg"><span>票券</span></a></li>
+					<li><a href="event-list.html"><img src="images/svg/navi-icon-05.svg"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
@@ -51,9 +51,9 @@
 			
 		</header>
 		<div class="main">
-			<div class="container">
+			<div class="container nopd">
 				<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">商城</a> > 购物车</div>
-				<div class="mall-cart">
+				<div class="mall-cart mall-checkout mall-cart-list">
 					<ul>
   <li class="thead">
     <ol class="tr">
@@ -69,18 +69,24 @@
   <li class="thead-select-all">
     <ol class="tr">
       <li>
-		  <input class="cart-detail-checkbox" type="checkbox">
-		  <h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
+		  <label class="checked-cont black"><h2 class="shop-name"><img src="images/img-shopname.png">我的店铺名</h2>
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  </label>
+		  
 	  </li>
     </ol>
   </li>
-  <div class="cartline"></div>						
-<!--products start-->						
+  <div class="cartline mobile-head-line"></div>						
+<!--group start-->						
   <li class="tbody">
     <ol class="tr">
       <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="cart-detail">
-		  	<input class="cart-detail-checkbox" type="checkbox">
+			  <label class="checked-cont black">
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  	  </label>
 			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
 			<div class="cart-detail-type">
 				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
@@ -95,14 +101,8 @@
 				<!--mobile 数量-->
 			</div>  
 		  </div>
-		  <!--mobile 取消订单-->
-		  <div class="change-mobile">
-		  	<p>取消订单</p>
-		  	<p>小计<span>$500<b>SUP</b></span></p>
-		  </div>
-		  <!--mobile 取消订单-->
+		  
 	  </li>
-	  <!--desktop 数量-->
       <li class="count" data-title="数量">
 		<select>
 			  <option>1</option>
@@ -112,19 +112,27 @@
 			  <option>99</option>
 		  </select>	
 	  </li>
-	  <!--desktop 数量-->
       <li class="price" data-title="价格">USDT 250</li>
       <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
-    </ol>  
+    </ol>
+	  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p class="closebtnorder">取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
   </li>
   <div class="cartline"></div>					
-<!--products end-->
-<!--products start-->						
+<!--group end-->
+<!--group start-->						
   <li class="tbody">
     <ol class="tr">
       <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="cart-detail">
-		  	<input class="cart-detail-checkbox" type="checkbox">
+		  	<label class="checked-cont black">
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  	  </label>
 			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
 			<div class="cart-detail-type">
 				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
@@ -139,14 +147,7 @@
 				<!--mobile 数量-->
 			</div>  
 		  </div>
-		  <!--mobile 取消订单-->
-		  <div class="change-mobile">
-		  	<p>取消订单</p>
-		  	<p>小计<span>$500<b>SUP</b></span></p>
-		  </div>
-		  <!--mobile 取消订单-->
 	  </li>
-	  <!--desktop 数量-->
       <li class="count" data-title="数量">
 		<select>
 			  <option>1</option>
@@ -156,13 +157,18 @@
 			  <option>99</option>
 		  </select>	
 	  </li>
-	  <!--desktop 数量-->
       <li class="price" data-title="价格">USDT 250</li>
       <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
-    </ol>  
-  </li>
+    </ol>
+	  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p class="closebtnorder">取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
+  </li>	
   <div class="cartline"></div>					
-<!--products end-->
+<!--group end-->
 </ul>
 <!--店舖類別 end-->
 <!--店舖類別 start-->
@@ -170,18 +176,24 @@
   <li class="thead-select-all">
     <ol class="tr">
       <li>
-		  <input class="cart-detail-checkbox" type="checkbox">
-		  <h2 class="shop-name"><img src="images/img-trans.png">我的店铺名</h2>
+		  <label class="checked-cont black"><h2 class="shop-name"><img src="images/img-shopname.png">我的店铺名</h2>
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  </label>
+		  
 	  </li>
     </ol>
   </li>
-  <div class="cartline"></div>						
-<!--products start-->						
+  <div class="cartline mobile-head-line"></div>						
+<!--group start-->						
   <li class="tbody">
     <ol class="tr">
       <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="cart-detail">
-		  	<input class="cart-detail-checkbox" type="checkbox">
+			  <label class="checked-cont black">
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  	  </label>
 			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
 			<div class="cart-detail-type">
 				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
@@ -196,14 +208,8 @@
 				<!--mobile 数量-->
 			</div>  
 		  </div>
-		  <!--mobile 取消订单-->
-		  <div class="change-mobile">
-		  	<p>取消订单</p>
-		  	<p>小计<span>$500<b>SUP</b></span></p>
-		  </div>
-		  <!--mobile 取消订单-->
+		  
 	  </li>
-	  <!--desktop 数量-->
       <li class="count" data-title="数量">
 		<select>
 			  <option>1</option>
@@ -213,19 +219,27 @@
 			  <option>99</option>
 		  </select>	
 	  </li>
-	  <!--desktop 数量-->
       <li class="price" data-title="价格">USDT 250</li>
       <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
-    </ol>  
+    </ol>
+	  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p class="closebtnorder">取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
   </li>
   <div class="cartline"></div>					
-<!--products end-->
-<!--products start-->						
+<!--group end-->
+<!--group start-->						
   <li class="tbody">
     <ol class="tr">
       <li class="spec" data-title="店铺 / 商品規格">
 		  <div class="cart-detail">
-		  	<input class="cart-detail-checkbox" type="checkbox">
+		  	<label class="checked-cont black">
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  	  </label>
 			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
 			<div class="cart-detail-type">
 				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
@@ -240,14 +254,7 @@
 				<!--mobile 数量-->
 			</div>  
 		  </div>
-		  <!--mobile 取消订单-->
-		  <div class="change-mobile">
-		  	<p>取消订单</p>
-		  	<p>小计<span>$500<b>SUP</b></span></p>
-		  </div>
-		  <!--mobile 取消订单-->
 	  </li>
-	  <!--desktop 数量-->
       <li class="count" data-title="数量">
 		<select>
 			  <option>1</option>
@@ -257,13 +264,18 @@
 			  <option>99</option>
 		  </select>	
 	  </li>
-	  <!--desktop 数量-->
       <li class="price" data-title="价格">USDT 250</li>
       <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
-    </ol>  
-  </li>
+    </ol>
+	  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p class="closebtnorder">取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
+  </li>	
   <div class="cartline"></div>					
-<!--products end-->
+<!--group end-->
 </ul>
 <!--店舖類別 end-->
 <div class="cart-step-btn">
@@ -332,4 +344,16 @@ $('#min').attr('disabled',true);
     })
 
 });
+</script>
+<script>
+var close = document.getElementsByClassName("closebtnorder");
+var i;
+
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
 </script>
