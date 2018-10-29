@@ -3841,7 +3841,7 @@ a.title-more{
 		display: flex;
 		justify-content: space-between;
 	}
-	.cart-step-btn button{
+	.mall-cart .cart-step-btn button{
 		width: 50%;
 		padding: 20px 0px;
 	}
