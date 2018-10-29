@@ -3366,9 +3366,9 @@ a.title-more{
 	}
 	::disabled{background: #fff;}
 
-.count-min{border-right:solid 1px #ddd; color: #c7c8c9;font-size: 30px;border:none;}
+.count-min{border-right:solid 1px #ddd; color: #c7c8c9;font-size: 30px;border:none;background: transparent;}
 .count-text{color: #333;font-size: 18px;width: 50px;height: 30px; text-align: center;line-height: 30px; border:none;border-left:solid 1px #ddd;border-right:solid 1px #ddd;}
-.count-add{color: #00A6D6;font-size: 25px;border:none;}
+.count-add{color: #00A6D6;font-size: 25px;border:none;background: transparent;}
 
 .tbody li{
 	padding: 15px 16px 15px 16px;
