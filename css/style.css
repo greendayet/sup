@@ -3349,8 +3349,7 @@ a.title-more{
 	visibility: visible;
 	margin-top: 10px;
 	border:solid 1px #ddd;
-	overflow: hidden;
-	clear: both;
+	display: table-cell;
 }
 .count-mobile input{
 	display: inline;
@@ -3358,7 +3357,7 @@ a.title-more{
 	padding: 0px 10px;
 	background: #fff;
 }
-	.count-mobile input[disabled="disabled"]{
+	.count-mobile input[type="button"]{
 		background: #fff;
 		border-radius: 0px;
 	}
