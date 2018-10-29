@@ -1298,10 +1298,10 @@ button.go-payment:hover{
  	color: #fff;
  }
  .stored img{
- 	margin-left: 10px;
+ 	margin-left: 7px;
  	width: 8px;
  	height: 9px;
- 	vertical-align: middle;
+ 	vertical-align: baseline;
  	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 5500% 4500%;
 	background-position: 54.861111% 17.171717%;/*237 68*/
