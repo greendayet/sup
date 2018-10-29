@@ -4245,7 +4245,12 @@ a.title-more{
 .register-group .login-info ul li{
 	padding: 15px 0px;
 }
-	.price{font-size: 15px;}
+	.products-box-main .shop-name,.shop-description,.price{font-size: 15px;}
+	.mall-products-left-group .shop-name img{
+		width: 18px;
+		height: 16px;
+		margin-right: 5px;
+	}
 		
 }
 
