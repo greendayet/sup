@@ -907,19 +907,6 @@ a.title-more{
 .products-type-head-rightfunction span{
 	display: inline-block;
 }
-/*.status-favorite{
-	display: inline-block;
-	width: 36px;
-	height: 31px;
-}
-.status-favorite img{
-	vertical-align: text-bottom;
-	width: 36px;
-	height: 31px;
-	background: url("../images/bg-icon.png") no-repeat;
-	background-size: 1222.222222% 1306.451612%;
-	background-position: 46.039603% 18.181818%;/*186 68
-}*/
 .status-favorite .btn-favorite{position: static;}
 .into-shop{
 	margin-right: 15px;
@@ -1310,7 +1297,7 @@ button.go-payment:hover{
  	color: #fff;
  }
  .stored img{
- 	margin-left: 5px;
+ 	margin-left: 10px;
  	width: 8px;
  	height: 9px;
  	vertical-align: middle;
