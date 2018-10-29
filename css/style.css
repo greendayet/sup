@@ -1335,13 +1335,13 @@ button.go-payment:hover{
 	padding: 35px 0px;
 }
 .currently-account{
-	color: #171c61;
+	color: #181D62;
 	padding: 30px 20px;
 	background: url("../images/bg_wallet.png") no-repeat;
 	width: 244px;
 	height: 239px;
 	box-sizing: border-box;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .currently-account ul{
 	margin: 20px 0px;
@@ -1351,6 +1351,9 @@ button.go-payment:hover{
 }
 .currently-account li{
 	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .currently-account li span{
 	margin-left: 25px;
@@ -1394,9 +1397,9 @@ button.go-payment:hover{
 .left-bottom-link li a:hover,.left-bottom-link li a.active{
 	background: #425b84;
 }
-.left-bottom-link span a.active,.left-bottom-link span a:hover{
+/*.left-bottom-link span a.active,.left-bottom-link span a:hover{
 	background: #7ebfd7;
-}
+}*/
 .left-bottom-link li:first-child img,.wallet-left-1{
 	vertical-align: sub;
 	margin-right: 10px;
@@ -1469,7 +1472,7 @@ button.go-payment:hover{
 .wallet-right-side .btn-wallet{
 	color: #333;
 	display: table;
-	margin: 100px auto 0px;
+	margin: 40px auto 0px;
 	border-radius: 10px;
 	padding-left: 45px;
 	padding-right: 45px;
@@ -2043,7 +2046,7 @@ word-break: break-all;
 	text-align: center;
 	
 }
-#accordion li span span{
+#accordion li span span,#accordion-wallet li span:first-child{
 	position: absolute;
 	right: 0px;
 	top:50%;
@@ -2069,6 +2072,42 @@ word-break: break-all;
 }
 #accordion li ul li span:last-child{
 	margin-right: 150px;
+}
+#accordion-wallet li span:first-child{
+	right: 18px;
+	top:39%;
+}
+#accordion-wallet li span:first-child.ui-icon{
+	border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 0px;
+	transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background: none;
+    width: 12px;height: 12px;
+}
+#accordion-wallet li .ui-state-active span:first-child{
+	transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    top:50%;
+}
+#accordion-wallet li > div:first-child{
+	padding: 0px !important;
+}
+#accordion-wallet li div:nth-child(2){
+	padding: 0px !important;
+	border-top: none;
+}
+#accordion-wallet .accorsing-content-1,#accordion-wallet .accorsing-content-2,#accordion-wallet .accorsing-content-3{
+	padding-top: 15px;
+}
+#accordion-wallet .accorsing-content-2 img{
+	margin-bottom: 0px;
+}
+#accordion-wallet li .remind span:first-child{
+	position: static;
+	transform: none;
 }
 
 .accorsing-content-2{
@@ -3182,6 +3221,9 @@ li.other-contact{
 	}
 	.mall-cart-list ul{
 		margin: 0px 10px 20px;
+	}
+	.currently-account ul{
+		font-size: 22px;
 	}
 	ul.all-item-group .cartline{
 		display: none;
