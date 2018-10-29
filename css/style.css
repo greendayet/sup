@@ -3349,13 +3349,17 @@ a.title-more{
 	visibility: visible;
 	margin-top: 10px;
 	display: table-cell;
+	overflow: hidden;
+	clear: both;
+	border:solid 1px #ddd;
 }
 .count-mobile input{
-	display: inline;
+	display: block;
+	float: left;
 	outline: 0;
 	padding: 0px 10px;
 	background: #fff;
-	border:solid 1px #ddd;
+	height: 30px;
 }
 	
 	.count-mobile input[type="button"]{
@@ -3366,8 +3370,8 @@ a.title-more{
 
 
 
-.count-min{border-right:solid 1px #ddd; color: #c7c8c9;font-size: 30px;border:none;background: transparent;}
-.count-text{color: #333;font-size: 18px;width: 50px;height: 30px; text-align: center;line-height: 30px; border:none;border-left:solid 1px #ddd;border-right:solid 1px #ddd;}
+.count-min{border-right:none; color: #c7c8c9;font-size: 25px;border:none;background: transparent;}
+.count-text{color: #333;font-size: 18px;width: 50px;text-align: center;border:none;border-left:solid 1px #ddd;border-right:solid 1px #ddd;}
 .count-add{color: #00A6D6;font-size: 25px;border:none;background: transparent;}
 
 .tbody li{
