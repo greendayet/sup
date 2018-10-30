@@ -3239,7 +3239,6 @@ li.other-contact{
 body.login-body.loginindex {
     overflow: hidden;
     height: 100%;
-	position: fixed;
 }
 	body,p,body.login-body{
 		font-size: 15px;
