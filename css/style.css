@@ -2445,6 +2445,7 @@ li.other-contact{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	position: relative;
 }
 .order-right-btn li{
 	margin-bottom: 10px;
@@ -3419,6 +3420,13 @@ a.title-more{
 		width: 49%;
 		border: solid 1px #872b2b;
 	}
+	.wrapper-admin .setting-left-list .threebox li{
+		width: 32.3%;
+		border: solid 1px #872b2b;
+	}
+	.setting-btn{
+		padding: 10px 25px;
+	}
 	.wrapper-admin .setting-left-list ul a{padding: 10px 0px;}
 	.w70{
 	width:100%;
@@ -4184,8 +4192,16 @@ a.title-more{
 	.login-password-mobile{
 		display: block;
 	}
+	.order-right-btn{
+		position: absolute;
+		right: 20px;
+		bottom: 0px;
+	}
 	.setting-right button{
 		display: none;
+	}
+	.setting-right .order-right-btn button{
+		display: block;
 	}
 	.setting-right .mobile-visibile button{
 		display: block;
