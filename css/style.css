@@ -2361,7 +2361,7 @@ li.other-contact{
 	text-align: center;
 	padding: 10px;
 	color: #8d8c8c;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .wrapper-admin .search-wrapper ul{
 }
@@ -2411,7 +2411,7 @@ li.other-contact{
 
 .order-box{
 	border:solid 1px #d6d6d6;
-	padding: 20px;
+	padding: 10px 20px;
 	position: relative;
 	margin-bottom: 20px;
 }
