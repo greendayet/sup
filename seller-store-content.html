@@ -40,7 +40,7 @@
 				<ul>
 					<li><a href="mall.html"><img src="images/svg/navi-icon-01.svg"><span>商城</span></a></li>
 					<li><a href="wallet-payA-step1.html"><img src="images/svg/navi-icon-02.svg"><span>钱包</span></a></li>
-					<li><a href="#"><img src="images/svg/navi-icon-03.svg"><span>扫描</span></a></li>
+					<li><a href="wallet-qrcode-01.html"><img src="images/svg/navi-icon-03.svg"><span>扫描</span></a></li>
 					<li><a href="ticket.html"><img src="images/svg/navi-icon-04.svg"><span>票券</span></a></li>
 					<li><a href="event-list.html"><img src="images/svg/navi-icon-05.svg"><span>活动</span></a></li>
 				</ul>
@@ -59,26 +59,11 @@
 						<div class="seller-store-head seller-store">
 							<h2 class="shop-name"><img src="images/img-trans.png"><span>我的店铺名</span></h2>
 							<div class="Evaluation">
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
-										<a href="#" class="Evaluation-btn">
-											<i class="far fa-star"></i>
-											<i class="fas fa-star"></i>
-										</a>
+										<button class="btn-star"></button>
+										<button class="btn-star"></button>
+										<button class="btn-star"></button>
+										<button class="btn-star"></button>
+										<button class="btn-star"></button>
 									</div>
 						</div>
 						<div class="seller-store-banner seller-banner-mobile"><img src="images/store-banner.jpg"></div>
@@ -255,6 +240,11 @@ function closeNav() {
 </script>
 <script type="text/javascript">
 	$('.btn-favorite').click(function() {
+	$(this).toggleClass('active');
+});
+</script>
+<script type="text/javascript">
+	$('.btn-star').click(function() {
 	$(this).toggleClass('active');
 });
 </script>
