@@ -3661,9 +3661,6 @@ a.title-more{
   .login-wrapper {
     max-width: 768px;
 	}
-	.login-body.loginindex .login-box{
-		overflow: hidden;
-	}
 	.login-box {
     border-radius: 0px;
     box-shadow: none; 
