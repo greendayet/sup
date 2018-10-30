@@ -3660,6 +3660,7 @@ a.title-more{
 	}
   .login-wrapper {
     max-width: 768px;
+	  overflow: hidden;
 	}
 	.login-box {
     border-radius: 0px;
