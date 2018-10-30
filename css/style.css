@@ -3656,6 +3656,9 @@ a.title-more{
   .login-wrapper {
     max-width: 768px;
 	}
+	.login-body.loginindex .login-box{
+		overflow: hidden;
+	}
 	.login-box {
     border-radius: 0px;
     box-shadow: none; 
@@ -3677,7 +3680,7 @@ a.title-more{
 		padding: 5px 20px 20px;
 	}
 	.loginindex .login-info ul li{
-		padding-top: 10px;
+		padding-top: 15px;
 	}
 	.loginindex .login-info ul{
 		margin-bottom: 0px;
