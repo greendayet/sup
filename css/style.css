@@ -3645,6 +3645,7 @@ a.title-more{
 	padding-top: 65px;
 
 }
+	html,body{overflow: hidden;}
 .login-wrapper h1,.login-wrapper h1 a{
 		display: block;
 		width: 144px; height: 119px;
