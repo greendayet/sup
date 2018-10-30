@@ -3656,7 +3656,6 @@ a.title-more{
 	html,
 body {
     overflow: hidden;
-    position: fixed;
     height: 100%;
 }
   .login-wrapper {
