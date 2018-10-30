@@ -577,16 +577,24 @@ a.title-more{
 	background-size: 1222.222222% 1306.451612%;
 	background-position: 46.039603% 18.181818%;/*186 68*/
 }
-
-/*.products-box-main1 .btn-favorite{
-	width: 24px;
-	height: 21px;
+.btn-star{
+	margin-right: 5px;
+	background: transparent;
+	border: none;
 }
-.products-box-main1 .btn-favorite:hover{
-	background: url("../images/bg-icon.png") no-repeat;
-	background-size: 1222.222222% 1306.451612%;
-	background-position: 46.039603% 18.181818%;/*186 68
-}*/
+.btn-star::before{
+	color: #1ba5d6;
+	font-size: 22px;
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f005";
+	font-weight: 400; 
+	cursor: pointer;
+	padding: 1px;
+}
+.btn-star.active::before{
+	content: "\f005";
+	font-weight: 900;
+}
 
 /* ======= 首頁最新活動 ======= */
 
@@ -911,17 +919,11 @@ a.title-more{
 	margin-right: 15px;
 }
 .Evaluation{}
-.Evaluation-btn{
-	color: #1ba5d6;
-}
-.Evaluation-btn:hover .far.fa-star,.Evaluation-btn .fas.fa-star {
-    display: none;
-}
-.Evaluation-btn:hover .fas.fa-star,.Evaluation-btn:active .fas.fa-star{
-    display: inline;
-}
 .Evaluation-mobile{
 	display: none;
+}
+.Evaluation button.btn-star::before{
+	color: #fff;
 }
 .community,.community-mobile-link{
 	position: absolute;
@@ -1181,7 +1183,7 @@ a.title-more{
 	padding: 20px 0px;
 	cursor: pointer;
 	border: none;
-	width: 49.5%;
+	width: 50%;
 }
 button.keep-shop{
 	background: #ceb44f;
@@ -3649,6 +3651,7 @@ a.title-more{
 	}
 	.login-body.loginindex{
 		padding-top: 50px !important;
+		overflow: hidden;
 	}
   .login-wrapper {
     max-width: 768px;
