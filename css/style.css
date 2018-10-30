@@ -2378,6 +2378,7 @@ li.other-contact{
 .search-wrapper-date{}
 .search-wrapper-date span{
 	width: 50%;
+	position: relative;
 }
 .wrapper-admin .search-wrapper select{
 	margin: 0px 5px;
@@ -2390,7 +2391,18 @@ li.other-contact{
 	width: 100%;
 	font-size: 15px;
 	color: #8d8c8c;
-	 -webkit-appearance: none;
+	-webkit-appearance: none;
+}
+.wrapper-admin .search-wrapper .arrow{
+	position: absolute;
+	right: 16px;
+	top: 13px;
+	border: solid #A64A4D;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .wrapper-admin .setting-left-list ul a{
