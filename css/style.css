@@ -2384,7 +2384,8 @@ li.other-contact{
 	vertical-align: middle;
 	padding:10px;
 	border: solid 1px #d1d1d5;
-	background: #fff;
+	background: #fff !important;
+	border-radius: 0 !important;
 	height: 44px;
 	width: 100%;
 	font-size: 15px;
