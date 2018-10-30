@@ -1328,7 +1328,7 @@ button.go-payment:hover{
 	display: block;
 }
 .wallet-left-side{
-	float: left;
+	/*float: left;*/
 	width: 244px;
 }
 .wallet-right-side{
@@ -2351,26 +2351,33 @@ li.other-contact{
 }
 .wrapper-admin .out-clear{
 	padding: 0px;
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .wrapper-admin .search-wrapper{
 	background: #efefef;
 	text-align: center;
-	padding: 21px;
+	padding: 10px;
 	color: #8d8c8c;
 	margin-bottom: 20px;
 }
-.wrapper-admin .search-wrapper li{
-	display: inline-block;
+.wrapper-admin .search-wrapper ul{
 }
 .wrapper-admin .search-wrapper li span{
 	margin: 0px 5px;
 }
-.wrapper-admin .search-wrapper li:first-child{
-	margin-right: 15px;
+.wrapper-admin .search-wrapper ul li:first-child{
+	width: 15%;
 }
-.wrapper-admin .search-wrapper li:last-child{
-	width: 80%;
+.wrapper-admin .search-wrapper ul li:last-child{
+	width: 85%;
+}
+
+.search-wrapper-date{}
+.search-wrapper-date span{
+	width: 50%;
 }
 .wrapper-admin .search-wrapper select{
 	margin: 0px 5px;
@@ -2378,9 +2385,10 @@ li.other-contact{
 	padding:10px;
 	border: solid 1px #d1d1d5;
 	height: 44px;
-	width: 40%;
+	width: 100%;
 	font-size: 15px;
 	color: #8d8c8c;
+	 -webkit-appearance: none;
 }
 
 .wrapper-admin .setting-left-list ul a{
@@ -3330,6 +3338,7 @@ li.other-contact{
 		padding-top: 10px;
 		padding-bottom: 0px;
 	}
+	.wrapper-admin .container{padding: 0px; }
 	.remind{
 		margin-bottom: 20px;
 		margin-left: 10px;
@@ -3375,7 +3384,7 @@ a.title-more{
 .content_box:nth-child(3n),.content_box:last-child{
 	margin-right: 0px;
 }
-	header{
+	header,.wrapper-admin header{
 		height: 100px;
 		background-position: center bottom -15px;
 	}
@@ -3402,6 +3411,10 @@ a.title-more{
 	}
 	.order-box{
 		border: none;
+		border-bottom: solid 10px #e5e5e5;
+	}
+	.order-box:last-child{
+		border-bottom: none;
 	}
 	.head{
 		position: relative;
@@ -3476,6 +3489,7 @@ a.title-more{
 	.promotion-mobile a,.home-mobile a,.malllist-mobile a{
 		color: #171c61;
 	}
+	.wrapper-admin .home-mobile a{color: #a6494d;}
 	.home-mobile{
 		display: block;
 		color: #171c61;
@@ -3778,6 +3792,11 @@ a.title-more{
 	h1{
 		display: none;
 	}
+	.wrapper-admin h1.head-mobile{
+		display: block;
+		width: auto;
+		padding-top: 0px;
+	}
 	h1.head-mobile{
 		display: block;
 		width: auto;
@@ -3787,6 +3806,9 @@ a.title-more{
 		font-size: 18px;
 		color: #181D62;
 		padding-top: 0px;
+	}
+	.wrapper-admin h1{
+		display: none;
 	}
 	.index h1,.index h1 a{
 		width: 29px;
@@ -3801,9 +3823,9 @@ a.title-more{
 		background: url(../images/logo_m.png) no-repeat;
 		background-size: 100%;
 	}
-	.index h1,.index h1 a,.w3-teal{
+	/*.index h1,.index h1 a,.w3-teal{
 		display: block;
-	}
+	}*/
 	.wrapper-admin h1.head-mobile{color: #a6494d;}
 	.path{
 		display: none;
@@ -4139,6 +4161,9 @@ a.title-more{
 		background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
 	}
 	.out-clear{padding: 0px;}
+	.wrapper-admin .out-clear{
+		display: block;
+	}
 	.setting-right .login-password-desktop{
 		display: none;
 	}
