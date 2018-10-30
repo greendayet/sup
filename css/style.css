@@ -4449,6 +4449,9 @@ a.title-more{
 		display: block;
 		text-align: center;
 	}
+	.wallet-step-block{
+		width: 80%;
+	}
 }
 @media only screen and (max-width:400px){
 	.login-box input{
