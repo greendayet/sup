@@ -3651,6 +3651,7 @@ a.title-more{
 	}
 	.login-body.loginindex{
 		padding-top: 25px !important;
+		padding-bottom: 0px !important;
 	}
   .login-wrapper {
     max-width: 768px;
@@ -3682,7 +3683,7 @@ a.title-more{
 		margin-bottom: 0px;
 	}
 	.login-box h1{
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 	}
 	.login-info ul li.language-choice div:nth-child(2),.login-info ul li > div:nth-child(2){
 		text-align: right;
