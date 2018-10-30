@@ -3676,13 +3676,13 @@ a.title-more{
 		padding: 5px 20px 20px;
 	}
 	.loginindex .login-info ul li{
-		padding-top: 15px;
+		padding-top: 10px;
 	}
 	.loginindex .login-info ul{
 		margin-bottom: 0px;
 	}
 	.login-box h1{
-		margin-bottom: 35px;
+		margin-bottom: 25px;
 	}
 	.login-info ul li.language-choice div:nth-child(2),.login-info ul li > div:nth-child(2){
 		text-align: right;
