@@ -3235,11 +3235,6 @@ li.other-contact{
 
 
 @media only screen and (max-width:768px){
-	html.loginindex,
-body.login-body.loginindex {
-    overflow: hidden;
-    height: 100%;
-}
 	body,p,body.login-body{
 		font-size: 15px;
 	}
@@ -3680,10 +3675,10 @@ a.title-more{
 	}
 	.loginindex .login-info{
 		border-radius: 10px;
-		padding: 5px 20px 20px;
+		padding: 5px 20px 15px;
 	}
 	.loginindex .login-info ul li{
-		padding-top: 15px;
+		padding-top: 12px;
 	}
 	.loginindex .login-info ul{
 		margin-bottom: 0px;
