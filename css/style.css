@@ -3645,18 +3645,15 @@ a.title-more{
 	padding-top: 65px;
 
 }
-	html,body{overflow: hidden;}
 .login-wrapper h1,.login-wrapper h1 a{
 		display: block;
 		width: 144px; height: 119px;
 	}
 	.login-body.loginindex{
 		padding-top: 50px !important;
-		overflow: hidden;
 	}
   .login-wrapper {
     max-width: 768px;
-	  overflow: hidden;
 	}
 	.login-box {
     border-radius: 0px;
