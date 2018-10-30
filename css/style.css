@@ -3650,7 +3650,7 @@ a.title-more{
 		width: 144px; height: 119px;
 	}
 	.login-body.loginindex{
-		padding-top: 50px !important;
+		padding-top: 25px !important;
 	}
   .login-wrapper {
     max-width: 768px;
@@ -3673,7 +3673,7 @@ a.title-more{
 	}
 	.loginindex .login-info{
 		border-radius: 10px;
-		padding-top: 25px;
+		padding: 25px 20px 25px;
 	}
 	.loginindex .login-info ul li{
 		padding-top: 15px;
