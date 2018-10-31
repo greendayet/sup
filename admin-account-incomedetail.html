@@ -34,49 +34,13 @@
 						</li>
 					</ul>
 				</div>
-				<!-- hamburger -->
-<span class="rwd-hamburger" onclick="openNav()">&#9776;</span>
-				
-				<!-- Sidebar -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="wallet-left-side setting">
-						<div class="setting-top">
-							<div class="setting-head">
-								<img class="user-photo" src="images/user.png">
-								<p class="personal-level ft13">等级<img src="images/img-trans.png"></p>
-								<p class="personal-name">Shaleen LIN</p>
-							</div>
-							<div class="acount-total">
-								<p class="ft15">帐户余额</p>
-								<ul>
-									<li>S COIN <span class="acount-money">1.000.000.000</span></li>
-									<li>USDT <span class="acount-money">1.000.000.000</span></li>
-									<li>ETH <span class="acount-money">1.000.000.000</span></li>
-									<li>SUP <span class="acount-money">1.000.000.000</span></li>
-								</ul>
-							</div>
-						</div>
-						<div class="setting-left-list">
-							<ul>
-								<li><a class="active" href="personal-setting.html">个人设定</a></li>
-								<li><a href="account-upgrate.html">账户升级</a></li>
-								<li><a href="member-management.html">会员管理</a></li>
-								<li><a href="wallet-setting.html">钱包设定</a></li>
-								<li><a href="transaction-record.html">交易纪录</a></li>
-								<li><a href="booking-info.html">订购信息</a></li>
-								<li><a href="mystore-info.html">我的店铺</a></li>
-								<li><a href="index.html">登出</a></li>
-							</ul>
-						</div>
-					</div>
-</div>
+				<div class="home-mobile"><a href="mystore-info.html"><i class="fas fa-angle-left"></i></a></div>
 			</div>
 			<nav class="nav-desktop">	
 				<ul>
-					<li class="active"><a href="admin-order.html"><img src="images/img-trans.png"><span>订单</span></a></li>
+					<li><a href="admin-order.html"><img src="images/img-trans.png"><span>订单</span></a></li>
 					<li><a href="admin-all-products.html"><img src="images/img-trans.png"><span>产品</span></a></li>
-					<li><a href="admin-account-incomedetail.html"><img src="images/img-trans.png"><span>帐务</span></a></li>
+					<li><a class="active" href="admin-account-incomedetail.html"><img src="images/img-trans.png"><span>帐务</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>		
@@ -91,13 +55,42 @@
 						<div class="setting-left-list">
 							<ul class="twobox">
 								<li><a class="active" href="admin-account-incomedetail.html">收益明细</a></li>
-								<li><a href="admin-account-total-award.html">金额结算</a></li>
+								<li><a href="admin-accountsearch.html">金额结算</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="wallet-right-side setting-right admin-order add-pro admin-acount">
+					<div class="wallet-right-side setting-right admin-order admin-acount">
+						<div class="search-wrapper">
+							<ul class="flex-center" style="justify-content:space-around;">
+								<li>查询</li>
+								<li>
+									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
+										<span class="flex-center">
+											<i class="arrow down"></i>
+											<b>自</b>
+											<select>
+												<option>20810909</option>
+												<option>20810909</option>
+												<option>20810909</option>
+												<option>20810909</option>
+											</select>
+										</span>
+										<span class="flex-center">
+											<i class="arrow down"></i>
+											<b>至</b>
+											<select>
+												<option>20810909</option>
+												<option>20810909</option>
+												<option>20810909</option>
+												<option>20810909</option>
+											</select>
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
 						<div class="w70 order-group">
-							<div class="order-box">
+							<div class="order-box" style="border-bottom: none;">
 								<ul>
 									<li class="order-time"><img class="order-head" src="images/img-trans.png">2018/07/20<b>09:00</b></li>
 									<li class="cartline"></li>

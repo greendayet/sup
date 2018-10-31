@@ -15,6 +15,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
+				<h1 class="head-mobile">帐务</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">登出</a></li>
@@ -33,13 +34,14 @@
 						</li>
 					</ul>
 				</div>
+				<div class="home-mobile"><a href="mystore-info.html"><i class="fas fa-angle-left"></i></a></div>
 			</div>
 			<nav class="nav-desktop">
 				
 				<ul>
-					<li class="active"><a href="admin-order.html"><img src="images/img-trans.png"><span>订单</span></a></li>
+					<li><a href="admin-order.html"><img src="images/img-trans.png"><span>订单</span></a></li>
 					<li><a href="admin-all-products.html"><img src="images/img-trans.png"><span>产品</span></a></li>
-					<li><a href="admin-account-incomedetail.html"><img src="images/img-trans.png"><span>帐务</span></a></li>
+					<li><a class="active" href="admin-account-incomedetail.html"><img src="images/img-trans.png"><span>帐务</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
@@ -55,103 +57,28 @@
 						<div class="setting-left-list">
 							<ul class="twobox">
 								<li><a href="admin-account-incomedetail.html">收益明细</a></li>
-								<li><a href="admin-account-total-award.html">金额结算</a></li>
+								<li><a class="active" href="admin-accountsearch.html">金额结算</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="wallet-right-side setting-right admin-order">
-						<div class="search-wrapper">
-							<ul>
+					<div class="wallet-right-side setting-right admin-order admin-acount">
+						<div class="search-wrapper search-account">
+							<ul class="flex-center" style="justify-content:space-around;">
 								<li>查询</li>
 								<li>
-									<div>
-										<span>自
+									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
+										<span class="flex-center">
+											<i class="arrow down"></i>
 											<select>
-												<option>20810909</option>
-												<option>20810909</option>
-												<option>20810909</option>
-												<option>20810909</option>
-											</select>
-										</span>
-										<span>至
-											<select>
-												<option>20810909</option>
-												<option>20810909</option>
-												<option>20810909</option>
-												<option>20810909</option>
+												<option>金额 / 提领纪录</option>
+												<option>金额</option>
+												<option>提领纪录</option>
 											</select>
 										</span>
 									</div>
 								</li>
 							</ul>
 						</div>
-						<div class="w70 order-group">
-							<div class="order-box">
-								<ul>
-									<li class="order-time"><img class="order-head" src="images/img-trans.png">2018/07/20<b>09:00</b></li>
-									<li class="cartline"></li>
-								</ul>
-								<ul class="searchlist">
-									<li>
-										<p>2018.07.01</p>
-										<p>ETH 10,000</p>
-									</li>
-									<li>
-										<p>2018.07.01</p>
-										<p>ETH 10,000</p>
-									</li>
-									<li>
-										<p>2018.07.01</p>
-										<p>ETH 10,000</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!--<div class="personal-form">
-							<div style="color: #0e3244;margin-bottom: 20px" class="ft24">我的店铺</div>
-							<ul class="personal-info">
-								<li class="stored-currency"><span>等 级<img class="gold" src="images/img-trans.png"></span><div>
-									<button class="setting-btn2 setting-btn-lightblue" onclick="location.href='mall-checkout.html'">我要开店</button>
-									</div>
-								</li>
-								<li><span>姓   名</span><div><input type="text" value="林君玲"></div></li>
-								<li class="personal-mobile"><span>手   机</span>
-									<div>
-									<select>
-										<option>+123</option>
-										<option>+886</option>
-									</select>
-									<input type="tel" value="+886 920123323">
-									</div>
-								</li>
-								<li><span>E-mail</span><div><input type="email" value="shaleen.lin@gmail.com"></div></li>
-								<li class="credit"><span>信 用 卡</span>
-									<div>
-										<p><input type="radio" name="credit" value="VISA">VISA</p>
-										<p><input type="radio" name="credit" value="Master">Master</p>
-										<p><input type="radio" name="credit" value="JCB">JCB</p>
-									</div>
-								</li>
-								<li><span>卡   号</span><div><input type="text"></div></li>
-								<li><span>有效期限</span><div>
-									<select>
-										<option>1999</option>
-										<option>2000</option>
-										<option>2018</option>
-									</select>
-									<p>/</p>
-									<select>
-										<option>22</option>
-										<option>33</option>
-										<option>24</option>
-									</select>
-									<p>(月/年)</p>
-									</div></li>
-								<li class="verification-code"><span>验 证 码</span><div><input type="text"><img src="images/vcode.gif"></div></li>
-							</ul>
-							<button onclick="location.href='account-upgrate-storage-done.html'" class="setting-btn setting-btn-lightblue">确认刷卡</button>
-							<div class="clear"></div>
-						</div>-->
 					</div>
 				</div>
 				</div>
