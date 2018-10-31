@@ -42,10 +42,6 @@
 					<li><a class="active" href="admin-all-products.html"><img src="images/svg/admin-icon-02.svg"><span>产品</span></a></li>
 					<li><a href="admin-account-incomedetail.html"><img src="images/svg/admin-icon-03.svg"><span>帐务</span></a></li>
 				</ul>
-				<div class="searchbox">
-					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
-					
-				</div>
 			</nav>
 		</header>
 		<div class="main">
@@ -55,21 +51,22 @@
 					<div class="wallet-left-side setting">
 						<div class="setting-left-list">
 							<ul class="threebox">
-								<li><a href="admin-order.html">全部商品</a></li>
-								<li><a href="admin-history-order.html">下架商品</a></li>
-								<li><a class="active" href="admin-order.html">新增商品</a></li>
+								<li><a href="admin-all-products.html">全部商品</a></li>
+								<li><a href="admin-out-products.html">下架商品</a></li>
+								<li><a class="active" href="admin-add-products.html">新增商品</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="wallet-right-side setting-right add-pro">
-						<div class="w70">
+						<div class="w70 order-group">
 							<div class="personal-form">
 							<ul class="personal-info">
-								<li><span>标题</span><div><input type="text" value="超绝体验课程，只到7月底先抢先赢!"></div></li>
+								<li><span>标题</span><div><input type="text" placeholder="不超過30個中文字"></div></li>
 								<li class="personal-mobile products-catgory"><span>分类</span>
-									<div>
+									<div class="selectout">
+										<i style="color: #868686;" class="arrowdown"></i>
 									<select>
-										<option>鞋包配飾</option>
+										<option>選擇分類</option>
 										<option>12345</option>
 									</select>
 									</div>
@@ -80,30 +77,37 @@
 										<option>USDT</option>
 										<option>S COIN</option>
 									</select>
-									<input type="text" value="3580">
+									<input type="text">
 									</div>
 								</li>
-								<li><span>属性</span><div><input type="text" value="产品"></div></li>
+								<li class="personal-mobile products-catgory">
+									<span>属性</span>
+									<div class="selectout">
+										<i style="color: #868686;" class="arrowdown"></i>
+									<select>
+										<option value="0">產品 / 票券</option>
+										<option>12345</option>
+									</select>
+									</div>
+								</li>
 								<li class="update-photo"><span>照片</span>
 									<div>
 										<div class="updatephoto-group">
-											<div class="updatephoto-box"><button><i class="fas fa-times-circle"></i></button><img src="images/img-product-small.jpg"></div>
-											<div class="updatephoto-box"><button><i class="fas fa-times-circle"></i></button><img src="images/img-product-small.jpg"></div>
-											<div class="updatephoto-box"><button><i class="fas fa-times-circle"></i></button><img src="images/img-product-small.jpg"></div>
-											<div class="updatephoto-box"><button><i class="fas fa-times-circle"></i></button><img src="images/img-product-small.jpg"></div>
-											<div class="updatephoto-box"><button><i class="fas fa-times-circle"></i></button><img src="images/img-product-small.jpg"></div>
+											<div class="updatephoto-box"><button><i class="fas fa-times-circle" onclick="this.parentElement.parentElement.style.display='none';"></i></button><img src="images/img-product-small.jpg"></div>
+											<div class="updatephoto-box"><button><i class="fas fa-times-circle" onclick="this.parentElement.parentElement.style.display='none';"></i></button><img src="images/img-product-small.jpg"></div>
+											<div class="updatephoto-box"><button><i class="fas fa-times-circle" onclick="this.parentElement.parentElement.style.display='none';"></i></button><img src="images/img-product-small.jpg"></div>
 										</div>
 										<img class="admin-updatephoto" src="images/img-trans.png">
 									</div>
 								</li>
-								<li><span>说明</span><div><textarea>adasds</textarea></div></li>
+								<li><span>说明</span><div><textarea placeholder="產品說明"></textarea></div></li>
 							</ul>
+						</div>
 							<div class="add-pro-btn">
 								<div><button onclick="location.href='#'" class="setting-btn middle-gray">取消</button></div>
-								<div><button onclick="location.href='#'" class="setting-btn setting-btn-lightblue">预览</button>
+								<div><button onclick="location.href='admin-products-review.html'" class="setting-btn setting-btn-lightblue">预览</button>
 							<button onclick="location.href='admin-all-products.html'" class="setting-btn red">确认送出</button></div>
 							</div>
-						</div>
 						</div>
 					</div>
 				</div>

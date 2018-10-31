@@ -42,10 +42,6 @@
 					<li><a class="active" href="admin-all-products.html"><img src="images/svg/admin-icon-02.svg"><span>产品</span></a></li>
 					<li><a href="admin-account-incomedetail.html"><img src="images/svg/admin-icon-03.svg"><span>帐务</span></a></li>
 				</ul>
-				<div class="searchbox">
-					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
-					
-				</div>
 			</nav>
 		</header>
 		<div class="main">
@@ -55,19 +51,21 @@
 					<div class="wallet-left-side setting">
 						<div class="setting-left-list">
 							<ul class="threebox">
-								<li><a href="admin-order.html">全部商品</a></li>
-								<li><a class="active" href="admin-history-order.html">下架商品</a></li>
-								<li><a href="admin-order.html">新增商品</a></li>
+								<li><a href="admin-all-products.html">全部商品</a></li>
+								<li><a class="active" href="admin-out-products.html">下架商品</a></li>
+								<li><a href="admin-add-products.html">新增商品</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="wallet-right-side setting-right admin-order">
 						<div class="search-wrapper">
-							<ul>
+							<ul class="flex-center" style="justify-content:space-around;">
 								<li>查询</li>
 								<li>
-									<div>
-										<span>自
+									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
+										<span class="flex-center">
+											<i class="arrow down"></i>
+											<b>自</b>
 											<select>
 												<option>20810909</option>
 												<option>20810909</option>
@@ -75,7 +73,9 @@
 												<option>20810909</option>
 											</select>
 										</span>
-										<span>至
+										<span class="flex-center">
+											<i class="arrow down"></i>
+											<b>至</b>
 											<select>
 												<option>20810909</option>
 												<option>20810909</option>
@@ -88,9 +88,11 @@
 							</ul>
 						</div>
 						<div class="w70 order-group">
+							<!--products group-->
 							<div class="order-box order-products">
+								<div class="order-time-group">
+								<div class="order-time-img"><img src="images/img-product-1-2.jpg"></div>
 								<ul>
-									<li class="order-time"><img class="order-head" src="images/img-trans.png">2018/07/20<b>09:00</b></li>
 									<li class="orange">超绝体验课程，只到7月底先抢先赢!</li>
 									<li>分類：流行手拿包</li>
 									<li>售價：USDT 3580</li>
@@ -98,18 +100,22 @@
 									<li>照片：1</li>
 									<li>運費：USDT 60</li>
 								</ul>
+								</div>
 								<ul class="order-right-btn">
 									<li>
 										<button class="setting-btn brown">上架</button>
 									</li>
 									<li>
-										<button class="setting-btn middle-gray">删除</button>
+										<button class="setting-btn middle-gray" onclick="this.parentElement.parentElement.parentElement.style.display='none';">删除</button>
 									</li>
 								</ul>
 							</div>
+							<!--products group-->
+							<!--products group-->
 							<div class="order-box order-products">
+								<div class="order-time-group">
+								<div class="order-time-img"><img src="images/img-product-1-2.jpg"></div>
 								<ul>
-									<li class="order-time"><img class="order-head" src="images/img-trans.png">2018/07/20<b>09:00</b></li>
 									<li class="orange">超绝体验课程，只到7月底先抢先赢!</li>
 									<li>分類：流行手拿包</li>
 									<li>售價：USDT 3580</li>
@@ -117,18 +123,22 @@
 									<li>照片：1</li>
 									<li>運費：USDT 60</li>
 								</ul>
+								</div>
 								<ul class="order-right-btn">
 									<li>
 										<button class="setting-btn brown">上架</button>
 									</li>
 									<li>
-										<button class="setting-btn middle-gray">删除</button>
+										<button class="setting-btn middle-gray" onclick="this.parentElement.parentElement.parentElement.style.display='none';">删除</button>
 									</li>
 								</ul>
 							</div>
+							<!--products group-->
+							<!--products group-->
 							<div class="order-box order-products">
+								<div class="order-time-group">
+								<div class="order-time-img"><img src="images/img-product-1-2.jpg"></div>
 								<ul>
-									<li class="order-time"><img class="order-head" src="images/img-trans.png">2018/07/20<b>09:00</b></li>
 									<li class="orange">超绝体验课程，只到7月底先抢先赢!</li>
 									<li>分類：流行手拿包</li>
 									<li>售價：USDT 3580</li>
@@ -136,15 +146,17 @@
 									<li>照片：1</li>
 									<li>運費：USDT 60</li>
 								</ul>
+								</div>
 								<ul class="order-right-btn">
 									<li>
 										<button class="setting-btn brown">上架</button>
 									</li>
 									<li>
-										<button class="setting-btn middle-gray">删除</button>
+										<button class="setting-btn middle-gray" onclick="this.parentElement.parentElement.parentElement.style.display='none';">删除</button>
 									</li>
 								</ul>
 							</div>
+							<!--products group-->
 						</div>
 					</div>
 				</div>
