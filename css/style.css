@@ -28,13 +28,29 @@ a,button,.btn{
 	color: #333;
 }
 button,input{
-	font-size: 21px;
+	font-size: 15px;
 }
 
 .searchbox input{
 	font-size: 15px;
 }
-
+.selectout{
+	position: relative;
+}
+.selectout i{
+	position: absolute;
+	right: 16px;
+	top:10px;
+}
+.selectout option:first-child{color: #868686;}
+.arrowdown{
+	border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+	transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 .flexbox{
 	display: flex;
 	justify-content: flex-start;
@@ -43,6 +59,12 @@ button,input{
 .flexbox span:last-child{
 	margin-left: 2%;
 }
+.wrapper-admin ::-webkit-input-placeholder{
+		color: #b5b5b6;
+	}
+.wrapper-admin select{
+		-webkit-appearance:none;
+	}
 .bluegreen{
 	background: #7ceaee;
 	color: #124670 !important;
@@ -371,11 +393,13 @@ footer{
 	background: #f5f5f4;
 	padding-top: 25px;
 }
+.wrapper-admin .main{
+	padding-top: 10px;
+}
 .container{
 	width: 1200px;
 	margin: 0px auto;
 }
-
 .title-blue{
 	background:#7ebfd7;
 	color: #fff;
@@ -2247,7 +2271,7 @@ section.record li.tbody li{
 	margin: 0px auto;
 }
 .w70{
-	width:70%;
+	padding-left: 10px;
 	margin: 0px auto;
 }
 .mr10{
@@ -2344,16 +2368,15 @@ li.other-contact{
 	background: none;
 	padding-top: 0px;
 }
-.wrapper-admin .setting-left-list ul a.active,.wrapper-admin .setting-left-list ul a:hover,.wrapper-admin nav.nav-desktop a:hover,.wrapper-admin nav.nav-desktop a.active{
+.wrapper-admin .setting-left-list ul a.active,.wrapper-admin .setting-left-list ul a:hover,.wrapper-admin nav.nav-desktop a:hover{
 	background-image: none;
 	background: #872b2b;
 	color: #fff;
 }
 .wrapper-admin .out-clear{
-	padding: 0px;
 	display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .wrapper-admin .search-wrapper{
@@ -2421,7 +2444,7 @@ li.other-contact{
 	top: 20px;
 }
 .order-box li{
-	margin-bottom: 12px;
+	margin-bottom: 7px;
 }
 .order-box .cartline{
 	margin: 0px 0px 12px 0px;
@@ -2441,11 +2464,15 @@ li.other-contact{
 .order-time b{
 	margin-left: 10px;
 }
+.order-time-img{margin-right: 10px;width: 30%;}
+.order-time-img img{
+	max-width: 100%;
+}
+.order-time-group{display: flex;justify-content: flex-start;align-items: flex-start;margin-bottom: 20px;flex:1;margin-right: 5%;}
 .order-products{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	position: relative;
 }
 .order-right-btn li{
 	margin-bottom: 10px;
@@ -2457,7 +2484,9 @@ li.other-contact{
 	padding: 35px 0px;
 }
 .wrapper-admin .personal-form{
-	width: auto;
+	width: 80%;
+    padding: 0px 10px;
+    box-sizing: border-box;
 }
 .wrapper-admin .add-pro textarea{
 	min-height: 150px;
@@ -2532,6 +2561,18 @@ li.other-contact{
 	display: flex;
 	justify-content: space-between;
 }
+.add-pro-btn div{}
+.add-pro-btn div:last-child{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+}
+.add-pro-btn div:last-child button{
+	flex:1;
+	margin-left: 2%;
+}
+.setting-btn{padding: 15px 25px;}
 .searchlist li{
 	display: flex;
 	justify-content: space-between;
@@ -3264,8 +3305,21 @@ li.other-contact{
 	button,input{
 		font-size: 15px;
 	}
+	.add-pro-btn div:first-child{display: none;}
+	.add-pro-btn div:last-child{
+		width: 100%;
+	}
+.add-pro-btn div:last-child button{
+	width: 50%;
+	margin: 0px;
+}
 	.wrapper, .wrapper-admin{
 		max-width: 768px;
+	}
+	.wrapper-admin nav.nav-desktop a.active{
+		background-image: none;
+	background: #872b2b;
+	color: #fff;
 	}
 	.left-side ul::-webkit-scrollbar {
     height: 3px;
@@ -3425,11 +3479,12 @@ a.title-more{
 		border: solid 1px #872b2b;
 	}
 	.setting-btn{
-		padding: 10px 25px;
+		padding: 10px 15px;
 	}
 	.wrapper-admin .setting-left-list ul a{padding: 10px 0px;}
 	.w70{
 	width:100%;
+		padding-left: 0px;
 	}
 	.order-box{
 		border: none;
@@ -3438,6 +3493,7 @@ a.title-more{
 	.order-box:last-child{
 		border-bottom: none;
 	}
+	.wrapper-admin .add-pro{padding:0px;}
 	.head{
 		position: relative;
 		height: 40px;
@@ -4172,6 +4228,7 @@ a.title-more{
 	.personal-form li span:last-child{
 		text-align: right;
 	}
+	.wrapper-admin .personal-form{width: 100%;}
 	.mobile-visibile{
 		display: block;
 	}
@@ -4193,12 +4250,17 @@ a.title-more{
 		display: block;
 	}
 	.order-right-btn{
-		position: absolute;
-		right: 20px;
-		bottom: 0px;
+		overflow: hidden;clear: both;
 	}
-	.setting-right button{
+	.order-right-btn li{
+		float: right;
+		margin-left: 1%;
+	}
+	/*.setting-right button{
 		display: none;
+	}*/
+	.order-products{
+	display: block;
 	}
 	.setting-right .order-right-btn button{
 		display: block;
