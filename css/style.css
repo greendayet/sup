@@ -2403,6 +2403,9 @@ li.other-contact{
 	width: 50%;
 	position: relative;
 }
+.search-account .search-wrapper-date span{
+	width: 100%;
+}
 .wrapper-admin .search-wrapper select{
 	margin: 0px 5px;
 	vertical-align: middle;
@@ -3503,7 +3506,7 @@ a.title-more{
 	.mallindex .searchbox{
 	display: block;
 	}
-	.main{
+	.wrapper-admin .main,.main{
 	padding-top: 0px;
 	}
 	.mall-checkout{
