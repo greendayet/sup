@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="bg-gray">
 <head>
 <meta charset="utf-8">	
 <title>SUPREME - 店铺后台</title>
@@ -49,7 +49,7 @@
 				</div>
 			</nav>
 		</header>
-		<div class="main">
+		<div class="main" style="background: none;">
 			<div class="container">
 				<div class="inner-mall">
 					<div class="bg-white out-clear">
@@ -69,10 +69,10 @@
 									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
 										<span class="flex-center">
 											<i class="arrow down"></i>
-											<select>
+											<select onchange="window.location.href=this.value;">
 												<option>金额 / 提领纪录</option>
-												<option>金额</option>
-												<option>提领纪录</option>
+												<option value="admin-account-much.html">金额</option>
+												<option value="admin-accountrecord.html">提领纪录</option>
 											</select>
 										</span>
 									</div>

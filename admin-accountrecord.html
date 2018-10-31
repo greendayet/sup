@@ -63,8 +63,19 @@
 					</div>
 					<div class="wallet-right-side setting-right admin-order">
 						<div class="search-wrapper">
-							<ul class="flex-center" style="justify-content:space-around;">
-								<li>查询</li>
+							<ul class="search-sort">
+								<li>
+									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
+										<span class="flex-center">
+											<i class="arrow down"></i>
+											<b>查询</b>
+											<select onchange="window.location.href=this.value;">
+												<option value="admin-accountrecord.html">提领纪录</option>
+												<option value="admin-account-much.html">金额</option>
+											</select>
+										</span>
+									</div>
+								</li>
 								<li>
 									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
 										<span class="flex-center">

@@ -57,34 +57,35 @@
 						<div class="setting-left-list">
 							<ul class="twobox">
 								<li><a href="admin-account-incomedetail.html">收益明细</a></li>
-								<li><a href="admin-accountsearch.html">金额结算</a></li>
+								<li><a class="active" href="admin-accountsearch.html">金额结算</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="wallet-right-side setting-right admin-order add-pro admin-acount-much">
+					<div class="wallet-right-side setting-right admin-order admin-acount-much">
 						<div class="search-wrapper">
-							<ul class="flex-center" style="justify-content:space-around;">
-								<li>查询</li>
+							<ul class="search-sort account-much">
 								<li>
 									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
 										<span class="flex-center">
 											<i class="arrow down"></i>
-											<b>自</b>
-											<select>
-												<option>20810909</option>
-												<option>20810909</option>
-												<option>20810909</option>
-												<option>20810909</option>
+											<b>查询</b>
+											<select onchange="window.location.href=this.value;">
+												<option value="admin-account-much.html">金额</option>
+												<option value="admin-accountrecord.html">提领纪录</option>
 											</select>
 										</span>
+									</div>
+								</li>
+								<li>
+									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
 										<span class="flex-center">
 											<i class="arrow down"></i>
-											<b>至</b>
+											<b class="money-kind">币别</b>
 											<select>
-												<option>20810909</option>
-												<option>20810909</option>
-												<option>20810909</option>
-												<option>20810909</option>
+												<option>USDT</option>
+												<option>S COIN</option>
+												<option>ETH</option>
+												<option>SUP</option>
 											</select>
 										</span>
 									</div>
