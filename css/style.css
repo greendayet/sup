@@ -2653,6 +2653,9 @@ li.other-contact{
 .getmoney span{
 	margin: 0px 10px;
 }
+.getmoney div:first-child{
+	flex:1;
+}
 .money-blue,.money-gray,.money-red{
 	vertical-align: middle;
 	margin-right: 10px;
@@ -4659,6 +4662,11 @@ ul.search-sort .search-wrapper-date span{
 	}
 	.register-group{
 	width: 320px;
+	}
+	.getmoney span{
+	margin: 0px 10px;
+	display: block;
+	text-indent: 25px;
 	}
 }
 
