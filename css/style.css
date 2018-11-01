@@ -30,6 +30,9 @@ a,button,.btn{
 button,input{
 	font-size: 15px;
 }
+.clearboth{
+	clear: both;
+}
 .money-kind{display: none;}
 .searchbox input{
 	font-size: 15px;
@@ -958,7 +961,7 @@ a.title-more{
 .Evaluation button.btn-star::before{
 	color: #fff;
 }
-.community,.community-mobile-link{
+.community-mobile-link{
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
@@ -1674,10 +1677,8 @@ button.go-payment:hover{
 	display: flex;
 	flex:1;
 }
-.editbox{
-}
 .editbox-group figure{
-	margin-right: 20px;
+	margin-right: 2%;
 }
 .editbox-group img{
 	max-width: 100%;
@@ -1686,19 +1687,41 @@ button.go-payment:hover{
 .event-head{
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
-	align-content: flex-end;
-	padding-bottom: 15px;
+	align-items: flex-start;
+	align-content: flex-start;
+	float: right;
+	width: 56%;
+}
+.event-name{width: 100%;margin-bottom: 20px;}
+.event-name h2{
 	border-bottom: solid 1px #c6c6c6;
+	padding-bottom: 7px;
+	margin-bottom: 15px;
+}
+.event-name date{
+	float: left;
+}
+.event-bottom{
+	flex:1;
 }
 .right-event-type{
 	width: 100%;
 	position: relative;
+	overflow: hidden;
+	clear: both;
+}
+.right-event-type figure{
+	float: left;
+	width: 42%;
 }
 .right-event-type .shop-name{
 	font-size: 24px;
 	color: #171c61;
 	margin-right: 10px;
+}
+.right-event-type .editbox{
+	float: right;
+	width: 56%;
 }
 
 .date{
@@ -1706,7 +1729,7 @@ button.go-payment:hover{
 }
 .link-function{
 	position: relative;
-	padding-top: 15px;
+	float: right;
 }
 .link-function .community{
 	top:15px;
@@ -3234,14 +3257,6 @@ li.other-contact{
 	.simpleLens-lens-element {
     width: 450px;
 	}
-	.link-function .community{
-	top:15px;
-	right: 0px;
-	left:0px;
-	}
-	.link-function{
-		margin-bottom: 70px;
-	}
 	.w90.booking-info{
 	display: table;
 	margin: 0px auto;
@@ -3351,6 +3366,9 @@ li.other-contact{
 
 
 @media only screen and (max-width:768px){
+	body{
+		background: #f5f5f4;
+	}
 	body,p,body.login-body{
 		font-size: 15px;
 	}
@@ -3359,7 +3377,10 @@ li.other-contact{
 	}
 	.bg-gray .bg-white{
 	background: transparent;
-}
+	}
+	.products-info > div{
+		display: none;
+	}
 .add-pro-btn{width: 100%;}
 	.add-pro-btn div:last-child{
 		flex: 2;
@@ -3369,6 +3390,7 @@ li.other-contact{
 	width: 50%;
 	margin: 0px;
 }
+	.ticket-group{background: #fff;padding: 10px 0px;}
 .money-kind{display: block;visibility: hidden;}
 	.wrapper, .wrapper-admin{
 		max-width: 768px;
@@ -3461,6 +3483,10 @@ li.other-contact{
 	}
 	.event-box-out li figure img{
 		width: 96px;
+	}
+	.event-head,.right-event-type figure,.right-event-type .editbox{
+		float: none;
+		width: 100%;
 	}
 	.products-type-head{
 		margin-bottom: 10px;
