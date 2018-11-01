@@ -2002,8 +2002,9 @@ word-break: break-all;
 }
 .setting-right button{
 	float: right;
-	margin-left: 15px;
+	margin-left: 4px;
 }
+.store-entrance-btn .setting-btn2{font-size: 13px;padding: 15px;}
 .clear{
 	clear: both;
 }
@@ -3470,6 +3471,7 @@ li.other-contact{
 	.all-item-group .cartline:last-child{
 	display:none;
 }
+.booking-info .mall-cart ul .cartline:last-child{display: none;}
 /* Track */
 .left-side ul.category-list::-webkit-scrollbar-track {
 	background: rgba(68,166,204,.7);
