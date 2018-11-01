@@ -1437,7 +1437,7 @@ button.go-payment:hover{
 }
 .left-bottom-link span a{
 	background: #425b84;
-	padding: 20px 15px;
+	padding: 10px 20px;
 	display: block;
 	color: #fff;
 }
@@ -1478,13 +1478,18 @@ button.go-payment:hover{
 	width: 22px;
 	vertical-align: sub;
 	margin-right: 10px;}
-.wallet-step-block{
-	display: table;
-	margin: 0px auto;
-}
+.wallet-step-block{width: 80%;margin: 0px auto;}
 .wallet-step-block div{
-	margin-bottom: 20px;
 	text-align: center;
+	margin-bottom: 20px;
+	/*position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);*/
+}
+.qrcode-img{}
+.qrcode-img img{
+	max-width: 100%;
 }
 
 .count{
@@ -1784,6 +1789,7 @@ button.go-payment:hover{
 .tooltiptext .qrcode-img{
 	margin-bottom: 20px;
 }
+
 .seller-top{
 	margin-bottom: 15px;
 }
@@ -1970,7 +1976,7 @@ word-break: break-all;
 	align-items: center;
 }
 .personal-form ul{
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 .personal-form li span{
 	flex: 1;
@@ -2187,7 +2193,7 @@ word-break: break-all;
 	position: static;
 	transform: none;
 }
-
+#accordion-wallet.qrsave02 li .ui-accordion-header-icon{display: none !important;}
 .accorsing-content-2{
 	display: flex;
 	justify-content: space-around;
@@ -3390,7 +3396,7 @@ li.other-contact{
 	width: 50%;
 	margin: 0px;
 }
-	.ticket-group{background: #fff;padding: 10px 0px;}
+	.ticket-group{background: #fff;}
 .money-kind{display: block;visibility: hidden;}
 	.wrapper, .wrapper-admin{
 		max-width: 768px;
@@ -3471,7 +3477,7 @@ li.other-contact{
 		line-height: 60px;
 	}
 	.event-box-out{
-		padding: 0px 10px;
+		padding: 10px 10px;
 		font-size: 13px;
 	}
 	.event-box-out p{
@@ -4282,6 +4288,7 @@ a.title-more{
 	.wallet-pay-none{display: none;}
 	.editbox-group{
 		display: block;
+		padding: 0px 10px 50px;
 	}
 	.editbox-group figure{
 		text-align: center;
@@ -4331,7 +4338,7 @@ a.title-more{
 	.setting-mobile-bg{
 		background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
 	}
-	.out-clear{padding: 0px;}
+	.out-clear{padding: 0px;height: calc(100vh - 100px);}
 	.wrapper-admin .out-clear{
 		display: block;
 	}
@@ -4451,7 +4458,7 @@ a.title-more{
 	}
 	.setting-wrapper header{
 		background: none;
-		height: 105px;
+		height: 40px;
 	}
 	.setting-wrapper .wallet-right-side{
 		padding: 0px;
@@ -4616,7 +4623,17 @@ ul.search-sort .search-wrapper-date{
 }
 ul.search-sort .search-wrapper-date span{
 	width: 45%;
-}	
+}
+	.wallet-qrcode .wallet-step-block{
+	position: relative;
+    height: calc(100vh - 100px);
+	}
+	.wallet-qrcode .wallet-step-block div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 		
 }
 
@@ -4677,9 +4694,6 @@ ul.search-sort .search-wrapper-date span{
 	.seller-contact{
 		display: block;
 		text-align: center;
-	}
-	.wallet-step-block{
-		width: 80%;
 	}
 }
 @media only screen and (max-width:400px){
