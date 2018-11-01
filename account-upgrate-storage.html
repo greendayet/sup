@@ -91,51 +91,79 @@
 						<div class="personal-form">
 							<div style="color: #0e3244;margin-bottom: 20px" class="ft24 storage-name">储值</div>
 							<ul class="personal-info">
-								<li class="stored-currency"><span>储值币种</span><div>
-									<select>
-										<option>USDT</option>
-										<option>USDT</option>
-										<option>sup</option>
+								<li class="stored-currency"><span>储值币种</span>
+									<div>
+									<div class="selectout">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select style="width: 100%;">
+										<option value="0">USDT</option>
+										<option>SUP</option>
 									</select>
+									</div>
 									<p>刷卡金额</p>
-									<input type="tel" value="500">
+									<input style="flex:1;" type="tel" value="500">
 									<p>USD</p>
 									</div>
 								</li>
 								<li><span>姓   名</span><div><input type="text" value="林君玲"></div></li>
 								<li class="personal-mobile"><span>手   机</span>
 									<div>
-									<select>
+									<div class="selectout">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select style="width: 100%;margin-right: 0;">
+										<option value="0">+886</option>
 										<option>+123</option>
-										<option>+886</option>
 									</select>
-									<input type="tel" value="+886 920123323">
 									</div>
+									<input style="margin-left: 5%;" type="tel" value="+886 920123323">
+										</div>
 								</li>
 								<li><span>E-mail</span><div><input type="email" value="shaleen.lin@gmail.com"></div></li>
 								<li class="credit"><span>信 用 卡</span>
-									<div>
-										<p><input type="radio" name="credit" value="VISA">VISA</p>
-										<p><input type="radio" name="credit" value="Master">Master</p>
-										<p><input type="radio" name="credit" value="JCB">JCB</p>
-									</div>
+									<div class="radioflex">
+							<span>
+								<label class="radio-cont">VISA
+								  <input type="radio" checked="checked" name="Refer">
+								  <span class="checkmark"></span>
+								</label>
+							</span>
+							<span>
+							<label class="radio-cont">MASTER
+								  <input type="radio" checked="checked" name="Refer">
+								  <span class="checkmark"></span>
+								</label>
+							</span>
+										<span style="margin-left: 0px;">
+							<label class="radio-cont">JCB
+								  <input type="radio" checked="checked" name="Refer">
+								  <span class="checkmark"></span>
+								</label>
+							</span>
+						</div>
 								</li>
 								<li><span>卡   号</span><div><input type="text"></div></li>
-								<li><span>有效期限</span><div>
-									<select>
-										<option>1999</option>
-										<option>2000</option>
-										<option>2018</option>
+								<li><span>有效期限</span>
+									<div>
+									<div class="selectout">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select style="width: 100%;margin-right: 0;">
+										<option>01</option>
+										<option>05</option>
 									</select>
-									<p>/</p>
-									<select>
-										<option>22</option>
-										<option>33</option>
-										<option>24</option>
+									</div>
+										<p>/</p>
+									<div class="selectout">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select style="width: 100%;margin-right: 0;">
+										<option>1988</option>
+										<option>1988</option>
 									</select>
-									<p>(月/年)</p>
-									</div></li>
-								<li class="verification-code"><span>验 证 码</span><div><input type="text"></div></li>
+									</div>
+										<p style="margin-right: 0px;">(月/年)</p>
+										</div>
+									</li>
+								<li class="verification-code"><span>验 证 码</span><div><input style="width: 30%;
+    flex: none;" type="text"></div></li>
 							</ul>
 							<button onclick="location.href='account-upgrate-storage-done.html'" class="setting-btn mobile-visibile setting-btn-lightblue">确认刷卡</button>
 							<div class="clear"></div>
