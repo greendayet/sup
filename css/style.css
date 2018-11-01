@@ -182,8 +182,6 @@ button{
 }
 .out-clear{
 	padding:10px;
-	overflow: hidden;
-	clear: both;
 }
 .bg-gray{
 	background: #efefef;
@@ -696,8 +694,7 @@ a.title-more{
 	display: none;
 }
 .inner-mall{
-	overflow:hidden;
-	clear: both;
+	
 }
 .category{
 	background-color: #7ebed7;
