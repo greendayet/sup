@@ -13,11 +13,6 @@ body{
 	letter-spacing: 0.75px;
 	color: #333;
 }
-.noscroll{
-	overflow: hidden;
-    position: fixed;
-    width: 100%;
-}
 body.login-body{
 	font-size: 21px;
 }
@@ -3440,6 +3435,11 @@ li.other-contact{
 	button,input,select{
 		font-size: 13px;
 	}
+	.noscroll{
+	overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
 	.stored-currency div p{
 		flex: none;
 	}
