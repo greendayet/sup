@@ -4705,6 +4705,7 @@ ul.search-sort .search-wrapper-date span{
 	.wallet-qrcode .wallet-step-block{
 	position: relative;
     height: calc(100vh - 100px);
+    overflow: hidden;
 	}
 	.vertialcenter {
     position: absolute;
