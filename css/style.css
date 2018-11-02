@@ -4703,10 +4703,10 @@ ul.search-sort .search-wrapper-date span{
 	width: 45%;
 }
 	.wallet-qrcode .wallet-step-block{
-	/*position: relative;*/
+	position: relative;
     height: calc(100vh - 100px);
 	}
-	.wallet-qrcode .wallet-step-block div {
+	.vertialcenter {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -4715,6 +4715,10 @@ ul.search-sort .search-wrapper-date span{
 	.hidebtn{
 		display: none;
 	}
+.bg-qrcode{
+	background: url("../images/svg/bg-qrcode.svg") no-repeat center;
+	background-size: 100%;
+}	
 		
 }
 
