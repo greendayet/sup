@@ -17,7 +17,6 @@ body{
 	overflow: hidden;
     position: fixed;
     width: 100%;
-    background: #fff;
 }
 body.login-body{
 	font-size: 21px;
