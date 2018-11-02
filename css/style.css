@@ -124,7 +124,7 @@ select{
 .all-item-group .setting-btn2{width: 72px;font-size: 13px;padding: 5px 0px;}
 .setting-btn2{
 	color: #fff;
-	padding: 15px 20px;
+	padding: 10px 20px;
 	border: none;
 	cursor: pointer;
 	font-size: 16px;
@@ -2004,7 +2004,7 @@ word-break: break-all;
 	float: right;
 	margin-left: 4px;
 }
-.store-entrance-btn .setting-btn2{font-size: 13px;padding: 15px;}
+.store-entrance-btn .setting-btn2{font-size: 13px;padding: 10px 20px;}
 .clear{
 	clear: both;
 }
@@ -2063,7 +2063,10 @@ word-break: break-all;
 }
 .account-upgrate-storage{}
 .account-upgrate-storage .personal-form li{border-bottom: none;}
-.account-upgrate-storage .personal-form li:nth-child(1),.account-upgrate-storage .personal-form li:nth-child(4){
+.account-upgrate-storage .personal-form li:nth-child(4){
+	border-bottom: solid 1px #efefef;
+}
+.account-upgrate-storage li.stored-currency{
 	border-bottom: solid 1px #efefef;
 }
 
@@ -2072,6 +2075,8 @@ word-break: break-all;
 	justify-content: space-between;
 	align-items: center;
 }
+.stored-currency div.storage-credit-money{}
+.stored-currency div.storage-credit-money .selectout{flex: 1;}
 .credit .radioflex span{flex:none;}
 .credit .radioflex span.checkmark{
 	width: 25px;
@@ -2265,14 +2270,15 @@ section.record {
 }
 section.record .thead li{
 	background: none;
-	color: #988b77;
+	color: #171c61;
 	width: 20% !important;
 	padding: 0px !important;
 	text-align: center !important;
 }
 section.record .thead{
-	padding-bottom: 15px;
-	border-bottom: solid 2px #d4d4d4;
+	padding: 15px 0px;
+	/*border-bottom: solid 2px #d4d4d4;*/
+	background: #a9cadf;
 }
 section.record time{
 	display: table;
@@ -2288,7 +2294,7 @@ section.record li.tbody{
 	font-size: 15px;
 	display: table;
 	width: 100%;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	border-bottom: solid 1px #d4d4d4;
 }
 section.record li.tbody:last-child{
@@ -3123,6 +3129,12 @@ li.other-contact{
     -ms-user-select: none;
     user-select: none;
 }
+.account-upgrate-storage .personal-form .personal-info .credit .radio-cont{
+	text-align: left;
+}
+.account-upgrate-storage .personal-form .personal-info .credit .radioflex span{
+	flex:none;
+}
 
 /* Hide the browser's default radio button */
 .radio-cont input {
@@ -3385,6 +3397,19 @@ li.other-contact{
 	.products-type-head-name .shop-name{
 		width: 60%;
 	}
+	.stored-currency div p{
+		flex:1;
+		margin: 0px 5px 0px 0px;
+	}
+	.stored-currency div.storage-credit-money{
+		display: block;
+	}
+	.stored-currency div.storage-credit-money div:last-child{
+		padding-top: 10px;
+	}
+	.stored-currency div.storage-credit-money div:last-child p{
+		flex:none;
+	}
 }
 @media only screen and (max-width: 820px) {
 	.container,.head,nav.nav-desktop{
@@ -3406,6 +3431,9 @@ li.other-contact{
 	}
 	button,input{
 		font-size: 15px;
+	}
+	.stored-currency div p{
+		flex: none;
 	}
 	.bg-gray .bg-white{
 	background: transparent;
@@ -3525,9 +3553,8 @@ li.other-contact{
 	.products-type-head{
 		margin-bottom: 10px;
 	}
-	.setting-container{padding: 0px 0px 20px;}
 	.container{width: 100%;padding: 0px 10px 20px;box-sizing: border-box;}
-	.setting-container{padding: 0px 0px 20px;}
+	.setting-container{padding: 0px;}
 	.nopd{
 		padding: 0px;
 	}
@@ -4353,6 +4380,9 @@ a.title-more{
 	.personal-form li span:last-child{
 		text-align: right;
 	}
+	.personal-form li.stored-currency:first-child > div{
+		flex-wrap: wrap;
+	}
 	.wrapper-admin .personal-form{width: 100%;}
 	.mobile-visibile{
 		display: block;
@@ -4452,6 +4482,10 @@ a.title-more{
 	.setting-right.account-upgrate-storage .personal-form button{
 		display: block;
 		width: 100%;
+	}
+	.setting-right.account-upgrate-storage .stored-currency button{
+		display: block;
+		width: auto;
 	}
 	.medal-intro-mobile{display: block;}
 	.medal-intro-mobile li{
@@ -4719,6 +4753,11 @@ ul.search-sort .search-wrapper-date span{
 	width: 50%;
 }
 }
+@media only screen and (max-width:480px){
+	.personal-form li.stored-currency{
+		padding: 0px 10px 15px;
+	}
+}
 
 @media only screen and (max-width:470px){
 	.register-group{
@@ -4727,7 +4766,11 @@ ul.search-sort .search-wrapper-date span{
 	.checked-cont .checkmark{width: 18px;height: 18px;}
 	.checked-cont .checkmark:after{left: 5px;
     top: 2px;}
+	.store-entrance-btn .setting-btn2{
+		padding: 10px 15px;
+	}
 }
+
 @media only screen and (max-width:430px){
 	.seller-contact-head{
 		margin-right: 0px;
@@ -4737,7 +4780,21 @@ ul.search-sort .search-wrapper-date span{
 		display: block;
 		text-align: center;
 	}
+	.account-upgrate-storage .personal-form li.expires .arrowdown{
+	border-width: 0 2px 2px 0;
+	padding: 3px;
 }
+.account-upgrate-storage .personal-form li.expires .selectout i {
+    position: absolute;
+    right: 8px;
+    top: 13px;
+}
+.account-upgrate-storage .personal-form li.expires select{
+	padding: 9px 7px;
+}
+.account-upgrate-storage .personal-form li.expires p{margin: 0px 5px;}
+}
+
 @media only screen and (max-width:400px){
 	.login-box input{
 	width: 100%;
@@ -4751,7 +4808,16 @@ ul.search-sort .search-wrapper-date span{
 	text-indent: 25px;
 	}
 }
-
+@media only screen and (max-width:374px){
+	.personal-form li.stored-currency.store-entrance-out{
+		display: block;
+		text-align: center;
+	}
+	.personal-form li.stored-currency.store-entrance-out div{
+		justify-content: center;
+		padding: 10px 0px;
+	}
+}
 @media only screen and (max-width:370px){
 .products-type-head-name .shop-name{
 	font-size: 18px;
@@ -4766,6 +4832,7 @@ ul.search-sort .search-wrapper-date span{
     display: inline-block;
     padding: 3px;}
 .smallarrow i{right: 15px;top: 15px;}	
+	.stored-currency div p{margin: 0px 0px 5px 0px;}
 }
 @media only screen and (max-width:320px){
 	.register-group{
