@@ -3895,7 +3895,7 @@ a.title-more{
 		padding: 0px;
 	}
   .login-body{
-	background: url(../images/bg-login-m.png) #fff no-repeat center 30%;
+	background: url(../images/bg-login-m.png) #373d65 no-repeat center;
 	padding-top: 30px;
 	padding-bottom: 25px;
 }
