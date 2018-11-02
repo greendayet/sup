@@ -4281,6 +4281,11 @@ a.title-more{
 	}
 	.login-body footer{
 		display: block;
+		position: fixed;
+		bottom: 2%;
+left: 50%;
+-webkit-transform: translate(-50%, 0%);
+transform: translate(-50%, 0%);
 	}
 	/*.seller-store{
 		margin: 10px;
