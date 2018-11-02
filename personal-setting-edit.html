@@ -60,13 +60,14 @@
 						</div>
 						<div class="setting-left-list">
 							<ul>
+								<li><a href="index.html">回首页</a></li>
 								<li><a class="active" href="personal-setting.html">个人设定</a></li>
 								<li><a href="account-upgrate.html">账户升级</a></li>
 								<li><a href="member-management.html">会员管理</a></li>
 								<li><a href="wallet-setting.html">钱包设定</a></li>
 								<li><a href="transaction-record.html">交易纪录</a></li>
 								<li><a href="booking-info.html">订购信息</a></li>
-								<li><a href="mystore-info.html">我的店铺</a></li>
+								<li><a href="mystore-status.html">我的店铺</a></li>
 								<li><a href="index.html">登出</a></li>
 							</ul>
 						</div>
@@ -121,7 +122,7 @@
 								<li><a href="wallet-setting.html">钱包设定</a></li>
 								<li><a href="transaction-record.html">交易纪录</a></li>
 								<li><a href="booking-info.html">订购信息</a></li>
-								<li><a href="mystore-info.html">我的店铺</a></li>
+								<li><a href="mystore-status.html">我的店铺</a></li>
 							</ul>
 						</div>
 					</div>
@@ -143,15 +144,31 @@
 								</li>
 								<li><span>E-mail</span><div><input type="email" value="shaleen.lin@gmail.com"></div></li>
 								<li><span>生   日</span><div><input type="email" value="1999/9/1"></div></li>
-								<li class="national"><span>国   籍</span><div><select><option>臺灣</option><option>日本</option><option>美國</option></select></div></li>
+								<li class="national"><span>国   籍</span><div class="selectout">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option value="0">国   籍</option>
+										<option>中国</option>
+									</select>
+									</div></li>
 								<li class="login-password-desktop"><span>登入密码 </span><div><input type="password" value="123"></div></li>
 							</ul>
 							<ul class="personal-info">
 								<li><span>登入密码</span><div><input type="password" value="12345"></div></li>
-								<li class="login-password-mobile"><span>指纹或图形辨识登入</span><div><select><option>指纹登入</option><option>图形辨识登入</option></select></div></li>
+								<li><div style="display: flex;justify-content: space-between;align-items: center;">
+									<span style="flex:none;">指纹或图形辨识登入</span><div class="selectout">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select style="border: none;padding-right: 36px;" onchange="window.location.href=this.value;">
+										<option value="#">指纹或图形辨识登入</option>
+										<option value="mobile-pic-check.html">图形辨识</option>
+										<option value="mobile-finger-check.html">指纹辨识</option>
+									</select>
+									</div>
+								</div>
+								</li>
 							</ul>
-							<button onclick="location.href='personal-setting.html'" class="setting-btn setting-btn-darkblue">确认变更</button>
-							<button onclick="location.href='#'" class="setting-btn setting-btn-lightblue">取   消</button>
+							<button onclick="location.href='personal-setting.html'" class="setting-btn setting-btn-darkblue hidebtn">确认变更</button>
+							<button onclick="location.href='#'" class="setting-btn setting-btn-lightblue hidebtn">取   消</button>
 							<div class="clear"></div>
 						</div>
 					</div>
@@ -193,4 +210,13 @@ $(document).ready(function() {
   });
   
 }); 
+</script>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "244px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 </script>

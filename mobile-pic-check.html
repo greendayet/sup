@@ -16,7 +16,7 @@
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
-				<h1 class="head-mobile">钱包设定</h1>
+				<h1 class="head-mobile">个人设定</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -130,11 +130,15 @@
 						<div class="only-bg"></div>
 						<div class="personal-form">
 							<ul class="fingerscand">
-								<li>
-									<select>
-								<option>指纹辨识</option>
-								<option>图形辨识</option>
-							</select>
+								<li><div style="display: flex;justify-content: space-between;align-items: center;">
+									<div class="selectout">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select style="border: none;padding-right: 36px;" onchange="window.location.href=this.value;">
+										<option value="mobile-pic-check.html">图形辨识</option>
+										<option value="mobile-finger-check.html">指纹辨识</option>
+									</select>
+									</div>
+								</div>
 								</li>
 								<li>
 								<p>圖形辨識  </p>

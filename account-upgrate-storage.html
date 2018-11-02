@@ -53,7 +53,7 @@
 			
 		</header>
 		<div class="main">
-			<div class="container">
+			<div class="container setting-container">
 				<div class="inner-mall">
 					<div class="path"><a href="index.html">首頁</a> > 设定 </div>
 					<div class="bg-white out-clear">
@@ -76,13 +76,15 @@
 						</div>
 						<div class="setting-left-list">
 							<ul>
+								<li><a href="index.html">回首页</a></li>
 								<li><a href="personal-setting.html">个人设定</a></li>
 								<li><a class="active" href="account-upgrate.html">账户升级</a></li>
 								<li><a href="member-management.html">会员管理</a></li>
 								<li><a href="wallet-setting.html">钱包设定</a></li>
 								<li><a href="transaction-record.html">交易纪录</a></li>
 								<li><a href="booking-info.html">订购信息</a></li>
-								<li><a href="mystore-info.html">我的店铺</a></li>
+								<li><a href="mystore-status.html">我的店铺</a></li>
+								<li><a href="index.html">登出</a></li>
 							</ul>
 						</div>
 					</div>
@@ -92,7 +94,7 @@
 							<div style="color: #0e3244;margin-bottom: 20px" class="ft24 storage-name">储值</div>
 							<ul class="personal-info">
 								<li class="stored-currency"><span>储值币种</span>
-									<div>
+									<div class="storage-credit-money">
 									<div class="selectout">
 										<i style="color: #0054a7;" class="arrowdown"></i>
 									<select style="width: 100%;">
@@ -100,9 +102,10 @@
 										<option>SUP</option>
 									</select>
 									</div>
-									<p>刷卡金额</p>
-									<input style="flex:1;" type="tel" value="500">
+									<div><p>刷卡金额</p>
+									<input style="flex:1;margin: 0 1%;" type="tel" value="500">
 									<p>USD</p>
+									</div>	
 									</div>
 								</li>
 								<li><span>姓   名</span><div><input type="text" value="林君玲"></div></li>
@@ -142,7 +145,7 @@
 						</div>
 								</li>
 								<li><span>卡   号</span><div><input type="text"></div></li>
-								<li><span>有效期限</span>
+								<li class="expires"><span>有效期限</span>
 									<div>
 									<div class="selectout">
 										<i style="color: #0054a7;" class="arrowdown"></i>
