@@ -2135,7 +2135,7 @@ word-break: break-all;
 .wallet-setting li span,.wallet-setting li span:last-child{
 	color: #8d8c8c;
 }
-.desktop-wallet{display: block;}
+.desktop-wallet{display: block;flex:1;}
 .mobile-wallet{display: none;}
 #accordion li{
 	display: block;
