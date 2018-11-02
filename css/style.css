@@ -3913,7 +3913,6 @@ a.title-more{
 	}
   .login-wrapper {
     max-width: 768px;
-	  overflow: hidden;
 	}
 	.login-box {
     border-radius: 0px;
@@ -3936,7 +3935,7 @@ a.title-more{
 		padding: 10px 20px 15px;
 	}
 	.loginindex .login-info ul li{
-		padding-top: 12px;
+		padding-top: 15px;
 	}
 	.loginindex .login-info ul{
 		margin-bottom: 0px;
