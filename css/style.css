@@ -4715,7 +4715,7 @@ ul.search-sort .search-wrapper-date span{
     position: absolute;
     top: calc(50% - 100px);/*top: 50%;*/
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%,-50%);
 }
 	.hidebtn{
 		display: none;
