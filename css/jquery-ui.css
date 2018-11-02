@@ -834,12 +834,12 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs {
 	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
-	padding: .2em;
+	/*padding: .2em;*/
 }
 .ui-tabs .ui-tabs-nav {
 	margin: 0;
-	margin-bottom: 15px;
-	/*padding: .2em .2em 0;*/
+	/*margin-bottom: 15px;
+	padding: .2em .2em 0;*/
 }
 .ui-tabs .ui-tabs-nav li {
 	list-style: none;
@@ -859,6 +859,7 @@ button.ui-button::-moz-focus-inner {
 	padding: .5em 1em;
 	text-decoration: none;
 	outline: none;
+	font-size: 15px;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
 	/*margin-bottom: -1px;
@@ -876,8 +877,9 @@ button.ui-button::-moz-focus-inner {
 .ui-tabs .ui-tabs-panel {
 	display: block;
 	border-width: 0;
-	padding: 1em 1.4em;
+	/*padding: 1em 1.4em;*/
 	background: none;
+	font-size: 15px;
 }
 .ui-tooltip {
 	padding: 8px;
@@ -906,8 +908,7 @@ body .ui-tooltip {
 }
 .transaction-record .ui-widget.ui-widget-content {
 	/*border: 1px solid #c5c5c5;*/
-	display: table;
-	width: 70%;
+	width: 80%;
     margin: 0px auto;
 }
 .ui-widget-content {
@@ -1333,11 +1334,11 @@ a.ui-button:active,
 		background: #171c61;
 	}
 
-@media only screen and (max-width:1200px){
+/*@media only screen and (max-width:1200px){
 .transaction-record .ui-widget.ui-widget-content {
 	width: 65%;
 	}
-}	
+}*/	
 
 @media only screen and (max-width:768px){
 	.transaction-record .ui-widget.ui-widget-content {
@@ -1349,5 +1350,8 @@ a.ui-button:active,
 	}
 	.ui-tabs .ui-tabs-nav .ui-tabs-anchor{
 		padding: 1.5em 1em;
+	}
+	.transaction-record .ui-tabs .ui-tabs-nav{
+		margin-bottom: 0px;
 	}
 }
