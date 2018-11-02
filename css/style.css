@@ -17,6 +17,7 @@ body{
 	overflow: hidden;
     position: fixed;
     width: 100%;
+    background: #fff;
 }
 body.login-body{
 	font-size: 21px;
@@ -3894,7 +3895,7 @@ a.title-more{
 		padding: 0px;
 	}
   .login-body{
-	background: url(../images/bg-login-m.png) #fff no-repeat center;
+	background: url(../images/bg-login-m.png) #fff no-repeat center 30%;
 	padding-top: 30px;
 	padding-bottom: 25px;
 }
@@ -3921,7 +3922,7 @@ a.title-more{
     padding-top: 0px;
     background: transparent;
     margin-bottom: 15px;
-    width: 320px;
+    width: 280px;
 	}
 	.login-info {
     background: #fff;
