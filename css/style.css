@@ -27,7 +27,7 @@ a,button,.btn{
 	transition-delay: 0s;
 	color: #333;
 }
-button,input{
+button,input,select{
 	font-size: 15px;
 }
 .clearboth{
@@ -1983,6 +1983,9 @@ word-break: break-all;
 .personal-form ul{
 	margin-bottom: 30px;
 }
+.account-upgrate-storage li{
+	margin-bottom: 0px;
+}
 .account-upgrate-storage .personal-form li span{
 	flex: 0.75;
 }
@@ -2063,7 +2066,7 @@ word-break: break-all;
 }
 .account-upgrate-storage{}
 .account-upgrate-storage .personal-form li{border-bottom: none;}
-.account-upgrate-storage .personal-form li:nth-child(4){
+.account-upgrate-storage .personal-form li:nth-child(5){
 	border-bottom: solid 1px #efefef;
 }
 .account-upgrate-storage li.stored-currency{
@@ -2087,7 +2090,7 @@ word-break: break-all;
     width: 14px;
     height: 14px;
 }
-.account-upgrate-storage .personal-form li:nth-child(7) div,.verification-code div{
+.account-upgrate-storage .personal-form li:nth-child(8) div,.verification-code div{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -3429,8 +3432,8 @@ li.other-contact{
 	body,p,body.login-body{
 		font-size: 15px;
 	}
-	button,input{
-		font-size: 15px;
+	button,input,select{
+		font-size: 13px;
 	}
 	.stored-currency div p{
 		flex: none;
@@ -4373,6 +4376,7 @@ a.title-more{
 	}
 	.personal-form{
 		width: 100%;
+		font-size: 13px;
 	}
 	.personal-form li{
 		padding: 0px 30px 15px;
@@ -4383,6 +4387,7 @@ a.title-more{
 	.personal-form li.stored-currency:first-child > div{
 		flex-wrap: wrap;
 	}
+	.account-upgrate-storage .personal-form li{padding: 0px 20px 15px;}
 	.wrapper-admin .personal-form{width: 100%;}
 	.mobile-visibile{
 		display: block;
@@ -4698,7 +4703,7 @@ ul.search-sort .search-wrapper-date span{
 	width: 45%;
 }
 	.wallet-qrcode .wallet-step-block{
-	position: relative;
+	/*position: relative;*/
     height: calc(100vh - 100px);
 	}
 	.wallet-qrcode .wallet-step-block div {
@@ -4738,6 +4743,12 @@ ul.search-sort .search-wrapper-date span{
 .content_box:nth-child(2n+1), .content_box:first-child{
 	margin-left: 0px;
 }
+.credit .radioflex span.checkmark{width: 16px;height: 16px;}
+.setting-wrapper .credit .radioflex .radio-cont .checkmark:after{width: 10px;height: 10px;top:3px;left: 3px;}
+.radio-cont {
+    padding-left: 20px;
+    font-size: 13px;
+}
 
 }
 @media only screen and (max-width:500px){
@@ -4757,6 +4768,7 @@ ul.search-sort .search-wrapper-date span{
 	.personal-form li.stored-currency{
 		padding: 0px 10px 15px;
 	}
+	.account-upgrate-storage .personal-form li{padding: 0px 20px 15px;}
 }
 
 @media only screen and (max-width:470px){
@@ -4780,19 +4792,20 @@ ul.search-sort .search-wrapper-date span{
 		display: block;
 		text-align: center;
 	}
-	.account-upgrate-storage .personal-form li.expires .arrowdown{
+	.account-upgrate-storage .personal-form li.expires .arrowdown,.account-upgrate-storage .personal-form li.storage-mobile  .arrowdown{
 	border-width: 0 2px 2px 0;
 	padding: 3px;
 }
-.account-upgrate-storage .personal-form li.expires .selectout i {
+.account-upgrate-storage .personal-form li.expires .selectout i,.account-upgrate-storage .personal-form li.storage-mobile .selectout i {
     position: absolute;
     right: 8px;
     top: 13px;
 }
-.account-upgrate-storage .personal-form li.expires select{
+.account-upgrate-storage .personal-form li.expires select,.account-upgrate-storage .personal-form li.storage-mobile select{
 	padding: 9px 7px;
 }
 .account-upgrate-storage .personal-form li.expires p{margin: 0px 5px;}
+.storage-mobile .selectout{flex:1 !important;}
 }
 
 @media only screen and (max-width:400px){
