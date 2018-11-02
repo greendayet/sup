@@ -3935,8 +3935,8 @@ a.title-more{
 		padding: 10px 20px 15px;
 	}
 	.loginindex .login-info ul li{
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-top: 12px;
+		padding-bottom: 12px;
 	}
 	.loginindex .login-info ul{
 		margin-bottom: 0px;
@@ -3975,6 +3975,7 @@ a.title-more{
     background-color: transparent;
     color: #f0f0f0;
     font-size: 13px;
+    padding-bottom:0px;
 	}
 	.login-info ul li.log-pass > div:nth-child(2){
 		display: flex;
