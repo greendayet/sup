@@ -4706,7 +4706,7 @@ ul.search-sort .search-wrapper-date span{
 	width: 45%;
 }
 	.wallet-qrcode .wallet-step-block{
-	position: relative;
+	/*position: relative;*/
     height: calc(100vh - 100px);
 	}
 	.vertialcenter {
