@@ -191,6 +191,7 @@ button{
 .out-clear{
 	padding:10px;
 	display: flex;
+	min-height: 450px;
 }
 .bg-gray{
 	background: #efefef;
@@ -639,7 +640,8 @@ a.title-more{
 }
 .event-box-out{
 	font-size: 15px;
-	padding: 0px 20px;
+	padding: 15px 20px 0px;
+	background: #fff;
 }
 .event-box-out p{
 	font-size: 15px;
@@ -978,7 +980,7 @@ a.title-more{
 	bottom: 0px;
 }
 .community a{
-	margin: 0px 5px;
+	margin: 0px;
 	border-radius: 99em;
 	display: inline-block;
 	font-size: 25px;
@@ -986,6 +988,12 @@ a.title-more{
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
+}
+.link-function .community a{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 17px;
 }
 .community a:first-child{
 	background: #43c506;
@@ -1387,7 +1395,7 @@ button.go-payment:hover{
 .qrscand a{
 	display: block;
 	color: #fff;
-	padding: 30px 70px;
+	padding: 30px 54px;
 }
 .qrscand span{
 	display: block;
@@ -1495,10 +1503,16 @@ button.go-payment:hover{
 	background-size: 2000% 1840.909091%;
 	background-position: 60.047847% 8.0939948%;/*251 31*/
 }
+.qrcode-left .left-bottom-link img{
+	background: transparent !important;
+}
 .wallet-left-4{
 	width: 22px;
 	vertical-align: sub;
 	margin-right: 10px;}
+.wallet-pay-c-side 	.wallet-step-block{
+	width: 50%;
+}
 .wallet-step-block{width: 80%;margin: 0px auto;}
 .wallet-step-block div{
 	text-align: center;
@@ -1594,20 +1608,42 @@ transform: translate(-50%,-50%);*/
 	padding: 20px;
 	background: #fff;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
+.wallet-right-side .ticket-content{
+	justify-content: space-between;
+}
+.wallet-right-side .ticket-content a{
+	display: block;
+	width: 48%;
+}
+
+.wallet-right-side .unuse-ticket-box{ width: auto; }
+.wallet-right-side .ticket-content a:nth-child(even) .unuse-ticket-box{
+	margin-right: 0px;
+}
+.wallet-right-side .unuse-ticket-box:nth-child(odd), .wallet-right-side .use-ticket-box:nth-child(odd){
+	margin-right: 0px;
+}
 .ticket-detail{
 	color: #438da8;
+	word-wrap: break-word;
+word-break: break-all;
+}
+.ticket-detail p{
+	font-size: 13px;
 }
 .use .ticket-detail,.use .ticket-detail-head{
 	color: #a3aeb2;
 }
 .ticket-detail-head{
 	color: #3e4962;
-	margin-bottom: 8px;
+	margin-bottom: 3px;
+	font-size: 15px;
 }
+.wallet-right-side .ticket-detail time{display: block;}
 .unuse{}
 .unuse-head{
 	background: #dd8447;
@@ -1647,43 +1683,48 @@ transform: translate(-50%,-50%);*/
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-bottom: 15px;
-	margin-bottom: 20px;
-	border-bottom: solid 1px #c6c6c6;
+}
+.ticket-content a{
 	width: 48%;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: solid 1px #c6c6c6;
+	display: block;
 }
 .unuse-ticket-box:nth-child(odd),.use-ticket-box:nth-child(odd){
 	margin-right: 4%;
 }
-.unuse-ticket-box:last-child,.unuse-ticket-box:nth-last-child(2),.use-ticket-box:last-child,.use-ticket-box:nth-last-child(2){
+/*.unuse-ticket-box:last-child,.unuse-ticket-box:nth-last-child(2),.use-ticket-box:last-child,.use-ticket-box:nth-last-child(2){
 	border-bottom: 0px;
 	padding-bottom: 0px;
-}
+}*/
 .category-money{
 	display: flex;
 	color: #fff;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .category-money img{
 	vertical-align: middle;
 }
+.category-money .price{margin-bottom: 0px;}
 .category-money span{
 	
 }
 .category-money span:nth-child(2){
 	background: url("../images/bg-ticket-blue-repeat.png") repeat-x;
-	padding: 15px 20px;
+	padding: 13px 8px 0px 0px;
 	text-align: center;
 	display: flex;
 }
 .use .category-money span:nth-child(2){
 	background: url("../images/bg-ticket-gray-repeat.png") repeat-x;
-	padding: 15px 20px;
+	padding: 13px 8px 0px 0px;
 	text-align: center;
 	display: flex;
 }
 .category-money .price{
 	color: #fff;
+	font-size: 28px;
 }
 .category-money b{
 	display: block;
@@ -1730,7 +1771,7 @@ transform: translate(-50%,-50%);*/
 	float: right;
 	width: 56%;
 }
-.event-name{width: 100%;margin-bottom: 20px;}
+.event-name{width: 100%;margin-bottom: 20px;position: relative;}
 .event-name h2{
 	border-bottom: solid 1px #c6c6c6;
 	padding-bottom: 7px;
@@ -1767,11 +1808,12 @@ transform: translate(-50%,-50%);*/
 }
 .link-function{
 	position: relative;
-	float: right;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
 }
 .link-function .community{
-	top:15px;
-	right: 0px;
+	position: static;
 }
 
 .tooltip {
@@ -1968,6 +2010,10 @@ word-break: break-all;
 	padding: 15px 25px 15px 0px;
 	display: block;
 	text-align: right;
+}
+.wrapper-admin .setting-left-list ul a{
+	text-align: center;
+	padding: 15px 0px 15px 0px;
 }
 .setting-left-list ul a.active,.setting-left-list ul a:hover{
 	background: url("../images/bg-personal-active.png") repeat-y center right;
@@ -2442,23 +2488,23 @@ li.other-contact{
 .wrapper-admin nav li:first-child img{
 	width: 26px;
 	height: 30px;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1692.307692% 1350%;
-	background-position: 82.6086965% 8.266667%;/*342 31*/
+	background-position: 82.6086965% 8.266667%;342 31*/
 }
 .wrapper-admin nav li:nth-child(2) img{
 	width: 39px;
 	height: 30px;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1128.205128% 1446.428571%;
-	background-position: 91.770574% 8.266667%;/*368 0*/
+	background-position: 91.770574% 8.266667%;368 0*/
 }
 .wrapper-admin nav li:nth-child(3) img{
 	width: 28px;
 	height: 28px;
-	background: url("../images/bg-icon.png") no-repeat;
+	/*background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1571.428571% 1446.428571%;
-	background-position: 49.757281% 0%;/*205 0*/
+	background-position: 49.757281% 0%;205 0*/
 }
 
 .wrapper-admin nav.nav-desktop li img{
@@ -3372,18 +3418,22 @@ li.other-contact{
 	.seller-contact{
 		justify-content: space-between;
 	}
+	.wallet-pay-c-side 	.wallet-step-block{
+	width: 70%;
+	}
 }
 @media only screen and (max-width: 1050px) {
 	.container,.head,nav.nav-desktop{
 		width: 900px;
 	}
-	.nav-desktop li a {
+	nav.nav-desktop li a{
     color: #fff;
     padding: 0px 16px;
 	}
 	.simpleLens-lens-element {
     width: 418px;
 	}
+	.wallet-pay-c-side .wallet-width .selectout{width: 35%;}
 }
 
 @media only screen and (max-width: 950px) {
@@ -3431,6 +3481,8 @@ li.other-contact{
 		width: 100%;
 		text-align: left;
 	}
+	.wallet-pay-c-side .wallet-width .selectout{width: 50%;}
+	.wallet-pay-c-side .wallet-width input{width: 50%;}
 
 }
 @media only screen and (max-width: 900px) {
@@ -3514,6 +3566,9 @@ li.other-contact{
 	padding-top: 10px;
     border-top: solid 1px #ddd;
 	}
+	.ticket-group .products-info{
+		display: none;
+	}
 	.thead-select-all .checked-cont.black{margin-left: 15px;}
 .add-pro-btn{width: 100%;}
 	.add-pro-btn div:last-child{
@@ -3524,7 +3579,7 @@ li.other-contact{
 	width: 50%;
 	margin: 0px;
 }
-	.ticket-group{background: #fff;}
+	.{background: #fff;}
 .money-kind{display: block;visibility: hidden;}
 	.wrapper, .wrapper-admin{
 		max-width: 768px;
@@ -4457,8 +4512,24 @@ transform: translate(-50%, 0%);
     font-family: "Arial";
     display: block;
 	}
-	.unuse-ticket-box, .use-ticket-box{
+	.unuse-ticket-box, .use-ticket-box,.wallet-right-side .ticket-content a{
 		width: 100%;
+	}
+	.ticket-content a {
+    width: 100%;
+	}
+	.wallet-right-side.qrticket{
+		padding: 20px 0px 0px !important;
+	}
+	.wallet-step-block.qrticket div{
+		margin-bottom: 0px;
+		text-align: left;
+	}
+	.wallet-step-block.qrticket .unuse-ticket-box{
+		margin-bottom: 20px;
+	}
+	.mobile-wallet .ticket-content{
+		padding-top: 20px !important;
 	}
 	.unuse-ticket-box:nth-last-child(2), .use-ticket-box:nth-last-child(2){
 		    border-bottom: solid 1px #c6c6c6;padding-bottom: 15px;
@@ -4496,8 +4567,15 @@ transform: translate(-50%, 0%);
 		position: relative;
     	height: calc(100vh - 120px);
 	}
+	.event-list{
+		overflow-y: scroll;
+	}
 	.wrapper-admin .out-clear{
 		display: block;
+	}
+	.qrticket-m{
+		height: calc(100vh - 100px);
+		overflow-y: scroll;
 	}
 	.setting-right .login-password-desktop{
 		display: none;
@@ -4811,6 +4889,7 @@ ul.search-sort .search-wrapper-date span{
     top: 40%;/*top: 50%;*/
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 100%;
 }
 	.hidebtn{
 		display: none;
