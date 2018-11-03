@@ -438,9 +438,6 @@ a.title-more{
 .seller-store .productsblock{
 	padding-top: 0px;
 }
-.productsblock{
-	padding: 0px;
-}
 .products-box-out{
 	display: flex;
 	justify-content: flex-start;
@@ -4051,6 +4048,9 @@ a.title-more{
 	.right-side .productsblock{
 		padding: 10px;
 	}
+	.productsblock{
+	padding-top: 10px;
+}
 	.event-box-out li{
 		width: 100%;
 	}
