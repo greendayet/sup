@@ -389,11 +389,12 @@ nav.nav-desktop li a:hover{
 }
 .desktop-banner{
 	display: block;
+	margin-bottom: 10px;
 }
 .mobile-banner{
 	display: none;
 }
-
+.product-manual{display: block !important;}
 footer{
 	font-size:15px;
 	color: #9ea9aa;
@@ -571,6 +572,9 @@ a.title-more{
 	color: #333;
 	margin-bottom:10px;
 }
+.cart-detail-type .cart-category{
+	margin-bottom: 30px;
+}
 .category-list a{ font-size: 15px; }
 .price{
 	color:#ed6c00;
@@ -611,18 +615,16 @@ a.title-more{
 	background-position: 46.039603% 18.181818%;/*186 68*/
 }
 .btn-star{
-	margin-right: 5px;
 	background: transparent;
 	border: none;
 }
 .btn-star::before{
 	color: #1ba5d6;
-	font-size: 22px;
+	font-size: 20px;
 	font-family: 'Font Awesome\ 5 Free';
 	content: "\f005";
 	font-weight: 400; 
 	cursor: pointer;
-	padding: 1px;
 }
 .btn-star.active::before{
 	content: "\f005";
@@ -715,26 +717,34 @@ a.title-more{
 }
 .left-side ul span{
 	visibility: hidden;
+	display: none;
 }
 .left-side ul li{
-	text-align: center;
-	padding: 10px 0px;
+	padding: 10px 12px;
 	border-bottom:solid 1px #dadada;
+	overflow: hidden;
+	clear: both;
 }
 .left-side ul li.calculation{
-	padding-left:19px;
+	/*padding-left:19px;*/
 }
 .left-side ul li img{
+	float: left;
 	width: 8px;
 	height: 9px;
 	vertical-align: middle;
 	margin-right: 10px;
+	margin-top: 3px;
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 5500% 4500%;/*8 9*/
 	background-position: 53.009259% 17.171717%;/*229 68*/
 }
 .left-side ul li a{
 	color:#173661;
+	display: block;
+	padding-left: 15px;
+	text-indent: -2px;
+	font-size: 15px;
 }
 .left-side ul li a:hover{
 	color:#38a6c9;
@@ -934,7 +944,7 @@ a.title-more{
 .products-type-head-name .shop-name img{
 	width: 22px;
 	height: 20px;
-	vertical-align: baseline;
+	vertical-align: sub;
 }
 .products-type-head-name .shop-name span{
 	
@@ -959,9 +969,9 @@ a.title-more{
 .Evaluation-mobile{
 	display: none;
 }
-.Evaluation button.btn-star::before{
+/*.Evaluation button.btn-star::before{
 	color: #fff;
-}
+}*/
 .community-mobile-link{
 	position: absolute;
 	right: 0px;
@@ -1056,6 +1066,9 @@ a.title-more{
 	margin:0px 0px 20px;
 	position: relative;
 	width: 100%;
+}
+.cart-detail-type .price{
+	margin-bottom: 0px;
 }
 .products-type-group .cart-step-btn{
 	text-align: left;
@@ -2950,6 +2963,11 @@ li.other-contact{
 
 .community{
 		visibility: visible;
+		display: block;
+		position: absolute;
+	    visibility: visible;
+	    right: 0px;
+	    bottom: 0px;
 	}
 .community-mobile-link,.count-mobile{
 		visibility: hidden;
@@ -4130,6 +4148,7 @@ a.title-more{
 	}
 	.left-side ul li a{
 		color: #fff;
+		display: inline-block;
 	}
 	.left-side ul li a:hover,.left-side ul li a.active{
 		color: #171c61;
@@ -4140,6 +4159,7 @@ a.title-more{
 	.left-side ul li span{
 		padding: 0px 10px;
 		visibility: visible;
+		display: inline-block;
 	}
 	.left-side .category{
 		display: none;
