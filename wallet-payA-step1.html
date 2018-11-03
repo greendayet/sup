@@ -137,17 +137,18 @@
 	 <div class="accorsing-content-2 wallet-right-side">
 						<div class="wallet-step-block">
 							<div><p class="orange">选择支付币别后，将依目前汇率 30.286 换算金额</p></div>
-							<div class="count select-width">
-								<div class="custom-select">
-								<select>
-									<option value="0">USDT</option>
-									<option value="1">S COIN</option>
-									<option value="2">ETH</option>
-									<option value="3">SUP</option>
-								</select>
-								</div>
-								<input type="text" value="500"></input>
-							</div>
+							<div class="count wallet-width">
+							<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option>USDT</option>
+									<option>S COIN</option>
+									<option>ETH</option>
+									<option>SUP</option>
+									</select>
+									</div>
+									<input style="width: 50%;" type="text" value="500">
+							</div>	
 							<div class="remind">
 								<span><img class="remind-img" src="images/img-trans.png">目前账户USDT余额不足</span>
 								<span class="stored"><a href="#">立刻储值</a><img src="images/img-trans.png"></span>
@@ -162,20 +163,24 @@
   <div>
 							<div class="accorsing-content-3 wallet-right-side wallet-pay-c-side">
 						<div class="wallet-step-block text-left">
-							<div class="password-input flex-center" style="justify-content: flex-start;">
-								<span style="color: #909090;">钱包地址</span><input style="flex:2;" type="text">
+							<div class="password-input" style="display: flex;justify-content: center;align-items: center;">
+								<span style="color: #909090;">钱包地址</span>
+								<input type="text" style="flex:1;">
 							</div>
-							<div class="count count-c select-width flex-center">
-								<span style="color: #909090;margin-right: 10px;">输入金额</span>
-								<div class="custom-select">
-								<select>
-									<option value="0">USDT</option>
-									<option value="1">S COIN</option>
-									<option value="2">ETH</option>
-									<option value="3">SUP</option>
-								</select>
-								</div>
-								<input type="text" value="500"></input>
+							<div class="count wallet-width" style="display: flex;justify-content: flex-start;align-items: center;">
+								<span style="color: #909090;">输入金额</span>
+								<div style="display: flex;justify-content: flex-start;align-items: center; margin-bottom: 0px;margin-left: 10px;flex: 1;">
+								<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option>USDT</option>
+									<option>S COIN</option>
+									<option>ETH</option>
+									<option>SUP</option>
+									</select>
+									</div>
+								<input type="text" value="500" style="flex:1;">
+							</div>
 							</div>
 						</div>
 						<button onclick="location.href='wallet-payC-step-done.html'" class="btn light-blue btn-wallet">确认转账</button>
@@ -233,77 +238,3 @@ $(document).ready(function() {
     });
   } );
   </script>
-  <script>
-var x, i, j, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
-x = document.getElementsByClassName("custom-select");
-for (i = 0; i < x.length; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  /*for each element, create a new DIV that will act as the selected item:*/
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 0; j < selElmnt.length; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
-        var y, i, k, s, h;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < s.length; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            for (k = 0; k < y.length; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
-        }
-        h.click();
-    });
-    b.appendChild(c);
-  }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-      /*when the select box is clicked, close any other select boxes,
-      and open/close the current select box:*/
-      e.stopPropagation();
-      closeAllSelect(this);
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
-    });
-}
-function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
-  var x, y, i, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  for (i = 0; i < y.length; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
-    } else {
-      y[i].classList.remove("select-arrow-active");
-    }
-  }
-  for (i = 0; i < x.length; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
-    }
-  }
-}
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
-document.addEventListener("click", closeAllSelect);
-</script>

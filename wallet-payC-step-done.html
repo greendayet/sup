@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">	
-<title>SUPREME - 儲值成功</title>
+<title>SUPREME - 转账成功</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -52,10 +52,10 @@
 			
 		</header>
 		<div class="main">
-			<div class="container">
+			<div class="container pdtop">
 				<div class="inner-mall">
 					<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">钱包</a> > 立即转账</div>
-					<div class="bg-white out-clear">
+					<div class="bg-white out-clear wallet-height">
 					<div class="wallet-left-side wallet-pay-none">
 						<div class="currently-account">
 							<p>目前帳戶餘額</p>
@@ -78,25 +78,25 @@
 						<div class="desktop-wallet">
 					<div class="wallet-right-side">
 						<div class="wallet-step-block">
-							<div><p class="orange">儲值成功</p></div>
+							<div><p class="orange">转账成功</p></div>
 							<div class="password-input">
-								<span style="color: #333;">您已成功刷卡储值，感謝您的使用。</span>
+								<span style="color: #333;">您的款项已成功转出，感谢您的使用。</span>
 							</div>
 						</div>
 					</div>
 					</div>
 					<!--desktop end-->
 						<!--mobile start-->
-					<ul id="accordion-wallet" class="personal-info mobile-wallet">
+					<ul id="accordion-wallet" class="personal-info mobile-wallet hidearrow">
 									<li>
 
 <div class="left-bottom-link"><span><a href="#"><img class="wallet-left-3" src="images/img-trans.png">立即转账</a></span></div>										
   <div>
 	  <div class="accorsing-content-1 wallet-right-side">
 						<div class="wallet-step-block">
-							<div><p class="orange">儲值成功</p></div>
+							<div><p class="orange">转账成功</p></div>
 							<div class="password-input">
-								<span style="color: #333;">您已成功刷卡储值，感謝您的使用。</span>
+								<span style="color: #333;">您的款项已成功转出，感谢您的使用。</span>
 							</div>
 						</div>
 					</div>
@@ -143,3 +143,11 @@ $(document).ready(function() {
   
 }); 
 </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion-wallet" ).accordion({
+      heightStyle: "content",
+    });
+  } );
+  </script>

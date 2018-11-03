@@ -6,11 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">	
+<link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" href="css/jquery-ui.css">	
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
-<body>
+<body class="noscroll">
 	<div class="wrapper">
 		<header>
 			<div class="head">
@@ -52,10 +53,10 @@
 			
 		</header>
 		<div class="main">
-			<div class="container">
+			<div class="container pdtop">
 				<div class="inner-mall">
 					<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">钱包</a> > 立即付款</div>
-					<div class="bg-white out-clear">
+					<div class="bg-white out-clear wallet-height">
 					<div class="wallet-left-side wallet-pay-none">
 						<div class="currently-account">
 							<p>目前帳戶餘額</p>
@@ -87,7 +88,7 @@
 						</div>
 					<!--desktop end-->
 						<!--mobile start-->
-					<ul id="accordion-wallet" class="personal-info mobile-wallet">
+					<ul id="accordion-wallet" class="personal-info mobile-wallet hidearrow">
 									<li>
 
 <div class="left-bottom-link"><span><a href="wallet-payA-step1.html"><img class="wallet-left-2" src="images/img-trans.png">立即付款</a></span></div>										
@@ -143,3 +144,11 @@ $(document).ready(function() {
   
 }); 
 </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion-wallet" ).accordion({
+      heightStyle: "content",
+    });
+  } );
+  </script>

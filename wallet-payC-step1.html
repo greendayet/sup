@@ -76,18 +76,24 @@
 					</div>
 					<div class="wallet-right-side wallet-pay-c-side">
 						<div class="wallet-step-block text-left">
-							<div class="password-input">
-								<span style="color: #909090;">钱包地址 <input type="text"></span>
+							<div class="password-input" style="display: flex;justify-content: center;align-items: center;">
+								<span style="color: #909090;">钱包地址</span>
+								<input type="text" style="flex:1;">
 							</div>
-							<div class="count count-c">
+							<div class="count wallet-width" style="display: flex;justify-content: flex-start;align-items: center;">
 								<span style="color: #909090;">输入金额</span>
-								<select>
-									<option>USDT</option>
+								<div style="display: flex;justify-content: flex-start;align-items: center; margin-bottom: 0px;margin-left: 10px;flex: 1;">
+								<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option>USDT</option>
 									<option>S COIN</option>
 									<option>ETH</option>
 									<option>SUP</option>
-								</select>
-								<input type="text" value="500">
+									</select>
+									</div>
+								<input type="text" value="500" style="flex:1;">
+							</div>
 							</div>
 						</div>
 						<button onclick="location.href='wallet-payC-step-done.html'" class="btn light-blue btn-wallet">确认转账</button>

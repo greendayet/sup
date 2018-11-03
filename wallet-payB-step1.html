@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">	
+<link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" href="css/jquery-ui.css">	
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
@@ -77,15 +78,18 @@
 					<div class="wallet-right-side">
 						<div class="wallet-step-block">
 							<div><p class="orange">选择支付币别后，将依目前汇率 30.286 换算金额</p></div>
-							<div class="count">
-								<select>
-									<option>USDT</option>
+							<div class="count wallet-width">
+							<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option>USDT</option>
 									<option>S COIN</option>
 									<option>ETH</option>
 									<option>SUP</option>
-								</select>
-								<input type="text" value="500"></input>
-							</div>
+									</select>
+									</div>
+									<input style="width: 50%;" type="text" value="500">
+							</div>	
 							<div class="remind">
 								<span><img class="remind-img" src="images/img-trans.png">目前账户USDT余额不足</span>
 								<span class="stored"><a href="#">立刻储值</a><img src="images/img-trans.png"></span>
@@ -132,3 +136,13 @@ $(document).ready(function() {
   
 }); 
 </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion-wallet" ).accordion({
+      heightStyle: "content",
+		active:"false",
+		collapsible: "true"
+    });
+  } );
+  </script>
