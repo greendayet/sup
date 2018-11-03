@@ -406,6 +406,7 @@ footer{
 }
 .main{
 	background: #f5f5f4;
+	padding-top: 10px;
 }
 .wrapper-admin .main{
 	padding-top: 10px;
@@ -420,7 +421,7 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 .title-blue h3{
 	padding-left: 25px;
@@ -438,7 +439,7 @@ a.title-more{
 	padding-top: 0px;
 }
 .productsblock{
-	padding: 10px 0px;
+	padding: 0px;
 }
 .products-box-out{
 	display: flex;
@@ -494,7 +495,7 @@ a.title-more{
 }
 .content_box{
 	width: 24%;
-	margin: 0 0.66% 2%;
+	margin: 0 0.66% 15px;
 }
 .content_box:first-child,.content_box:nth-child(4n+1){
 	margin-left: 0px;
@@ -3620,7 +3621,7 @@ a.title-more{
 }
 .content_box{
 	width: 32%;
-	margin: 0 1% 2%;
+	margin: 0 1% 15px;
 }
 .content_box:nth-child(4n){
 	margin-right: 1%;
@@ -4768,7 +4769,7 @@ ul.search-sort .search-wrapper-date span{
 }
 .content_box{
 	width: 48.5%;
-	margin: 0 0% 2%;
+	margin: 0 0% 15px;
 }
 .content_box:nth-child(2n){
 	margin-left: 1.5%;
