@@ -2905,6 +2905,10 @@ li.other-contact{
 	padding: 0px 0px 20px;
 	line-height: 1.5;
 }
+.pass-senddone{
+	width: 340px;
+	margin: 0px auto;
+}
 .forgot-group .login-btn button{
 	padding: 20px 0px;
 }
@@ -4797,6 +4801,10 @@ ul.search-sort .search-wrapper-date span{
 		padding: 0px 10px 15px;
 	}
 	.account-upgrate-storage .personal-form li{padding: 0px 20px 15px;}
+	.pass-senddone{
+	width: 240px;
+	margin: 0px auto;
+}
 }
 
 @media only screen and (max-width:470px){
