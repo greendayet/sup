@@ -1328,6 +1328,7 @@ button.go-payment:hover{
  .total span{
  	margin: 0px 10px;
  } 
+ .wallet-step-block .remind{justify-content: center;}
  .remind{
  	text-align: right;
  	margin-bottom: 80px;
@@ -1579,9 +1580,9 @@ transform: translate(-50%,-50%);*/
 .forget-password a:hover{
 	text-decoration: underline;
 }
-.wallet-pay-c-side{
+/*.wallet-pay-c-side{
 	padding-top: 75px;
-}
+}*/
 
 .flex-center{
 	display: flex;
@@ -4814,6 +4815,10 @@ ul.search-sort .search-wrapper-date span{
 	.hidebtn{
 		display: none;
 	}
+.hidearrow .ui-accordion-header-icon{
+	display: none !important;
+}	
+
 /*.bg-qrcode{
 	background: url("../images/svg/bg-qrcode.svg") no-repeat center;
 	background-size: 100%;
@@ -4853,6 +4858,8 @@ ul.search-sort .search-wrapper-date span{
     font-size: 13px;
 }
 .products-type-head-name .shop-name{width: 60%;}
+.wallet-step-block .remind{display: block;text-align: right;margin-right: 0px;}
+.wallet-step-block .remind span{display: inline-block;margin-right: 0px;}
 
 }
 @media only screen and (max-width:500px){
