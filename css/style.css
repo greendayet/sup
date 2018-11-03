@@ -66,10 +66,10 @@ button,input,select{
 ::-webkit-input-placeholder{
 		color: #b5b5b6;
 	}
-select{
+select,input{
 	background: transparent;
 	border-radius: 0px;
-		-webkit-appearance:none;
+	-webkit-appearance:none;
 	}
 .bluegreen{
 	background: #7ceaee;
@@ -2881,9 +2881,7 @@ li.other-contact{
 }
 .register-group .login-mobile select{
 	border: solid 1px #d1d1d5;
-	height: 44px;
 	padding: 9px 10px;
-	font-size: 15px;
 	color: #7d7d7d;
 }
 .register-group .login-info ul li.referrer input,.register-group .login-info ul li.sex input{
@@ -4815,11 +4813,11 @@ ul.search-sort .search-wrapper-date span{
 		display: block;
 		text-align: center;
 	}
-	.account-upgrate-storage .personal-form li.expires .arrowdown,.account-upgrate-storage .personal-form li.storage-mobile  .arrowdown{
+	.account-upgrate-storage .personal-form li.expires .arrowdown,.account-upgrate-storage .personal-form li.storage-mobile  .arrowdown,.smallarrown .arrowdown{
 	border-width: 0 2px 2px 0;
 	padding: 3px;
 }
-.account-upgrate-storage .personal-form li.expires .selectout i,.account-upgrate-storage .personal-form li.storage-mobile .selectout i {
+.account-upgrate-storage .personal-form li.expires .selectout i,.account-upgrate-storage .personal-form li.storage-mobile .selectout i ,.smallarrown .selectout i{
     position: absolute;
     right: 8px;
     top: 13px;
