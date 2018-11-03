@@ -27,7 +27,7 @@ a,button,.btn{
 	transition-delay: 0s;
 	color: #333;
 }
-button,input,select{
+button,input,select,.a-btn{
 	font-size: 15px;
 }
 .clearboth{
@@ -2823,6 +2823,7 @@ li.other-contact{
 }
 .login-btn{
 	text-align: center;
+	margin-bottom: 20px;
 }
 .login-btn p{
 	padding:3px 0px;
@@ -4697,6 +4698,9 @@ transform: translate(-50%, 0%);
 }
 .login-info ul li.login-function{
 	padding-top: 15px;
+}
+.login-btn{
+	margin-bottom: 0px;
 }	
 .login-btn button,.login-btn .a-btn{
 	padding: 15px 0px;
