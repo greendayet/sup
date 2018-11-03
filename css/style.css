@@ -697,7 +697,8 @@ a.title-more{
 	display: none;
 }
 .inner-mall{
-	
+	clear: both;
+	overflow: hidden;
 }
 .category{
 	background-color: #7ebed7;
