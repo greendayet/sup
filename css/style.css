@@ -3447,6 +3447,7 @@ li.other-contact{
 	button,input,select,.a-btn{
 		font-size: 13px;
 	}
+	.setting{background: transparent;}
 	.noscroll{
 	overflow: hidden;
     position: fixed;
