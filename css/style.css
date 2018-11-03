@@ -884,7 +884,7 @@ a.title-more{
 
 .simpleLens-lens-element {
     background-color: #FFFFFF;
-    box-shadow: 0 0 2px 2px #8E8E8E;
+    border:1px solid #999;
     height: 350px;
     left: 108%;
     overflow: hidden;
@@ -1087,7 +1087,7 @@ a.title-more{
     color: #fff;
     text-align: left;
     padding: 10px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .products-info p{
 	font-size: 15px;
@@ -3428,7 +3428,7 @@ li.other-contact{
     width: 350px;
 	}
 	.products-type-head-name .shop-name{
-		width: 60%;
+		width: 76%;
 	}
 	.stored-currency div p{
 		flex:1;
@@ -3486,6 +3486,16 @@ li.other-contact{
 	}
 	.products-info > div{
 		display: none;
+	}
+	.product-manual{
+		display: inline-block !important;
+	}
+	.products-type-group .cart-detail-type{
+		margin-bottom: 10px;
+	}
+	.products-info{
+	padding-top: 10px;
+    border-top: solid 1px #ddd;
 	}
 .add-pro-btn{width: 100%;}
 	.add-pro-btn div:last-child{
@@ -4816,6 +4826,7 @@ ul.search-sort .search-wrapper-date span{
     padding-left: 25px;
     font-size: 13px;
 }
+.products-type-head-name .shop-name{width: 60%;}
 
 }
 @media only screen and (max-width:500px){
