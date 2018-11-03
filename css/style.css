@@ -969,9 +969,9 @@ a.title-more{
 .Evaluation-mobile{
 	display: none;
 }
-/*.Evaluation button.btn-star::before{
+.seller-store .Evaluation button.btn-star::before{
 	color: #fff;
-}*/
+}
 .community-mobile-link{
 	position: absolute;
 	right: 0px;
@@ -1830,6 +1830,7 @@ transform: translate(-50%,-50%);*/
 	width: 22px;
 	height: 20px;
 	margin-right: 10px;
+	margin-bottom: 5px;
 	vertical-align: middle;
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 1375% 1350%;
@@ -3355,6 +3356,7 @@ li.other-contact{
 	}
 	.seller-contact-head{
 	width: 30%;
+	text-align: left;
 	}
 	.seller-contact{
 		justify-content: space-between;
