@@ -27,7 +27,7 @@ a,button,.btn{
 	transition-delay: 0s;
 	color: #333;
 }
-button,input,select{
+button,input,select,.a-btn{
 	font-size: 15px;
 }
 .clearboth{
@@ -446,6 +446,7 @@ a.title-more{
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
+	padding-bottom: 1%;
 }
 .products-box-main5{
 	display:flex;
@@ -495,7 +496,7 @@ a.title-more{
 }
 .content_box{
 	width: 24%;
-	margin: 0 0.66% 20px;
+	margin: 0 0.66% 2%;
 }
 .content_box:first-child,.content_box:nth-child(4n+1){
 	margin-left: 0px;
@@ -558,7 +559,7 @@ a.title-more{
 }
 .products-box-main .shop-name{
 	font-size: 18px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .shop-description{
@@ -647,7 +648,7 @@ a.title-more{
 }
 .event-box-out time{
 	display: inline-block !important;
-	font-size: 15px !important;
+	/*font-size: 15px !important;*/
 }
 .event-box-out h2 a{
 	color:#171c61;
@@ -2823,6 +2824,7 @@ li.other-contact{
 }
 .login-btn{
 	text-align: center;
+	margin-bottom: 20px;
 }
 .login-btn p{
 	padding:3px 0px;
@@ -2904,6 +2906,10 @@ li.other-contact{
 	text-align:center;
 	padding: 0px 0px 20px;
 	line-height: 1.5;
+}
+.pass-senddone{
+	width: 340px;
+	margin: 0px auto;
 }
 .forgot-group .login-btn button{
 	padding: 20px 0px;
@@ -3555,6 +3561,9 @@ li.other-contact{
 		padding: 10px 10px;
 		font-size: 13px;
 	}
+	.event-box-out ul li:last-child{
+		margin-bottom: 0px;
+	}
 	.event-box-out p{
 		font-size: 13px;
 		height: 32px;
@@ -3572,7 +3581,7 @@ li.other-contact{
 	.products-type-head{
 		margin-bottom: 10px;
 	}
-	.container{width: 100%;padding: 0px 10px 20px;box-sizing: border-box;}
+	.container{width: 100%;padding: 0px 10px 10px;box-sizing: border-box;}
 	.setting-container{padding: 0px;}
 	.nopd{
 		padding: 0px;
@@ -3613,7 +3622,7 @@ a.title-more{
 }
 .content_box{
 	width: 32%;
-	margin: 0 1% 20px;
+	margin: 0 1% 2%;
 }
 .content_box:nth-child(4n){
 	margin-right: 1%;
@@ -3940,6 +3949,7 @@ a.title-more{
 	}
 	.register-group .login-info{
 		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.loginindex .login-info{
 		border-radius: 10px;
@@ -4069,6 +4079,7 @@ a.title-more{
 	.index h1,.index h1 a{
 		width: 29px;
 		height: 29px;
+		display: block;
 	}
 	.index h1{
 		padding-top: 5.5px;
@@ -4692,6 +4703,9 @@ transform: translate(-50%, 0%);
 }
 .login-info ul li.login-function{
 	padding-top: 15px;
+}
+.login-btn{
+	margin-bottom: 0px;
 }	
 .login-btn button,.login-btn .a-btn{
 	padding: 15px 0px;
@@ -4699,7 +4713,7 @@ transform: translate(-50%, 0%);
 .register-group .login-info ul li{
 	padding: 15px 0px;
 }
-	.products-box-main .shop-name,.shop-description{font-size: 15px;}
+	.products-box-main .shop-name,.shop-description,.price{font-size: 15px;}
 	.mall-products-left-group .shop-name img{
 		width: 18px;
 		height: 16px;
@@ -4756,7 +4770,7 @@ ul.search-sort .search-wrapper-date span{
 }
 .content_box{
 	width: 48.5%;
-	margin: 0 0% 20px;
+	margin: 0 0% 2%;
 }
 .content_box:nth-child(2n){
 	margin-left: 1.5%;
@@ -4796,6 +4810,10 @@ ul.search-sort .search-wrapper-date span{
 		padding: 0px 10px 15px;
 	}
 	.account-upgrate-storage .personal-form li{padding: 0px 20px 15px;}
+	.pass-senddone{
+	width: 240px;
+	margin: 0px auto;
+}
 }
 
 @media only screen and (max-width:470px){
