@@ -2856,9 +2856,9 @@ li.other-contact{
 }
 .register-head{
 	margin-bottom: 20px;
-	font-size: 24px;
-	letter-spacing:50px;
-	text-indent: 50px;
+	font-size: 21px;
+	letter-spacing:25px;
+	text-indent: 25px;
 	font-weight: 300;
 }
 .register-group .login-info{
@@ -3912,7 +3912,7 @@ a.title-more{
 }
 .login-wrapper h1,.login-wrapper h1 a{
 		display: block;
-		width: 144px; height: 119px;
+		width: 120px; height: 99px;
 	}
 	.login-body.loginindex{
 		padding-top: 40px !important;
@@ -3981,7 +3981,7 @@ a.title-more{
 	.login-body footer {
     background-color: transparent;
     color: #f0f0f0;
-    font-size: 13px;
+    font-size: 12px;
     padding-bottom:0px;
 	}
 	.login-info ul li.log-pass > div:nth-child(2){
