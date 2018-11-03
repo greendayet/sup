@@ -3436,7 +3436,7 @@ li.other-contact{
 	body,p,body.login-body{
 		font-size: 15px;
 	}
-	button,input,select{
+	button,input,select,.a-btn{
 		font-size: 13px;
 	}
 	.noscroll{
@@ -3940,6 +3940,7 @@ a.title-more{
 	}
 	.register-group .login-info{
 		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.loginindex .login-info{
 		border-radius: 10px;
