@@ -446,6 +446,7 @@ a.title-more{
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
+	padding-bottom: 1%;
 }
 .products-box-main5{
 	display:flex;
