@@ -3560,6 +3560,9 @@ li.other-contact{
 		padding: 10px 10px;
 		font-size: 13px;
 	}
+	.event-box-out ul li:last-child{
+		margin-bottom: 0px;
+	}
 	.event-box-out p{
 		font-size: 13px;
 		height: 32px;
@@ -3577,7 +3580,7 @@ li.other-contact{
 	.products-type-head{
 		margin-bottom: 10px;
 	}
-	.container{width: 100%;padding: 0px 10px 20px;box-sizing: border-box;}
+	.container{width: 100%;padding: 0px 10px 10px;box-sizing: border-box;}
 	.setting-container{padding: 0px;}
 	.nopd{
 		padding: 0px;
@@ -4708,7 +4711,7 @@ transform: translate(-50%, 0%);
 .register-group .login-info ul li{
 	padding: 15px 0px;
 }
-	.products-box-main .shop-name,.shop-description{font-size: 15px;}
+	.products-box-main .shop-name,.shop-description,.price{font-size: 15px;}
 	.mall-products-left-group .shop-name img{
 		width: 18px;
 		height: 16px;
