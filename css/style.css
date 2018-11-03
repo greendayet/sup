@@ -647,7 +647,7 @@ a.title-more{
 }
 .event-box-out time{
 	display: inline-block !important;
-	font-size: 15px !important;
+	/*font-size: 15px !important;*/
 }
 .event-box-out h2 a{
 	color:#171c61;
