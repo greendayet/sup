@@ -66,11 +66,11 @@
 </ul>
 <!--購物車內容-->
 <div class="form-white" style="background: #fff;">					
-<ul class="all-item-group">
+<ul class="all-item-group non-line">
   <li class="thead-select-all">
     <ol class="tr">
       <li>
-		  <label class="checked-cont black"><h2 class="shop-name"><img src="images/img-shopname.png">我的店铺名</h2>
+		  <label class="checked-cont black checked-cont-bottom"><h2 class="shop-name"><img src="images/img-shopname.png">我的店铺名</h2>
 				  <input class="cart-detail-checkbox" type="checkbox">
 			  <span class="checkmark"></span>
 		  </label>
@@ -78,7 +78,53 @@
 	  </li>
     </ol>
   </li>
-  <div class="cartline mobile-head-line"></div>						
+  <div class="cartline mobile-head-line"></div>	
+ <!--group start-->						
+  <li class="tbody">
+    <ol class="tr">
+      <li class="spec" data-title="店铺 / 商品規格">
+		  <div class="cart-detail">
+			  <label class="checked-cont black">
+				  <input class="cart-detail-checkbox" type="checkbox">
+			  <span class="checkmark"></span>
+		  	  </label>
+			<img class="cart-detail-img" src="images/img-product-485x388.jpg">
+			<div class="cart-detail-type">
+				<h3 class="cart-name">契尔式经典明星商品契尔式经典明星商品典明星商品品星商品品星商 100 ml</h3>
+				<p class="cart-category">类别：化妆 / 保养品</p>
+				<span class="price">USDT<b>250</b></span>
+				<!--mobile 数量-->
+				<div class="count-mobile">
+				<input class="count-min" id="min" name="" type="button" value="-" /> 
+				<input class="count-text" id="text_box" name="" type="text" value="1" /> 
+				<input class="count-add" id="add" name="" type="button" value="+" /> 
+				</div>
+				<!--mobile 数量-->
+			</div>  
+		  </div>
+		  
+	  </li>
+      <li class="count" data-title="数量">
+		<select>
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>99</option>
+		  </select>	
+	  </li>
+      <li class="price" data-title="价格">USDT 250</li>
+      <li class="change" data-title="变更"><button class="cart-delete"><i class="fas fa-trash-alt"></i></button></li>
+    </ol>
+	  <!--mobile 取消订单-->
+		  <div class="change-mobile">
+		  	<p class="closebtnorder">取消订单</p>
+		  	<p>小计<span>$500<b>SUP</b></span></p>
+		  </div>
+		  <!--mobile 取消订单-->
+  </li>
+  <div class="cartline"></div>					
+<!--group end--> 					
 <!--group start-->						
   <li class="tbody">
     <ol class="tr">
