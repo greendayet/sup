@@ -1913,14 +1913,18 @@ word-break: break-all;
 .acount-total li{
 	color: #7ab6d7;
 	display: inline-block;
-	font-size: 10px;
+	font-size: 13px;
 	letter-spacing: 0px;
+	padding-bottom: 3px;
+	display: flex;
+	justify-content: flex-end;
 }
 .acount-total li:nth-child(even){
 	margin-right: 0px;
 }
 .acount-total li span{
 	margin-left: 2px;
+	flex:1;
 }
 .acount-money{
 	color: #fff;
@@ -1933,8 +1937,9 @@ word-break: break-all;
 }
 .setting-left-list ul a{
 	color: #fff;
-	padding: 20px 0px;
+	padding: 15px 25px 15px 0px;
 	display: block;
+	text-align: right;
 }
 .setting-left-list ul a.active,.setting-left-list ul a:hover{
 	background: url("../images/bg-personal-active.png") repeat-y center right;
@@ -2959,7 +2964,7 @@ li.other-contact{
     z-index: 1;
     top: 0;
     left: 0;
-    background: #005580;;
+    background: url(../images/bg_menu_mobile.png) #005580 repeat-x center top;
     line-height: normal;
     overflow-x: hidden;
     transition: 0.5s;
@@ -2977,7 +2982,7 @@ li.other-contact{
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 20px;
     font-size: 36px;
     margin-left: 50px;
 }
