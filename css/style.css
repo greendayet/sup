@@ -4078,6 +4078,7 @@ a.title-more{
 	.index h1,.index h1 a{
 		width: 29px;
 		height: 29px;
+		display: block;
 	}
 	.index h1{
 		padding-top: 5.5px;
