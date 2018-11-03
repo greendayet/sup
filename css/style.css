@@ -67,7 +67,7 @@ button,input,select{
 		color: #b5b5b6;
 	}
 select,input{
-	background: transparent;
+	background: #fff;
 	border-radius: 0px;
 	appearance:none;
 	-webkit-appearance:none;
@@ -3914,7 +3914,7 @@ a.title-more{
 	}
 	.login-body.loginindex{
 		padding-top: 40px !important;
-		padding-bottom: 0px !important;
+		padding-bottom: 25px !important;
 	}
   .login-wrapper {
     max-width: 768px;
