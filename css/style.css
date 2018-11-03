@@ -1932,7 +1932,7 @@ word-break: break-all;
 .setting-left-list{}
 .setting-left-list ul{
 	text-align: center;
-	background: url("../images/bg-personal-bottom.png") no-repeat center top;
+	background: url("../images/bg-personal-bottom.png") no-repeat right top;
 	padding-top: 3px;
 }
 .setting-left-list ul a{
