@@ -4928,6 +4928,7 @@ ul.search-sort .search-wrapper-date span{
 	display: block;
 	text-indent: 25px;
 	}
+	.wallet-width .selectout,.count.wallet-width input{width: 50%;}
 }
 @media only screen and (max-width:374px){
 	.personal-form li.stored-currency.store-entrance-out{
