@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">	
-<title>SUPREME-WALLET-现场支付</title>
+<title>SUPREME-扫描二维码</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
-<body>
-	<div class="wrapper bg-gray">
+<body class="noscroll">
+	<div class="wrapper">
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
@@ -52,17 +52,57 @@
 			
 		</header>
 		<div class="main">
-			<div class="container">
+			<div class="container nopd">
 				<div class="inner-mall">
-					<div class="path"><a href="index.html">首頁</a> > 扫描</div>
-					<div class="bg-white out-clear">
-					
+					<div class="path"><a href="index.html">首頁</a> > 扫描 > 收款</div>
+					<div class="bg-white out-clear qrcode-left wallet-qrcode">
+						<div class="wallet-left-side">
+						<!--desktop start-->
+						<div class="desktop-wallet">
+						<div class="left-bottom-link">
+						<ul>
+							<li><a class="active" href="wallet-qrcode-01.html"><img src="images/svg/wallet-left-4.svg">收款</a></li>
+							<li><a href="wallet-qrcode-02.html"><img src="images/svg/icon_qrscand.svg">票券</a></li>
+						</ul>
+						</div>
+						</div>
+					<!--desktop end-->	
+					</div>
+					<!--desktop start-->
+						<div class="desktop-wallet">
 					<div class="wallet-right-side">
 						<div class="wallet-step-block">
-							<div class="qrscand"><a href="wallet-qrcode-02.html"><img src="images/wallet-left-4.png"><span>收款</span></a></div>
-							<div class="qrscand"><a href="ticket.html"><img src="images/icon_qrscand.png"><span>票券</span></a></div>
+							<div><p class="orange">请选择支付币别，再输入金额。</p></div>
+							<div class="count wallet-width">
+							<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option>USDT</option>
+										<option>SUP</option>
+									</select>
+									</div>
+									<input type="text" value="500">
+							</div>
 						</div>
+						<button onclick="location.href='wallet-qrcode-01-a.html'" class="btn light-blue btn-wallet bold">确认付款</button>	
 					</div>
+					</div>
+					<!--desktop end-->
+					<!--mobile start-->
+					<div class="wallet-step-block mobile-wallet">
+						<div class="vertialcenter" style="width: auto;">
+							<div class="qrscand"><a href="wallet-qrcode-01-a-mobile.html"><img src="images/svg/wallet-left-4.svg"><span>收款</span></a></div>
+							<div class="qrscand"><a href="wallet-qrcode-02.html"><img src="images/svg/icon_qrscand.svg"><span>票券</span></a></div>
+						</div>
+						</div>
+				    <!--mobile end-->
+
+					<!--<div class="wallet-right-side">
+						<div class="wallet-step-block">
+							<div class="qrscand"><a href="wallet-qrcode-02.html"><img src="images/svg/wallet-left-4.svg"><span>收款</span></a></div>
+							<div class="qrscand"><a href="ticket.html"><img src="images/svg/icon_qrscand.svg"><span>票券</span></a></div>
+						</div>
+					</div>-->
 							
 				</div>
 				</div>

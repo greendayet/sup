@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">	
-<title>SUPREME - 儲值成功</title>
+<title>SUPREME-WALLET-现场支付</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -10,12 +10,12 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
-<body>
-	<div class="wrapper setting-wrapper">
+<body class="noscroll">
+	<div class="wrapper">
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
-				<h1 class="head-mobile">储值</h1>
+				<h1 class="head-mobile">扫描二维码</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
@@ -34,8 +34,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="home-mobile"><a href="account-upgrate.html"><i class="fas fa-angle-left"></i></a></div>
-				
+				<div class="home-mobile"><a href="wallet-qrcode-02.html"><i class="fas fa-angle-left"></i></a></div>			
 			</div>
 			<nav class="nav-desktop">
 				<ul>
@@ -53,51 +52,46 @@
 			
 		</header>
 		<div class="main">
-			<div class="container setting-container">
+			<div class="container nopd">
 				<div class="inner-mall">
-					<div class="path"><a href="index.html">首頁</a> > 设定 </div>
-					<div class="bg-white out-clear">
-					<div class="wallet-left-side setting wallet-pay-none">
-						<div class="setting-top">
-							<div class="setting-head">
-								<img class="user-photo" src="images/user.png">
-								<p class="personal-level ft13">等级<img src="images/img-trans.png"></p>
-								<p class="personal-name">Shaleen LIN</p>
-							</div>
-							<div class="acount-total">
-								<p class="ft15">帐户余额</p>
-								<ul>
-									<li>S COIN <span class="acount-money">1.000.000.000</span></li>
-									<li>USDT <span class="acount-money">1.000.000.000</span></li>
-									<li>ETH <span class="acount-money">1.000.000.000</span></li>
-									<li>SUP <span class="acount-money">1.000.000.000</span></li>
-								</ul>
-							</div>
+					<div class="path"><a href="index.html">首頁</a> > 扫描 > 票券</div>
+					<div class="bg-white out-clear wallet-qrcode">
+					<div class="wallet-left-side">
+						<!--desktop start-->
+						<div class="desktop-wallet">
+						<div class="left-bottom-link">
+						<ul>
+							<li><a href="wallet-qrcode-01.html"><img src="images/svg/wallet-left-4.svg">收款</a></li>
+							<li><a class="active" href="wallet-qrcode-02.html"><img src="images/svg/icon_qrscand.svg">票券</a></li>
+						</ul>
 						</div>
-						<div class="setting-left-list">
-							<ul>
-								<li><a href="index.html">回首页</a></li>
-								<li><a href="personal-setting.html">个人设定</a></li>
-								<li><a class="active" href="account-upgrate.html">账户升级</a></li>
-								<li><a href="member-management.html">会员管理</a></li>
-								<li><a href="wallet-setting.html">钱包设定</a></li>
-								<li><a href="transaction-record.html">交易纪录</a></li>
-								<li><a href="booking-info.html">订购信息</a></li>
-								<li><a href="mystore-status.html">我的店铺</a></li>
-								<li><a href="index.html">登出</a></li>
-							</ul>
 						</div>
+					<!--desktop end-->	
 					</div>
+						<!--desktop start-->
+						<div class="desktop-wallet">
 					<div class="wallet-right-side">
-						<div class="only-bg"></div>
 						<div class="wallet-step-block">
-							<div><p class="orange">儲值成功</p></div>
-							<div class="password-input">
-								<span style="color: #333;">您已成功刷卡储值，感謝您的使用。</span>
+							<div class="qrcode-img">
+								<img src="images/qrcode.png">
+							</div>
+							<div class="orange ft13">
+								2018DIGHISDRHG OIERHYIOERHIOYHE
+							</div>
+						</div>	
+					</div>
+						</div>
+					<!--desktop end-->
+						<!--mobile start-->
+						<div class="mobile-wallet">
+					<div class="wallet-step-block">
+							<div class="qrcode-img vertialcenter">
+								<img src="images/qrcode.png">
 							</div>
 						</div>
 					</div>
-				</div>
+				    <!--mobile end-->
+				</div>	
 				</div>
 			</div>
 		</div>
@@ -136,3 +130,11 @@ $(document).ready(function() {
   
 }); 
 </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion-wallet" ).accordion({
+      heightStyle: "content",
+    });
+  } );
+  </script>
