@@ -78,9 +78,23 @@
 						<div>ID或护照号码</div>
 						<div><input type="text" placeholder="身份证字或护照号码"></div>
 					</li>
-					<li class="login-mobile">
+					<li class="login-mobile smallarrown">
 						<div>手机</div>
-						<div class="flexbox short-width" style="text-align: left;    justify-content: space-between;">
+						<div style="display: flex;justify-content: flex-end;flex:1;margin-left: 5%;">
+						<div class="selectout" style="flex:1;margin-right: 2%;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select style="width: 100%;">
+										<option value="0">选择国码</option>
+										<option value="1">+886</option>
+								    <option value="2">+886</option>
+								    <option value="3">+886</option>
+								    <option value="4">+886</option>
+								    <option value="5">+886</option>
+									</select>
+						</div>
+						<span style="flex:1;"><input style="height: 38px;" type="text"></span>
+						</div>
+						<!--<div class="flexbox short-width" style="text-align: left;    justify-content: space-between;">
 							<div class="custom-select">
 								<select>
 									<option value="0">选择国码</option>
@@ -92,7 +106,7 @@
 								</select>
 							</div>
 							<span><input style="height: 44px;" type="text"></span>
-						</div>
+						</div>-->
 					</li>
 					<li class="longwidth">
 						<div>E-mail</div>
