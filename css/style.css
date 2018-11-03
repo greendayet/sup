@@ -73,6 +73,9 @@ select,input{
 	-webkit-appearance:none;
 	height: 40px;
 	}
+.loginindex input{
+	height: auto;
+}
 .bluegreen{
 	background: #7ceaee;
 	color: #124670 !important;
@@ -2848,7 +2851,7 @@ li.other-contact{
 	transform:none;
 	width: 100%;
 	padding-top: 0px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	/*height: 680px;
 	overflow-y: auto;*/
 }
