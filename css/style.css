@@ -69,9 +69,9 @@ button,input,select,.a-btn{
 select,input{
 	background: #fff;
 	border-radius: 0px;
-	appearance:none;
 	-webkit-appearance:none;
 	height: 40px;
+	box-sizing: border-box;
 	}
 .loginindex input{
 	height: auto;
@@ -1507,6 +1507,17 @@ top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);*/
 }
+.wallet-width{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+.wallet-width select{
+	width: 100%;
+}
+.wallet-width .selectout{width: 25%;}
+.count.wallet-width input{flex:none;}
 .qrcode-img{}
 .qrcode-img img{
 	max-width: 100%;
@@ -1526,7 +1537,7 @@ transform: translate(-50%,-50%);*/
 .count select,.count input,.wallet-step-block div.password-input input{
 	padding: 10px;
 	border: solid 1px #d1d1d5;
-	font-size: 19px;
+	/*font-size: 19px;*/
 }
 .count-c{
 	display: block;
@@ -3279,8 +3290,6 @@ li.other-contact{
   padding: 0px 16px;
   border: solid 1px #d1d1d5;
   user-select: none;
-  height: 42px;
-  line-height: 44px;
 }
 /*style items (options):*/
 .select-items {
