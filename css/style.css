@@ -1571,6 +1571,7 @@ transform: translate(-50%,-50%);*/
 }
 .wallet-step-block div.password-input input{
 	margin-left: 10px;
+	width: 100%;
 }
 .wallet-step-block div.forget-password{
 	text-align: right;
@@ -4490,6 +4491,10 @@ transform: translate(-50%, 0%);
 		background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
 	}
 	.out-clear{padding: 0px;display: block;}
+	.wallet-height{
+		position: relative;
+    	height: calc(100vh - 120px);
+	}
 	.wrapper-admin .out-clear{
 		display: block;
 	}
