@@ -69,7 +69,9 @@ button,input,select{
 select,input{
 	background: transparent;
 	border-radius: 0px;
+	appearance:none;
 	-webkit-appearance:none;
+	height: 40px;
 	}
 .bluegreen{
 	background: #7ceaee;
