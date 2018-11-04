@@ -73,6 +73,11 @@ select,input{
 	height: 40px;
 	box-sizing: border-box;
 	}
+textarea{
+	background: #fff;
+	border-radius: 0px;
+	-webkit-appearance:none;
+}	
 .loginindex input{
 	height: auto;
 }
@@ -1809,8 +1814,8 @@ word-break: break-all;
 .link-function{
 	position: relative;
 	position: absolute;
-	bottom: 0px;
-	right: 0px;
+	bottom: -5px;
+	right: 8px;
 }
 .link-function .community{
 	position: static;
@@ -2064,6 +2069,9 @@ word-break: break-all;
 }
 .personal-form ul{
 	margin-bottom: 30px;
+}
+.mystore .personal-form li.stored-currency{
+	padding: 10px 20px;
 }
 .account-upgrate-storage li{
 	margin-bottom: 0px;
@@ -4183,9 +4191,6 @@ a.title-more{
 		color: #181D62;
 		padding-top: 0px;
 	}
-	.wrapper-admin h1{
-		display: none;
-	}
 	.index h1,.index h1 a{
 		width: 29px;
 		height: 29px;
@@ -4203,7 +4208,10 @@ a.title-more{
 	/*.index h1,.index h1 a,.w3-teal{
 		display: block;
 	}*/
-	.wrapper-admin h1.head-mobile{color: #a6494d;}
+	.wrapper-admin.index h1,.wrapper-admin.index h1 a{
+		display: none;
+	}
+	.wrapper-admin h1.head-mobile{color: #a6494d;display: block;}
 	.path{
 		display: none;
 	}
@@ -4559,6 +4567,12 @@ transform: translate(-50%, 0%);
 		background: #fff;
 		padding-top: 15px;
 	}
+	.wrapper-admin .personal-form ul{
+		padding-top: 10px;
+		margin-bottom: 10px;
+	}
+	.wrapper-admin .personal-form li{padding-bottom: 10px;margin-bottom: 10px;}
+	.wrapper-admin .personal-form li:last-child{border-bottom: none;padding-bottom: 0px;margin-bottom: 0px;}
 	.setting-mobile-bg{
 		background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
 	}
@@ -5015,8 +5029,6 @@ ul.search-sort .search-wrapper-date span{
 	text-indent: 25px;
 	}
 	.wallet-width .selectout,.count.wallet-width input{width: 50%;}
-}
-@media only screen and (max-width:374px){
 	.personal-form li.stored-currency.store-entrance-out{
 		display: block;
 		text-align: center;
@@ -5025,7 +5037,9 @@ ul.search-sort .search-wrapper-date span{
 		justify-content: center;
 		padding: 10px 0px;
 	}
+	.mystore .stored-currency div p{margin: 0px 0px 5px 0px;}
 }
+
 @media only screen and (max-width:370px){
 .products-type-head-name .shop-name{
 	font-size: 18px;
