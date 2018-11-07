@@ -3554,7 +3554,7 @@ li.other-contact{
     width: 100%;
     background: url(../images/bg-login-m.png) #373d65 no-repeat center;
 	}
-	.noscrollindex .login-body{background: none;}
+	.noscrollindex .login-body{background: none !important;}
 	.stored-currency div p{
 		flex: none;
 	}
