@@ -2837,6 +2837,7 @@ li.other-contact{
 .login-box input{
 	width: 100%;
 	border: none;
+	outline: none;
 	background: transparent;
 	padding: 0px 10px;
 	vertical-align: middle;
