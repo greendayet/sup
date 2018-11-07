@@ -13,8 +13,8 @@ body{
 	letter-spacing: 0.75px;
 	color: #333;
 }
-body.login-body{
-	font-size: 21px;
+body.login-body,button{
+	font-size: 18px;
 }
 p{font-size: 18px;}
 button{
@@ -27,9 +27,10 @@ a,button,.btn{
 	transition-delay: 0s;
 	color: #333;
 }
-button,input,select,.a-btn{
+input,select,.a-btn{
 	font-size: 15px;
 }
+
 .clearboth{
 	clear: both;
 }
@@ -2814,7 +2815,7 @@ li.other-contact{
 .login-body{
 	background: url("../images/bg-login.png") #1d6f95 no-repeat center top;
 	padding: 170px 0px 35px;
-	color: #919191;
+	color: #4c4c4c;
 }
 
 .login-wrapper{
@@ -2867,7 +2868,7 @@ li.other-contact{
 	margin-bottom: 10px;
 }
 .login-info ul li{
-	padding: 30px 0px;
+	padding: 15px 0px;
 	border-bottom: solid 1px #c1c1c0;
 }
 .login-info ul li{
@@ -2952,10 +2953,9 @@ li.other-contact{
 }
 .register-head{
 	margin-bottom: 20px;
-	font-size: 21px;
+	font-size: 18px;
 	letter-spacing:25px;
 	text-indent: 25px;
-	font-weight: 300;
 }
 .register-group .login-info{
 	background: #fff;
@@ -3228,7 +3228,7 @@ li.other-contact{
 .radio-cont {
     display: block;
     position: relative;
-    padding-left: 40px;
+    padding-left: 30px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -3254,8 +3254,8 @@ li.other-contact{
     position: absolute;
     top: -2px;
     left: 0;
-    height: 30px;
-    width: 30px;
+    height: 22px;
+    width: 22px;
     background-color: #EFEFEF;
     border-radius: 50%;
 }
@@ -3285,10 +3285,10 @@ li.other-contact{
 
 /* Style the indicator (dot/circle) */
 .radio-cont .checkmark:after {
- 	top: 7px;
-	left: 7px;
-	width: 16px;
-	height: 16px;
+ 	top: 5px;
+	left: 5px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
 	background: #231916;
 }
@@ -3538,10 +3538,10 @@ li.other-contact{
 	body{
 		background: #f5f5f4;
 	}
-	body,p,body.login-body,.a-btn,.loginindex .log-btn{
+	body,p,body.login-body,.a-btn,.loginindex .log-btn,button{
 		font-size: 15px;
 	}
-	button,input,select{
+	input,select{
 		font-size: 13px;
 	}
 	.setting{background: transparent;}
@@ -4853,7 +4853,7 @@ transform: translate(-50%, 0%);
 	padding: 0px 10px;
 }
 .login-info ul{
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 .login-info ul li{
 	padding: 30px 0px 10px;
