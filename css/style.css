@@ -79,8 +79,9 @@ textarea{
 	-webkit-appearance:none;
 }	
 .loginindex input{
-	height: auto;
+	font-size: 21px;
 }
+.loginindex .log-btn,.fb-blue{font-size: 21px;}
 .bluegreen{
 	background: #7ceaee;
 	color: #124670 !important;
