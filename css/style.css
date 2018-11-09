@@ -29,10 +29,25 @@ a,button,.btn{
 }
 input,select,.a-btn{
 	font-size: 15px;
+	outline: none;
 }
 
 .clearboth{
 	clear: both;
+}
+.cart-number{
+	background: #353535;
+	border-radius: 99em;
+	color: #E1C81D;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 13px;
+	display: inline-block;
+	position: relative;
+	top: -11px;
+    right: 12px;
 }
 .money-kind{display: none;}
 .searchbox input{
@@ -80,7 +95,7 @@ textarea{
 	-webkit-appearance:none;
 }	
 .loginindex input{
-	font-size: 21px;
+	font-size: 18px;
 }
 .loginindex .log-btn,.fb-blue{font-size: 21px;}
 .bluegreen{
@@ -394,6 +409,9 @@ nav.nav-desktop li a:hover{
 	background: url("../images/bg-icon.png") no-repeat;
 	background-size: 2200% 2250%;/*20 18*/
 	background-position: 74.285714% 0%;/*292 0*/
+}
+.index .desktop-banner{
+	margin-bottom: 0px;
 }
 .desktop-banner{
 	display: block;
@@ -968,6 +986,7 @@ a.title-more{
 }
 .products-type-head-rightfunction span{
 	display: inline-block;
+	font-size: 15px;
 }
 
 .status-favorite .btn-favorite{position: static;}
@@ -1101,8 +1120,9 @@ a.title-more{
 	background-color: #7ebed7;
     color: #fff;
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px 7px;
     margin-bottom: 10px;
+    font-size: 15px;
 }
 .products-info p{
 	font-size: 15px;
@@ -1143,7 +1163,7 @@ a.title-more{
 .all-item-group,.all-discount-group{
 	margin-bottom: 30px;
 }
-
+.bluelist{background: #94c2db !important;padding: 0px 15px 0px 20px;box-sizing: border-box;}
 .thead,.thead-select-all{display: table; width: 100%;}
 .tr{display: table-row;}
 .tbody{display: table-row-group;
@@ -1156,7 +1176,6 @@ a.title-more{
 }
 .thead li{
   text-align: center;
-  background: #94c2db;
   color: #fff;
   padding: 15px 0px;
 }
@@ -1171,12 +1190,11 @@ a.title-more{
 }
 .thead li:first-child{
 	text-align:left;
-	padding-left: 15px;
 }
 .mall-cart ol:nth-child(even){
   background: rgba(#6cffd1,.2);
 }
-
+.cart-bottom > li:last-child > div.linebottom{border-bottom: none;}
 .tr li:first-child{
 	width:70%;
 }
@@ -1259,7 +1277,7 @@ a.title-more{
 }
 .cart-step-btn button{
 	color: #fff;
-	padding: 10px 0px;
+	padding: 30px 0px;
 	cursor: pointer;
 	border: none;
 	width: 50%;
@@ -1557,7 +1575,7 @@ transform: translate(-50%,-50%);*/
 	margin-left: 10px;
 }
 .count select,.count input,.wallet-step-block div.password-input input{
-	padding: 10px;
+	padding: 0px 10px;
 	border: solid 1px #d1d1d5;
 	/*font-size: 19px;*/
 }
@@ -2865,10 +2883,10 @@ li.other-contact{
 }
 .loginindex .login-info{border-radius: 0px 0px 10px 10px;}
 .login-info ul{
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 .login-info ul li{
-	padding: 15px 0px;
+	padding: 10px 0px;
 	border-bottom: solid 1px #c1c1c0;
 }
 .login-info ul li{
@@ -2953,7 +2971,7 @@ li.other-contact{
 }
 .register-head{
 	margin-bottom: 20px;
-	font-size: 18px;
+	font-size: 21px;
 	letter-spacing:25px;
 	text-indent: 25px;
 }
@@ -2977,7 +2995,7 @@ li.other-contact{
 }
 .register-group .login-mobile select{
 	border: solid 1px #d1d1d5;
-	padding: 9px 10px;
+	padding: 0px 10px;
 	color: #7d7d7d;
 }
 .register-group .login-info ul li.referrer input,.register-group .login-info ul li.sex input{
@@ -3389,7 +3407,7 @@ li.other-contact{
 .wallet-step-block .select-items div{
 	margin-bottom: 0px;
 }
-.pdtop{padding-top: 10px;}
+.pdtop{padding-top: 0px;}
 .personal-form li.login-password-mobile{
 	display: none;
 }
@@ -3400,7 +3418,9 @@ li.other-contact{
 		border: none;
 		cursor: pointer;
 	}
-.checked-cont-bottom{margin-bottom: 0px;}	
+.checked-cont-bottom{margin-bottom: 0px;}
+.linebottom{border-bottom: solid 1px #c6c6c6;margin: 0px 15px;}
+.linebottom .checked-cont.black{margin-left: 0px;}
 
 /* ======= Responsive ======= */
 
@@ -3544,6 +3564,7 @@ li.other-contact{
 	input,select{
 		font-size: 13px;
 	}
+	.linebottom{border-bottom: none;margin: 0px;}
 	.setting{background: transparent;}
 	.noscroll{
 	overflow: hidden;
@@ -3579,7 +3600,7 @@ li.other-contact{
 	.ticket-group .products-info{
 		display: none;
 	}
-	.thead-select-all .checked-cont.black{margin-left: 15px;}
+	.thead-select-all .checked-cont.black{margin-left: 0px;}
 .add-pro-btn{width: 100%;}
 	.add-pro-btn div:last-child{
 		flex: 2;
@@ -4060,6 +4081,7 @@ a.title-more{
     margin-bottom: 15px;
     width: 280px;
 	}
+	.register-head{font-size: 18px;}
 	.login-info {
     background: #fff;
     box-shadow: 2px 2px 10px #0f3d59; 
@@ -4868,7 +4890,7 @@ transform: translate(-50%, 0%);
 	padding: 15px 0px;
 }
 .register-group .login-info ul li{
-	padding: 15px 0px;
+	padding: 10px 0px;
 }
 	.products-box-main .shop-name,.shop-description,.price{font-size: 15px;}
 	.mall-products-left-group .shop-name img{
