@@ -18,7 +18,7 @@
 				<h1 class="head-mobile">店铺申请</h1>
 				<div class="head-rightfunction">
 					<ul>
-						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="index.html">注销</a></li>
+						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="login.html">登出</a></li>
 						<li><a href="admin-order.html">店铺后台</a></li>
 						<li><img src="images/img-trans.png">
 							<a href="#" class="tooltip">推广回馈
@@ -67,7 +67,7 @@
 								<li><a href="transaction-record.html">交易纪录</a></li>
 								<li><a href="booking-info.html">订购信息</a></li>
 								<li><a class="active" href="mystore-status.html">我的店铺</a></li>
-								<li><a href="index.html">登出</a></li>
+								<li><a href="login.html">登出</a></li>
 							</ul>
 						</div>
 					</div>
@@ -127,21 +127,27 @@
 						<div class="personal-form">
 							<div style="color: #0e3244;margin-bottom: 20px" class="ft24 storage-name">我的店铺</div>
 							<ul class="personal-info">
-								<li class="stored-currency"><span>等 级<img class="silver" src="images/img-trans.png"></span><div>
+								<!--等級不符,出現我要升級 start-->
+								<li class="stored-currency" style="display: none;"><span>等 级<img class="silver" src="images/img-trans.png"></span><div>
 									<p class="orange" style="text-align:left;">尚未符合资格，请先升级</p>
-									<button class="setting-btn2 setting-btn-yellow" onClick="window.open('http://www.example.com/');">我要升级</button>
+									<button class="setting-btn2 setting-btn-yellow" onClick="window.open('#');">我要升级</button>
 									</div>
 								</li>
-								<li class="stored-currency"><span>等 级<img class="gold" src="images/img-trans.png"></span><div>
+								<!--等級不符,出現我要升級 end-->
+								<!--升級後等級符合, 出現我要開店 start-->
+								<li class="stored-currency" style="display: none;"><span>等 级<img class="gold" src="images/img-trans.png"></span><div>
 									<button class="setting-btn2 setting-btn-lightblue" onclick="location.href='mystore-edit.html'">我要开店</button>
 									</div>
 								</li>
+								<!--升級後等級符合, 出現我要開店 end-->
+								<!--等級符合,並有開過店,才會出現 start-->
 								<li class="stored-currency store-entrance-out"><span>等 级<img class="gold" src="images/img-trans.png"></span><div class="store-entrance-btn">
-									<button class="setting-btn2 setting-btn-yellow" onclick="location.href='#'">取消店铺</button>
-									<button onclick="location.href='mystore-edit.html'" class="setting-btn2 setting-btn-lightblue">编辑店铺</button>
-									<button onclick="location.href='admin-order.html'" class="setting-btn2 setting-orange">后台管理</button>
+									<button class="setting-btn2 setting-btn-yellow" onclick="location.href='#'">取消</button>
+									<button onclick="location.href='mystore-edit.html'" class="setting-btn2 setting-btn-lightblue">编辑</button>
+									<button onclick="location.href='admin-order.html'" class="setting-btn2 setting-orange">管理</button>
 									</div>
 								</li>
+								<!--等級符合,並有開過店,才會出現 start-->
 							</ul>
 							<div class="clear"></div>
 						</div>
