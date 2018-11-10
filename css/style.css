@@ -149,6 +149,7 @@ textarea{
 	font-size: 16px;
 }
 .all-item-group .setting-btn2{width: 72px;font-size: 13px;padding: 5px 0px;}
+.all-item-group .setting-btn2.messagenotice{width: auto;}
 .setting-btn2{
 	color: #fff;
 	padding: 10px 20px;
@@ -580,6 +581,7 @@ a.title-more{
 	color: #4662A0;
 	margin-bottom: 5px;
 }
+.cart-name a{color: #4662A0;}
 .products-box-main .shop-name{
 	font-size: 18px;
 	margin-bottom: 5px;
@@ -917,7 +919,7 @@ a.title-more{
     overflow: hidden;
     position: absolute;
     top: 0;
-    width: 550px;
+    width: 620px;
     z-index: 9999;
     text-align: center;
 }
@@ -1214,7 +1216,7 @@ a.title-more{
 	 padding: 15px 5px;
 }
 .booking-info .tbody li{
-	 padding: 10px 0px 0px;
+	 padding: 10px 0px 10px;
 }
 .tr .price{
 	color: #ed6c00;
@@ -1281,6 +1283,9 @@ a.title-more{
 	cursor: pointer;
 	border: none;
 	width: 50%;
+}
+.wrapper-admin .cart-step-btn button{
+	padding: 15px 0px;
 }
 button.keep-shop{
 	background: #ceb44f;
@@ -2076,7 +2081,6 @@ word-break: break-all;
 	padding: 9px 10px;
 	border: solid 1px #d1d1d5;
 	color: #2476a0;
-	height: 40px;
 }
 .personal-form li{
 	padding-bottom: 15px;
@@ -2090,8 +2094,57 @@ word-break: break-all;
 .personal-form ul{
 	margin-bottom: 30px;
 }
+.personal-form.mystoreapply ul{margin-bottom: 0px;}
+.personal-form.mystoreapply li div{flex:1.75;}
+.storeapplyfile{
+	background: #b9b9b9;
+	color: #fff;
+	text-align: center;
+	width: 80px;
+}
+
+/*upload input*/
+.uploadbutton {
+    border: solid 1px #d1d1d5;
+    color: #2476a0; 
+    border-radius: 2px;  
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.uploadbutton .input-file {
+  opacity: 0;   
+  display: none;
+}
+
+.uploadbutton .button {
+    width: 80px;
+    line-height: 36px;
+    text-align: center;
+    background: #b9b9b9;
+	color: #fff;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.uploadbutton:hover .button {
+    background: #7f7e7e;
+}
+
+.uploadbutton .input-file-text {
+    width: 71%;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: left;
+    overflow: hidden;
+}
+/*upload input*/
+
 .mystore .personal-form li.stored-currency{
-	padding: 10px 20px;
+	padding: 10px 0px;
 }
 .account-upgrate-storage li{
 	margin-bottom: 0px;
@@ -2109,6 +2162,7 @@ word-break: break-all;
 }
 .personal-form li span:last-child{
 	color: #2476a0;
+	text-align: right;
 }
 .setting-right{
 	flex: 2;
@@ -2289,7 +2343,7 @@ word-break: break-all;
 	display: flex;
 }
 #accordion li ul li span:first-child{
-	margin-left: 150px;
+	margin-left: 135px;
 }
 #accordion li ul li span:last-child{
 	margin-right: 150px;
@@ -2381,14 +2435,17 @@ section.record {
 	height: 500px;
 	overflow-y: auto;
 }
-section.record .thead li{
+.tabhead{
+	margin-bottom: 0px;
+}
+.tabhead .thead li{
 	background: none;
 	color: #171c61;
 	width: 20% !important;
 	padding: 0px !important;
 	text-align: center !important;
 }
-section.record .thead{
+.tabhead .thead{
 	padding: 15px 0px;
 	/*border-bottom: solid 2px #d4d4d4;*/
 	background: #a9cadf;
@@ -2419,10 +2476,15 @@ section.record li.tbody li{
 	text-align: center;
 }
 .booking-info{}
-.booking-info li.tbody li,.booking-info li.thead-select-all li{
+.booking-info li.thead-select-all li{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
+}
+.booking-info li.tbody li{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 .booking-info .cart-detail{flex: 1;}
 .booking-info .cart-detail,.booking-info .cart-detail p,.booking-info .cart-detail .price{font-size: 15px;}
@@ -2705,7 +2767,7 @@ li.other-contact{
     box-sizing: border-box;
 }
 .wrapper-admin .add-pro textarea{
-	min-height: 150px;
+	min-height: 100px;
 	padding: 10px;
 	border: solid 1px #d1d1d5;
 	width: 100%;
@@ -2731,7 +2793,19 @@ li.other-contact{
 	background-size: 1333.333333% 1760.8695657%;
 	background-position: 92.137592% 0%;/*375 0*/
 }
-
+.uploadfile{
+	background: url("../images/bg-icon.png") no-repeat;
+	width: 33px !important;
+    height: 23px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: 1333.333333% 1760.8695657%;
+    background-position: 92.137592% 0%;
+    flex:none !important;
+    text-indent: -9999px;
+    cursor: pointer;
+    border: none;
+}
 .wrapper-admin .update-photo div{
 	flex:0;
 }
@@ -3160,6 +3234,9 @@ li.other-contact{
 .radioflex > span:last-child{
 	margin-left: 80px;
 }
+.mystoreapply .radioflex > span:last-child {
+    margin-left: 34px;
+}
 
 /*checked*/
 .checked-cont {
@@ -3421,6 +3498,77 @@ li.other-contact{
 .checked-cont-bottom{margin-bottom: 0px;}
 .linebottom{border-bottom: solid 1px #c6c6c6;margin: 0px 15px;}
 .linebottom .checked-cont.black{margin-left: 0px;}
+/*Pages Start*/
+.pagination_title {
+    font-size: 10pt;
+    margin-top: 0px;
+    border-top: 1px solid #CCC;
+    background: #F1F1F1;
+}
+
+div.pagination {
+    overflow: hidden;
+    font-size: 9pt;
+    padding: 10px 0;
+}
+
+div.pagination ul {
+    list-style: none;
+    padding: 2px 0;
+    line-height: 16px;
+}
+
+div.pagination li {
+    display: inline-block;
+    padding: 10px 0px 0px;
+}
+
+div.pagination.scott {
+	padding:3px;
+	margin:10px;
+	text-align:center;
+}
+
+div.pagination.scott a {
+	padding: 2px 5px 2px 5px;
+	margin-right: 2px;
+	border: 1px solid #ddd;
+
+	text-decoration: none;
+	color: #999999;
+}
+
+div.pagination.scott a:hover, div.pagination.scott a:active {
+	border:1px solid #777777;
+	color: #666666;
+	background-color: #EAEAEA;
+}
+
+div.pagination.scott li.current {
+	padding: 2px 5px 2px 5px;
+	margin-right: 2px;
+	border: 1px solid #999999;
+	font-weight: bold;
+	background-color: #999999;
+	color: #FFF;
+}
+
+div.pagination.scott li.disabled {
+	margin-right: 2px;
+	color: #999999;
+}
+/*Pages End*/
+
+.mobile-visibile{
+		display: none;
+	}
+.account-upgrate-storage .personal-form.mystoreapply .radioflex input{
+	flex:none;
+}	
+.outspace{
+		display: block;margin-bottom: 0px;
+	}
+.contactchoice{flex:0.75;word-break: break-all;white-space: nowrap;}	
 
 /* ======= Responsive ======= */
 
@@ -3429,7 +3577,7 @@ li.other-contact{
 		width: 980px;
 	}
 	.simpleLens-lens-element {
-    width: 450px;
+    width: 507px;
 	}
 	.info-2{
 		flex:1;
@@ -3451,6 +3599,13 @@ li.other-contact{
 	.wallet-pay-c-side 	.wallet-step-block{
 	width: 70%;
 	}
+	.mystoreapply .radioflex > span:last-child{
+		margin-left: 0px;
+	}
+	.personal-form.mystoreapply .radioflex{display: block;}
+	.outspace{
+		display: block;margin-bottom: 10px;
+	}
 }
 @media only screen and (max-width: 1050px) {
 	.container,.head,nav.nav-desktop{
@@ -3461,7 +3616,7 @@ li.other-contact{
     padding: 0px 16px;
 	}
 	.simpleLens-lens-element {
-    width: 418px;
+    width: 465px;
 	}
 	.wallet-pay-c-side .wallet-width .selectout{width: 35%;}
 }
@@ -3478,7 +3633,7 @@ li.other-contact{
     min-width: 220px;
 	}
 	.simpleLens-lens-element {
-    width: 390px;
+    width: 439px;
 	}
 	.products-box-out ul{
 		display: flex;
@@ -3524,7 +3679,7 @@ li.other-contact{
     padding: 0px 10px;
 	}
 	.simpleLens-lens-element {
-    width: 350px;
+    width: 398px;
 	}
 	.products-type-head-name .shop-name{
 		width: 76%;
@@ -3536,9 +3691,9 @@ li.other-contact{
 	.stored-currency div.storage-credit-money{
 		display: block;
 	}
-	.stored-currency div.storage-credit-money div:last-child{
+	/*.stored-currency div.storage-credit-money div:last-child{
 		padding-top: 10px;
-	}
+	}*/
 	.stored-currency div.storage-credit-money div:last-child p{
 		flex:none;
 	}
@@ -3548,7 +3703,7 @@ li.other-contact{
 		width: 740px;
 	}
 	.simpleLens-lens-element {
-    width: 340px;
+    width: 382px;
 	}
 }
 
@@ -3563,6 +3718,12 @@ li.other-contact{
 	}
 	input,select{
 		font-size: 13px;
+	}
+	#accordion li ul li span:first-child{
+		margin-left: 0px;
+	}
+	.account-upgrate-storage .personal-form.mystoreapply .radioflex input{
+		width: 80%;
 	}
 	.linebottom{border-bottom: none;margin: 0px;}
 	.setting{background: transparent;}
@@ -3721,7 +3882,11 @@ li.other-contact{
 	}
 	.container{width: 100%;padding: 0px 10px 10px;box-sizing: border-box;}
 	.setting-container{padding: 0px;}
-	.nopd{
+	.setting-wrapper .container{padding: 0px 0px 10px;}
+	#accordion li ul li span:last-child{
+		margin-right: 0px;
+	}
+	.nopd,.personal-form.wallet-setting-pd0 #accordion li li{
 		padding: 0px;
 	}
 	.pdtop{
@@ -4584,6 +4749,10 @@ transform: translate(-50%, 0%);
 		flex-wrap: wrap;
 	}
 	.account-upgrate-storage .personal-form li{padding: 0px 20px 15px;}
+	.mystore .personal-form li.stored-currency {
+    padding: 10px 20px;
+	}
+	.store-entrance-out button{width: 33% !important;}
 	.wrapper-admin .personal-form{width: 100%;}
 	.mobile-visibile{
 		display: block;
@@ -4684,12 +4853,19 @@ transform: translate(-50%, 0%);
 	.medal-intro ul li img{
 		margin-right: 20px;
 	}
+	.setting-wrapper .medal-intro ul li img{
+		width: 50px;
+		height: 48px;
+	}
 	.account-upgrate-intro section{
 		justify-content: space-around;
 		flex-wrap: wrap;
 		padding: 0px 30px 30px;
 		padding-top: 45px !important;
 	}
+	.pd15{padding-top: 15px !important;}
+	.account-upgrate-intro section.pd15{padding-top: 15px !important;padding-bottom: 15px !important;margin-bottom: 0px;}
+	.medal-intro ul li:last-child{margin-bottom: 0px;}
 	.account-upgrate-intro{
 		padding: 0px;
 	}
@@ -4745,8 +4921,11 @@ transform: translate(-50%, 0%);
 	.setting-wrapper .transaction-record .all-item-group .tr li:before{
 		background: #a9cadf;
 		padding-right: 0px;
-		padding: 1.5em 2.5em;
+		padding: 15px 0;
 		margin-right: 1em;
+		width: 25%;
+		box-sizing: border-box;
+		text-align: center;
 	}
 	.setting-wrapper .transaction-record section.record li.tbody li{
 		display: block;
@@ -4792,7 +4971,7 @@ transform: translate(-50%, 0%);
 		height: 36px;
 		width: 100%;
 		background: #fff;
-		padding: 10px;
+		padding: 0px 10px;
 		box-sizing: border-box;
 	}
 	.order-history-search.selectout i{right: 25px;top:19px;}
@@ -4824,6 +5003,7 @@ transform: translate(-50%, 0%);
 		padding: 10px 15px;
 		height: 60px;
 		box-sizing: border-box;
+		line-height: 54px;
 	}
 	.booking-info .tr li:before{
 		padding-right: 0px;
@@ -4854,7 +5034,7 @@ transform: translate(-50%, 0%);
 		padding: 5px 15px;
 	}
 	.message_notice .thead-select-all.first li{
-		padding: 15px 15px;
+		padding: 10px 15px;
 	}
 	.simpleLens-gallery-container{
 		height: 100%;
@@ -4978,7 +5158,18 @@ ul.search-sort .search-wrapper-date span{
 .products-type-head-name .shop-name{width: 60%;}
 .wallet-step-block .remind{display: block;text-align: right;margin-right: 0px;}
 .wallet-step-block .remind span{display: inline-block;margin-right: 0px;}
+.account-upgrate-storage .personal-form.mystoreapply .credit input{
+		width: 75%;
+	}
 
+}
+@media only screen and (max-width:560px){
+	.mystoreapply .radioflex > span:last-child{
+		margin-left: 0px;
+	}
+	.personal-form.mystoreapply .radioflex{
+		display: block;
+	}
 }
 @media only screen and (max-width:500px){
 .short-width{}
@@ -4992,6 +5183,12 @@ ul.search-sort .search-wrapper-date span{
 .flexbox span:last-child{
 	width: 50%;
 }
+.account-upgrate-storage .personal-form.mystoreapply .credit input{
+		width: 70%;
+	}
+.contactchoice{
+	flex:1;
+}	
 }
 @media only screen and (max-width:480px){
 	.personal-form li.stored-currency{
@@ -5014,6 +5211,12 @@ ul.search-sort .search-wrapper-date span{
 	.store-entrance-btn .setting-btn2{
 		padding: 10px 15px;
 	}
+	.account-upgrate-storage .personal-form.mystoreapply .credit input{
+		width: 65%;
+	}
+	.contactchoice{
+	flex:1.5;
+}
 }
 
 @media only screen and (max-width:430px){
@@ -5039,6 +5242,10 @@ ul.search-sort .search-wrapper-date span{
 }
 .account-upgrate-storage .personal-form li.expires p{margin: 0px 5px;}
 .storage-mobile .selectout{flex:1 !important;}
+.account-upgrate-storage .personal-form.mystoreapply .credit input{
+		width: 60%;
+		margin-left: 0px;
+	}
 }
 
 @media only screen and (max-width:400px){
@@ -5063,6 +5270,10 @@ ul.search-sort .search-wrapper-date span{
 		padding: 10px 0px;
 	}
 	.mystore .stored-currency div p{margin: 0px 0px 5px 0px;}
+	.account-upgrate-storage .personal-form.mystoreapply .credit input{
+		width: 50%;
+		margin-left: 0px;
+	}
 }
 
 @media only screen and (max-width:370px){
