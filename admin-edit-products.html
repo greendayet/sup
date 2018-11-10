@@ -20,18 +20,6 @@
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="login.html">登出</a></li>
 						<li><a href="mystore-status.html">回购物前台</a></li>
-						<li><img src="images/img-trans.png">
-							<a href="#" class="tooltip">推广回馈
-							<span class="tooltiptext">
-								<div class="qrcode-img">
-								<img src="images/qrcode.png">
-								</div>
-								<div class="orange ft13">
-									2018DIGHISDRHG OIERHYIOERHIOYHE
-								</div>
-							</span>
-							</a>
-						</li>
 					</ul>
 				</div>
 				<div class="home-mobile"><a href="mystore-status.html"><i class="fas fa-angle-left"></i></a></div>
@@ -51,9 +39,9 @@
 					<div class="wallet-left-side setting">
 						<div class="setting-left-list">
 							<ul class="threebox">
-								<li><a href="admin-all-products.html">全部商品</a></li>
+								<li><a class="active" href="admin-all-products.html">全部商品</a></li>
 								<li><a href="admin-out-products.html">下架商品</a></li>
-								<li><a class="active" href="admin-add-products.html">新增商品</a></li>
+								<li><a href="admin-add-products.html">新增商品</a></li>
 							</ul>
 						</div>
 					</div>
@@ -66,17 +54,26 @@
 									<div class="selectout">
 										<i style="color: #868686;" class="arrowdown"></i>
 									<select>
+										<option>鞋包配饰</option>
 										<option>選擇分類</option>
-										<option>12345</option>
+										<option>美妆药妆</option>
+										<option>流行服饰</option>
+										<option>电玩娱乐</option>
+										<option>清洁医疗</option>
 									</select>
 									</div>
 								</li>
 								<li class="personal-mobile"><span>售价</span>
 									<div>
-									<select>
+									<div class="selectout smallarrow">
+										<i style="color: #868686;" class="arrowdown"></i>
+									<select style="width: 100%;">
 										<option>USDT</option>
 										<option>S COIN</option>
+										<option>ETH</option>
+										<option>SUP</option>
 									</select>
+									</div>
 									<input type="text" value="500">
 									</div>
 								</li>
@@ -85,8 +82,9 @@
 									<div class="selectout">
 										<i style="color: #868686;" class="arrowdown"></i>
 									<select>
-										<option value="0">產品 / 票券</option>
-										<option>12345</option>
+										<option>產品</option>
+										<option>"选择"" 產品 / 票券</option>
+										<option>票券</option>
 									</select>
 									</div>
 								</li>
@@ -97,7 +95,7 @@
 											<div class="updatephoto-box"><button><i class="fas fa-times-circle" onclick="this.parentElement.parentElement.style.display='none';"></i></button><img src="images/img-product-small.jpg"></div>
 											<div class="updatephoto-box"><button><i class="fas fa-times-circle" onclick="this.parentElement.parentElement.style.display='none';"></i></button><img src="images/img-product-small.jpg"></div>
 										</div>
-										<img class="admin-updatephoto" src="images/img-trans.png">
+										<input class="uploadfile" type="file">
 									</div>
 								</li>
 								<li><span>说明</span><div><textarea placeholder="產品說明">超绝体验课程，只到7月底先抢先赢!超绝体验课程，只到7月底先抢先赢!超绝体验课程，只到7月底先抢先赢!超绝体验课程，只到7月底先抢先赢!</textarea></div></li>
