@@ -1588,6 +1588,7 @@ transform: translate(-50%,-50%);*/
 }
 .count select{
 	background: url("../images/svg/bluearrow.svg") no-repeat right 12px top 13px;
+	width: 100%;
 }
 .count-c{
 	display: block;
@@ -1933,7 +1934,7 @@ word-break: break-all;
 .seller-contact{
 	background: #7ebfd7;
 	padding: 20px;
-	color: #181d62;
+	color: #fff;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -2019,7 +2020,7 @@ word-break: break-all;
 .acount-total li{
 	color: #7ab6d7;
 	display: inline-block;
-	font-size: 13px;
+	font-size: 15px;
 	letter-spacing: 0px;
 	padding-bottom: 3px;
 	display: flex;
@@ -4674,6 +4675,7 @@ transform: translate(-50%, 0%);
 	}*/
 	.seller-contact{
 		justify-content: flex-start;
+		color: #181d62;
 	}
 	.seller-store-banner{
 		margin-bottom: 10px;
@@ -4983,6 +4985,9 @@ transform: translate(-50%, 0%);
 		width: 100% !important;
 		text-align: left;
 		border-bottom: solid 1px #fff;
+	}
+	section.record .all-item-group{
+		margin-top: 64px;
 	}
 	.setting-wrapper .transaction-record section.record li.tbody{
 		border-bottom: none;
