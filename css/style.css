@@ -3764,7 +3764,6 @@ div.pagination.scott li.disabled {
     width: 100%;
     background: url(../images/bg-login-m.png) #373d65 no-repeat center;
 	}
-	.noscrollindex .login-body{background: transparent !important;}
 	.stored-currency div p{
 		flex: none;
 	}
@@ -5179,6 +5178,8 @@ ul.search-sort .search-wrapper-date span{
 .hidearrow .ui-accordion-header-icon{
 	display: none !important;
 }	
+
+.noscrollindex .login-body{background: transparent !important;}
 
 /*.bg-qrcode{
 	background: url("../images/svg/bg-qrcode.svg") no-repeat center;
