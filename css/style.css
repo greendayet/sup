@@ -1417,6 +1417,7 @@ button.go-payment:hover{
 	border-radius: 10px;
 	text-align: center;
 	color: #fff;
+	margin-top: 40px;
 	margin-bottom: 40px !important;
 }
 .qrscand img{
@@ -4282,6 +4283,7 @@ header{
 		padding-top: 40px !important;
 		padding-bottom: 0px !important;
 		background: url(../images/bg-login-m.png) #373d65 no-repeat center -422px;
+		overflow: hidden;
 	}
   .login-wrapper {
     max-width: 768px;
@@ -5382,13 +5384,6 @@ html.noscrollindex{
 	}
 }
 
-
-
-@media only screen and (max-height:800px){
-	html{
-		height: auto;
-	}
-}
 
 .masonry { /* Masonry container */
     -webkit-column-count: 4;
