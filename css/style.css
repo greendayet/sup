@@ -924,7 +924,7 @@ a.title-more{
     z-index: 9999;
     text-align: center;
 }
-.wrapper-admin .simpleLens-lens-element{width: 555px;}
+.wrapper-admin .simpleLens-lens-element{width: 422px;}
 
 .simpleLens-lens-element img{
     position:relative;
@@ -3635,6 +3635,9 @@ div.pagination.scott li.disabled {
     width: 465px;
 	}
 	.wallet-pay-c-side .wallet-width .selectout{width: 35%;}
+	.wrapper-admin .simpleLens-lens-element{
+		width: 375px;
+	}
 }
 
 @media only screen and (max-width: 950px) {
@@ -3660,6 +3663,9 @@ div.pagination.scott li.disabled {
 		width: 48%;
 		margin: 0 0 25px 0;
 		box-sizing: border-box;
+	}
+	.wrapper-admin .simpleLens-lens-element{
+		width: 344px;
 	}
 }
 @media only screen and (max-width: 910px) {
@@ -3720,6 +3726,9 @@ div.pagination.scott li.disabled {
 	}
 	.simpleLens-lens-element {
     width: 382px;
+	}
+	.wrapper-admin .simpleLens-lens-element{
+		width: 278px;
 	}
 }
 
