@@ -4281,6 +4281,7 @@ header{
 	.login-body.loginindex{
 		padding-top: 40px !important;
 		padding-bottom: 0px !important;
+		background: url(../images/bg-login-m.png) #373d65 no-repeat center -422px;
 	}
   .login-wrapper {
     max-width: 768px;
