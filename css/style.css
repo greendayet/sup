@@ -5188,13 +5188,13 @@ ul.search-sort .search-wrapper-date span{
 	display: none !important;
 }	
 
-.noscrollindex .login-body{background: transparent !important;}
+/*.noscrollindex .login-body{background: transparent !important;}
 html.noscrollindex{
 	overflow: hidden;
     position: fixed;
     width: 100%;
     background: url(../images/bg-login-m.png) no-repeat center !important;
-	}
+	}*/
 
 /*.bg-qrcode{
 	background: url("../images/svg/bg-qrcode.svg") no-repeat center;
