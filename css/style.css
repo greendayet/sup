@@ -1587,14 +1587,14 @@ transform: translate(-50%,-50%);*/
 	/*font-size: 19px;*/
 }
 .count select{
-	background: url("../images/bluearrow.png") no-repeat right 12px top 13px;
+	background: url("../images/svg/bluearrow.svg") no-repeat right 12px top 13px;
 }
 .count-c{
 	display: block;
 }
 .count-c select{
 	margin-left: 10px;
-	background: url("../images/bluearrow.png") no-repeat right 12px top 13px;
+	background: url("../images/svg/bluearrow.svg") no-repeat right 12px top 13px;
 }
 .text-left div{
 	text-align:left;
@@ -2087,7 +2087,7 @@ word-break: break-all;
 	padding: 9px 10px;
 	border: solid 1px #d1d1d5;
 	color: #2476a0;
-	background: url("../images/bluearrow.png") no-repeat right 12px top 13px;
+	background: url("../images/svg/bluearrow.svg") no-repeat right 12px top 13px;
 }
 .personal-form li{
 	padding-bottom: 15px;
@@ -2701,7 +2701,7 @@ li.other-contact{
 	font-size: 15px;
 	color: #8d8c8c;
 	-webkit-appearance: none;
-	background: url(../images/redarrow.png) #fff no-repeat right 12px top 16px;
+	background: url(../images/svg/redarrow.svg) #fff no-repeat right 12px top 16px;
 }
 .wrapper-admin .search-wrapper .arrow{
 	position: absolute;
@@ -2791,7 +2791,7 @@ li.other-contact{
 	color: #c06605;
 }
 .wrapper-admin .add-pro .personal-form li div select{
-	background: url(../images/grayarrow.png) no-repeat right 12px top 13px;
+	background: url(../images/svg/grayarrow.svg) no-repeat right 12px top 13px;
 }
 .wrapper-admin .add-pro .products-catgory select{
 	height: 37px;
@@ -3085,7 +3085,7 @@ li.other-contact{
 	border: solid 1px #d1d1d5;
 	padding: 0px 10px;
 	color: #7d7d7d;
-	background: url(../images/bluearrow.png) no-repeat right 12px top 13px;
+	background: url(../images/svg/bluearrow.svg) no-repeat right 12px top 13px;
 }
 .register-group .login-info ul li.referrer input,.register-group .login-info ul li.sex input{
 	width: 25px;
@@ -5301,7 +5301,7 @@ ul.search-sort .search-wrapper-date span{
     top: 13px;
 }
 .smallarrow select{
-	background: url("../images/bluearrow.png") no-repeat right 6px top 13px;
+	background: url("../images/svg/bluearrow.svg") no-repeat right 6px top 13px;
     background-size: 15px 9px;
 }
 .account-upgrate-storage .personal-form li.expires select,.account-upgrate-storage .personal-form li.storage-mobile select{
