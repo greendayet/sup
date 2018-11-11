@@ -5059,11 +5059,17 @@ transform: translate(-50%, 0%);
 	.booking-info .thead-select-all li{
 		padding: 15px;
 	}
-	.booking-info .thead-select-all .tr li{
+	.booking-info .message_notice .thead-select-all .tr li{
 		padding: 10px 15px;
 		height: 60px;
 		box-sizing: border-box;
 		line-height: 54px;
+	}
+	.booking-info .thead-select-all .tr li{
+		padding: 10px 15px;
+		height: 60px;
+		box-sizing: border-box;
+		line-height: normal;
 	}
 	.booking-info .tr li:before{
 		padding-right: 0px;
