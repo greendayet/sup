@@ -5184,7 +5184,7 @@ ul.search-sort .search-wrapper-date span{
 }	
 
 .noscrollindex .login-body{background: transparent !important;}
-.noscrollindex{
+html.noscrollindex{
 	overflow: hidden;
     position: fixed;
     width: 100%;
