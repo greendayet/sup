@@ -69,6 +69,7 @@ input,select,.a-btn{
     padding: 5px;
 	transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    display: none;
 }
 
 .flexbox{
@@ -923,6 +924,7 @@ a.title-more{
     z-index: 9999;
     text-align: center;
 }
+.wrapper-admin .simpleLens-lens-element{width: 555px;}
 
 .simpleLens-lens-element img{
     position:relative;
@@ -1584,11 +1586,15 @@ transform: translate(-50%,-50%);*/
 	border: solid 1px #d1d1d5;
 	/*font-size: 19px;*/
 }
+.count select{
+	background: url("../images/bluearrow.png") no-repeat right 12px top 13px;
+}
 .count-c{
 	display: block;
 }
 .count-c select{
 	margin-left: 10px;
+	background: url("../images/bluearrow.png") no-repeat right 12px top 13px;
 }
 .text-left div{
 	text-align:left;
@@ -1927,7 +1933,7 @@ word-break: break-all;
 .seller-contact{
 	background: #7ebfd7;
 	padding: 20px;
-	color: #fff;
+	color: #181d62;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -2081,6 +2087,7 @@ word-break: break-all;
 	padding: 9px 10px;
 	border: solid 1px #d1d1d5;
 	color: #2476a0;
+	background: url("../images/bluearrow.png") no-repeat right 12px top 13px;
 }
 .personal-form li{
 	padding-bottom: 15px;
@@ -2155,6 +2162,9 @@ word-break: break-all;
 .personal-form li span{
 	flex: 1;
 	color: #8d8c8c;
+}
+.wrapper-admin .personal-form li span{
+	flex:0.5;
 }
 .personal-form li div{
 	text-align: right;
@@ -2685,13 +2695,13 @@ li.other-contact{
 	vertical-align: middle;
 	padding:10px;
 	border: solid 1px #d1d1d5;
-	background: #fff !important;
 	border-radius: 0 !important;
 	height: 44px;
 	width: 100%;
 	font-size: 15px;
 	color: #8d8c8c;
 	-webkit-appearance: none;
+	background: url(../images/redarrow.png) #fff no-repeat right 12px top 16px;
 }
 .wrapper-admin .search-wrapper .arrow{
 	position: absolute;
@@ -2703,6 +2713,7 @@ li.other-contact{
     padding: 5px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    display: none;
 }
 
 .wrapper-admin .setting-left-list ul a{
@@ -2776,8 +2787,11 @@ li.other-contact{
 .wrapper-admin .add-pro .personal-form li div{
 	text-align: left;
 }
-.wrapper-admin .add-pro .personal-form li div input,.wrapper-admin .add-pro .personal-form li div textarea,.wrapper-admin .add-pro .personal-form li div select{
+.wrapper-admin .add-pro .personal-form li div input,.wrapper-admin .add-pro .personal-form li div textarea{
 	color: #c06605;
+}
+.wrapper-admin .add-pro .personal-form li div select{
+	background: url(../images/grayarrow.png) no-repeat right 12px top 13px;
 }
 .wrapper-admin .add-pro .products-catgory select{
 	height: 37px;
@@ -3071,6 +3085,7 @@ li.other-contact{
 	border: solid 1px #d1d1d5;
 	padding: 0px 10px;
 	color: #7d7d7d;
+	background: url(../images/bluearrow.png) no-repeat right 12px top 13px;
 }
 .register-group .login-info ul li.referrer input,.register-group .login-info ul li.sex input{
 	width: 25px;
@@ -3568,8 +3583,9 @@ div.pagination.scott li.disabled {
 .outspace{
 		display: block;margin-bottom: 0px;
 	}
-.contactchoice{flex:0.75;word-break: break-all;white-space: nowrap;}	
-
+.contactchoice{flex:0.75;word-break: break-all;white-space: nowrap;}
+.formpd li{padding: 4px 0px !important;}	
+.formpd li.radiospace{padding: 13px 0px !important;}
 /* ======= Responsive ======= */
 
 @media only screen and (max-width: 1350px) {
@@ -3719,6 +3735,7 @@ div.pagination.scott li.disabled {
 	input,select{
 		font-size: 13px;
 	}
+	.cart-step-btn button{font-size: 18px;}
 	#accordion li ul li span:first-child{
 		margin-left: 0px;
 	}
@@ -3765,6 +3782,16 @@ div.pagination.scott li.disabled {
 .add-pro-btn{width: 100%;}
 	.add-pro-btn div:last-child{
 		flex: 2;
+		width: 100%;
+	}
+	.add-pro-btn div button{
+		padding: 15px 0px !important;
+	}
+	.add-pro-btn div{
+		flex: 1;
+	}
+	.add-pro-btn div:first-child button{
+		display: block;
 		width: 100%;
 	}
 .add-pro-btn div:last-child button{
@@ -3882,7 +3909,7 @@ div.pagination.scott li.disabled {
 	}
 	.container{width: 100%;padding: 0px 10px 10px;box-sizing: border-box;}
 	.setting-container{padding: 0px;}
-	.setting-wrapper .container{padding: 0px 0px 10px;}
+	.setting-wrapper .container{padding: 0px 0px 0px;}
 	#accordion li ul li span:last-child{
 		margin-right: 0px;
 	}
@@ -3913,15 +3940,15 @@ div.pagination.scott li.disabled {
 	padding-left: 0px;
 }
 .index .title-blue{
-	padding: 0px 10px;
+	padding: 0px 0px 0px 10px;
 	height: 30px;
 	margin-bottom: 10px;
 }
 a.title-more{
 	font-size: 12px;
-	padding: 3px;
+	padding: 9px;
 	line-height: 12px;
-	background: #181D62;
+	background: #388dad;
 }
 .content_box{
 	width: 32%;
@@ -3938,6 +3965,18 @@ a.title-more{
 }
 .content_box:nth-child(3n),.content_box:last-child{
 	margin-right: 0px;
+}
+header{
+	position: fixed;
+	top: 0px;
+	z-index: 9999;
+	width: 100%;
+}
+.main{
+	margin-top: 100px;
+}
+.setting-wrapper .main{
+	margin-top: 40px;
 }
 	header,.wrapper-admin header{
 		height: 100px;
@@ -3965,8 +4004,10 @@ a.title-more{
 		border: solid 1px #872b2b;
 	}
 	.setting-btn{
-		padding: 10px 15px;
+		padding: 30px 15px;
+		font-size: 18px;
 	}
+	.wrapper-admin .setting-btn{padding: 10px 15px;}
 	.wrapper-admin .setting-left-list ul a{padding: 10px 0px;}
 	.w70{
 	width:100%;
@@ -4528,7 +4569,7 @@ a.title-more{
 	}
 	.mall-cart .cart-step-btn button{
 		width: 50%;
-		padding: 10px 0px;
+		padding: 30px 0px;
 	}
 	.simpleLens-lens-image{
 		width: auto;
@@ -4770,6 +4811,10 @@ transform: translate(-50%, 0%);
 	.setting-mobile-bg{
 		background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
 	}
+	.setting-white-bg{
+		height: calc(100vh - 40px);
+		background: #fff !important;
+	}
 	.out-clear{padding: 0px;display: block;}
 	.wallet-height{
 		position: relative;
@@ -4951,6 +4996,15 @@ transform: translate(-50%, 0%);
 	.setting-wrapper section.record{
 		overflow-y: auto;
 		height: auto;
+	}
+	.setting-wrapper section.record time span{
+		display: inline;
+	}
+	.setting-wrapper section.record time span:first-child{
+		margin-left: -5px;
+	}
+	.setting-wrapper section.record li:before{
+		padding: 10px 0px !important;
 	}
 	.wallet-total{
 		display: block;
@@ -5237,6 +5291,10 @@ ul.search-sort .search-wrapper-date span{
     right: 8px;
     top: 13px;
 }
+.smallarrow select{
+	background: url("../images/bluearrow.png") no-repeat right 6px top 13px;
+    background-size: 15px 9px;
+}
 .account-upgrate-storage .personal-form li.expires select,.account-upgrate-storage .personal-form li.storage-mobile select{
 	padding: 9px 7px;
 }
@@ -5289,7 +5347,7 @@ ul.search-sort .search-wrapper-date span{
 	.smallarrow .arrowdown{border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;}
-.smallarrow i{right: 15px;top: 15px;}	
+.smallarrow i{right: 15px;top: 13px;}	
 	.stored-currency div p{margin: 0px 0px 5px 0px;}
 }
 @media only screen and (max-width:320px){
