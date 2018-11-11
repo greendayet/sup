@@ -3983,6 +3983,10 @@ header{
 .main{
 	margin-top: 100px;
 }
+.index .main{
+	margin-top: 0px;
+}
+.index .banner{margin-top: 100px;}
 .setting-wrapper .main{
 	margin-top: 40px;
 }
