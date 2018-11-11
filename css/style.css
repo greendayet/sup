@@ -3758,12 +3758,6 @@ div.pagination.scott li.disabled {
     position: fixed;
     width: 100%;
 	}
-	.noscrollindex{
-	overflow: hidden;
-    position: fixed;
-    width: 100%;
-    background: url(../images/bg-login-m.png) #373d65 no-repeat center;
-	}
 	.stored-currency div p{
 		flex: none;
 	}
@@ -5184,6 +5178,12 @@ ul.search-sort .search-wrapper-date span{
 }	
 
 .noscrollindex .login-body{background: transparent !important;}
+.noscrollindex{
+	overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background: url(../images/bg-login-m.png) #373d65 no-repeat center;
+	}
 
 /*.bg-qrcode{
 	background: url("../images/svg/bg-qrcode.svg") no-repeat center;
