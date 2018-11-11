@@ -4284,6 +4284,7 @@ header{
 		padding-bottom: 0px !important;
 		background: url(../images/bg-login-m.png) #373d65 no-repeat center -422px;
 		overflow: hidden;
+		position: fixed;
 	}
   .login-wrapper {
     max-width: 768px;
