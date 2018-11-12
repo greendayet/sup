@@ -3992,7 +3992,7 @@ header{
 		background-position: center bottom -15px;
 	}
 	nav.nav-desktop li a{
-		padding: 0px;
+		padding: 0px 20px;
 	}
 	nav.nav-desktop li img{
 		margin: 0px;
