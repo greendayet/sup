@@ -3993,6 +3993,8 @@ header{
 	}
 	nav.nav-desktop li a{
 		padding: 0px;
+		width: 20%;
+		height: 60px;
 	}
 	nav.nav-desktop li img{
 		margin: 0px;
