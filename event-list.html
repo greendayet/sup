@@ -38,11 +38,16 @@
 				<div class="home-mobile"><a href="index.html"><i class="fas fa-home"></i></a></div>			
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script type="text/javascript">
-				$("nav.nav-desktop li a").mouseenter(function(){
-  $("nav.nav-desktop li a").css("background-color","#27548b");
+			<script>
+$(document).ready(function(){
+    $("nav.nav-desktop li a").mouseenter(function(){
+        $("nav.nav-desktop li a").css("background-color", "#27548b");
+    });
+    $("nav.nav-desktop li a").mouseleave(function(){
+        $("nav.nav-desktop li a").css("background-color", "transparent");
+    });
 });
-			</script>
+</script>
 			<nav class="nav-desktop">
 				<ul>
 					<li><a href="mall.html"><img src="images/svg/navi-icon-01.svg"><span>商城</span></a></li>
