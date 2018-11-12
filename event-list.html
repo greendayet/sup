@@ -37,6 +37,16 @@
 				</div>
 				<div class="home-mobile"><a href="index.html"><i class="fas fa-home"></i></a></div>			
 			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("nav.nav-desktop li a").hover(function(){
+        $(this).css("background-color", "#27548b");
+        }, function(){
+        $(this).css("background-color", "transparent");
+    });
+});
+</script>
 			<nav class="nav-desktop">
 				<ul>
 					<li><a href="mall.html"><img src="images/svg/navi-icon-01.svg"><span>商城</span></a></li>
@@ -93,12 +103,3 @@
 	</div>
 </body>
 </html>
-<script>
-$(document).ready(function(){
-    $("nav.nav-desktop li a").hover(function(){
-        $(this).css("background-color", "#27548b");
-        }, function(){
-        $(this).css("background-color", "transparent");
-    });
-});
-</script>
