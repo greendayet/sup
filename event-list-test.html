@@ -2,21 +2,20 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">	
-<title>SUPREME- 活动</title>
+<title>SUPREME</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">	
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<link rel="stylesheet" href="css/side-menu.css" type="text/css">
+	<link rel="stylesheet" href="css/side-menu.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper index" id="mainindex">
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
-				<h1 class="head-mobile">活动</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="login.html">登出</a></li>
@@ -35,67 +34,78 @@
 						</li>
 					</ul>
 				</div>
-				<div class="home-mobile"><a href="index.html"><i class="fas fa-home"></i></a></div>			
+
+				<!-- hamburger -->
+<span class="rwd-hamburger" onclick="openNav()">&#9776;</span>
+				
+				<!-- Sidebar -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="wallet-left-side setting">
+						<div class="setting-top">
+							<div class="setting-head">
+								<img class="user-photo" src="images/user.png">
+								<p class="personal-level ft13">等级<img src="images/img-trans.png"></p>
+								<p class="personal-name">Shaleen LIN</p>
+							</div>
+							<div class="acount-total">
+								<p class="ft15">帐户余额</p>
+								<ul>
+									<li>S COIN <span class="acount-money">1.000.000.000</span></li>
+									<li>USDT <span class="acount-money">1.000.000.000</span></li>
+									<li>ETH <span class="acount-money">1.000.000.000</span></li>
+									<li>SUP <span class="acount-money">1.000.000.000</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="setting-left-list">
+							<ul>
+								<li><a href="index.html">回首页</a></li>
+								<li><a href="personal-setting.html">个人设定</a></li>
+								<li><a href="account-upgrate.html">账户升级</a></li>
+								<li><a href="member-management.html">会员管理</a></li>
+								<li><a href="wallet-setting.html">钱包设定</a></li>
+								<li><a href="transaction-record.html">交易纪录</a></li>
+								<li><a href="booking-info.html">订购信息</a></li>
+								<li><a href="mystore-status.html">我的店铺</a></li>
+								<li><a href="login.html">登出</a></li>
+							</ul>
+						</div>
+					</div>
+</div>
+<div class="promotion-mobile"><a href="qrcode-active.html"><i class="fas fa-star"></i></a></div>
 			</div>
 			<nav class="nav-desktop">
 				<ul>
-					<li><a href="mall.html"><img src="images/svg/navi-icon-01.svg"><span>商城</span></a></li>
-					<li><a href="wallet-payA-step1.html"><img src="images/svg/navi-icon-02.svg"><span>钱包</span></a></li>
-					<li><a href="wallet-qrcode-01.html"><img src="images/svg/navi-icon-03.svg"><span>扫描</span></a></li>
-					<li><a href="ticket.html"><img src="images/svg/navi-icon-04.svg"><span>票券</span></a></li>
-					<li><a href="event-list.html"><img src="images/svg/navi-icon-05.svg"><span>活动</span></a></li>
+					<li><a class="i01" href="mall.html"><span>商城</span></a></li>
+					<li><a class="i02" href="wallet-payA-step1.html"><span>钱包</span></a></li>
+					<li><a class="i03" href="wallet-qrcode-01.html"><span>扫描</span></a></li>
+					<li><a class="i04" href="ticket.html"><span>票券</span></a></li>
+					<li><a class="i05" href="event-list.html"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
 					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
 					
 				</div>
 			</nav>
-			
 		</header>
-		<div class="main">
-			<div class="container nopd">
-				<div class="inner-mall">
-					<div class="left-side mallindex">
-						<div class="searchbox">
-					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>	
-				</div>
-						<h2 class="category">商品分类</h2>
-						<ul class="category-list">
-							<li><img src="images/img-trans.png"><a class="active" href="#">流行服饰</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">美妆药妆</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">鞋包配饰</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">妇幼玩具</a><span>|</span></li>
-							<li class="calculation"><img src="images/img-trans.png"><a href="#">计算机周边</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">家电影音</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">手机相机</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">电玩娱乐</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">美食保健</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">清洁医疗</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">宠物用品</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">居家寝具</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">运动户外</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">餐券旅游</a><span>|</span></li>
-							<li><img src="images/img-trans.png"><a href="#">图书文具</a><span>|</span></li>
-						</ul>
-					</div>
-					<div class="right-side">
-						<div class="path">首頁 > 商城</div>
-						
-						<div class="mall_jssor desktop-banner">
-						<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:900px;height:500px;overflow:hidden;visibility:hidden;">
+
+<!--desktop-banner-start-->
+	<div class="banner desktop-banner">
+		<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1920px;height:700px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:900px;height:500px;overflow:hidden;">
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1920px;height:700px;overflow:hidden;">
             <div>
-                <a href="#"><img data-u="image" src="images/slider-01.jpg" /></a>
+                <a href="#"><img data-u="image" src="images/banner-1.jpg" /></a>
             </div>
             <div>
-                <a href="#"><img data-u="image" src="images/slider-02.jpg" /></a>
+                <a href="#"><img data-u="image" src="images/banner-2.jpg" /></a>
             </div>
             <div>
-                <a href="#"><img data-u="image" src="images/slider-03.jpg" /></a>
+                <a href="#"><img data-u="image" src="images/banner-3.jpg" /></a>
             </div>
         </div>
         <!-- Bullet Navigator -->
@@ -118,8 +128,9 @@
             </svg>
         </div>
     </div>
-</div>
     <!-- #endregion Jssor Slider End -->
+	</div>	
+<!--desktop-banner-end-->
 
 <!--mobile-banner-start-->
 	<div class="banner mobile-banner">
@@ -150,179 +161,43 @@
     </div>
     <!-- #endregion Jssor Slider End -->
 	</div>	
-<!--mobile-banner-end-->
+<!--mobile-banner-end-->	
 
-	<div class="productsblock">				
-	 <div class="products-box-out">
-						<!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-1.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-
-     <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-2.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-
-     <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-3.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="#">契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-
-      <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-4.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品契尔氏经典明星商品契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-
-      <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-5.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-
-     <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-6.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-
-     <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-7.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-
-      <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-8.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">帽子帽子帽子帽子帽子帽子帽子帽子帽子帽子帽子帽子帽子帽子</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-     <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-9.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-     <!--products-->
-     <div class="content_box">
-     	<div class="products-box-main">
-     	<div class="mall-products-left-group">
-				<figure><a href="mall-products.html"><img src="images/img-product-10.jpg"></a></figure>
-				<h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-				<p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品 100ml</a></p>
-				<span class="price">USDT<b>250</b></span>
-				<button class="btn-favorite"></button>		
-		</div>
-		</div>							
-     </div>
-     <!--products-->
-     <!--products-->
-     <div class="content_box">
-        <div class="products-box-main">
-        <div class="mall-products-left-group">
-                <figure><a href="mall-products.html"><img src="images/img-product-4.jpg"></a></figure>
-                <h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-                <p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品契尔氏经典明星商品契尔氏经典明星商品 100ml</a></p>
-                <span class="price">USDT<b>250</b></span>
-                <button class="btn-favorite"></button>      
-        </div>
-        </div>                          
-     </div>
-     <!--products-->
-
-      <!--products-->
-     <div class="content_box">
-        <div class="products-box-main">
-        <div class="mall-products-left-group">
-                <figure><a href="mall-products.html"><img src="images/img-product-5.jpg"></a></figure>
-                <h2 class="shop-name"><img src="images/img-shopname.png"><a href="seller-store.html">我的店铺名</a></h2>
-                <p class="shop-description"><a href="mall-products.html">契尔氏经典明星商品 100ml</a></p>
-                <span class="price">USDT<b>250</b></span>
-                <button class="btn-favorite"></button>      
-        </div>
-        </div>                          
-     </div>
-     <!--products-->
+	<div class="main">
+			<div class="container pdtop">
+				<div class="path"><a href="index.html">首頁</a> > 活动</div>
+				<div class="ticket-group wallet-height bg-white event-list">
+					<div class="products-info">
+						<div style="margin-bottom: 0px;">最新活动</div>
 					</div>
-</div>
-						
-					
-					</div>
+					<div class="event-box-out">
+						<ul>
+							<li>
+								<figure><img src="images/img-event.jpg"></figure>
+								<h2 class="shop-name"><a href="event-content.html">今日比特币，明日至尊币说明会</a></h2>
+								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫...</p>
+								<span>活動時間 : <time>2018.07.30</time></span>
+							</li>
+							<li>
+								<figure><img src="images/img-event.jpg"></figure>
+								<h2 class="shop-name"><a href="event-content.html">今日比特币，明日至尊币说明会</a></h2>
+								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫...</p>
+								<span>活動時間 : <time>2018.07.30</time></span>
+							</li>
+							<li>
+								<figure><img src="images/img-event.jpg"></figure>
+								<h2 class="shop-name"><a href="event-content.html">今日比特币，明日至尊币说明会</a></h2>
+								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫...</p>
+								<span>活動時間 : <time>2018.07.30</time></span>
+							</li>
+							<li>
+								<figure><img src="images/img-event.jpg"></figure>
+								<h2 class="shop-name"><a href="event-content.html">今日比特币，明日至尊币说明会</a></h2>
+								<p>革命新区块闪电网络紫光链，创造全新的革命新区块闪 電網路紫光鏈，創造全新的革命新區塊閃電網路紫...</p>
+								<span>活動時間 : <time>2018.07.30</time></span>
+							</li>
+						</ul>
+					</div>				
 				</div>
 			</div>
 		</div>
@@ -331,33 +206,106 @@
 </body>
 </html>
 <script src="js/jquery-2.1.1.min.js"></script>
-<!--slider-->
-<script src="js/sliderResponsive.js"></script>
+<script type="text/javascript" src="js/jssor.slider.min.js"></script>
+<script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>
+<script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_2_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_2_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_2_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>    
 <script>
-$(document).ready(function() {
-  
-  $("#slider1").sliderResponsive({
-  // Using default everything
-    // slidePause: 5000,
-    // fadeSpeed: 800,
-    // autoPlay: "on",
-    // showArrows: "off", 
-    // hideDots: "off", 
-    // hoverZoom: "on", 
-    // titleBarTop: "off"
-  });
-  
-  $("#slider2").sliderResponsive({
-    fadeSpeed: 300,
-    autoPlay: "off",
-    showArrows: "on",
-    hideDots: "on"
-  });
-  
-  $("#slider3").sliderResponsive({
-    hoverZoom: "off",
-    hideDots: "on"
-  });
-  
-}); 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "244px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script type="text/javascript">
+	$('.btn-favorite').click(function() {
+	$(this).toggleClass('active');
+});
 </script>
