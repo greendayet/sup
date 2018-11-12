@@ -3974,6 +3974,9 @@ header{
 	nav.nav-desktop li a{
 	background-position: center center;
 }
+	nav.nav-desktop li a.i01,nav.nav-desktop li a.i02,nav.nav-desktop li a.i03,nav.nav-desktop li a.i04,nav.nav-desktop li a.i05{
+		background-position: center center;
+	}
 	.twobox{}
 	.wrapper-admin .setting-left-list ul{
 		display: flex;
