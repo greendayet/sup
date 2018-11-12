@@ -4281,7 +4281,10 @@ header{
 	.login-body.loginindex{
 		padding-top: 40px !important;
 		padding-bottom: 0px !important;
-		background: url(../images/bg-login-m.png) #373d65 no-repeat center -422px;
+		/*background: url(../images/bg-login-m.png) #373d65 no-repeat center -422px;*/
+		background-image: url("../images/bg-login-m.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 		overflow: hidden;
 		position: fixed;
 		width: 100%;
