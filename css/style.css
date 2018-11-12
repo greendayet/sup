@@ -333,9 +333,6 @@ nav.nav-desktop li a{
 	padding: 0px 25px;
 	display: block;
 }
-nav.nav-desktop li a:hover{
-	background-color:#27548b;
-}
 nav.nav-desktop li a.i01{
 	background: url("../images/svg/navi-icon-01.svg") no-repeat left center;
 }
@@ -343,13 +340,16 @@ nav.nav-desktop li a.i02{
 	background: url("../images/svg/navi-icon-02.svg") no-repeat left center;
 }
 nav.nav-desktop li a.i03{
-	background: url("../images/svg/navi-icon-04.svg") no-repeat left center;
+	background: url("../images/svg/navi-icon-03.svg") no-repeat left center;
 }
 nav.nav-desktop li a.i04{
 	background: url("../images/svg/navi-icon-04.svg") no-repeat left center;
 }
 nav.nav-desktop li a.i05{
 	background: url("../images/svg/navi-icon-05.svg") no-repeat left center;
+}
+nav.nav-desktop li a:hover,nav.nav-desktop li a:active{
+	background-color:#27548b;
 }
 
 .searchbox{
@@ -3970,6 +3970,9 @@ header{
 	nav.nav-desktop li img{
 		margin: 0px;
 	}
+	nav.nav-desktop li a{
+	background-position: center center;
+}
 	.twobox{}
 	.wrapper-admin .setting-left-list ul{
 		display: flex;
