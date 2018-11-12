@@ -378,7 +378,7 @@ nav.nav-desktop li a{
 	padding: 0px 25px;
 	display: block;
 }
-nav.nav-desktop li a:hover,nav.nav-desktop li .active{
+nav.nav-desktop li a:hover{
 	background-color:#27548b;
 }
 
