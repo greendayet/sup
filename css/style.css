@@ -4286,6 +4286,12 @@ header{
 		position: fixed;
 		width: 100%;
 	}
+.loginhtml{
+	position: fixed;width: 100%;overflow: hidden;height: 100vh; background: #373d65 url(../images/bg-login-m.png) no-repeat fixed center -422px;
+}	
+.loginhtml .login-body{
+	background: none;
+}	
   .login-wrapper {
     max-width: 768px;
 	}
