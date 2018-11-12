@@ -340,6 +340,7 @@ nav.nav-desktop li a{
 	color:#fff;
 	padding: 0px 25px;
 }
+
 nav.nav-desktop li a:hover,nav.nav-desktop li a:active{
 	background-color:#27548b;
 }
@@ -4037,9 +4038,6 @@ header{
 	nav.nav-desktop ul li {
 		width: 20%;
 		text-align: center;
-	}
-	nav.nav-desktop ul li:hover,nav.nav-desktop ul li:active{
-		background-color:#27548b;
 	}
 	.wrapper-admin nav.nav-desktop ul li {
 		width: 33.3%;
