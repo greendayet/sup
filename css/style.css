@@ -4264,11 +4264,11 @@ header{
 	.pd0{
 		padding: 0px;
 	}
-  .login-body{
+  /*.login-body{
 	background: url(../images/bg-login-m.png) #373d65 no-repeat center;
 	padding-top: 30px;
 	padding-bottom: 25px;
-}
+}*/
 .login-body.bg-menu-mobile{
 	background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top !important;
 	padding-top: 65px;
