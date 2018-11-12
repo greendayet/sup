@@ -381,7 +381,6 @@ nav.nav-desktop li a{
 nav.nav-desktop li a:hover{
 	background-color:#27548b;
 }
-nav.nav-desktop li:hover{background-color:#27548b;}
 
 .searchbox{
 	float: right;
@@ -3992,8 +3991,12 @@ header{
 		background-position: center bottom -15px;
 	}
 	nav.nav-desktop li a{
-		padding: 0px 20px;
+		width: 100%;
+    height: 60px;
+    margin: 0px auto;
+    padding: 0px;
 	}
+	nav.nav-desktop li a:hover,nav.nav-desktop li a:active{background-color:#27548b;}
 	nav.nav-desktop li img{
 		margin: 0px;
 	}
