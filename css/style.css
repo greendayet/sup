@@ -4281,11 +4281,11 @@ header{
 	.login-body.loginindex{
 		padding-top: 40px !important;
 		padding-bottom: 0px !important;
-		background: url(../images/bg-login-m.png) #373d65 no-repeat fixed center -422px;
+		/*background: url(../images/bg-login-m.png) #373d65 no-repeat fixed center -422px;
 		background-attachment: fixed;
 		overflow: hidden !important;
 		position: fixed;
-		width: 100%;
+		width: 100%;*/
 	}
   .login-wrapper {
     max-width: 768px;
