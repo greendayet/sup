@@ -341,7 +341,7 @@ nav.nav-desktop li a{
 	padding: 0px 25px;
 }
 nav.nav-desktop li a:hover,nav.nav-desktop li a:active{
-	background-color:#27548b !important;
+	background-color:#27548b;
 }
 
 .searchbox{
@@ -2590,9 +2590,14 @@ li.other-contact{
 	background: none;
 	padding-top: 0px;
 }
-.wrapper-admin .setting-left-list ul a.active,.wrapper-admin .setting-left-list ul a:hover,.wrapper-admin nav.nav-desktop a:hover{
+.wrapper-admin .setting-left-list ul a.active,.wrapper-admin .setting-left-list ul a:hover{
 	background-image: none;
 	background: #872b2b;
+	color: #fff;
+}
+.wrapper-admin nav.nav-desktop li a:hover,.wrapper-admin nav.nav-desktop li a:active{
+	background-image: none;
+	background-color: #872b2b !important;
 	color: #fff;
 }
 .wrapper-admin .out-clear{
@@ -3778,9 +3783,9 @@ div.pagination.scott li.disabled {
 	color: #fff !important;
 }
 	.wrapper-admin .out-clear{min-height: auto;}
-	.wrapper-admin nav.nav-desktop a.active{
+	.wrapper-admin nav.nav-desktop a.active,.wrapper-admin nav.nav-desktop ul li a:active{
 		background-image: none;
-	background: #872b2b;
+	background-color: #872b2b !important;
 	color: #fff;
 	}
 	.left-side ul::-webkit-scrollbar {
