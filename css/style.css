@@ -341,7 +341,7 @@ nav.nav-desktop li a{
 	padding: 0px 25px;
 }
 nav.nav-desktop li a:hover{
-	background-color:#27548b;
+	background-color:#27548b !important;
 }
 
 .searchbox{
