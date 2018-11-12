@@ -3952,8 +3952,12 @@ header{
 		height: 100px;
 		background-position: center bottom -15px;
 	}
+	nav.nav-desktop li{
+		display: block !important;
+	}
 	nav.nav-desktop li a{
 		padding: 0px;
+		display: block !important;
 	}
 	nav.nav-desktop li img{
 		margin: 0px;
