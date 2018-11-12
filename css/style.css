@@ -3967,7 +3967,7 @@ header{
     margin: 0px auto;
     padding: 0px;
 	}
-	nav.nav-desktop li a:hover,nav.nav-desktop li a:active{background-color:#27548b;}
+	nav.nav-desktop li a:hover,nav.nav-desktop li a:active,nav.nav-desktop li a:focus{background-color:#27548b;}
 	nav.nav-desktop li img{
 		margin: 0px;
 	}
