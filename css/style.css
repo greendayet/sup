@@ -4283,7 +4283,7 @@ header{
 		padding-bottom: 0px !important;
 		background: url(../images/bg-login-m.png) #373d65 no-repeat fixed center -422px;
 		background-attachment: fixed;
-		overflow: hidden;
+		overflow: hidden !important;
 		position: fixed;
 		width: 100%;
 	}
