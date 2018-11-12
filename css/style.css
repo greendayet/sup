@@ -341,7 +341,7 @@ nav.nav-desktop li a{
 	padding: 0px 25px;
 }
 
-nav.nav-desktop li a:hover,nav.nav-desktop li a:active{
+nav.nav-desktop li:hover,nav.nav-desktop li:active{
 	background-color:#27548b;
 }
 
@@ -2596,7 +2596,7 @@ li.other-contact{
 	background: #872b2b;
 	color: #fff;
 }
-.wrapper-admin nav.nav-desktop li a:hover,.wrapper-admin nav.nav-desktop li a:active{
+.wrapper-admin nav.nav-desktop li:hover,.wrapper-admin nav.nav-desktop li:active{
 	background-image: none;
 	background-color: #872b2b !important;
 	color: #fff;
@@ -3784,7 +3784,7 @@ div.pagination.scott li.disabled {
 	color: #fff !important;
 }
 	.wrapper-admin .out-clear{min-height: auto;}
-	.wrapper-admin nav.nav-desktop a.active,.wrapper-admin nav.nav-desktop ul li a:active{
+	.wrapper-admin nav.nav-desktop a.active{
 		background-image: none;
 	background-color: #872b2b !important;
 	color: #fff;
