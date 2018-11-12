@@ -3958,7 +3958,6 @@ header{
 	nav.nav-desktop li a{
 		padding: 0px;
 		display: block !important;
-		text-indent: -9999px;
 	}
 	nav.nav-desktop li img{
 		margin: 0px;
