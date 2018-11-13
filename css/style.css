@@ -3127,7 +3127,7 @@ li.other-contact{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
     top: 0;
     left: 0;
     background: url(../images/bg_menu_mobile.png) #00819e repeat-x center top;
@@ -3135,6 +3135,7 @@ li.other-contact{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 30px;
+    box-shadow: 2px 2px 8px #353535;
 }
 
 .sidenav a {
@@ -4077,7 +4078,7 @@ header{
     	top: 50%;
 		transform: translateY(-50%);
     	font-size: 18px;
-		z-index: 9999;
+		z-index: 999;
 	}
 	.cart-detail-type .community{
 		display: none;
