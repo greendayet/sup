@@ -1330,7 +1330,7 @@ a.ui-button:active,
 	.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
 		color: #fff;
 	}
-	.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited,.ui-state-default a:hover{
+	.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
 		background: #171c61;
 	}
 
