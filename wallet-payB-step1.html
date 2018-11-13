@@ -47,8 +47,7 @@
 					<li><a href="event-list.html"><img src="images/svg/navi-icon-05.svg"><span>活动</span></a></li>
 				</ul>
 				<div class="searchbox">
-					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"></input><a href="mall-cart.html"><img src="images/img-trans.png"></a>
-					
+					<input placeholder="请输入 商品 或 商店 关键字"><img src="images/img-trans.png"><a href="mall-cart.html"><img src="images/img-trans.png"></a>
 				</div>
 			</nav>
 			
@@ -70,15 +69,75 @@
 								<li><span><img src="images/img-trans.png">SUP</span><span>500,000,000</span></li>
 							</ul>
 						</div>
+						<!--desktop start-->
+						<div class="desktop-wallet">
 						<div class="left-bottom-link">
 						<ul>
-							<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png">现场支付</a></li>
-							<li><a class="active" href="wallet-payB-step1.html"><img src="images/img-trans.png">立即付款</a></li>
+							<li><a class="active" href="wallet-payA-step1.html"><img src="images/img-trans.png">现场支付</a></li>
+							<li><a href="wallet-payB-step1.html"><img src="images/img-trans.png">立即付款</a></li>
 							<li><a href="wallet-payC-step1.html"><img src="images/img-trans.png">立即转账</a></li>
 						</ul>
+						</div>
+						</div>
+					<!--desktop end-->
 					</div>
-					</div>
+					<!--desktop start-->
+						<div class="desktop-wallet">
 					<div class="wallet-right-side">
+						<div class="wallet-step-block">
+							<div><p class="orange">请选择支付币别，再输入金额。</p></div>
+							<div class="count wallet-width">
+							<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option value="0">币别</option>
+										<option>USDT</option>
+										<option>S COIN</option>
+										<option>ETH</option>
+										<option>SUP</option>
+									</select>
+									</div>
+									<input type="text" value="500">
+							</div>		
+							<div class="cyanine ft15">
+								( 目前匯率 30.286 )
+							</div>
+						</div>
+						<button onclick="location.href='wallet-payA-step2.html'" class="btn light-blue btn-wallet bold">确认付款</button>	
+					</div>
+					</div>
+					<!--desktop end-->
+						<!--mobile start-->
+					<ul id="accordion-wallet" class="personal-info mobile-wallet">
+									<li>
+
+<div class="left-bottom-link"><span><a href="wallet-payA-step1.html"><img class="wallet-left-1" src="images/img-trans.png">现场支付</a></span></div>										
+  <div>
+	  <div class="accorsing-content-1 wallet-right-side">
+						<div class="wallet-step-block">
+							<div><p class="orange">请选择支付币别，再输入金额。</p></div>
+							<div class="count wallet-width">
+							<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option value="0">国   籍</option>
+										<option>中国</option>
+									</select>
+									</div>
+									<input type="text" value="500">
+							</div>		
+							<div class="cyanine ft15">
+								( 目前匯率 30.286 )
+							</div>
+						</div>
+						<button onclick="location.href='wallet-payA-step2.html'" class="btn light-blue btn-wallet bold">确认付款</button>	
+					</div>
+  </div>
+									</li>
+									<li>
+  <div class="left-bottom-link"><span><a href="#"><img class="wallet-left-2" src="images/img-trans.png">立即付款</a></span></div>
+ <div>
+	 <div class="accorsing-content-2 wallet-right-side">
 						<div class="wallet-step-block">
 							<div><p class="orange">选择支付币别后，将依目前汇率 30.286 换算金额</p></div>
 							<div class="count wallet-width">
@@ -100,6 +159,39 @@
 						</div>
 						<button onclick="location.href='wallet-payB-step-done.html'" class="btn light-blue btn-wallet">确认付款</button>
 					</div>
+  </div>
+									</li>
+									<li>
+  <div class="left-bottom-link"><span><a href="wallet-payC-step1.html"><img class="wallet-left-3" src="images/img-trans.png">立即转账</a></span></div>
+  <div>
+							<div class="accorsing-content-3 wallet-right-side wallet-pay-c-side">
+						<div class="wallet-step-block text-left">
+							<div class="password-input" style="display: flex;justify-content: center;align-items: center;">
+								<span style="color: #909090;">钱包地址</span>
+								<input type="text" style="flex:1;">
+							</div>
+							<div class="count wallet-width" style="display: flex;justify-content: flex-start;align-items: center;">
+								<span style="color: #909090;">输入金额</span>
+								<div style="display: flex;justify-content: flex-start;align-items: center; margin-bottom: 0px;margin-left: 10px;flex: 1;">
+								<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option>USDT</option>
+									<option>S COIN</option>
+									<option>ETH</option>
+									<option>SUP</option>
+									</select>
+									</div>
+								<input type="text" value="500" style="flex:1;">
+							</div>
+							</div>
+						</div>
+						<button onclick="location.href='wallet-payC-step-done.html'" class="btn light-blue btn-wallet">确认转账</button>
+					</div>
+						</div>
+									</li>
+								</ul>
+				    <!--mobile end-->
 			</div>
 				</div>
 			</div>
@@ -143,9 +235,9 @@ $(document).ready(function() {
   <script>
   $( function() {
     $( "#accordion-wallet" ).accordion({
-      heightStyle: "content",
-		active:"false",
-		collapsible: "true"
+		heightStyle: "content",
+		collapsible: "true",
+		active:1
     });
   } );
   </script>
