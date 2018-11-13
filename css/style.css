@@ -3135,7 +3135,7 @@ li.other-contact{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 30px;
-    box-shadow: 2px 2px 8px #777;
+    box-shadow: 2px 0px 15px #353535;
 }
 
 .sidenav a {
