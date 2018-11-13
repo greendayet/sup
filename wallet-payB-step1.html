@@ -73,8 +73,8 @@
 						<div class="desktop-wallet">
 						<div class="left-bottom-link">
 						<ul>
-							<li><a class="active" href="wallet-payA-step1.html"><img src="images/img-trans.png">现场支付</a></li>
-							<li><a href="wallet-payB-step1.html"><img src="images/img-trans.png">立即付款</a></li>
+							<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png">现场支付</a></li>
+							<li><a class="active" href="wallet-payB-step1.html"><img src="images/img-trans.png">立即付款</a></li>
 							<li><a href="wallet-payC-step1.html"><img src="images/img-trans.png">立即转账</a></li>
 						</ul>
 						</div>
@@ -85,25 +85,25 @@
 						<div class="desktop-wallet">
 					<div class="wallet-right-side">
 						<div class="wallet-step-block">
-							<div><p class="orange">请选择支付币别，再输入金额。</p></div>
+							<div><p class="orange">选择支付币别后，将依目前汇率 30.286 换算金额</p></div>
 							<div class="count wallet-width">
 							<div class="selectout" style="margin-bottom: 0px;">
 										<i style="color: #0054a7;" class="arrowdown"></i>
 									<select>
-										<option value="0">币别</option>
 										<option>USDT</option>
-										<option>S COIN</option>
-										<option>ETH</option>
-										<option>SUP</option>
+									<option>S COIN</option>
+									<option>ETH</option>
+									<option>SUP</option>
 									</select>
 									</div>
-									<input type="text" value="500">
-							</div>		
-							<div class="cyanine ft15">
-								( 目前匯率 30.286 )
+									<input style="width: 50%;" type="text" value="500">
+							</div>	
+							<div class="remind">
+								<span><img class="remind-img" src="images/img-trans.png">目前账户USDT余额不足</span>
+								<span class="stored"><a href="account-upgrate-storage.html">立刻储值</a><img src="images/img-trans.png"></span>
 							</div>
 						</div>
-						<button onclick="location.href='wallet-payA-step2.html'" class="btn light-blue btn-wallet bold">确认付款</button>	
+						<button onclick="location.href='wallet-payB-step-done.html'" class="btn light-blue btn-wallet">确认付款</button>
 					</div>
 					</div>
 					<!--desktop end-->
