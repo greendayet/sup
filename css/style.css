@@ -4654,7 +4654,7 @@ header{
 	.login-body footer{
 		width: 100%;
 		display: block;
-		position: fixed;
+		position: absolute;
 		bottom: 1.75%;
 left: 50%;
 -webkit-transform: translate(-50%, 0%);
