@@ -4262,7 +4262,6 @@ header{
 		padding-top: 40px !important;
 		padding-bottom: 0px !important;
 		/*background: url(../images/bg-login-m.png) #373d65 no-repeat center -422px;*/
-		overflow: hidden;
 		position: fixed;
 		width: 100%;
 	}
@@ -4655,7 +4654,7 @@ header{
 		width: 100%;
 		display: block;
 		position: absolute;
-		bottom: 1.75%;
+		bottom: -2.25%;
 left: 50%;
 -webkit-transform: translate(-50%, 0%);
 transform: translate(-50%, 0%);
