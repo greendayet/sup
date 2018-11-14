@@ -3734,6 +3734,9 @@ div.pagination.scott li.disabled {
 	#accordion li ul li span:first-child{
 		margin-left: 0px;
 	}
+	.navi-out{
+		height: 60px;
+	}
 	.account-upgrate-storage .personal-form.mystoreapply .radioflex input{
 		width: 80%;
 	}
