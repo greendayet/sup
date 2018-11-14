@@ -1603,9 +1603,36 @@ transform: translate(-50%,-50%);*/
 .forget-password a:hover{
 	text-decoration: underline;
 }
-/*.wallet-pay-c-side{
-	padding-top: 75px;
-}*/
+
+.purchaser-info{
+	padding-top: 20px;
+	border-top: solid 1px #d1d1d5;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.purchaser-info.personal-form{}
+.purchaser-info.personal-form li{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: none;
+}
+.purchaser-info .personal-info{
+	flex:0.9;
+}
+.purchaser-info.personal-form li span{
+	flex:0.5;
+	color: #333;
+}
+.purchaser-info.personal-form input{
+	flex:2.5;
+}
+.purchaser-info.personal-form ul{
+	margin-bottom: 0px;
+}
+.wallet-step-block .purchaser-info.personal-form .personal-info div{
+	margin-bottom: 0px;
+}
 
 .flex-center{
 	display: flex;
@@ -4819,6 +4846,27 @@ transform: translate(-50%, 0%);
 		background: #fff;
 		padding-top: 15px;
 	}
+.purchaser-info{
+	display: block;
+}	
+.purchaser-info.personal-form span{
+	position: static !important;
+	transform: none !important;
+}
+.purchaser-info.personal-form li{
+	padding: 0px;
+}
+.purchaser-info.personal-form ul{
+	padding-top: 0px;
+}
+.wallet-pay-c-side .wallet-step-block{
+	width: 80%;
+}
+.malllist-mobile button{
+	bottom: 8px !important;
+    right: 40px !important;
+}
+
 	.wrapper-admin .personal-form ul{
 		padding-top: 10px;
 		margin-bottom: 10px;
