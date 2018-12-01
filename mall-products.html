@@ -36,7 +36,7 @@
 					</ul>
 				</div>
 				<div class="home-mobile"><a href="mall.html"><i class="fas fa-angle-left"></i></a></div>			
-				<div class="malllist-mobile"><button class="btn-favorite active"></button><a href="mall-cart.html"><img style="width: 21px;vertical-align: middle;" src="images/svg/navi-icon-cart.svg"></a></div>
+				<div class="malllist-mobile"><button onclick="location.href='favorite.html'" class="btn-favorite active"></button><a href="mall-cart.html"><img style="width: 21px;vertical-align: middle;" src="images/svg/navi-icon-cart.svg"></a></div>
 			</div>
 			<div class="navi-out">
 			<nav class="nav-desktop">
@@ -77,7 +77,8 @@
 							<li><img src="images/img-trans.png"><a href="#">图书文具</a></li>
 						</ul>
 					</div>
-					<div class="right-side">
+					<div class="right-side favorite-page">
+						<button onclick="location.href='favorite.html'" class="btn-favorite-page active"></button>
 						<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">商城</a> > 美妆药妆</div>
 						<div class="products-detail-box">
 
@@ -111,7 +112,6 @@
             </a>
         </div>
     </div>
-
 							</div>
 
 							<div class="products-type-group">
@@ -197,13 +197,7 @@
 
 									</p>
 								</div>
-							</div>
-							<!--mobile button-->
-							<div class="cart-step-btn cart-step-btn-mobile">
-									<button class="keep-shop" onclick="location.href='#'">加入购物车</button>
-								<button class="go-payment" onclick="location.href='mall-checkout.html'">购买结账</button>
-								</div>
-							<!--mobile button-->	
+							</div>	
 						</div>
 						<div class="products-box-out review-products">
 							<p>你曾看过的商品</p>
@@ -254,15 +248,26 @@
 							</li>
 						</ul>
 						</div>
-							
-						
-						
-					
+						<!--mobile button-->
+							<div class="cart-step-btn cart-step-btn-mobile">
+									<button class="keep-shop" onclick="location.href='#'">加入购物车</button>
+								<button class="go-payment" onclick="location.href='mall-checkout.html'">购买结账</button>
+								</div>
+							<!--mobile button-->
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer>© 2018 SUPREME. All rights reserved.</footer>
+		<footer>
+			<section>
+				<div>© 2018 SUPREME. All rights reserved.</div>
+				<div>
+				<a href="about.html">关于商城</a>
+				<a href="privacy.html">隐私权条款</a>
+				<a href="service.html">服务声明</a>
+				</div>
+			</section>
+		</footer>
 	</div>
 </body>
 </html>

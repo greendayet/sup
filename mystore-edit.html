@@ -130,13 +130,26 @@
 					</div>
 					<div class="wallet-right-side setting-right account-upgrate-storage mystore">
 						<div class="only-bg"></div>
+						<form>
 						<div class="personal-form mystoreapply">
 							<div style="color: #0e3244;margin-bottom: 20px" class="ft24 storage-name">我的店铺</div>
 							<ul class="personal-info">
 								<li class="stored-currency"><span style="text-align:left;color: #8d8c8c;">等 级<img class="gold" src="images/img-trans.png"></span>
 								</li>
-								<li style="padding-top: 15px;"><span>店铺名称</span><div><input type="text" value=""></div></li>
-								<li><span>商品类别</span><div><input type="text" value=""></div></li>
+								<li style="padding-top: 15px;"><span><b class="red-verification">*</b>店铺名称</span><div><input placeholder="不超过15个中文字元" type="text" value="" required></div></li>
+								<li><span><b class="red-verification">*</b>商品类别</span>
+									<div class="selectout">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select style="width: 100%;">
+										<option>商品类别</option>
+										<option>流行服饰</option>
+										<option>清洁医疗</option>
+										<option>居家寝具</option>
+										<option>图书文具</option>
+										<option>运动户外</option>
+									</select>
+									</div>
+								</li>
 								<li class="updateing">
 									<span>店铺LOGO</span>
 									<div style="overflow: hidden;">
@@ -147,7 +160,7 @@
 </label>
 									</div>
 								</li>
-								<li class="credit" style="padding-top: 15px;"><span>点数回馈</span>
+								<li class="credit" style="padding-top: 15px;"><span><b class="red-verification">*</b>点数回馈</span>
 									<div class="radioflex">
 							<span class="outspace">
 								<label class="radio-cont">无
@@ -167,7 +180,7 @@
 							</span>
 						</div>
 								</li>
-								<li class="credit" style="padding-top: 15px;"><span>运费</span>
+								<li class="credit" style="padding-top: 15px;"><span><b class="red-verification">*</b>运费</span>
 									<div style="display: block;">
 									<div class="radioflex" style="width: auto; margin-bottom: 10px;">
 							<span class="outspace">
@@ -207,8 +220,8 @@
 						</div>
 					</div>
 								</li>
-								<li><span>联  络  人</span><div><input type="text" value=""></div></li>
-								<li class="personal-mobile"><span>电话</span>
+								<li><span><b class="red-verification">*</b>联  络  人</span><div><input type="text" value=""></div></li>
+								<li class="personal-mobile"><span><b class="red-verification">*</b>电话</span>
 									<div class="smallarrow">
 									<select style="width: 35%;margin-right: 2%;">
 										<option>+123</option>
@@ -217,9 +230,9 @@
 									<input type="tel" value="+886 920123323">
 									</div>
 								</li>
-								<li><span>地址</span><div><input type="text" value=""></div></li>
-								<li><span>E-mail</span><div><input type="email" value=""></div></li>
-								<li class="credit other-contact" style="display: block;"><span>其他联络方式 ( 可複選 )</span>
+								<li><span><b class="red-verification">*</b>地址</span><div><input type="text" value=""></div></li>
+								<li><span><b class="red-verification">*</b>E-mail</span><div><input type="email" value=""></div></li>
+								<li class="credit other-contact" style="display: block;"><span><b class="red-verification">*</b>其他联络方式 ( 可複選 )</span>
 									<div style="margin-left: 30%;padding-top: 3%;">
 										<p>
 											<label class="radio-cont contactchoice">LINE ID
@@ -245,15 +258,26 @@
 									</div>
 								</li>
 							</ul>
-							<button onclick="location.href='mystore-status.html'" class="setting-btn setting-btn-darkblue">确认送出</button>
+							<!--<button onclick="location.href='mystore-status.html'" class="setting-btn setting-btn-darkblue">确认送出</button>-->
+							<button class="setting-btn setting-btn-darkblue">确认送出</button>
 							<div class="clear"></div>
 						</div>
+					</form>
 					</div>
 				</div>
 				</div>
 			</div>
 		</div>
-		<footer>© 2018 SUPREME. All rights reserved.</footer>
+		<footer>
+			<section>
+				<div>© 2018 SUPREME. All rights reserved.</div>
+				<div>
+				<a href="about.html">关于商城</a>
+				<a href="privacy.html">隐私权条款</a>
+				<a href="service.html">服务声明</a>
+				</div>
+			</section>
+		</footer>
 	</div>
 </body>
 </html>

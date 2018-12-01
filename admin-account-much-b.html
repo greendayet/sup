@@ -45,23 +45,50 @@
 							</ul>
 						</div>
 					</div>
-					<div class="wallet-right-side setting-right admin-order admin-acount">
-						<div class="search-wrapper search-account">
-							<ul class="flex-center" style="justify-content:space-around;">
-								<li>查询</li>
+					<div class="wallet-right-side setting-right admin-order admin-acount-much">
+						<div class="search-wrapper">
+							<ul class="search-sort account-much">
 								<li>
 									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
 										<span class="flex-center">
 											<i class="arrow down"></i>
+											<b>查询</b>
 											<select onchange="window.location.href=this.value;">
-												<option>选择 金额 / 提领纪录</option>
 												<option value="admin-account-much.html">金额</option>
 												<option value="admin-accountrecord.html">提领纪录</option>
 											</select>
 										</span>
 									</div>
 								</li>
+								<li>
+									<div class="search-wrapper-date flex-center" style="justify-content: flex-start;">
+										<span class="flex-center">
+											<i class="arrow down"></i>
+											<b class="money-kind">币别</b>
+											<select>
+												<option>USDT</option>
+												<option>SUP</option>
+											</select>
+										</span>
+									</div>
+								</li>
 							</ul>
+						</div>
+						<div class="w70 order-group">
+							<div class="order-box">
+								<ul>
+									<li class="order-time" style="color:#333;">USDT</li>
+									<li class="cartline"></li>
+								</ul>
+								<div class="getmoney">
+									<div>
+										<p><img class="money-gray" src="images/icon-money-gray.png">可清算中金额<span><b>USD</b>50,000,000</span>-<span style="font-weight: normal;">手续费<b>5</b>%</span></p>
+										<p><img class="money-blue" src="images/icon-money-blue.png">可提领金额<span><b>USD</b>1,000,000,000</span></p>
+										<p><img class="money-red" src="images/icon-money-red.png">可提领余额<span><b>USD</b>50,000,000</span></p>
+									</div>
+									<div><button onclick="location.href='wallet-payA-step2.html'" class="setting-btn setting-btn-lightblue">确定送出</button></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
