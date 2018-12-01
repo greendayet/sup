@@ -186,8 +186,14 @@
 				<span class="price">USDT<b>250</b></span>
 			</div>
 		  </div>
-		  <div class="orange-2 setting-btn2" style="cursor: default;width: 72px;
-    cursor: default;padding: 5px 0px;text-align: center;">未出货</div>
+		  <!--未出貨可點選乘已出貨 start-->
+		  <div id="sbtitle">
+		  <div class="orange-2 setting-btn2" id="a1" style="cursor: default;width: 72px;
+    cursor: default;padding: 5px 0px;text-align: center;" onclick='showhidediv("a2");'>未出货</div>
+    		<div class="blue-2 setting-btn2" id="a2" style="cursor: default;width: 72px;
+    cursor: default;padding: 5px 0px;text-align: center;display: none; justify-content: center;">已出货</div>
+		  </div>
+		  <!--未出貨可點選乘已出貨 end-->
 	  </li>
     </ol>  
   </li>
@@ -235,8 +241,14 @@
 				<span class="price">USDT<b>250</b></span>
 			</div>
 		  </div>
-		  <div class="orange-2 setting-btn2" style="cursor: default;width: 72px;
-    cursor: default;padding: 5px 0px;text-align: center;">未出货</div>
+		  <!--未出貨可點選乘已出貨 start-->
+		  <div id="sbtitle">
+		  <div class="orange-2 setting-btn2" id="a1" style="cursor: default;width: 72px;
+    cursor: default;padding: 5px 0px;text-align: center;" onclick='showhidediv("a2");'>未出货</div>
+    		<div class="blue-2 setting-btn2" id="a2" style="cursor: default;width: 72px;
+    cursor: default;padding: 5px 0px;text-align: center;display: none; justify-content: center;">已出货</div>
+		  </div>
+		  <!--未出貨可點選乘已出貨 end-->
 	  </li>
     </ol>  
   </li>
@@ -340,4 +352,28 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+</script>
+<script>
+function showhidediv(id){
+try{
+var sbtitle=document.getElementById(id);
+for (i=1;i<=3;i++) {
+   if(id=="a"+i){
+        if(sbtitle.style.display=='flex'){
+          sbtitle.style.display='none';
+        }
+        else{
+        sbtitle.style.display='flex';
+        }
+   
+      }
+    else
+   {
+     document.getElementById("a" + i).style.display='none'; 
+   }
+}
+
+}catch(e){}
+}
+
 </script>
