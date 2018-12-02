@@ -378,7 +378,7 @@ nav.nav-desktop li:hover,nav.nav-desktop li:active{
 }
 .searchbox img{
 	position: relative;
-	right: 28px;
+	right: 30px;
 	width:20px;
 	height: 19px;
 	vertical-align: middle;
@@ -466,10 +466,10 @@ footer a:hover{
 	color: #353535;
 }
 footer div:first-child{
-	float: left;
+	float: right;
 }
 footer div:last-child{
-	float: right;
+	float: left;
 }
 footer section{
 	width: 1200px;
@@ -3971,7 +3971,7 @@ div.pagination.scott li.disabled {
 		width: 278px;
 	}
 	.account-update{
-		width: 75% !important;
+		width: 85% !important;
 	}
 }
 @media only screen and (min-width:769px) and (max-width:960px){
@@ -4215,7 +4215,6 @@ div.pagination.scott li.disabled {
 	display: block;
 }
 .index .title-blue h3{
-	color: #181D62;
 	padding-left: 0px;
 }
 .index .title-blue{
@@ -5606,6 +5605,7 @@ html.noscrollindex{
 }
 .products-type-head-name .shop-name{width: 60%;}
 .wallet-step-block .remind{display: block;text-align: right;margin-right: 0px;}
+.accorsing-content-2 .wallet-step-block .remind{text-align: center;}
 .wallet-step-block .remind span{display: inline-block;margin-right: 0px;}
 .account-upgrate-storage .personal-form.mystoreapply .credit input{
 		width: 75%;
