@@ -3761,9 +3761,6 @@ div.pagination.scott li.disabled {
 .contactchoice{flex:0.75;word-break: break-all;white-space: nowrap;}
 .formpd li{padding: 4px 0px !important;}	
 .formpd li.radiospace{padding: 13px 0px !important;}
-#sbtitle .getmoney:last-child .setting-btn-lightblue:hover{
-	background: #64bce9;
-}
 /* ======= Responsive ======= */
 
 @media only screen and (min-width: 1921px) {
