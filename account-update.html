@@ -2,12 +2,13 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">	
-<title>SUPREME-WALLET-帐户升级</title>
+<title>SUPREME-WALLET-升级</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">	
+<link rel="stylesheet" href="css/jquery-ui.css">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
@@ -35,7 +36,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="home-mobile"><a href="wallet-payA-step2.html"><i class="fas fa-angle-left"></i></a></div>			
+				<div class="home-mobile"><a href="index.html"><i class="fas fa-home"></i></a></div>			
 			</div>
 			<div class="navi-out">
 			<nav class="nav-desktop">
@@ -54,9 +55,9 @@
 			</div>
 		</header>
 		<div class="main">
-			<div class="container">
+			<div class="container nopd">
 				<div class="inner-mall">
-					<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">钱包</a> > 立即转账</div>
+					<div class="path"><a href="index.html">首頁</a> > <a href="mall.html">钱包</a> > 现场支付</div>
 					<div class="bg-white out-clear">
 					<div class="wallet-left-side">
 						<div class="currently-account">
@@ -76,14 +77,20 @@
 								</li>
 							</ul>
 						</div>
+						<!--desktop start-->
+						<div class="desktop-wallet">
 						<div class="left-bottom-link">
 						<ul>
 							<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png">现场支付</a></li>
 							<li><a href="wallet-payB-step1.html"><img src="images/img-trans.png">立即付款</a></li>
 							<li><a class="active" href="wallet-payC-step1.html"><img src="images/img-trans.png">立即转账</a></li>
 						</ul>
+						</div>
+						</div>
+					<!--desktop end-->	
 					</div>
-					</div>
+						<!--desktop start-->
+						<div class="desktop-wallet">
 					<div class="wallet-right-side wallet-pay-c-side">
 						<div class="wallet-step-block text-left account-update">
 							<div class="wallet-right-side setting-right account-upgrate-storage mystore" style="margin-bottom: 0px;padding-bottom: 0px;">
@@ -184,7 +191,199 @@
 						</div>
 						<button onclick="location.href='wallet-payC-step-done.html'" class="btn light-blue btn-wallet">确认转账</button>
 					</div>
-			</div>
+					</div>
+					<!--desktop end-->	
+					<!--mobile start-->
+					<ul id="accordion-wallet" class="personal-info mobile-wallet">
+									<li>
+
+<div class="left-bottom-link"><span><a href="wallet-payA-step1.html"><img class="wallet-left-1" src="images/img-trans.png">现场支付</a></span></div>										
+  <div>
+	  <div class="accorsing-content-1 wallet-right-side">
+						<div class="wallet-step-block">
+							<div><p class="orange">请选择支付币别，再输入金额。</p></div>
+							<div class="count wallet-width">
+							<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option>币别</option>
+										<option>USDT</option>
+										<option>S COIN</option>
+										<option>ETH</option>
+										<option>SUP</option>
+									</select>
+									</div>
+									<input type="text" value="500">
+							</div>		
+							<div class="cyanine ft15">
+								( 目前匯率 30.286 )
+							</div>
+						</div>
+						<button onclick="location.href='wallet-payA-step2.html'" class="btn light-blue btn-wallet bold">确认付款</button>	
+					</div>
+  </div>
+									</li>
+									<li>
+  <div class="left-bottom-link"><span><a href="#"><img class="wallet-left-2" src="images/img-trans.png">立即付款</a></span></div>
+ <div>
+	 <div class="accorsing-content-2 wallet-right-side">
+						<div class="wallet-step-block">
+							<div><p class="orange">选择支付币别后，将依目前汇率 30.286 换算金额</p></div>
+							<div class="count wallet-width">
+							<div class="selectout" style="margin-bottom: 0px;">
+										<i style="color: #0054a7;" class="arrowdown"></i>
+									<select>
+										<option>USDT</option>
+									<option>S COIN</option>
+									<option>ETH</option>
+									<option>SUP</option>
+									</select>
+									</div>
+									<input style="width: 50%;" type="text" value="500">
+							</div>	
+							<div class="remind">
+								<span><img class="remind-img" src="images/img-trans.png">目前账户USDT余额不足</span>
+								<span class="stored"><a href="account-upgrate-storage.html">立刻储值</a><img src="images/img-trans.png"></span>
+							</div>
+							<div class="purchaser-info personal-form">
+								<div style="padding-top: 9px;">购买人信息</div>
+								<ul class="personal-info">
+									<li>
+										<span>姓   名</span>
+										<div><input type="text" value="林君玲"></div>
+									</li>
+									<li class="personal-mobile storage-mobile">
+										<span>手   机</span>
+										<div>
+										<div class="selectout smallarrow">
+											<i style="color: #0054a7;" class="arrowdown"></i>
+										<select style="width: 100%;margin-right: 0;">
+											<option value="0">+886</option>
+											<option>+123</option>
+										</select>
+										</div>
+										<input style="margin-left: 5%;" type="tel" value="+886 920123323">
+										</div>
+									</li>
+									<li>
+										<span>地   址</span>
+										<div><input type="email" value="shaleen.lin@gmail.com"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button onclick="location.href='wallet-payB-step-done.html'" class="btn light-blue btn-wallet">确认付款</button>
+					</div>
+  </div>
+									</li>
+									<li>
+  <div class="left-bottom-link"><span><a href="wallet-payC-step1.html"><img class="wallet-left-3" src="images/img-trans.png">立即转账</a></span></div>
+  <div>
+					<div class="accorsing-content-3 wallet-right-side wallet-pay-c-side">
+						<div class="wallet-step-block text-left account-update">
+							<div class="wallet-right-side setting-right account-upgrate-storage mystore" style="margin-bottom: 0px;padding-bottom: 0px;">
+						<form>
+						<div class="personal-form mystoreapply" style="width: 100%;margin-bottom: 0px;">
+							<ul class="personal-info">
+								<li class="credit other-contact" style="display: block;padding-bottom: 0px;">
+									<div style="margin-bottom: 20px;border-bottom: solid 1px #efefef;">
+										<div style="margin-bottom: 10px;">
+										<label class="radio-cont contactchoice"><img class="update-silver" src="images/silver.png">银级
+								  			<input type="radio" checked="checked" name="Refer">
+								  			<span class="checkmark"></span>
+										</label>
+										</div>
+										<div class="clearboth" style="margin-bottom: 0px;">
+											<div class="floatleft mgbtom update-width-set" style="padding-top: 10px;width: 30%;margin-bottom: 0px;">
+												<span>金额 1000 USD</span>
+											</div>
+											<div class="floatright update-width-set clearboth" style="width: 70%;margin-bottom: 0px;">
+												<div class="selectout floatleft" style="text-align: right;width: 47%;">
+													支付币别
+													<i style="color: #0054a7;" class="arrowdown"></i>
+												<select style="width: 58%;">
+													<option>USDT</option>
+													<option>S COIN</option>
+													<option>ETH</option>
+													<option>SUP</option>
+												</select>
+												</div>
+												<div class="floatleft" style="width: 50%;margin-left: 10px;text-align: right;">
+												<span>应付金额<input style="width: 60%; margin-right: 0px;margin-left: 6px;" type="text" name="contact" value=""></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div style="margin-bottom: 20px;border-bottom: solid 1px #efefef;">
+										<div style="margin-bottom: 10px;">
+										<label class="radio-cont contactchoice"><img class="update-silver" src="images/golden.png">金级
+								  			<input type="radio" checked="checked" name="Refer">
+								  			<span class="checkmark"></span>
+										</label>
+										</div>
+										<div class="clearboth" style="margin-bottom: 0px;">
+											<div class="floatleft mgbtom update-width-set" style="padding-top: 10px;width: 30%;margin-bottom: 0px;">
+												<span>金额 1000 USD</span>
+											</div>
+											<div class="floatright update-width-set clearboth" style="width: 70%;margin-bottom: 0px;">
+												<div class="selectout floatleft" style="text-align: right;width: 47%;">
+													支付币别
+													<i style="color: #0054a7;" class="arrowdown"></i>
+												<select style="width: 58%;">
+													<option>USDT</option>
+													<option>S COIN</option>
+													<option>ETH</option>
+													<option>SUP</option>
+												</select>
+												</div>
+												<div class="floatleft" style="width: 50%;margin-left: 10px;text-align: right;">
+												<span>应付金额<input style="width: 60%; margin-right: 0px;margin-left: 6px;" type="text" name="contact" value=""></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div style="margin-bottom: 20px;border-bottom: solid 1px #efefef;">
+										<div style="margin-bottom: 10px;">
+										<label class="radio-cont contactchoice"><img class="update-silver" src="images/purple.png">紫金级
+								  			<input type="radio" checked="checked" name="Refer">
+								  			<span class="checkmark"></span>
+										</label>
+										</div>
+										<div class="clearboth" style="margin-bottom: 0px;">
+											<div class="floatleft mgbtom update-width-set" style="padding-top: 10px;width: 30%;margin-bottom: 0px;">
+												<span>金额 1000 USD</span>
+											</div>
+											<div class="floatright update-width-set clearboth" style="width: 70%;margin-bottom: 0px;">
+												<div class="selectout floatleft" style="text-align: right;width: 47%;">
+													支付币别
+													<i style="color: #0054a7;" class="arrowdown"></i>
+												<select style="width: 58%;">
+													<option>USDT</option>
+													<option>S COIN</option>
+													<option>ETH</option>
+													<option>SUP</option>
+												</select>
+												</div>
+												<div class="floatleft" style="width: 50%;margin-left: 10px;text-align: right;">
+												<span>应付金额<input style="width: 60%; margin-right: 0px;margin-left: 6px;" type="text" name="contact" value=""></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</form>
+					</div>
+						</div>
+						<button onclick="location.href='wallet-payC-step-done.html'" class="btn light-blue btn-wallet">确认转账</button>
+					</div>
+</div>
+									</li>
+								</ul>
+				    <!--mobile end-->
+				</div>
 				</div>
 			</div>
 		</div>
@@ -232,3 +431,14 @@ $(document).ready(function() {
   
 }); 
 </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion-wallet" ).accordion({
+      heightStyle: "content",
+		active:"false",
+		collapsible: "true",
+		active:2
+    });
+  } );
+  </script>
