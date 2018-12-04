@@ -156,11 +156,12 @@ textarea{
 	font-size: 16px;
 }
 .update-silver,.update-golden,.update-purple{
-	margin-top: -8px;
 	vertical-align: middle;
-	width: 8%;
-	margin: -8px 5px 0px 5px;
+	height: 40px;
+	margin: -4px 10px 0px 5px;
 }
+.account-update .radio-cont input:checked ~ .checkmark{margin-top: 8px !important;}
+.wallet-step-block.text-left.account-update{width: 85%;}
 .all-item-group .setting-btn2{width: 72px;font-size: 13px;padding: 5px 0px;}
 .all-item-group .setting-btn2.messagenotice{width: auto;padding: 0px;}
 .setting-btn2{
@@ -1541,6 +1542,7 @@ button.go-payment:hover{
 .currently-account li span{
 	margin-left: 25px;
 	text-align: right;
+	font-weight: bold;
 }
 .currently-account li span:first-child{
 	margin-left: 0px;
@@ -1548,7 +1550,7 @@ button.go-payment:hover{
 }
 .currently-account img{
 	vertical-align: middle;
-	margin-right: 10px;
+	margin-right: 6px;
 	width: 22px;
 	height: 22px;
 	background: url("../images/svg/icon-left-money.svg") no-repeat;
@@ -1557,10 +1559,11 @@ button.go-payment:hover{
 	background-position: 34.449761% 8.0729167%;144 31*/
 }
 .currently-account li span b{
-	font-size: 13px;
+	font-size: 15px;
+	font-weight: normal !important;
 }
 .cost-name{
-	margin-left: 32px;
+	margin-left: 28px;
 }
 .cost-money{}
 .left-bottom-link{
@@ -1736,6 +1739,8 @@ transform: translate(-50%,-50%);*/
 .purchaser-info.personal-form li span{
 	flex:0.5;
 	color: #333;
+	text-align: right;
+	margin-right: 10px;
 }
 .purchaser-info.personal-form input{
 	flex:2.5;
@@ -2190,6 +2195,10 @@ word-break: break-all;
 	font-size: 15px;
 	width: 80%;
 	margin: 0px auto;
+}
+.purchaser-info.personal-form{
+	width: 100%;
+	font-size: 18px;
 }
 .personal-form p{
 	font-size: 15px;
@@ -3761,6 +3770,18 @@ div.pagination.scott li.disabled {
 .contactchoice{flex:0.75;word-break: break-all;white-space: nowrap;}
 .formpd li{padding: 4px 0px !important;}	
 .formpd li.radiospace{padding: 13px 0px !important;}
+.account-update span,.account-update div{
+	color: #333 !important;
+	font-size: 18px;
+}
+.update-width-set select,.update-width-set input{
+	width: 58% !important;
+	margin-right: 0px !important;
+}
+.currently-account p{
+		font-size: 18px;
+		font-weight: bold;
+	}
 /* ======= Responsive ======= */
 
 @media only screen and (min-width: 1921px) {
@@ -3815,6 +3836,19 @@ div.pagination.scott li.disabled {
 	display: block;
 	margin: 10px 0px;
 	}
+	.update-width-set{
+		width: 100% !important;
+		float: none !important;
+	}
+	.update-width-set div{
+		text-align: left !important;
+	}
+	.mgbtom{
+		margin-bottom: 20px !important;
+	}
+	.floatnone{
+		float: none;
+	}
 }
 @media only screen and (min-width: 1051px) {
 	.clearboth{
@@ -3835,19 +3869,6 @@ div.pagination.scott li.disabled {
 	.wallet-pay-c-side .wallet-width .selectout{width: 35%;}
 	.wrapper-admin .simpleLens-lens-element{
 		width: 375px;
-	}
-	.update-width-set{
-		width: 100% !important;
-		float: none !important;
-	}
-	.update-width-set div{
-		text-align: left !important;
-	}
-	.mgbtom{
-		margin-bottom: 20px !important;
-	}
-	.floatnone{
-		float: none;
 	}
 }
 
@@ -3955,6 +3976,14 @@ div.pagination.scott li.disabled {
 	}
 	.input-money span:last-child{
 		margin-left: 0px;
+	}
+	.update-width-set select,.update-width-set input{
+		margin-top: 6px;
+	}
+	.floatleft{
+		float: none;
+		width: 100% !important;
+		margin-left: 0px !important;
 	}
 }
 @media only screen and (max-width: 820px) {
@@ -4970,12 +4999,16 @@ header{
 	}
 	footer div:first-child,footer div:last-child{
 		float: none;
+		width: 100%;
 	}
 	footer section{
 		text-align: center;
 		width: 100%;
+		display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: column-reverse;
 	}
-	footer div:first-child{
+	footer div:last-child{
 		margin-bottom: 5px;
 	}
 	.login-body footer{
@@ -5116,6 +5149,7 @@ transform: translate(-50%, 0%);
 		flex-wrap: wrap;
 	}
 	.account-upgrate-storage .personal-form li{padding: 0px 20px 15px;}
+	.account-update .radio-cont input:checked ~ .checkmark{margin-top: 10px !important;}
 	.mystore .personal-form li.stored-currency {
     padding: 10px 20px;
 	}
@@ -5141,11 +5175,14 @@ transform: translate(-50%, 0%);
 .purchaser-info.personal-form ul{
 	padding-top: 0px;
 }
+.purchaser-info.personal-form{
+	font-size: 15px;
+}
 .wallet-pay-c-side .wallet-step-block{
 	width: 80%;
 }
 .malllist-mobile button{
-	bottom: 8px !important;
+	bottom: 6px !important;
     right: 40px !important;
 }
 
@@ -5607,7 +5644,24 @@ html.noscrollindex{
 .account-upgrate-storage .personal-form.mystoreapply .credit input{
 		width: 75%;
 	}
+.account-update	.account-upgrate-storage .personal-form.mystoreapply .credit input{
+	width: auto;
+}
+.account-update .radio-cont{
+	font-size: 100% !important;
+}	
 
+}
+@media only screen and (max-width:565px){
+	.update-width-set select,.update-width-set input{
+		margin-top: 6px;
+		width: 100% !important;
+	}
+	.floatleft{
+		float: none;
+		width: 100% !important;
+		margin-left: 0px !important;
+	}
 }
 @media only screen and (max-width:560px){
 	.mystoreapply .radioflex > span:last-child{
