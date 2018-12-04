@@ -619,7 +619,7 @@ a.title-more{
 	margin: 0px auto;
 	width: 80%;
 }
-.booking-info .shop-name{
+.message_notice .shop-name{
 	flex:1;
 }
 .products-box-main-other .shop-name img,.products-box-out ul .shop-name img,.thead-select-all .shop-name img{
@@ -850,7 +850,7 @@ a.title-more{
 	float: right;
 	width: 86%;
 }
-.right-side.favorite-page{
+.right-side.favorite-page,.inner-mall.favorite-page{
 	position: relative;
 }
 .wrapper-admin .right-side{
@@ -1528,7 +1528,7 @@ button.go-payment:hover{
 	letter-spacing: 0px;
 }
 .currently-account li{
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -2156,13 +2156,16 @@ word-break: break-all;
 .acount-total li span{
 	/*margin-left: 2px;
 	flex:1;*/
+	font-weight: bold;
+	font-size: 18px;
 }
 .acount-total li span:first-child{
 	text-align: left;
 }
 .acount-total li b{
-	font-size: 13px;
+	font-size: 15px;
 	color: #eeeeee;
+	font-weight: normal;
 }
 .acount-total li br{
 	content: "";
@@ -3058,12 +3061,12 @@ li.other-contact{
 	margin: 0px 10px;
 	font-weight: bold;
 }
+.input-money span:first-child,.input-money span:last-child{
+	margin-left: 0px;
+}
 .getmoney b{
 	margin-right: 5px;
 	font-weight: bold;
-}
-.getmoney b:last-child{
-	margin-left: 5px;
 }
 .getmoney div:first-child{
 	flex:1;
@@ -3075,12 +3078,13 @@ li.other-contact{
 
 .input-money{
 	margin-bottom: 30px;
-	margin-left: 25px;
+	margin-left: 34px;
 }
 
 .input-money input{
 	border: solid 1px #d1d1d5;
 	padding: 10px 7px;
+	margin-bottom: 10px;
 }
 .input-money input::placeholder{
 		color: #8d8c8c;
@@ -3782,6 +3786,46 @@ div.pagination.scott li.disabled {
 		font-size: 18px;
 		font-weight: bold;
 	}
+.message_notice .message-star{
+	margin-left: 0 !important;
+}	
+.message-star{
+	clear: both;
+	overflow: hidden;
+	flex: 2;
+    margin: 0px 2%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}	
+.message-star p{
+	font-size: 15px;
+}
+.message-star .btn-star::before{
+	font-size: 15px;
+}
+.message-star > div{
+	float: left;
+}	
+.message-star button.keep-shop{
+	background: #2d548f;
+	color: #fff;
+	padding: 5px 10px;
+	border: none;
+	font-size: 13px;
+	margin-left: 10px !important;
+	float: right;
+}
+.message-star button.keep-shop:hover{
+	background: #00a6d6;
+}	
+.message-star button{
+	margin-left: 0px !important;
+	float: right;
+}
+.block-long > span{
+		margin-left: 0px;
+	}
 /* ======= Responsive ======= */
 
 @media only screen and (min-width: 1921px) {
@@ -3905,7 +3949,12 @@ div.pagination.scott li.disabled {
 		margin: 5px 0px;
 	}
 	.get-cat01-name{
-		margin-left: 30px !important;
+		margin-left: 36px !important;
+	}
+	.block-long{
+		display: block;
+		margin-top: 5px !important;
+		margin-left: 36px !important;
 	}
 }
 @media only screen and (max-width: 910px) {
@@ -3985,6 +4034,23 @@ div.pagination.scott li.disabled {
 		width: 100% !important;
 		margin-left: 0px !important;
 	}
+	.message-star{
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		align-items: flex-end;
+		margin-top: 4px;
+	}
+	.message-star > div{
+		flex-wrap: wrap;
+		margin-bottom: 0px;
+		width: 70%;
+	}
+	.message-star button.keep-shop{
+		float: left;
+		margin-left: 0px !important;
+		margin-bottom: 0px;
+		height: 28px;
+	}
 }
 @media only screen and (max-width: 820px) {
 	.container,.head,nav.nav-desktop,footer section{
@@ -3998,6 +4064,29 @@ div.pagination.scott li.disabled {
 	}
 	.account-update{
 		width: 85% !important;
+	}
+	.block-long{
+		margin-left: 0px !important;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width:820px) {
+	.getmoney span{
+	margin: 0px 10px;
+	display: block;
+	text-indent: 25px;
+	}
+	.formalities{
+		margin-left: 11px !important;
+	}
+	.getmoney-red{
+		text-indent: 0px !important;
+		margin: 0px !important;
+	}
+	.getmoney-red:first-child{
+		margin-bottom: 10px !important;
+	}
+	.input-money span:last-child{
+		text-indent: 0px !important; 
 	}
 }
 @media only screen and (min-width:769px) and (max-width:960px){
@@ -4020,6 +4109,14 @@ div.pagination.scott li.disabled {
 	}
 	input,select{
 		font-size: 13px;
+	}
+	.block-long{
+		display: inline-block;
+    	margin-top: 0px !important;
+    	margin-left: 0px !important;
+	}
+	.block-long > span{
+		margin-left: 10px;
 	}
 	.single-type{
 		width: 31px;
@@ -5498,6 +5595,17 @@ transform: translate(-50%, 0%);
 	.message-star p{
 		padding-top: 2px;
 	}
+	.booking-info .message-star p{
+		padding-top: 0px;
+	}
+	.message-star{
+		align-items: flex-start;
+		flex-wrap: nowrap;
+	}
+	.message-star > div{
+		flex-wrap: wrap;
+		width: 65%;
+	}
 	.message-star .Evaluation button{
 		padding: 0px;
 	}
@@ -5509,6 +5617,15 @@ transform: translate(-50%, 0%);
 		height: 100%;
 		min-height:345px;
 	}
+.booking-info .message-star{
+	visibility: hidden;
+}
+.message_notice	.message-star{
+	visibility: visible;
+}
+.seller-store-banner{
+	margin-bottom: 0px;
+}
 
 .left-side.seller-store{
 	padding: 0px 20px 10px 20px;
@@ -5562,12 +5679,6 @@ transform: translate(-50%, 0%);
 	width: 100%;
 }
 
-ul.search-sort .search-wrapper-date{
-	justify-content: flex-end !important;
-}
-ul.search-sort .search-wrapper-date span{
-	width: 45%;
-}
 	.wallet-qrcode .wallet-step-block{
 	position: relative;
     height: calc(100vh - 100px);
@@ -5663,6 +5774,13 @@ html.noscrollindex{
 		margin-left: 0px !important;
 	}
 }
+@media only screen and (max-width:550px){
+	.block-long {
+    display: block;
+	margin-left: 25px !important;
+	margin-top: 5px !important;
+	}
+}
 @media only screen and (max-width:560px){
 	.mystoreapply .radioflex > span:last-child{
 		margin-left: 0px;
@@ -5735,6 +5853,34 @@ html.noscrollindex{
 		margin-left: 0px !important;
 		margin-top: 10px;
 	}
+	.formalities{
+		display: inline-block;
+		margin-left: 11px !important;
+	}
+	.getmoney span{
+	margin: 0px 10px;
+	display: block;
+	text-indent: 25px;
+	}
+	.block-long{
+		margin-left: 0px !important;
+	}
+	.getmoney-red{
+		text-indent: 0px !important;
+		margin: 0px !important;
+	}
+	.getmoney-red:first-child{
+		margin-bottom: 10px !important;
+	}
+	.input-money span:last-child{
+		text-indent: 0px !important; 
+	}
+	.input-money span:last-child {
+    margin-left: 0px;
+	}
+	#sbtitle .setting-btn{
+		margin-top: 22px;
+	}
 }
 @media only screen and (max-width:430px){
 	.seller-contact-head{
@@ -5776,11 +5922,6 @@ html.noscrollindex{
 	.register-group{
 	width: 320px;
 	}
-	.getmoney span{
-	margin: 0px 10px;
-	display: block;
-	text-indent: 25px;
-	}
 	.wallet-width .selectout,.count.wallet-width input{width: 50%;}
 	.personal-form li.stored-currency.store-entrance-out{
 		display: block;
@@ -5812,6 +5953,10 @@ html.noscrollindex{
     padding: 3px;}
 .smallarrow i{right: 15px;top: 13px;}	
 	.stored-currency div p{margin: 0px 0px 5px 0px;}
+	.admin-acount-much .setting-btn{
+		font-size: 15px;
+		padding: 5px 10px;
+	}
 }
 @media only screen and (max-width:320px){
 	.register-group{
