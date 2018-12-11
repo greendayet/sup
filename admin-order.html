@@ -78,7 +78,12 @@
 						</div>
 						<div class="w70 order-group">
 							<div class="order-box">
-								<div class="order-status setting-btn2" style="cursor: default;background: #64bce9;">未出货</div>
+								<!--未出貨可點選乘已出貨 start-->
+		  						<div id="sbtitle">
+									<div class="order-status setting-btn2" id="a1" onclick='showhidediv("a2");' style="cursor: default;background: #64bce9;">未出货</div>
+									<div class="order-status setting-btn2" id="a2" style="cursor: default;background: #f19d1d;display: none;">已出货</div>
+								</div>
+		  						<!--未出貨可點選乘已出貨 end-->
 								<ul>
 									<li class="order-time"><img class="order-head" src="images/img-trans.png">2018/07/20<b>09:00</b></li>
 									<li class="orange">超绝体验课程，只到7月底先抢先赢!</li>
@@ -91,7 +96,12 @@
 								</ul>
 							</div>
 							<div class="order-box">
-								<div class="order-status setting-btn2" style="cursor: default;background: #64bce9;">未出货</div>
+								<!--未出貨可點選乘已出貨 start-->
+		  						<div id="sbtitle">
+									<div class="order-status setting-btn2" id="a1" onclick='showhidediv("a2");' style="cursor: default;background: #64bce9;">未出货</div>
+									<div class="order-status setting-btn2" id="a2" style="cursor: default;background: #f19d1d;display: none;">已出货</div>
+								</div>
+		  						<!--未出貨可點選乘已出貨 end-->
 								<ul>
 									<li class="order-time"><img class="order-head" src="images/img-trans.png">2018/07/20<b>09:00</b></li>
 									<li class="orange">超绝体验课程，只到7月底先抢先赢!</li>
@@ -104,7 +114,12 @@
 								</ul>
 							</div>
 							<div class="order-box">
-								<div class="order-status setting-btn2" style="cursor: default;background: #64bce9;">未出货</div>
+								<!--未出貨可點選乘已出貨 start-->
+		  						<div id="sbtitle">
+									<div class="order-status setting-btn2" id="a1" onclick='showhidediv("a2");' style="cursor: default;background: #64bce9;">未出货</div>
+									<div class="order-status setting-btn2" id="a2" style="cursor: default;background: #f19d1d;display: none;">已出货</div>
+								</div>
+		  						<!--未出貨可點選乘已出貨 end-->
 								<ul>
 									<li class="order-time"><img class="order-head" src="images/img-trans.png">2018/07/20<b>09:00</b></li>
 									<li class="orange">超绝体验课程，只到7月底先抢先赢!</li>
@@ -210,4 +225,27 @@ $(document).ready(function() {
   });
   
 }); 
+</script>
+<script>
+function showhidediv(id){
+try{
+var sbtitle=document.getElementById(id);
+for (i=1;i<=3;i++) {
+   if(id=="a"+i){
+        if(sbtitle.style.display=='flex'){
+          sbtitle.style.display='none';
+        }
+        else{
+        sbtitle.style.display='flex';
+        }
+   
+      }
+    else
+   {
+     document.getElementById("a" + i).style.display='none'; 
+   }
+}
+
+}catch(e){}
+}
 </script>

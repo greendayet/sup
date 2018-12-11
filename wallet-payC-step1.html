@@ -86,9 +86,12 @@
 					</div>
 					<div class="wallet-right-side wallet-pay-c-side">
 						<div class="wallet-step-block text-left"">
-							<div class="password-input" style="display: flex;justify-content: center;align-items: center;">
+							<div class="password-input" style="display: flex;justify-content: center;align-items: center;position: relative;">
 								<span style="color: #909090;">钱包地址</span>
 								<input type="text" style="flex:1;">
+								<!--錢包地址有兩種狀況，一種直接連至Qrcode掃描；另一種帶入代碼至上面的input框-->
+								<div class="wallet-qrbtn" onclick="location.href='wallet-qrcode-03.html'"><img src="images/qrcode.png"></div>
+								<!--錢包地址有兩種狀況，一種直接連至Qrcode掃描；另一種帶入代碼至上面的input框-->
 							</div>
 							<div class="count wallet-width" style="display: flex;justify-content: flex-start;align-items: center;">
 								<span style="color: #909090;">输入金额</span>
