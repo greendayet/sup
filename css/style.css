@@ -4170,6 +4170,12 @@ div.pagination.scott li.disabled {
 	input,select{
 		font-size: 13px;
 	}
+	.staticpage .left-side{
+		display: none;
+	}
+	.privacy-page{
+		padding-top: 20px;
+	}
 	.admin-search-textindent{
 		text-indent: 47px;
 	}
