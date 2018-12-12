@@ -1962,7 +1962,7 @@ word-break: break-all;
 	width: 42%;
 }
 .right-event-type .shop-name{
-	font-size: 24px;
+	font-size: 21px;
 	color: #171c61;
 	margin-right: 10px;
 }
@@ -2217,7 +2217,7 @@ word-break: break-all;
 	margin: 0px auto;
 }
 .purchaser-info.personal-form{
-	width: 100%;
+	width: 77%;
 	font-size: 18px;
 }
 .personal-form p{
@@ -3445,13 +3445,8 @@ li.other-contact{
 		clear: both;
 	}
 	.booking-search-form{
-		width: 49%;
-	}
-	.booking-search-form:first-child{
-		float: left;
-	}
-	.booking-search-form:last-child{
-		float: right;
+		width: 83%;
+		margin: 0px auto;
 	}
 	.order-history-search select{
 		height: 36px;
@@ -3965,6 +3960,9 @@ div.pagination.scott li.disabled {
 	.wrapper-admin .simpleLens-lens-element{
 		width: 375px;
 	}
+	.wallet-step-block .purchaser-info.personal-form .personal-info div{
+		flex: 2 !important;
+	}
 }
 
 @media only screen and (max-width: 950px) {
@@ -4064,6 +4062,12 @@ div.pagination.scott li.disabled {
 	}
 	.update-width-set div:last-child{
 		text-align: left !important;
+	}
+	.wallet-width .selectout{
+		width: 35%;
+	}
+	.purchaser-info.personal-form{
+		width: 90%;
 	}
 }
 @media only screen and (min-width: 769px) and (max-width: 900px) {
@@ -4169,6 +4173,9 @@ div.pagination.scott li.disabled {
 	}
 	input,select{
 		font-size: 13px;
+	}
+	.search-wrapper-date-end{
+		padding-left: 15px;
 	}
 	.staticpage .left-side{
 		display: none;
@@ -4494,6 +4501,10 @@ header{
 	.setting-btn{
 		padding: 30px 15px;
 		font-size: 18px;
+	}
+	#sbtitle button{
+		font-size: 15px;
+		padding: 5px 10px;
 	}
 	.wrapper-admin .setting-btn{padding: 10px 15px;}
 	.wrapper-admin .setting-left-list ul a{padding: 10px 0px;}
@@ -4990,6 +5001,7 @@ header{
 	.seller-store-mobile{
 		clear: both;
 		overflow: hidden;
+		padding: 10px 20px 6px;
 	}
 	.seller-store-head.seller-store-mobile h2{
 		margin-bottom: 3px;
@@ -5004,7 +5016,7 @@ header{
 	.store-logo-mobile img{
 		max-width: 100%;
 		width: auto !important;
-		height: 55px !important;
+		height: 51px !important;
 	}
 	.seller-store-head{
 		display: block;
@@ -5376,6 +5388,7 @@ transform: translate(-50%, 0%);
 }
 .purchaser-info.personal-form{
 	font-size: 15px;
+	width: 100%;
 }
 .wallet-pay-c-side .wallet-step-block{
 	width: 80%;
@@ -5467,8 +5480,8 @@ transform: translate(-50%, 0%);
 	}
 	.finger-set{
 		position: absolute;
-    	right: 2px;
-    	top: -42px;
+    	right: 10px;
+    	top: -6px;
 	}
 	.account-upgrate-intro .medal-intro{
 		display: block;
@@ -5680,6 +5693,7 @@ transform: translate(-50%, 0%);
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		margin: 0px 15px;
 	}
 	.message-star{
 		margin-bottom: 5px;
@@ -5794,7 +5808,15 @@ transform: translate(-50%, 0%);
 	padding-left: 0px !important;
 	text-indent: 0px !important;
 }
+.booking-search-form{
+	width: 100%;
+}
 		
+}
+@media only screen and (min-width: 769px) and (max-width: 890px){
+    .booking-search-form {
+    width: 85%;
+	}
 }
 @media only screen and (max-width:602px){
 	.mystoreapply .radioflex > span:last-child{
@@ -5896,7 +5918,10 @@ transform: translate(-50%, 0%);
 .seller-store-head h2{
 	font-size: 18px;
 }
-.btn-star::before{font-size: 18px;}	
+.btn-star::before{font-size: 18px;}
+.store-logo-mobile img{
+	height: 45px !important;
+}	
 }
 @media only screen and (max-width:480px){
 	.personal-form li.stored-currency{
@@ -6029,8 +6054,11 @@ transform: translate(-50%, 0%);
 }
 .btn-star::before{font-size: 15px;}	
 	.seller-store-head{
-		padding: 10px;
+		padding: 10px 10px 4px 10px;
 	}
+.store-logo-mobile img{
+	height: 40px !important;
+}	
 }
 @media only screen and (max-width:381px){
 	.finger-bg{
