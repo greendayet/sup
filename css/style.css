@@ -502,6 +502,9 @@ footer section{
 .wrapper-admin .main{
 	padding-top: 10px;
 }
+.input-money span:last-child br{
+	display: none;
+}
 .container{
 	width: 1200px;
 	margin: 0px auto;
@@ -734,6 +737,7 @@ a.title-more{
 	content: "\f005";
 	font-weight: 400; 
 	cursor: pointer;
+	margin: 0px -1px;
 }
 .btn-star.active::before{
 	content: "\f005";
@@ -6058,13 +6062,17 @@ transform: translate(-50%, 0%);
 	}
 .store-logo-mobile img{
 	height: 40px !important;
-}	
+}
+.input-money span:last-child br{
+	display: block !important;
+	}	
 }
 @media only screen and (max-width:381px){
 	.finger-bg{
 		background-size: 261px 261px;
 		width: 261px;
 		height: 261px;
+		line-height:261px;
 	}
 }
 @media only screen and (max-width:370px){
