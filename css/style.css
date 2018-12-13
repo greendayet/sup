@@ -729,6 +729,7 @@ a.title-more{
 .btn-star{
 	background: transparent;
 	border: none;
+	margin-right: -3px;
 }
 .btn-star::before{
 	color: #1ba5d6;
@@ -737,7 +738,6 @@ a.title-more{
 	content: "\f005";
 	font-weight: 400; 
 	cursor: pointer;
-	margin-right: -3px;
 }
 .btn-star.active::before{
 	content: "\f005";
