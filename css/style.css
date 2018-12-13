@@ -5476,7 +5476,7 @@ transform: translate(-50%, 0%);
 	.finger-bg{
 		width: 321px;
 		height: 321px;
-		margin: 20px auto;
+		margin: 0px auto;
 		text-align: center !important;
 		line-height: 321px;
 		background: url(../images/bg-mobile-scan.png) no-repeat center;
