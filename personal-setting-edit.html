@@ -53,7 +53,7 @@
 								<p class="ft15">帐户余额</p>
 								<ul>
 									<li>
-										<span>USDT<br><b>价值</b></span>
+										<span>USD<br><b>价值</b></span>
 										<span class="acount-money">1.000.000.000<br><b class="cost-money">000/USD</b></span>
 									</li>
 									<li>
@@ -122,7 +122,7 @@
 								<p class="ft15">帐户余额</p>
 								<ul>
 									<li>
-										<span>USDT<br><b>价值</b></span>
+										<span>USD<br><b>价值</b></span>
 										<span class="acount-money">1.000.000.000<br><b class="cost-money">000/USD</b></span>
 									</li>
 									<li>
@@ -156,6 +156,15 @@
 						<div class="only-bg"></div>
 						<div class="personal-form">
 							<ul class="personal-info">
+								<li><span>头   像</span>
+									<div style="overflow: hidden;">
+										<label class="uploadbutton">
+    <div class="input-file-text" style="flex: 2;"></div>
+    <input class="input-file" style="width: 1% !important;flex: none;" type="file" />
+    <div class="button" style="flex: none;">浏览</div>
+</label>
+									</div>
+								</li>
 								<li><span>姓   名</span><div><input type="text" value="林君玲"></div></li>
 								<li><span>帐   号</span><div><input type="text" value="Shaleen"></div></li>
 								<li><span>ID或护照号码</span><div><input type="text" value="A222222168"></div></li>
@@ -257,4 +266,11 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+</script>
+<script type="text/javascript">
+	(function() {
+  $('.uploadbutton').on('change', '.input-file', function(event) {
+    $(this).siblings('.input-file-text').html(this.value);
+  });
+}).call(this);
 </script>
