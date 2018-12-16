@@ -1769,7 +1769,12 @@ transform: translate(-50%,-50%);*/
 	margin-bottom: 0px;
 	flex:3 !important;
 }
-
+.personal-info .user-photo{
+	width: 40px;
+}
+.personal-form li.presonal-head{
+	padding-bottom: 5px;
+}
 .flex-center{
 	display: flex;
 	justify-content: center;
@@ -2215,6 +2220,9 @@ word-break: break-all;
 .setting-left-list ul a.active,.setting-left-list ul a:hover{
 	background: url("../images/bg-personal-active.png") repeat-y center right;
 }
+.discount-ticket span{
+	color: #8d8c8c !important;
+}
 .personal-form{
 	font-size: 15px;
 	width: 80%;
@@ -2279,7 +2287,6 @@ word-break: break-all;
 .uploadbutton {
     border: solid 1px #d1d1d5;
     color: #2476a0; 
-    border-radius: 2px;  
     height: 36px;
     display: flex;
     justify-content: space-between;
@@ -3873,6 +3880,9 @@ div.pagination.scott li.disabled {
 .block-long > span{
 		margin-left: 0px;
 	}
+.selectbox b{
+		display: inline-block;
+	}	
 /* ======= Responsive ======= */
 
 @media only screen and (min-width: 1921px) {
@@ -3891,6 +3901,12 @@ div.pagination.scott li.disabled {
 @media only screen and (max-width: 1350px) {
 	.container,.head,nav.nav-desktop,footer section{
 		width: 980px;
+	}
+	.discount-ticket .radioflex{
+		display: block;
+	}
+	.discount-ticket .outspace-none{
+		display: none;
 	}
 	.simpleLens-lens-element {
     width: 507px;
@@ -3966,6 +3982,24 @@ div.pagination.scott li.disabled {
 	}
 	.wallet-step-block .purchaser-info.personal-form .personal-info div{
 		flex: 2 !important;
+	}
+	.event-time{
+		align-items: baseline !important;
+	}
+	.selectbox{
+		text-align: center !important;
+		margin-left: 16px;
+	}
+	.selectbox select{
+		margin-right: 0px !important;
+		width: 100% !important;
+	}
+	.selectbox b{
+		margin: 10px 0px;
+		display: block;
+	}
+	.mr-mobile{
+		margin-left: 16px !important;
 	}
 }
 
@@ -5889,12 +5923,27 @@ transform: translate(-50%, 0%);
 .wallet-width .selectout,.count.wallet-width input{width: 50%;}	
 
 }
+
+@media only screen and (min-width:570px) and (max-width:768px){
+.selectbox{
+		margin-left: -1px !important;
+	}
+	.mr-mobile{
+		margin-left: 9px !important;
+	}
+}
 @media only screen and (max-width:550px){
 	.block-long {
     display: block;
 	margin-left: 25px !important;
 	margin-top: 5px !important;
 	}
+}
+@media only screen and (min-width:530px) and (max-width:575px){
+	.selectbox{
+		margin-left: 6px !important;
+	}
+}
 }
 @media only screen and (max-width:518px){
 	.account-update{
