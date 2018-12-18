@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">	
-<title>SUPREME-WALLET-现场支付</title>
+<title>SUPREME-WALLET-立即转账</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -11,12 +11,12 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
-<body class="noscroll" ontouchstart>
+<body ontouchstart>
 	<div class="wrapper">
 		<header>
 			<div class="head">
 				<h1><a href="index.html">SUPREME</a></h1>
-				<h1 class="head-mobile">扫描二维码</h1>
+				<h1 class="head-mobile">钱包</h1>
 				<div class="head-rightfunction">
 					<ul>
 						<li><a href="personal-setting.html"><img src="images/img-trans.png"></a>|<a href="login.html">登出</a></li>
@@ -35,7 +35,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="home-mobile"><a href="wallet-qrcode-02.html"><i class="fas fa-angle-left"></i></a></div>			
+				<div class="home-mobile"><a href="wallet-payA-step2.html"><i class="fas fa-angle-left"></i></a></div>			
 			</div>
 			<div class="navi-out">
 			<nav class="nav-desktop">
@@ -54,25 +54,37 @@
 			</div>
 		</header>
 		<div class="main">
-			<div class="container nopd">
+			<div class="container">
 				<div class="inner-mall">
 					<div class="path"><a href="index.html">首頁</a> > 扫描 > 立即转帐</div>
-					<div class="bg-white out-clear wallet-qrcode">
+					<div class="bg-white out-clear">
 					<div class="wallet-left-side">
-						<!--desktop start-->
-						<div class="desktop-wallet">
+						<div class="currently-account">
+							<p>目前帳戶餘額</p>
+							<ul>
+								<li>
+									<span><img src="images/img-trans.png">USD<br><b class="cost-name">价值</b></span><span>500,000,000<br><b class="cost-money">3000/USD</b></span>
+								</li>
+								<li>
+									<span><img src="images/img-trans.png">S COIN<br><b class="cost-name">价值</b></span><span>500,000,000<br><b class="cost-money">3000/USD</b></span>
+								</li>
+								<li>
+									<span><img src="images/img-trans.png">ETH<br><b class="cost-name">价值</b></span><span>500,000,000<br><b class="cost-money">3000/USD</b></span>
+								</li>
+								<li>
+									<span><img src="images/img-trans.png">SUP<br><b class="cost-name">价值</b></span><span>500,000,000<br><b class="cost-money">3000/USD</b></span>
+								</li>
+							</ul>
+						</div>
 						<div class="left-bottom-link">
 						<ul>
-							<li><a href="wallet-qrcode-01.html"><img style="background: none;" src="images/svg/wallet-left-4.svg">收款</a></li>
-							<li><a href="wallet-qrcode-02.html"><img style="background: none;" src="images/svg/icon_qrscand.svg">票券</a></li>
+							<li><a href="wallet-payA-step1.html"><img src="images/img-trans.png">现场支付</a></li>
+							<li><a href="wallet-payB-step1.html"><img src="images/img-trans.png">立即付款</a></li>
+							<li><a class="active" href="wallet-payC-step1.html"><img src="images/img-trans.png">立即转账</a></li>
 						</ul>
-						</div>
-						</div>
-					<!--desktop end-->	
 					</div>
-						<!--desktop start-->
-						<div class="desktop-wallet">
-					<div class="wallet-right-side">
+					</div>
+					<div class="wallet-right-side wallet-pay-c-side">
 						<div class="wallet-step-block">
 							<div class="qrcode-img">
 								<img src="images/qrcode.png">
@@ -80,23 +92,9 @@
 							<div class="orange ft13">
 								2018DIGHISDRHG OIERHYIOERHIOYHE
 							</div>
-						</div>	
-					</div>
-						</div>
-					<!--desktop end-->
-						<!--mobile start-->
-						<div class="mobile-wallet">
-					<div class="wallet-step-block">
-							<div class="qrcode-img vertialcenter">
-								<img src="images/qrcode.png">
-							</div>
-							<div class="orange ft13">
-								2018DIGHISDRHG OIERHYIOERHIOYHE
-							</div>
 						</div>
 					</div>
-				    <!--mobile end-->
-				</div>	
+			</div>
 				</div>
 			</div>
 		</div>
@@ -144,11 +142,3 @@ $(document).ready(function() {
   
 }); 
 </script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#accordion-wallet" ).accordion({
-      heightStyle: "content",
-    });
-  } );
-  </script>
