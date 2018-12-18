@@ -36,6 +36,9 @@ input,select,.a-btn{
 .mb-block-i{
 	display: none;
 }
+.placeholdsample{
+	display: none;
+}
 .wallet-qrbtn{
 	position: absolute;
 	margin-bottom: 0px !important;
@@ -4203,6 +4206,11 @@ div.pagination.scott li.disabled {
 	.input-money span:last-child{
 		text-indent: 0px !important; 
 	}
+	.long-width-type{
+		text-indent: -12px !important;
+    	padding-left: 47px !important;
+    	margin-top: 0px !important;
+	}
 }
 @media only screen and (min-width:769px) and (max-width:960px){
 .wrapper-admin .search-wrapper ul.search-sort,.wrapper-admin .search-wrapper ul.search-sort select{
@@ -5945,6 +5953,10 @@ transform: translate(-50%, 0%);
 }
 .special-price{
 	letter-spacing: 3px;
+}
+.placeholdsample{
+	display: block;
+	font-size: 13px !important;
 }	
 
 }
@@ -5962,6 +5974,13 @@ transform: translate(-50%, 0%);
     display: block;
 	margin-left: 25px !important;
 	margin-top: 5px !important;
+	}
+	.block-long.long-width-type{
+		margin-top: -25px !important;
+		margin-left: 34px !important;
+		text-indent: -100px !important;
+    	padding-left: 100px !important;
+    	line-height: 1.75;
 	}
 }
 @media only screen and (min-width:530px) and (max-width:575px){
@@ -6009,7 +6028,7 @@ transform: translate(-50%, 0%);
 	.pass-senddone{
 	width: 240px;
 	margin: 0px auto;
-}
+	}
 }
 
 @media only screen and (max-width:470px){
@@ -6031,6 +6050,15 @@ transform: translate(-50%, 0%);
 	.wallet-step-block .purchaser-info.personal-form .personal-info div{
 	margin-bottom: 0px;
 	flex:2 !important;
+	}
+}
+@media only screen and (max-width:440px){
+.long-width-type-i{
+		margin-top: -25px !important;
+		margin-left: 34px !important;
+		text-indent: -100px !important;
+    	padding-left: 100px !important;
+    	line-height: 1.75;
 	}
 }
 @media only screen and (max-width:435px){
