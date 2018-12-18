@@ -30,6 +30,9 @@ input,select,.a-btn{
 	font-size: 15px;
 	outline: none;
 }
+.exchange{
+	margin: 0px 10px;
+}
 .mb-block{
 	display: inline-block;
 }
@@ -3899,6 +3902,12 @@ div.pagination.scott li.disabled {
 .selectbox b{
 		display: inline-block;
 	}	
+.much-money,.block-long .much-money{
+	margin-left: 10px;
+}
+.formalities{
+	margin-left: 10px !important;
+}	
 /* ======= Responsive ======= */
 
 @media only screen and (min-width: 1921px) {
@@ -4024,6 +4033,9 @@ div.pagination.scott li.disabled {
     color: #fff;
     padding: 0px 16px;
 	}
+	.block-long .much-money{
+		margin-left: 0px;
+	}
 	.container,.head,nav.nav-desktop,footer section{
 		width: 850px;
 	}
@@ -4123,6 +4135,9 @@ div.pagination.scott li.disabled {
 	.purchaser-info.personal-form{
 		width: 90%;
 	}
+	.exchange {
+    margin: 0px 10px 0px 0px;
+	}
 }
 @media only screen and (min-width: 769px) and (max-width: 900px) {
 	.get-cat02-name {
@@ -4186,6 +4201,9 @@ div.pagination.scott li.disabled {
 	.message-star button.keep-shop{
 		padding: 5px 8px;
 	}
+	.block-long .much-money{
+		margin-left: 10px;
+	}
 }
 @media only screen and (min-width: 769px) and (max-width:820px) {
 	.getmoney span{
@@ -4232,6 +4250,9 @@ div.pagination.scott li.disabled {
 	}
 	input,select{
 		font-size: 13px;
+	}
+	.exchange {
+    margin: 0px 10px 0px 10px;
 	}
 	.search-wrapper-date-end{
 		padding-left: 15px;
@@ -6018,7 +6039,16 @@ transform: translate(-50%, 0%);
 .btn-star::before{font-size: 18px;}
 .store-logo-mobile img{
 	height: 45px !important;
-}	
+}
+.getmoney-red:first-child{
+		margin-bottom: 10px !important;
+	}
+.getmoney-red{
+	display: block;
+}
+.exchange{
+	margin-left: 0px;
+}		
 }
 @media only screen and (max-width:480px){
 	.personal-form li.stored-currency{
@@ -6077,20 +6107,12 @@ transform: translate(-50%, 0%);
 		display: inline-block;
 		margin-left: 11px !important;
 	}
-	.getmoney span{
-	margin: 0px 10px;
-	display: block;
-	text-indent: 25px;
-	}
 	.block-long{
-		margin-left: 0px !important;
+		margin-left: 25px !important;
 	}
 	.getmoney-red{
 		text-indent: 0px !important;
 		margin: 0px !important;
-	}
-	.getmoney-red:first-child{
-		margin-bottom: 10px !important;
 	}
 	.input-money span:last-child{
 		text-indent: 0px !important; 
@@ -6100,6 +6122,13 @@ transform: translate(-50%, 0%);
 	}
 	#sbtitle .setting-btn{
 		margin-top: 22px;
+	}
+	.much-money{
+		display: block;
+		margin-left: 35px;
+	}
+	.block-long .much-money{
+		margin-bottom: 5px;
 	}
 }
 @media only screen and (max-width:430px){
