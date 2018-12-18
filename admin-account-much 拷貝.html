@@ -76,19 +76,68 @@
 						</div>
 						<div class="w70 order-group">
 							<div class="order-box">
-								<ul class="money-account-detail">
-									<li class="order-time" style="color:#333;"><h3 class="account-much-head">金额结算</h3>
-										<p>金额结算之金额为钱包系统内的【立即付款】选项，【立即付款】等同线上支付，线上支付会由平台统一代收再跟商家做清算。</p>
-									</li>
+								<ul>
+									<li class="order-time" style="color:#333;">USD</li>
+									<li class="cartline"></li>
 								</ul>
-								<h3 class="account-much-head">金额说明</h3>
-								<div class="getmoney">
+								<!--all form start-->
+								<div id="sbtitle">
+								<div class="getmoney" id="a1">
 									<div>
-										<p><img class="money-gray" src="images/icon-money-gray.png">可清算金额&nbsp;：<span class="block-long">商家的【线上立即支付】总销售额并扣除手续费</p>
-										<p><img class="money-blue" src="images/icon-money-blue.png">可提领金额&nbsp;：<span>可清算金额换算成预想清单之币别</span></p>
-										<p><img class="money-red" src="images/icon-money-red.png">可提领余额&nbsp;：<span>可提领金额扣除已提领金额</span></p>
+										<p><img class="money-gray" src="images/icon-money-gray.png">可清算金额<span class="block-long"><span><b>USD</b>50,000,000</span><span class="formalities" style="font-weight: normal;margin: 0px;">-&nbsp;手续费<b>5</b>%</span></span></p>
+										<p><img class="money-blue" src="images/icon-money-blue.png">可提领金额<span><b>USD</b>1,000,000,000</span></p>
+										<p><img class="money-red" src="images/icon-money-red.png">可提领余额<span><b>USD</b>50,000,000</span></p>
 									</div>
+									<div><button onclick='showhidediv("a2");' class="setting-btn setting-btn-lightblue">我要提领</button></div>
 								</div>
+								<div class="getmoney" id="a2" style="display: none;">
+									<div>
+										<p><img class="money-gray" src="images/icon-money-gray.png">可清算金额<span class="block-long"><span><b>USD</b>50,000,000</span><span class="formalities" style="font-weight: normal;margin: 0px;">-&nbsp;手续费<b>5</b>%</span></span></p>
+										<p><img class="money-blue" src="images/icon-money-blue.png">可提领金额<span><b>USD</b>1,000,000,000</span></p>
+										<div class="input-money">
+											<span class="getmoney-red">输入金额 USD</span><input type="text" name="" placeholder="金额"><span class="getmoney-red">换算</span><br><span><b>USD</b>1,000,000,00</span>
+										</div>
+										<p><img class="money-red" src="images/icon-money-red.png">可提领余额<span><b>USD</b>50,000,000</span></p>
+									</div>
+									<div><button onclick='showhidediv("a3");' class="setting-btn setting-btn-lightblue">确认送出</button></div>
+								</div>
+								<div class="getmoney" id="a3" style="display: none;">
+									<div>
+										<p><img class="money-gray" src="images/icon-money-gray.png">可清算金额<span class="block-long"><span><b>USD</b>50,000,000</span><span class="formalities" style="font-weight: normal;margin: 0px;">-&nbsp;手续费<b>5</b>%</span></span></p>
+										<p><img class="money-blue" src="images/icon-money-blue.png">可提领金额<span><b>USD</b>1,000,000,000</span></p>
+										<div class="input-money">
+											<span class="getmoney-red">已送出申请，<br>于3-5个工作天入帐。</span>
+										</div>
+										<p><img class="money-red" src="images/icon-money-red.png">可提领余额<span><b>USD</b>50,000,000</span></p>
+									</div>
+									<div><button onclick='showhidediv("a1");' class="setting-btn setting-btn-lightblue">好，明白了</button></div>
+								</div>
+							</div>
+								<script>
+function showhidediv(id){
+try{
+var sbtitle=document.getElementById(id);
+for (i=1;i<=3;i++) {
+   if(id=="a"+i){
+        if(sbtitle.style.display=='flex'){
+          sbtitle.style.display='none';
+        }
+        else{
+        sbtitle.style.display='flex';
+        }
+   
+      }
+    else
+   {
+     document.getElementById("a" + i).style.display='none'; 
+   }
+}
+
+}catch(e){}
+}
+
+</script>
+							<!--all form end-->
 							</div>
 						</div>
 					</div>
