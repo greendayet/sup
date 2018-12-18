@@ -30,6 +30,12 @@ input,select,.a-btn{
 	font-size: 15px;
 	outline: none;
 }
+.mb-block{
+	display: inline-block;
+}
+.mb-block-i{
+	display: none;
+}
 .wallet-qrbtn{
 	position: absolute;
 	margin-bottom: 0px !important;
@@ -90,7 +96,9 @@ input,select,.a-btn{
     -webkit-transform: rotate(45deg);
     display: none;
 }
-
+.special-price br{
+	display: none;
+}
 .flexbox{
 	display: flex;
 	justify-content: flex-start;
@@ -2923,6 +2931,16 @@ li.other-contact{
 	background-size: 2588.235294% 2131.578947%;
 	background-position: 84.63357% 0%;/*358 0*/
 }
+.money-account-detail{
+	margin-bottom: 70px;
+}
+h3.account-much-head{
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.money-account-detail p{
+	line-height: 1.75;
+}
 .order-time{
 	color: #8d8c8c;
 }
@@ -3077,17 +3095,12 @@ li.other-contact{
 	border:none;
 }
 .getmoney{
-	padding: 15px 0px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 .getmoney p{
 	margin-bottom: 15px;
-}
-.getmoney span{
-	margin: 0px 10px;
-	font-weight: bold;
 }
 .input-money span:first-child,.input-money span:last-child{
 	margin-left: 0px;
@@ -5920,7 +5933,19 @@ transform: translate(-50%, 0%);
 .account-update .radio-cont{
 	font-size: 100% !important;
 }
-.wallet-width .selectout,.count.wallet-width input{width: 50%;}	
+.wallet-width .selectout,.count.wallet-width input{width: 50%;}
+.mb-block{
+	display: none;
+}
+.mb-block-i{
+	display: inline-block;
+}
+.special-price br{
+	display: block;
+}
+.special-price{
+	letter-spacing: 3px;
+}	
 
 }
 
