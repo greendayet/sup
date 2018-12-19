@@ -8,7 +8,6 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" id="courtyard-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto%3A300%2C400%2C500%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
-<link rel="stylesheet" href="css/jquery-ui.css">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
@@ -55,11 +54,11 @@
 			</div>
 		</header>
 		<div class="main">
-			<div class="container">
+			<div class="container pdtop">
 				<div class="inner-mall">
-					<div class="path"><a href="index.html">钱包</a> > 立即转帐 > QRCODE</div>
-					<div class="bg-white out-clear">
-					<div class="wallet-left-side">
+					<div class="path"><a href="index.html">首页</a> > 钱包 > 立即转帐</div>
+					<div class="bg-white out-clear wallet-height">
+					<div class="wallet-left-side wallet-pay-none">
 						<div class="currently-account">
 							<p>目前帳戶餘額</p>
 							<ul>
@@ -104,92 +103,11 @@
 					</div>
 					<!--desktop end-->
 					<!--mobile start-->
-					<ul id="accordion-wallet" class="personal-info mobile-wallet">
-									<li>
-
-<div class="left-bottom-link"><span><a href="wallet-payA-step1.html"><img class="wallet-left-1" src="images/img-trans.png">现场支付</a></span></div>										
-  <div>
-	  <div class="accorsing-content-1 wallet-right-side">
-						<div class="wallet-step-block">
-							<div><p class="orange">请选择支付币别，再输入金额。</p></div>
-							<div class="count wallet-width">
-							<div class="selectout" style="margin-bottom: 0px;">
-										<i style="color: #0054a7;" class="arrowdown"></i>
-									<select>
-										<option>币别</option>
-										<option>USD</option>
-										<option>S COIN</option>
-										<option>ETH</option>
-										<option>SUP</option>
-									</select>
-									</div>
-									<input type="text" value="500">
-							</div>		
-							<div class="cyanine ft15">
-								( 目前匯率 30.286 )
-							</div>
-						</div>
-						<button onclick="location.href='wallet-payA-step2.html'" class="btn light-blue btn-wallet bold">确认付款</button>	
-					</div>
-  </div>
-									</li>
-									<li>
-  <div class="left-bottom-link"><span><a href="#"><img class="wallet-left-2" src="images/img-trans.png">立即付款</a></span></div>
- <div>
-	 <div class="accorsing-content-2 wallet-right-side">
-						<div class="wallet-step-block">
-							<div><p class="orange">选择支付币别后，将依目前汇率 30.286 换算金额</p></div>
-							<div class="count wallet-width">
-							<div class="selectout" style="margin-bottom: 0px;">
-										<i style="color: #0054a7;" class="arrowdown"></i>
-									<select>
-										<option>USD</option>
-									<option>S COIN</option>
-									<option>ETH</option>
-									<option>SUP</option>
-									</select>
-									</div>
-									<input class="width-in" type="text" value="500">
-							</div>	
-							<div class="remind">
-								<span><img class="remind-img" src="images/img-trans.png">目前账户USD余额不足</span>
-								<span class="stored"><a href="account-upgrate-storage.html">立刻储值</a><img src="images/img-trans.png"></span>
-							</div>
-							<div class="purchaser-info personal-form">
-								<div style="padding-top: 9px;">购买人信息</div>
-								<ul class="personal-info">
-									<li>
-										<span>姓   名</span>
-										<div><input type="text" value="林君玲"></div>
-									</li>
-									<li class="personal-mobile storage-mobile">
-										<span>手   机</span>
-										<div>
-										<div class="selectout smallarrow">
-											<i style="color: #0054a7;" class="arrowdown"></i>
-										<select style="width: 100%;margin-right: 0;">
-											<option value="0">+886</option>
-											<option>+123</option>
-										</select>
-										</div>
-										<input style="margin-left: 5%;" type="tel" value="+886 920123323">
-										</div>
-									</li>
-									<li>
-										<span>地   址</span>
-										<div><input type="email" value="shaleen.lin@gmail.com"></div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<button onclick="location.href='wallet-payB-step-done.html'" class="btn light-blue btn-wallet">确认付款</button>
-					</div>
-  </div>
-									</li>
+					<ul id="accordion-wallet" class="personal-info mobile-wallet hidearrow">
 									<li>
   <div class="left-bottom-link"><span><a href="wallet-payC-step1.html"><img class="wallet-left-3" src="images/img-trans.png">立即转账</a></span></div>
   <div>
-							<div class="accorsing-content-3 wallet-right-side wallet-pay-c-side">
+							<div class="accorsing-content-1 wallet-right-side">
 						<div class="wallet-step-block">
 							<div class="wallet-step-block">
 							<div class="qrcode-img">
@@ -258,8 +176,6 @@ $(document).ready(function() {
   $( function() {
     $( "#accordion-wallet" ).accordion({
 		heightStyle: "content",
-		collapsible: "true",
-		active:2
     });
   } );
   </script>
