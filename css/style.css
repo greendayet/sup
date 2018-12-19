@@ -4181,6 +4181,15 @@ div.pagination.scott li.disabled {
 		margin-bottom: 0px;
 		height: 28px;
 	}
+	.placeholdsample{
+		display: block;
+	}
+	.mb-block{
+		display: none;
+	}
+	.mb-block-i{
+		display: inline-block;
+	}
 }
 @media only screen and (max-width: 820px) {
 	.container,.head,nav.nav-desktop,footer section{
@@ -6089,6 +6098,7 @@ transform: translate(-50%, 0%);
 		text-indent: -100px !important;
     	padding-left: 100px !important;
     	line-height: 1.75;
+    	display: block;
 	}
 }
 @media only screen and (max-width:435px){
